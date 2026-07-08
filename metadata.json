@@ -1,0 +1,8 @@
+{
+  "name": "Reach Engage Develop",
+  "description": "Reach Engage Develop is a unique digital solutions provider.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
