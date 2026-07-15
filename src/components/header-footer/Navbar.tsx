@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import redWhiteLogo from '../images/r-e-d-white-logo.svg';
-import postXWhiteLogo from '../images/PostX_Web_white_Logo.png';
+import redWhiteLogo from '../../images/r-e-d-white-logo.svg';
+import postXWhiteLogo from '../../images/PostX_Web_white_Logo.png';
 
 interface NavbarProps {
   onCtaClick: () => void;

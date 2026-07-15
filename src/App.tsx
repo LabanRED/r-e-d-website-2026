@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
+import Navbar from './components/header-footer/Navbar';
 import Hero from './components/Hero';
 import StatsBar from './components/StatsBar';
 import LogoCarousel from './components/LogoCarousel';
@@ -10,7 +10,7 @@ import ServicesGrid from './components/ServicesGrid';
 import RedProcess from './components/RedProcess';
 import Partnerships from './components/Partnerships';
 import EstablishPresence from './components/EstablishPresence';
-import Footer from './components/Footer';
+import Footer from './components/header-footer/Footer';
 import { lazy, Suspense } from 'react';
 
 const PostXPage = lazy(() => import('./pages/PostXPage'));

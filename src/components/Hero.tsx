@@ -13,7 +13,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
       <div className="mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-0">
 
         {/* DESKTOP LAYOUT (lg and up) */}
-        <div className="hidden lg:flex relative w-full lg:h-[720px] items-center overflow-hidden">
+        <div className="hidden lg:flex relative w-full lg:h-180 items-center overflow-hidden">
           {/* Background Image Layer */}
           <div className="absolute inset-0 w-full h-full z-0">
             <img

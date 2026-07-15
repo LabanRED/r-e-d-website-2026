@@ -1,6 +1,6 @@
 import { Facebook, Linkedin } from 'lucide-react';
-import redWhiteLogo from '../images/r-e-d-white-logo.svg';
-import postXWhiteLogo from '../images/PostX_Web_white_Logo.png';
+import redWhiteLogo from '../../images/r-e-d-white-logo.svg';
+import postXWhiteLogo from '../../images/PostX_Web_white_Logo.png';
 
 export default function Footer() {
   return (
