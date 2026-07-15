@@ -1,5 +1,6 @@
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import heroBanner from '../images/r-e-d-social-media-management-dekstop-banner.webp';
+import phoneMockup from '../images/social-media-service-phone-mockup.webp';
 
 interface ServicePageProps {
   onCtaClick: () => void;
@@ -15,7 +16,7 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
   ];
 
   return (
-    <div className="w-full bg-[#f8f9fa] min-h-screen relative font-sans overflow-x-hidden pt-8 sm:pt-16 pb-20">
+    <div className="w-full bg-[#f8f9fa] min-h-screen relative font-sans overflow-x-hidden pt-8 sm:pt-16 pb-20 md:pb-0 lg:pb-0">
       {/* Back Breadcrumb */}
       <div className="mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-0 mb-6">
         <a
@@ -28,32 +29,32 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
       </div>
 
       {/* Hero Section */}
-      <section className="relative mt-8 lg:mt-12 pb-12 sm:pb-16">
+      <section className="relative mt-8 lg:mt-12 pb-12 lg:pb-0">
         <link rel="preload" as="image" href={heroBanner} fetchPriority="high" />
         <div className="mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-0">
-          
+
           {/* DESKTOP LAYOUT (lg and up) */}
-          <div className="hidden lg:flex relative w-full lg:h-[650px] bg-white rounded-[40px] items-center overflow-hidden shadow-sm border border-neutral-100">
+          <div className="hidden lg:flex relative w-full lg:h-175 items-center overflow-hidden">
             {/* Background Image Layer */}
             <div className="absolute inset-0 w-full h-full z-0 flex justify-end">
               <img
                 src={heroBanner}
                 alt="Social Media Management Banner"
                 referrerPolicy="no-referrer"
-                className="h-full w-auto object-cover object-right"
+                className="h-full w-auto object-contain justify-end object-right"
                 fetchPriority="high"
                 loading="eager"
               />
             </div>
 
             {/* Content Overlaid on Desktop */}
-            <div className="relative z-10 w-full lg:w-[700px] lg:pl-[100px] flex flex-col justify-center items-start text-left">
-              <span className="font-poppins font-medium text-[15px] text-neutral-500 mb-6 tracking-wide">
+            <div className="relative z-10 w-full lg:w-175 lg:pl-25 flex flex-col justify-center items-start text-left">
+              <span className="font-poppins font-medium text-base text-neutral-500 mb-6 tracking-wide">
                 Social Media Management
               </span>
-              <h1 className="font-poppins font-semibold text-[3.5rem] leading-[1.1] text-neutral-900 tracking-tight">
-                Build Stronger <br/> Customer <br/>
-                <span className="text-[#1ca3c4]">Connections<br/>Through Social<br/>Media</span>
+              <h1 className="font-poppins font-semibold text-6xl leading-[1.1] text-neutral-900 tracking-tight">
+                Build Stronger <br /> Customer <br />
+                <span className="text-[#1ca3c4]">Connections<br />Through Social<br />Media</span>
               </h1>
             </div>
           </div>
@@ -64,10 +65,10 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
               Social Media Management
             </span>
             <h1 className="font-poppins font-semibold text-4xl sm:text-5xl leading-[1.15] text-neutral-900 tracking-tight mb-8">
-              Build Stronger <br/> Customer <br/>
+              Build Stronger <br /> Customer <br />
               <span className="text-[#1ca3c4]">Connections Through Social Media</span>
             </h1>
-            <div className="w-full relative mt-4 -mb-4 flex justify-center">
+            <div className="w-full relative mt-4 -mb-4 flex justify-end">
               <img
                 src={heroBanner}
                 alt="Social Media Management Banner"
@@ -82,7 +83,7 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
       </section>
 
       {/* Introduction Text Block */}
-      <section className="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 max-w-[1100px] mx-auto text-center space-y-8">
+      <section className="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 max-w-[1400px] mx-auto text-center space-y-8">
         <p className="font-poppins text-neutral-700 text-[17px] sm:text-[19px] lg:text-[21px] leading-relaxed">
           Today having a social media presence is an absolute necessity for all businesses. In the past decade the majority of consumers have embraced social media as a primary means of communication. In response to this migration, businesses must be present on social media. Moreover, businesses need to ensure that they are initiating engagement with their target audiences and monitoring that engagement.
         </p>
@@ -94,18 +95,15 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
       {/* Content Management Section */}
       <section className="mx-auto lg:w-[95%] max-w-[1600px] px-6 sm:px-8 lg:px-0 py-12 lg:py-24">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          
+
           {/* Left Column: Phone Mockup */}
           <div className="w-full flex justify-center lg:justify-end pr-0 lg:pr-10 relative">
-             {/* Using a stylized placeholder box since the phone image asset is missing */}
-             <div className="w-full max-w-[380px] aspect-[1/2] bg-neutral-200/60 rounded-[50px] border-[12px] border-neutral-800 flex items-center justify-center relative shadow-[0_30px_60px_rgba(0,0,0,0.15)] rotate-[-6deg] hover:rotate-0 transition-transform duration-500 ease-out">
-                <div className="text-center p-8">
-                   <p className="font-poppins text-neutral-500 font-semibold mb-2">Phone Mockup Placement</p>
-                   <p className="font-poppins text-neutral-400 text-sm">Replace this block with the provided phone graphic when available.</p>
-                </div>
-                {/* Simulated phone notch */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-6 bg-neutral-800 rounded-b-xl"></div>
-             </div>
+            <img
+              src={phoneMockup}
+              alt="Social Media Management Phone Mockup"
+              className="w-full max-w-full h-auto object-contain hover:-translate-y-2 transition-transform duration-500 ease-out"
+              loading="lazy"
+            />
           </div>
 
           {/* Right Column: Content */}
@@ -113,7 +111,7 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
             <h2 className="font-poppins font-bold text-4xl sm:text-[42px] lg:text-[48px] text-neutral-900 tracking-tight mb-12">
               Content management.
             </h2>
-            
+
             <ul className="space-y-6 mb-16">
               {contentManagementPoints.map((point, index) => (
                 <li key={index} className="flex items-start gap-4">
@@ -134,14 +132,14 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
 
             {/* Circular Awareness Placeholders */}
             <div className="flex flex-wrap gap-8 sm:gap-12 lg:gap-16">
-               {[...Array(4)].map((_, i) => (
-                  <div key={i} className="flex flex-col items-center gap-4">
-                     <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#e5e5e5]"></div>
-                     <span className="font-poppins text-[11px] font-medium tracking-widest text-neutral-600 uppercase">
-                       Awareness
-                     </span>
-                  </div>
-               ))}
+              {[...Array(4)].map((_, i) => (
+                <div key={i} className="flex flex-col items-center gap-4">
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#e5e5e5]"></div>
+                  <span className="font-poppins text-[11px] font-medium tracking-widest text-neutral-600 uppercase">
+                    Awareness
+                  </span>
+                </div>
+              ))}
             </div>
           </div>
 

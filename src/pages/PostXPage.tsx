@@ -34,6 +34,7 @@ import inhouseSupportIcon from '../images/in-house-support-team.svg';
 import clientsTrustImg from '../images/clients-who-trust-postx.webp';
 import continouslyUpdatingImg from '../images/continously-updatating-desktop.webp';
 import testimonialGuyImg from '../images/testimonial-guy-image.webp';
+import postxInboxScreenshot from '../images/postx-inbox-screenshot.webp';
 
 interface PostXPageProps {
   onCtaClick: () => void;
@@ -297,7 +298,7 @@ export default function PostXPage({ onCtaClick }: PostXPageProps) {
             {/* Right Column (5 cols on large screens) */}
             <div className="lg:col-span-5 lg:pt-3">
               <p className="font-poppins font-regular text-neutral-800 text-base md:text-2xl lg:text-2xl leading-[2.25]">
-                Post<span className="text-[#2ca8cb] font-semibold">X</span> brings every channel into one inbox â€“ WhatsApp, social media, live chat, and Google reviews â€“ so your team responds faster, never misses a lead, and delivers a seamless customer experience from first enquiry to aftersales.
+                Post<span className="text-[#2ca8cb] font-semibold">X</span> brings every channel into one inbox - WhatsApp, social media, live chat, and Google reviews - so your team responds faster, never misses a lead, and delivers a seamless customer experience from first enquiry to aftersales.
               </p>
             </div>
           </div>
@@ -811,7 +812,7 @@ export default function PostXPage({ onCtaClick }: PostXPageProps) {
           </h3>
 
           {/* Carousel Image Container */}
-          <div className="relative w-full aspect-[4/3] md:aspect-[16/9] bg-white rounded-[24px] md:rounded-[32px] shadow-[0px_4px_30px_rgba(0,0,0,0.05)] border border-neutral-100 overflow-hidden mb-8">
+          <div className="relative w-full h-auto bg-white rounded-[24px] md:rounded-xl shadow-[0px_4px_30px_rgba(0,0,0,0.05)] border border-neutral-100 overflow-hidden mb-8">
             <AnimatePresence mode="wait">
               <motion.div
                 key={insightIndex}
@@ -822,9 +823,9 @@ export default function PostXPage({ onCtaClick }: PostXPageProps) {
                 className="w-full h-full flex items-center justify-center bg-neutral-50"
               >
                 {/* PLACEHOLDER IMAGE - Update src when ready */}
-                <img loading="lazy" src={`https://placehold.co/1200x800/e2e8f0/64748b?text=PostX+Inbox+Placeholder+${insightIndex + 1}`}
+                <img loading="lazy" src={insightIndex === 0 ? postxInboxScreenshot : `https://placehold.co/1200x800/e2e8f0/64748b?text=PostX+Inbox+Placeholder+${insightIndex + 1}`}
                   alt={`PostX Insight ${insightIndex + 1}`}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain"
                 />
               </motion.div>
             </AnimatePresence>
