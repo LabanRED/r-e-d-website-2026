@@ -61,12 +61,12 @@ export default function TwoColumnAbout({ onCtaClick }: TwoColumnAboutProps) {
             </p>
 
             <div className="pt-2">
-              <button
-                onClick={onCtaClick}
-                className="text-sm sm:text-base text-white bg-black hover:bg-[#1ca3c4] px-7 py-3.5 rounded-full active:scale-95 transition-all duration-300 font-poppins font-medium lowercase"
+              <a
+                href="#postx"
+                className="inline-block text-center text-sm sm:text-base text-white bg-black hover:bg-[#1ca3c4] px-7 py-3.5 rounded-full active:scale-95 transition-all duration-300 font-poppins font-medium lowercase"
               >
                 Explore PostX and see how it works.
-              </button>
+              </a>
             </div>
           </motion.div>
 

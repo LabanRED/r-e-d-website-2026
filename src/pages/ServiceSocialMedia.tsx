@@ -1,5 +1,6 @@
 import { ArrowLeft, CheckCircle2 } from 'lucide-react';
 import heroBanner from '../images/r-e-d-social-media-management-dekstop-banner.webp';
+import heroMobileBanner from '../images/r-e-d-social-media-management-mobile-banner.webp';
 import phoneMockup from '../images/social-media-service-phone-mockup.webp';
 
 interface ServicePageProps {
@@ -29,7 +30,7 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
       </div>
 
       {/* Hero Section */}
-      <section className="relative mt-8 lg:mt-12 pb-12 lg:pb-0">
+      <section className="relative pb-12 lg:pb-0">
         <link rel="preload" as="image" href={heroBanner} fetchPriority="high" />
         <div className="mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-0">
 
@@ -60,7 +61,7 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
           </div>
 
           {/* MOBILE LAYOUT (below lg) */}
-          <div className="block lg:hidden w-full flex flex-col items-center text-center px-4 bg-white rounded-[32px] pt-12 pb-0 overflow-hidden shadow-sm border border-neutral-100">
+          <div className="flex lg:hidden w-full flex-col items-center text-center px-4 bg-white rounded-[32px] pt-12 pb-0 overflow-hidden shadow-sm border border-neutral-100">
             <span className="font-poppins font-medium text-xs sm:text-sm text-neutral-500 mb-4 tracking-wide">
               Social Media Management
             </span>
@@ -70,10 +71,10 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
             </h1>
             <div className="w-full relative mt-4 -mb-4 flex justify-end">
               <img
-                src={heroBanner}
-                alt="Social Media Management Banner"
+                src={heroMobileBanner}
+                alt="Social Media Management Mobile Banner"
                 referrerPolicy="no-referrer"
-                className="w-full max-w-[500px] h-auto object-contain"
+                className="w-full max-w-125 h-auto object-contain"
                 fetchPriority="high"
                 loading="eager"
               />
@@ -83,8 +84,8 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
       </section>
 
       {/* Introduction Text Block */}
-      <section className="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 max-w-[1400px] mx-auto text-center space-y-8">
-        <p className="font-poppins text-neutral-700 text-[17px] sm:text-[19px] lg:text-[21px] leading-relaxed">
+      <section className="px-6 sm:px-8 lg:px-12  max-w-350 mx-auto text-center space-y-8">
+        <p className="font-poppins text-neutral-700 text-base sm:text-xl lg:text-xl leading-relaxed">
           Today having a social media presence is an absolute necessity for all businesses. In the past decade the majority of consumers have embraced social media as a primary means of communication. In response to this migration, businesses must be present on social media. Moreover, businesses need to ensure that they are initiating engagement with their target audiences and monitoring that engagement.
         </p>
         <p className="font-poppins text-neutral-700 text-[17px] sm:text-[19px] lg:text-[21px] leading-relaxed">

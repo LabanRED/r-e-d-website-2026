@@ -12,8 +12,25 @@ export default function Hero({ onCtaClick }: HeroProps) {
       <link rel="preload" as="image" href={heroMobileBanner} media="(max-width: 1023px)" fetchPriority="high" />
       <div className="mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-0">
 
+        {/* NEW DESKTOP HEADING (Above Banner) */}
+        <div className="hidden lg:flex flex-col items-center text-center mt-4">
+          <h1 className="font-poppins font-semibold text-[3.5rem] leading-[1.15] tracking-tight mb-4 text-neutral-900">
+            <span className="text-[#1ca3c4]">Conversion</span> based,<br />
+            results driven marketing
+          </h1>
+          <p className="font-poppins text-neutral-500 text-lg leading-relaxed max-w-2xl mb-8">
+            Over <span className="text-[#1ca3c4] font-semibold">500+</span> satisfied clients across South Africa trust us to manage their monthly lead generation and Ad spend.
+          </p>
+          <button
+            onClick={onCtaClick}
+            className="font-poppins font-medium text-[15px] text-white bg-black hover:bg-[#1ca3c4] rounded-full px-8 py-3 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md lowercase"
+          >
+            schedule a meeting today
+          </button>
+        </div>
+
         {/* DESKTOP LAYOUT (lg and up) */}
-        <div className="hidden lg:flex relative w-full lg:h-180 items-center overflow-hidden">
+        <div className="hidden lg:flex relative w-full lg:h-180 items-center overflow-hidden rounded-[40px]">
           {/* Background Image Layer */}
           <div className="absolute inset-0 w-full h-full z-0">
             <img
@@ -47,7 +64,7 @@ export default function Hero({ onCtaClick }: HeroProps) {
         </div>
 
         {/* MOBILE & TABLET LAYOUT (below lg) - Stacked Vertically, Center-aligned */}
-        <div className="block lg:hidden w-full flex flex-col items-center text-center px-4">
+        <div className="flex lg:hidden w-full flex-col items-center text-center px-4">
           {/* Mobile Heading with Conversion highlighted in cyan */}
           <h1 className="font-poppins font-medium text-3xl sm:text-[2.25rem] md:text-5xl leading-tight tracking-tight mb-4">
             <span className="text-[#1ca3c4]">Conversion</span> based,<br />
