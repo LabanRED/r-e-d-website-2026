@@ -59,7 +59,7 @@ export default function LogoCarousel() {
               transition={{
                 repeat: Infinity,
                 repeatType: 'loop',
-                duration: 25,
+                duration: 8,
                 ease: 'linear',
               }}
             >

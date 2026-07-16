@@ -138,7 +138,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#fafafa] font-sans selection:bg-blue-600/30 selection:text-blue-200 antialiased overflow-x-hidden">
+    <div className="min-h-screen bg-[#fafafa] font-sans selection:bg-blue-600/30 selection:text-blue-200 antialiased overflow-x-clip">
       {/* 1. Black Nav Bar (with CTA) */}
       <Navbar onCtaClick={handleOpenModal} />
 

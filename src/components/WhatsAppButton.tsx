@@ -5,10 +5,10 @@ import hoverCta from '../images/whatsapp-hover-cta.svg';
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/27103000535"
+      href="https://wa.me/27720688509"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed w-32 md:w-48 bottom-[2%] right-[2%] z-[9999] group flex items-center justify-center transition-transform hover:scale-105"
+      className="fixed w-36 md:w-48 bottom-[2%] right-[2%] z-[9999] group flex items-center justify-center transition-transform hover:scale-105"
       aria-label="Contact us on WhatsApp"
     >
       <div className="relative w-full drop-shadow-2xl">
