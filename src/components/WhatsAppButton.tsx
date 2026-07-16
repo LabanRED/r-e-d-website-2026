@@ -8,7 +8,7 @@ export default function WhatsAppButton() {
       href="https://wa.me/27720688509"
       target="_blank"
       rel="noopener noreferrer"
-      className="fixed w-36 md:w-48 bottom-[2%] right-[2%] z-[9999] group flex items-center justify-center transition-transform hover:scale-105"
+      className="fixed w-42 md:w-48 bottom-[2%] right-[2%] z-9999 group flex items-center justify-center transition-transform hover:scale-105"
       aria-label="Contact us on WhatsApp"
     >
       <div className="relative w-full drop-shadow-2xl">

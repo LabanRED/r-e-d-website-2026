@@ -1,5 +1,6 @@
+import { useState, useRef } from 'react';
 import { motion } from 'motion/react';
-import { Star } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight } from 'lucide-react';
 import quotesTestimonial from '../images/quotes-testimonial.webp';
 
 export default function Testimonials() {
@@ -24,6 +25,43 @@ export default function Testimonials() {
     }
   ];
 
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleScroll = () => {
+    if (!scrollRef.current) return;
+    const scrollLeft = scrollRef.current.scrollLeft;
+    // Calculate the active index based on scroll position and item width
+    const containerWidth = scrollRef.current.clientWidth;
+    // We assume items are roughly 85vw on mobile
+    const newIndex = Math.round(scrollLeft / containerWidth);
+    if (newIndex !== activeIndex && newIndex >= 0 && newIndex < testimonials.length) {
+      setActiveIndex(newIndex);
+    }
+  };
+
+  const scrollTo = (index: number) => {
+    if (!scrollRef.current) return;
+    const child = scrollRef.current.children[index] as HTMLElement;
+    if (child) {
+      const scrollPos = child.offsetLeft - (scrollRef.current.clientWidth - child.clientWidth) / 2;
+      scrollRef.current.scrollTo({ left: scrollPos, behavior: 'smooth' });
+      setActiveIndex(index);
+    }
+  };
+
+  const scrollNext = () => {
+    if (activeIndex < testimonials.length - 1) {
+      scrollTo(activeIndex + 1);
+    }
+  };
+
+  const scrollPrev = () => {
+    if (activeIndex > 0) {
+      scrollTo(activeIndex - 1);
+    }
+  };
+
   return (
     <section className="py-16 sm:py-24 bg-[#fafafa]" id="testimonials">
       <div className="mx-auto max-w-[1600px] px-8 sm:px-8 lg:px-8">
@@ -39,7 +77,11 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonials Grid / Scrollable Row on Mobile */}
-        <div className="flex overflow-x-auto md:grid md:grid-cols-3 gap-6 md:gap-8 lg:gap-10 pb-8 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden -mx-4 px-4 sm:-mx-8 sm:px-8 md:mx-0 md:px-0">
+        <div 
+          ref={scrollRef}
+          onScroll={handleScroll}
+          className="flex overflow-x-auto md:grid md:grid-cols-3 gap-6 md:gap-8 lg:gap-10 pb-8 md:pb-0 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden -mx-4 px-4 sm:-mx-8 sm:px-8 md:mx-0 md:px-0"
+        >
           {testimonials.map((item, idx) => (
             <motion.div
               key={idx}
@@ -91,6 +133,51 @@ export default function Testimonials() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* Mobile Scroller Controls */}
+        <div className="flex md:hidden flex-col items-center gap-6 mt-4">
+          {/* Dots */}
+          <div className="flex justify-center gap-2">
+            {testimonials.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => scrollTo(idx)}
+                className={`w-3 h-3 rounded-full transition-colors ${
+                  activeIndex === idx ? 'bg-[#00a5c5]' : 'bg-neutral-200'
+                }`}
+                aria-label={`Go to slide ${idx + 1}`}
+              />
+            ))}
+          </div>
+          
+          {/* Arrows */}
+          <div className="flex justify-center gap-8">
+            <button
+              onClick={scrollPrev}
+              disabled={activeIndex === 0}
+              className={`w-14 h-14 rounded-full flex items-center justify-center transition-all ${
+                activeIndex === 0 
+                  ? 'bg-neutral-200 text-neutral-400' 
+                  : 'bg-[#00a5c5] text-white hover:bg-[#0092af] active:scale-95 shadow-md'
+              }`}
+              aria-label="Previous testimonial"
+            >
+              <ChevronLeft className="w-8 h-8" />
+            </button>
+            <button
+              onClick={scrollNext}
+              disabled={activeIndex === testimonials.length - 1}
+              className={`w-14 h-14 rounded-full flex items-center justify-center transition-all ${
+                activeIndex === testimonials.length - 1 
+                  ? 'bg-neutral-200 text-neutral-400' 
+                  : 'bg-[#00a5c5] text-white hover:bg-[#0092af] active:scale-95 shadow-md'
+              }`}
+              aria-label="Next testimonial"
+            >
+              <ChevronRight className="w-8 h-8" />
+            </button>
+          </div>
         </div>
 
       </div>
