@@ -61,7 +61,7 @@ export default function ServiceSocialMedia({ onCtaClick }: ServicePageProps) {
           </div>
 
           {/* MOBILE LAYOUT (below lg) */}
-          <div className="flex lg:hidden w-full flex-col items-center text-center px-4 bg-white rounded-[32px] pt-12 pb-0 overflow-hidden shadow-sm border border-neutral-100">
+          <div className="flex lg:hidden w-full flex-col items-center text-center px-4 pt-4 pb-0 overflow-hidden">
             <span className="font-poppins font-medium text-xs sm:text-sm text-neutral-500 mb-4 tracking-wide">
               Social Media Management
             </span>
