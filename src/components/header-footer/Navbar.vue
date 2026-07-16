@@ -5,14 +5,14 @@
       <div class="flex items-center justify-between w-full">
         
         <!-- Logo: R-E-D White Logo -->
-        <a href="#" class="flex items-center group">
+        <NuxtLink to="/" class="flex items-center group">
           <img 
             :src="redWhiteLogo" 
             alt="R-E-D Logo" 
             class="h-8 md:h-16 lg:h-10 object-contain select-none opacity-90 group-hover:opacity-100 transition-opacity"
             referrerpolicy="no-referrer"
           />
-        </a>
+        </NuxtLink>
 
         <!-- Desktop Nav Links -->
         <div class="hidden md:flex items-center gap-10">
@@ -38,12 +38,12 @@
 
         <!-- CTA (Desktop) - Vibrant Cyan Pill Button -->
         <div class="hidden md:flex items-center">
-          <button
-            @click="$emit('cta-click')"
+          <NuxtLink
+            to="/contact"
             class="h-10.5 inline-flex items-center justify-center rounded-full bg-[#00a2ca] hover:bg-[#00b5e2] px-7 text-sm text-white shadow-md shadow-cyan-500/10 transition-all duration-300 hover:scale-[1.02] active:scale-95 font-poppins font-medium lowercase"
           >
             Contact us
-          </button>
+          </NuxtLink>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -95,12 +95,13 @@
             </template>
           </NuxtLink>
           <div class="pt-4 border-t border-neutral-900 mt-2">
-            <button
-              @click="handleMobileCta"
-              class="w-full rounded-full bg-[#00a2ca] py-3 text-base font-semibold text-white text-center shadow-lg hover:bg-[#00b5e2] transition-colors"
+            <NuxtLink
+              to="/contact"
+              @click="isOpen = false"
+              class="block w-full rounded-full bg-[#00a2ca] py-3 text-base font-semibold text-white text-center shadow-lg hover:bg-[#00b5e2] transition-colors"
             >
               Contact us
-            </button>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -119,12 +120,12 @@ const emit = defineEmits(['cta-click']);
 const isOpen = ref(false);
 
 const links = [
-  { label: 'PostX', href: '#postx', isImage: true },
-  { label: 'Why Us', href: '#why-us' },
-  { label: 'Services', href: '#services' },
-  { label: 'Blogs', href: '#blogs' },
-  { label: 'Careers', href: '#careers' },
-  { label: 'About', href: '#about' },
+  { label: 'PostX', href: '/postx', isImage: true },
+  { label: 'Why Us', href: '/#why-us' },
+  { label: 'Services', href: '/services' },
+  { label: 'Blogs', href: '/blogs' },
+  { label: 'Careers', href: '/careers' },
+  { label: 'About', href: '/about' },
 ];
 
 const handleMobileCta = () => {

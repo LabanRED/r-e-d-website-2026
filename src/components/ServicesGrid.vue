@@ -18,11 +18,12 @@
         <!-- Left Column - Facebook and Paid Media -->
         <div class="flex flex-col gap-8 justify-between">
           <!-- Card 1: Facebook Marketing -->
-          <div
+          <NuxtLink
+            to="/services/digital-advertising"
             v-motion
             :initial="{ opacity: 0, x: -30 }"
             :visible-once="{ opacity: 1, x: 0, transition: { duration: 600 } }"
-            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
+            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1 hover:border-[#00a5c5] transition-colors cursor-pointer"
             style="box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.01);"
           >
             <div>
@@ -37,18 +38,22 @@
                 Facebook marketing
               </h3>
               <!-- Support Text -->
-              <p class="font-poppins text-neutral-500 text-sm sm:text-base leading-relaxed">
+              <p class="font-poppins text-neutral-500 text-sm sm:text-base leading-relaxed mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et porttitor leo. Sed ullamcorper gravida ligula, a venenatis risus feugiat a. Nam venenatis diam sit amet laoreet ultricies.
               </p>
             </div>
-          </div>
+            <div class="mt-auto pt-4 flex items-center text-[#00a5c5] font-poppins font-medium text-sm gap-2">
+              Learn more <span class="text-lg leading-none">&rarr;</span>
+            </div>
+          </NuxtLink>
 
           <!-- Card 2: Paid Media & Social Media -->
-          <div
+          <NuxtLink
+            to="/services/social-media"
             v-motion
             :initial="{ opacity: 0, x: -30 }"
             :visible-once="{ opacity: 1, x: 0, transition: { duration: 600, delay: 100 } }"
-            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
+            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1 hover:border-[#00a5c5] transition-colors cursor-pointer"
             style="box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.01);"
           >
             <div>
@@ -63,11 +68,14 @@
                 Paid media & Social media
               </h3>
               <!-- Support Text -->
-              <p class="font-poppins text-neutral-500 text-sm sm:text-base leading-relaxed">
+              <p class="font-poppins text-neutral-500 text-sm sm:text-base leading-relaxed mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et porttitor leo. Sed ullamcorper gravida ligula, a venenatis risus feugiat a. Nam venenatis diam sit amet laoreet ultricies.
               </p>
             </div>
-          </div>
+            <div class="mt-auto pt-4 flex items-center text-[#00a5c5] font-poppins font-medium text-sm gap-2">
+              Learn more <span class="text-lg leading-none">&rarr;</span>
+            </div>
+          </NuxtLink>
         </div>
 
         <!-- Middle Column - Large Image Card -->
@@ -90,11 +98,12 @@
         <!-- Right Column - Google Advertising and Web Development -->
         <div class="flex flex-col gap-8 justify-between">
           <!-- Card 3: Google Advertising -->
-          <div
+          <NuxtLink
+            to="/services/digital-advertising"
             v-motion
             :initial="{ opacity: 0, x: 30 }"
             :visible-once="{ opacity: 1, x: 0, transition: { duration: 600 } }"
-            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
+            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1 hover:border-[#00a5c5] transition-colors cursor-pointer"
             style="box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.01);"
           >
             <div>
@@ -109,18 +118,22 @@
                 Google advertising
               </h3>
               <!-- Support Text -->
-              <p class="font-poppins text-neutral-500 text-sm sm:text-base leading-relaxed">
+              <p class="font-poppins text-neutral-500 text-sm sm:text-base leading-relaxed mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et porttitor leo. Sed ullamcorper gravida ligula, a venenatis risus feugiat a. Nam venenatis diam sit amet laoreet ultricies.
               </p>
             </div>
-          </div>
+            <div class="mt-auto pt-4 flex items-center text-[#00a5c5] font-poppins font-medium text-sm gap-2">
+              Learn more <span class="text-lg leading-none">&rarr;</span>
+            </div>
+          </NuxtLink>
 
           <!-- Card 4: Website Development -->
-          <div
+          <NuxtLink
+            to="/services/website-dev"
             v-motion
             :initial="{ opacity: 0, x: 30 }"
             :visible-once="{ opacity: 1, x: 0, transition: { duration: 600, delay: 100 } }"
-            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
+            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1 hover:border-[#00a5c5] transition-colors cursor-pointer"
             style="box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.01);"
           >
             <div>
@@ -135,23 +148,26 @@
                 Website development
               </h3>
               <!-- Support Text -->
-              <p class="font-poppins text-neutral-500 text-sm sm:text-base leading-relaxed">
+              <p class="font-poppins text-neutral-500 text-sm sm:text-base leading-relaxed mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et porttitor leo. Sed ullamcorper gravida ligula, a venenatis risus feugiat a. Nam venenatis diam sit amet laoreet ultricies.
               </p>
             </div>
-          </div>
+            <div class="mt-auto pt-4 flex items-center text-[#00a5c5] font-poppins font-medium text-sm gap-2">
+              Learn more <span class="text-lg leading-none">&rarr;</span>
+            </div>
+          </NuxtLink>
         </div>
 
       </div>
 
       <!-- View All Services Button -->
       <div class="text-center mt-8">
-        <button
-          @click="$emit('cta-click')"
-          class="font-poppins text-xs tracking-widest text-white bg-black hover:bg-[#1ca3c4] rounded-full py-4 px-10 hover:scale-[1.02] active:scale-95 transition-all duration-300 shadow-sm font-medium lowercase"
+        <NuxtLink
+          to="/services"
+          class="inline-block font-poppins text-xs tracking-widest text-white bg-black hover:bg-[#1ca3c4] rounded-full py-4 px-10 hover:scale-[1.02] active:scale-95 transition-all duration-300 shadow-sm font-medium lowercase"
         >
           View all services
-        </button>
+        </NuxtLink>
       </div>
 
     </div>

@@ -10,27 +10,27 @@
           </h3>
           <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">
             <li>
-              <NuxtLink to="#service-digital-advertising" class="hover:text-white transition-colors duration-200">
+              <NuxtLink to="/services/digital-advertising" class="hover:text-white transition-colors duration-200">
                 Digital advertising
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#service-social-media" class="hover:text-white transition-colors duration-200">
+              <NuxtLink to="/services/social-media" class="hover:text-white transition-colors duration-200">
                 Social media management
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#service-website-dev" class="hover:text-white transition-colors duration-200">
+              <NuxtLink to="/services/website-dev" class="hover:text-white transition-colors duration-200">
                 Website development <br />& maintenance
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#service-online-reputation" class="hover:text-white transition-colors duration-200">
+              <NuxtLink to="/services/online-reputation" class="hover:text-white transition-colors duration-200">
                 Online reputation solutions
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#service-location-listing" class="hover:text-white transition-colors duration-200">
+              <NuxtLink to="/services/location-listing" class="hover:text-white transition-colors duration-200">
                 Location listing and solutions
               </NuxtLink>
             </li>
@@ -44,7 +44,7 @@
           </h3>
           <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">
             <li>
-              <NuxtLink to="#postx" class="hover:text-white transition-colors duration-200 inline-block mt-1">
+              <NuxtLink to="/postx" class="hover:text-white transition-colors duration-200 inline-block mt-1">
                 <img loading="lazy" :src="postXWhiteLogo" alt="PostX Logo" class="h-6 object-contain" />
               </NuxtLink>
             </li>
@@ -61,19 +61,19 @@
               href="https://www.facebook.com/ReachEngageDevelop" 
               target="_blank" 
               rel="noopener noreferrer" 
-              class="text-neutral-400 hover:text-white transition-colors duration-200"
+              class="text-neutral-400 hover:opacity-80 transition-opacity duration-200"
               aria-label="Facebook"
             >
-              <Facebook class="w-6 h-6" />
+              <img :src="facebookIcon" alt="Facebook" class="w-6 h-6 object-contain" />
             </a>
             <a 
               href="https://www.linkedin.com/company/reach-engage-develop/posts/?feedView=all" 
               target="_blank" 
               rel="noopener noreferrer" 
-              class="text-neutral-400 hover:text-white transition-colors duration-200"
+              class="text-neutral-400 hover:opacity-80 transition-opacity duration-200"
               aria-label="LinkedIn"
             >
-              <Linkedin class="w-6 h-6" />
+              <img :src="linkedinIcon" alt="LinkedIn" class="w-6 h-6 object-contain" />
             </a>
           </div>
         </div>
@@ -86,12 +86,12 @@
             </h3>
             <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">
               <li>
-                <NuxtLink to="#contact" class="hover:text-white transition-colors duration-200">
+                <NuxtLink to="/contact" class="hover:text-white transition-colors duration-200">
                   Contact us
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink to="#why-us" class="hover:text-white transition-colors duration-200">
+                <NuxtLink to="/about" class="hover:text-white transition-colors duration-200">
                   About us
                 </NuxtLink>
               </li>
@@ -107,13 +107,13 @@
 
           <!-- Logo container placed nicely underneath the Get in Touch section -->
           <div class="mt-8 pt-4">
-            <a href="#">
+            <NuxtLink to="/">
               <img loading="lazy" :src="redWhiteLogo" 
                 alt="R-E-D Logo" 
                 class="h-auto w-36 object-contain select-none transition-opacity hover:opacity-80 duration-200"
                 referrerpolicy="no-referrer"
               />
-            </a>
+            </NuxtLink>
           </div>
         </div>
 
@@ -123,7 +123,9 @@
 </template>
 
 <script setup lang="ts">
-import { Facebook, Linkedin } from 'lucide-vue-next';
 import redWhiteLogo from '~/assets/images/r-e-d-white-logo.svg';
 import postXWhiteLogo from '~/assets/images/PostX_Web_white_Logo.png';
+import facebookIcon from '~/assets/images/facebook-social-icon.svg';
+import linkedinIcon from '~/assets/images/linkedin-social-icon.svg';
+import xIcon from '~/assets/images/x-social-icon.svg';
 </script>
