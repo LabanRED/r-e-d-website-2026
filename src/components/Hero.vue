@@ -35,12 +35,12 @@
         </div>
 
         <!-- Content Overlaid on Desktop with exactly 100px left spacing -->
-        <div class="relative z-10 w-full lg:w-[600px] lg:pt-12 lg:pl-[100px] flex flex-col justify-center items-start text-left">
-          <h1 class="font-poppins font-medium lg:text-[4rem] lg:leading-[70px] mb-6 text-neutral-900">
+        <div class="relative z-10 w-full lg:w-150 lg:pt-12 lg:pl-25 flex flex-col justify-center items-start text-left">
+          <h1 class="font-poppins font-medium lg:text-[4rem] lg:leading-17.5 mb-6 text-neutral-900">
             Designed for businesses of all sizes.
           </h1>
 
-          <p class="font-poppins font-medium text-neutral-800 text-[16px] leading-[1.5] max-w-2xl mb-8">
+          <p class="font-poppins font-medium text-neutral-800 text-[16px] leading-normal max-w-2xl mb-8">
             From early stage start-ups to industry leading corporations, R-E-D is the choice of modern CEO's and CFO's. Make us your marketing partner and maximise your growth and results today!
           </p>
 

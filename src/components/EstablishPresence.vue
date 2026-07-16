@@ -1,5 +1,5 @@
 <template>
-  <section class="w-full bg-white py-[100px] px-4 sm:px-6 lg:px-8 border-t border-neutral-100" id="establish-presence">
+  <section class="w-full bg-white py-25 px-4 sm:px-6 lg:px-8 border-t border-neutral-100" id="establish-presence">
     <div class="mx-auto max-w-4xl text-center flex flex-col items-center">
       
       <!-- R-E-D Logo Image -->

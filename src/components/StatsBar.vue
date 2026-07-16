@@ -4,7 +4,7 @@
       v-motion
       :initial="{ opacity: 0, y: 30 }"
       :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-      class="w-auto bg-white rounded-[24px] sm:rounded-[32px] py-8 px-6 md:px-16 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4"
+      class="w-auto bg-white rounded-3xl sm:rounded-4xl py-8 px-6 md:px-16 flex flex-col md:flex-row justify-center items-center gap-8 md:gap-4"
       style="box-shadow: 0px 2px 80px rgba(24, 39, 75, 0.12);"
     >
       <div v-for="(stat, idx) in stats" :key="idx" class="flex items-center gap-4 w-full md:w-auto justify-center md:justify-start">
@@ -29,7 +29,7 @@
         </div>
 
         <!-- Divider for desktop, only between items -->
-        <div v-if="idx < stats.length - 1" class="hidden md:block h-12 w-[1px] bg-neutral-100 ml-8 lg:ml-12" />
+        <div v-if="idx < stats.length - 1" class="hidden md:block h-12 w-px bg-neutral-100 ml-8 lg:ml-12" />
       </div>
     </div>
   </div>

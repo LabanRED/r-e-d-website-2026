@@ -31,7 +31,7 @@
           v-motion
           :initial="{ opacity: 0, x: -30 }"
           :visible-once="{ opacity: 1, x: 0, transition: { duration: 700 } }"
-          class="w-full md:w-[700px] lg:w-[800px] lg:col-span-5 space-y-6 flex flex-col items-start"
+          class="w-full md:w-175 lg:w-200 lg:col-span-5 space-y-6 flex flex-col items-start"
         >
           <h3 class="font-sans text-2xl sm:text-[28px] lg:text-2xl font-semibold text-neutral-950 leading-snug tracking-tight">
             Turn every lead into a meaningful interaction with Post<span class="text-[#2ca8cb]">X</span>.
@@ -67,7 +67,7 @@
           :visible-once="{ opacity: 1, x: 0, transition: { duration: 700, delay: 150 } }"
           class="lg:col-span-7 w-full flex justify-end"
         >
-          <div class="relative w-full md:w-[700px] rounded-[32px] flex items-right justify-right p-4 sm:p-8 lg:p-10 overflow-hidden">
+          <div class="relative w-full md:w-175 rounded-4xl flex items-right justify-right p-4 sm:p-8 lg:p-10 overflow-hidden">
             <div
               v-motion
               :hovered="{ y: -6, transition: { duration: 400, ease: 'easeOut' } }"

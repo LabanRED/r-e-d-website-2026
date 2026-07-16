@@ -1,6 +1,6 @@
 <template>
   <footer class="w-full bg-transparent p-5 font-sans select-none" id="footer">
-    <div class="mx-auto max-w-[1600px] rounded-[32px] bg-black text-white p-8 sm:p-12 md:p-16 lg:p-20 shadow-2xl">
+    <div class="mx-auto max-w-[1600px] rounded-4xl bg-black text-white p-8 sm:p-12 md:p-16 lg:p-20 shadow-2xl">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 items-start w-full">
         
         <!-- Column 1: Our Services -->
@@ -79,7 +79,7 @@
         </div>
 
         <!-- Column 4: Get in Touch & Logo -->
-        <div class="flex flex-col justify-between h-full min-h-[220px]">
+        <div class="flex flex-col justify-between h-full min-h-55">
           <div>
             <h3 class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
               Get in touch

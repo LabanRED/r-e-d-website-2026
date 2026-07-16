@@ -22,7 +22,7 @@
           v-motion
           :initial="{ opacity: 0, x: -30 }"
           :visible-once="{ opacity: 1, x: 0, transition: { duration: 600 } }"
-          class="bg-white rounded-[32px] p-8 sm:p-12 border border-neutral-100 flex flex-col justify-between"
+          class="bg-white rounded-4xl p-8 sm:p-12 border border-neutral-100 flex flex-col justify-between"
           style="box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.02);"
         >
           <div>
@@ -44,7 +44,7 @@
             <!-- Negative List -->
             <ul class="space-y-5 mb-10 text-left">
               <li v-for="(text, i) in withoutAgency" :key="i" class="flex items-start gap-3">
-                <div class="flex-shrink-0 mt-0.5 w-5 h-5 rounded-full bg-neutral-100 flex items-center justify-center">
+                <div class="shrink-0 mt-0.5 w-5 h-5 rounded-full bg-neutral-100 flex items-center justify-center">
                   <X class="w-3.5 h-3.5 text-neutral-500" />
                 </div>
                 <span class="font-poppins text-neutral-600 text-xs sm:text-sm leading-relaxed">
@@ -55,7 +55,7 @@
           </div>
 
           <!-- Bottom Image: Without Specialised Lead Agency -->
-          <div class="w-full overflow-hidden rounded-[24px]">
+          <div class="w-full overflow-hidden rounded-3xl">
             <img loading="lazy" :src="withoutAgencyImg"
               alt="Without a Specialised Lead Agency"
               referrerpolicy="no-referrer"
@@ -69,7 +69,7 @@
           v-motion
           :initial="{ opacity: 0, x: 30 }"
           :visible-once="{ opacity: 1, x: 0, transition: { duration: 600 } }"
-          class="bg-black rounded-[32px] p-8 sm:p-12 text-white flex flex-col justify-between relative overflow-hidden"
+          class="bg-black rounded-4xl p-8 sm:p-12 text-white flex flex-col justify-between relative overflow-hidden"
         >
           <div>
             <!-- Badge -->
@@ -92,7 +92,7 @@
               <li v-for="(text, i) in withAgency" :key="i" class="flex items-start gap-3">
                 <img loading="lazy" :src="positiveIcon"
                   alt="Check"
-                  class="w-5 h-5 flex-shrink-0 mt-0.5 select-none"
+                  class="w-5 h-5 shrink-0 mt-0.5 select-none"
                   referrerpolicy="no-referrer"
                 />
                 <span class="font-poppins text-neutral-300 text-xs sm:text-sm leading-relaxed">
@@ -103,7 +103,7 @@
           </div>
 
           <!-- Bottom Image: With Lead-Focused Agency -->
-          <div class="w-full overflow-hidden rounded-[24px]">
+          <div class="w-full overflow-hidden rounded-3xl">
             <img loading="lazy" :src="withAgencyImg"
               alt="With a Lead-Focused Agency"
               referrerpolicy="no-referrer"

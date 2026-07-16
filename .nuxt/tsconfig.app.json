@@ -47,16 +47,16 @@
         "../node_modules/nitropack/runtime"
       ],
       "~": [
-        ".."
+        "../src"
       ],
       "~/*": [
-        "../*"
+        "../src/*"
       ],
       "@": [
-        ".."
+        "../src"
       ],
       "@/*": [
-        "../*"
+        "../src/*"
       ],
       "~~": [
         ".."
@@ -101,7 +101,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev.json"
+        "./manifest/meta/3d2073dd-ba6a-40a8-a253-81ea48eeaeb6.json"
       ],
       "#components": [
         "./components"
@@ -144,7 +144,7 @@
   },
   "include": [
     "./nuxt.d.ts",
-    "../**/*",
+    "../src/**/*",
     "../modules/*/runtime/**/*",
     "../test/nuxt/**/*",
     "../tests/nuxt/**/*",
@@ -157,6 +157,11 @@
     "../layers/*/*.d.ts"
   ],
   "exclude": [
+    "../node_modules",
+    "../node_modules/nuxt/node_modules",
+    "../node_modules/@vueuse/motion/node_modules",
+    "../node_modules/@nuxt/devtools/node_modules",
+    "../node_modules/@nuxt/telemetry/node_modules",
     "../dist",
     "../.data",
     "../modules/*/runtime/server/**/*",
@@ -172,7 +177,12 @@
     "../node_modules/dist/runtime/server",
     "../node_modules/*.*",
     "../node_modules/dist/*.*",
-    "dev",
+    "../.output",
     "../server"
-  ]
+  ],
+  "vueCompilerOptions": {
+    "plugins": [
+      "vue-router/volar/sfc-route-blocks"
+    ]
+  }
 }

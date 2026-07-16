@@ -11,9 +11,9 @@ import { useTransition, useIntersectionObserver, TransitionPresets } from '@vueu
 const props = defineProps<{ text: string }>();
 
 const match = computed(() => props.text.match(/^(\D*)(\d+)(\D*)$/));
-const prefix = computed(() => match.value ? match.value[1] : '');
-const numStr = computed(() => match.value ? match.value[2] : '');
-const suffix = computed(() => match.value ? match.value[3] : '');
+const prefix = computed(() => match.value ? match.value[1] || '' : '');
+const numStr = computed(() => match.value ? match.value[2] || '' : '');
+const suffix = computed(() => match.value ? match.value[3] || '' : '');
 
 const num = computed(() => parseInt(numStr.value, 10));
 const isNumber = computed(() => !isNaN(num.value));
@@ -27,8 +27,9 @@ const output = useTransition(targetValue, {
 
 const { stop } = useIntersectionObserver(
   el,
-  ([{ isIntersecting }]) => {
-    if (isIntersecting && isNumber.value) {
+  (entries) => {
+    const entry = entries[0];
+    if (entry && entry.isIntersecting && isNumber.value) {
       targetValue.value = num.value;
       stop();
     }

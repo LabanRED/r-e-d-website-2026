@@ -47,16 +47,16 @@
         "../node_modules/nitropack/runtime"
       ],
       "~": [
-        ".."
+        "../src"
       ],
       "~/*": [
-        "../*"
+        "../src/*"
       ],
       "@": [
-        ".."
+        "../src"
       ],
       "@/*": [
-        "../*"
+        "../src/*"
       ],
       "~~": [
         ".."
@@ -101,7 +101,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev.json"
+        "./manifest/meta/3d2073dd-ba6a-40a8-a253-81ea48eeaeb6.json"
       ],
       "#build": [
         "."

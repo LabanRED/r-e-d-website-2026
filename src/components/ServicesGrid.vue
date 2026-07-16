@@ -22,7 +22,7 @@
             v-motion
             :initial="{ opacity: 0, x: -30 }"
             :visible-once="{ opacity: 1, x: 0, transition: { duration: 600 } }"
-            class="bg-white rounded-[32px] p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
+            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
             style="box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.01);"
           >
             <div>
@@ -48,7 +48,7 @@
             v-motion
             :initial="{ opacity: 0, x: -30 }"
             :visible-once="{ opacity: 1, x: 0, transition: { duration: 600, delay: 100 } }"
-            class="bg-white rounded-[32px] p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
+            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
             style="box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.01);"
           >
             <div>
@@ -75,7 +75,7 @@
           v-motion
           :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 600, delay: 200 } }"
-          class="group relative rounded-[32px] overflow-hidden min-h-[350px] lg:min-h-full shadow-sm"
+          class="group relative rounded-4xl overflow-hidden min-h-87.5 lg:min-h-full shadow-sm"
         >
           <img
             v-motion
@@ -94,7 +94,7 @@
             v-motion
             :initial="{ opacity: 0, x: 30 }"
             :visible-once="{ opacity: 1, x: 0, transition: { duration: 600 } }"
-            class="bg-white rounded-[32px] p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
+            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
             style="box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.01);"
           >
             <div>
@@ -120,7 +120,7 @@
             v-motion
             :initial="{ opacity: 0, x: 30 }"
             :visible-once="{ opacity: 1, x: 0, transition: { duration: 600, delay: 100 } }"
-            class="bg-white rounded-[32px] p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
+            class="bg-white rounded-4xl p-8 sm:p-10 border border-neutral-100/80 flex flex-col justify-between shadow-sm flex-1"
             style="box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.01);"
           >
             <div>

@@ -39,8 +39,8 @@
           v-motion
           :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: index * 50 } }"
-          class="relative bg-white rounded-[32px] transition-all duration-300 border border-neutral-100/50 cursor-pointer overflow-hidden flex flex-col"
-          :class="hoveredIdx === index ? 'p-6 shadow-xl ring-1 ring-[#1ca3c4]/10 min-h-[420px]' : 'p-8 min-h-[280px] justify-between shadow-sm hover:shadow-md'"
+          class="relative bg-white rounded-4xl transition-all duration-300 border border-neutral-100/50 cursor-pointer overflow-hidden flex flex-col"
+          :class="hoveredIdx === index ? 'p-6 shadow-xl ring-1 ring-[#1ca3c4]/10 min-h-105' : 'p-8 min-h-70 justify-between shadow-sm hover:shadow-md'"
         >
           <transition
             mode="out-in"
@@ -74,7 +74,7 @@
             </div>
             
             <!-- Inactive State -->
-            <div v-else class="flex flex-col justify-between min-h-[216px]">
+            <div v-else class="flex flex-col justify-between min-h-54">
               <!-- Top right large faint number -->
               <div class="absolute top-6 right-8 font-poppins font-semibold text-4xl sm:text-5xl text-neutral-100 select-none">
                 {{ step.number }}

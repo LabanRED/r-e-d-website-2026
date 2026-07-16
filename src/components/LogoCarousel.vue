@@ -4,24 +4,24 @@
       <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-12">
 
         <!-- Static Left Text -->
-        <div class="flex-shrink-0 text-center md:text-left">
+        <div class="shrink-0 text-center md:text-left">
           <span class="font-poppins font-medium text-neutral-500 text-sm md:text-base tracking-wide whitespace-nowrap">
             Trusted by the industry leaders
           </span>
         </div>
 
         <!-- Sliding Marquee Area -->
-        <div class="relative flex-grow w-full overflow-hidden">
+        <div class="relative grow w-full overflow-hidden">
           <!-- Left and right gradient overlays for faded edges -->
-          <div class="absolute left-0 top-0 bottom-0 z-10 w-12 md:w-32 bg-gradient-to-r from-[#fafafa] to-transparent pointer-events-none" />
-          <div class="absolute right-0 top-0 bottom-0 z-10 w-12 md:w-32 bg-gradient-to-l from-[#fafafa] to-transparent pointer-events-none" />
+          <div class="absolute left-0 top-0 bottom-0 z-10 w-12 md:w-32 bg-linear-to-r from-[#fafafa] to-transparent pointer-events-none" />
+          <div class="absolute right-0 top-0 bottom-0 z-10 w-12 md:w-32 bg-linear-to-l from-[#fafafa] to-transparent pointer-events-none" />
 
           <!-- Sliding Track -->
           <div class="flex gap-12 md:gap-16 items-center whitespace-nowrap py-2 animate-marquee">
             <div
               v-for="(logo, idx) in doubleLogos"
               :key="`${logo.name}-${idx}`"
-              class="flex items-center justify-center min-w-[110px] md:min-w-[140px] px-2"
+              class="flex items-center justify-center min-w-27.5 md:min-w-35 px-2"
             >
               <img
                 :src="logo.src"

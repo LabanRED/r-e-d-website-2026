@@ -7,7 +7,7 @@
         <span class="font-poppins text-sm sm:text-base font-regular text-[#1ca3c4] tracking-wide block mb-3">
           What our clients say
         </span>
-        <h2 class="font-poppins font-semibold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-tight max-w-3xl md:w-[500px] lg:w-[500px] mx-auto">
+        <h2 class="font-poppins font-semibold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-tight max-w-3xl md:w-125 lg:w-125 mx-auto">
           Honest feedback from valued clients
         </h2>
       </div>
@@ -16,7 +16,7 @@
       <div 
         ref="scrollRef"
         @scroll="handleScroll"
-        class="flex overflow-x-auto md:grid md:grid-cols-3 gap-6 md:gap-8 lg:gap-10 pb-8 md:pb-0 snap-x snap-mandatory [scrollbar-width:none] [&::-webkit-scrollbar]:hidden -mx-4 px-4 sm:-mx-8 sm:px-8 md:mx-0 md:px-0"
+        class="flex overflow-x-auto md:grid md:grid-cols-3 gap-6 md:gap-8 lg:gap-10 pb-8 md:pb-0 snap-x snap-mandatory scrollbar-none [&::-webkit-scrollbar]:hidden -mx-4 px-4 sm:-mx-8 sm:px-8 md:mx-0 md:px-0"
       >
         <div
           v-for="(item, idx) in testimonials"
@@ -25,7 +25,7 @@
           :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: idx * 150 } }"
           :hovered="{ y: -6, transition: { duration: 300 } }"
-          class="flex-shrink-0 w-[85vw] sm:w-[400px] md:w-auto snap-center bg-white rounded-[24px] p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] border border-neutral-100 flex flex-col justify-between transition-all duration-300"
+          class="shrink-0 w-[85vw] sm:w-100 md:w-auto snap-center bg-white rounded-3xl p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] border border-neutral-100 flex flex-col justify-between transition-all duration-300"
         >
           <div>
             <!-- Quotes Icon & Stars - Left Aligned -->
@@ -38,7 +38,7 @@
               
               <!-- Star Rating -->
               <div class="flex gap-1">
-                <Star v-for="i in 5" :key="i" class="w-[18px] h-[18px] fill-[#FBBF24] text-[#FBBF24]" />
+                <Star v-for="i in 5" :key="i" class="w-4.5 h-4.5 fill-[#FBBF24] text-[#FBBF24]" />
               </div>
             </div>
 

@@ -26,7 +26,7 @@
           :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 600, delay: index * 120 } }"
           :style="{ boxShadow: `8px 8px 0px ${card.shadowColor}` }"
-          class="flex flex-col rounded-[24px] border border-neutral-200/80 bg-white p-8 sm:p-9 min-h-[460px] transition-all duration-300 hover:-translate-y-1"
+          class="flex flex-col rounded-3xl border border-neutral-200/80 bg-white p-8 sm:p-9 min-h-115 transition-all duration-300 hover:-translate-y-1"
         >
           <!-- Header with Icon and Headline -->
           <div class="flex items-center gap-3.5 mb-8">
@@ -37,9 +37,9 @@
           </div>
 
           <!-- Bullets with Solid Dot Indicators -->
-          <ul class="space-y-4 flex-grow">
+          <ul class="space-y-4 grow">
             <li v-for="bullet in card.bullets" :key="bullet" class="flex items-start gap-3 text-[15px] sm:text-[16px] text-neutral-700 font-sans leading-snug">
-              <span class="h-2 w-2 rounded-full bg-[#2ca8cb] shrink-0 mt-[7px]" />
+              <span class="h-2 w-2 rounded-full bg-[#2ca8cb] shrink-0 mt-1.75" />
               <span>{{ bullet }}</span>
             </li>
           </ul>
@@ -59,7 +59,7 @@
             v-for="card in cards"
             :key="card.headline"
             :style="{ boxShadow: `8px 8px 0px ${card.shadowColor}` }"
-            class="w-full shrink-0 snap-center flex flex-col rounded-[24px] border border-neutral-200/80 bg-white p-8 min-h-[460px]"
+            class="w-full shrink-0 snap-center flex flex-col rounded-3xl border border-neutral-200/80 bg-white p-8 min-h-115"
           >
             <!-- Header with Icon and Headline -->
             <div class="flex items-center gap-3.5 mb-8">
@@ -70,9 +70,9 @@
             </div>
 
             <!-- Bullets with Solid Dot Indicators -->
-            <ul class="space-y-4 flex-grow">
+            <ul class="space-y-4 grow">
               <li v-for="bullet in card.bullets" :key="bullet" class="flex items-start gap-3 text-[15px] sm:text-[16px] text-neutral-700 font-sans leading-snug">
-                <span class="h-2 w-2 rounded-full bg-[#2ca8cb] shrink-0 mt-[7px]" />
+                <span class="h-2 w-2 rounded-full bg-[#2ca8cb] shrink-0 mt-1.75" />
                 <span>{{ bullet }}</span>
               </li>
             </ul>

@@ -14,6 +14,22 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  AnimatedCounter: typeof import("../../src/components/AnimatedCounter.vue")['default']
+  EstablishPresence: typeof import("../../src/components/EstablishPresence.vue")['default']
+  FeatureRow: typeof import("../../src/components/FeatureRow.vue")['default']
+  Hero: typeof import("../../src/components/Hero.vue")['default']
+  InteractiveContactModal: typeof import("../../src/components/InteractiveContactModal.vue")['default']
+  LogoCarousel: typeof import("../../src/components/LogoCarousel.vue")['default']
+  Partnerships: typeof import("../../src/components/Partnerships.vue")['default']
+  RedProcess: typeof import("../../src/components/RedProcess.vue")['default']
+  ServicesGrid: typeof import("../../src/components/ServicesGrid.vue")['default']
+  StatsBar: typeof import("../../src/components/StatsBar.vue")['default']
+  Testimonials: typeof import("../../src/components/Testimonials.vue")['default']
+  TwoColumnAbout: typeof import("../../src/components/TwoColumnAbout.vue")['default']
+  WhatsAppButton: typeof import("../../src/components/WhatsAppButton.vue")['default']
+  WhyUs: typeof import("../../src/components/WhyUs.vue")['default']
+  HeaderFooter: typeof import("../../src/components/header-footer/Footer.vue")['default']
+  HeaderFooterNavbar: typeof import("../../src/components/header-footer/Navbar.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   NuxtErrorBoundary: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -29,7 +45,7 @@ interface _GlobalComponents {
   NuxtPicture: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtPicture']
   Motion: typeof import("@vueuse/motion")['MotionComponent']
   MotionGroup: typeof import("@vueuse/motion")['MotionGroupComponent']
-  NuxtPage: typeof import("../../node_modules/nuxt/dist/pages/runtime/page-placeholder")['default']
+  NuxtPage: typeof import("../../node_modules/nuxt/dist/pages/runtime/page")['default']
   NoScript: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['NoScript']
   Link: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Link']
   Base: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Base']
@@ -40,6 +56,22 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+  LazyAnimatedCounter: LazyComponent<typeof import("../../src/components/AnimatedCounter.vue")['default']>
+  LazyEstablishPresence: LazyComponent<typeof import("../../src/components/EstablishPresence.vue")['default']>
+  LazyFeatureRow: LazyComponent<typeof import("../../src/components/FeatureRow.vue")['default']>
+  LazyHero: LazyComponent<typeof import("../../src/components/Hero.vue")['default']>
+  LazyInteractiveContactModal: LazyComponent<typeof import("../../src/components/InteractiveContactModal.vue")['default']>
+  LazyLogoCarousel: LazyComponent<typeof import("../../src/components/LogoCarousel.vue")['default']>
+  LazyPartnerships: LazyComponent<typeof import("../../src/components/Partnerships.vue")['default']>
+  LazyRedProcess: LazyComponent<typeof import("../../src/components/RedProcess.vue")['default']>
+  LazyServicesGrid: LazyComponent<typeof import("../../src/components/ServicesGrid.vue")['default']>
+  LazyStatsBar: LazyComponent<typeof import("../../src/components/StatsBar.vue")['default']>
+  LazyTestimonials: LazyComponent<typeof import("../../src/components/Testimonials.vue")['default']>
+  LazyTwoColumnAbout: LazyComponent<typeof import("../../src/components/TwoColumnAbout.vue")['default']>
+  LazyWhatsAppButton: LazyComponent<typeof import("../../src/components/WhatsAppButton.vue")['default']>
+  LazyWhyUs: LazyComponent<typeof import("../../src/components/WhyUs.vue")['default']>
+  LazyHeaderFooter: LazyComponent<typeof import("../../src/components/header-footer/Footer.vue")['default']>
+  LazyHeaderFooterNavbar: LazyComponent<typeof import("../../src/components/header-footer/Navbar.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   LazyNuxtErrorBoundary: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
@@ -55,7 +87,7 @@ interface _GlobalComponents {
   LazyNuxtPicture: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-stubs")['NuxtPicture']>
   LazyMotion: LazyComponent<typeof import("@vueuse/motion")['MotionComponent']>
   LazyMotionGroup: LazyComponent<typeof import("@vueuse/motion")['MotionGroupComponent']>
-  LazyNuxtPage: LazyComponent<typeof import("../../node_modules/nuxt/dist/pages/runtime/page-placeholder")['default']>
+  LazyNuxtPage: LazyComponent<typeof import("../../node_modules/nuxt/dist/pages/runtime/page")['default']>
   LazyNoScript: LazyComponent<typeof import("../../node_modules/nuxt/dist/head/runtime/components")['NoScript']>
   LazyLink: LazyComponent<typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Link']>
   LazyBase: LazyComponent<typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Base']>
