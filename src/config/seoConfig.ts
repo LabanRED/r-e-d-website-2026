@@ -6,7 +6,7 @@ export interface PageSEO {
 
 export const seoConfig: Record<string, PageSEO> = {
   home: {
-    title: "R-E-D | Reach Engage Develop",
+    title: "R-E-D | Reach Engage Develop | Digital Advertising",
     metaDescription: "R-E-D is a unique digital solutions provider specializing in digital advertising, website development, and social media management.",
     pageDescription: "Tailored digital solutions driving growth.",
   },

@@ -50,9 +50,8 @@
           </p>
 
           <div class="pt-2">
-            <!-- Replace a with NuxtLink if it points to a route, but this is an anchor hash to #postx which acts like a link. We can keep it as an anchor or NuxtLink -->
             <NuxtLink
-              to="#postx"
+              to="/postx"
               class="inline-block text-center text-sm sm:text-base text-white bg-black hover:bg-[#1ca3c4] px-7 py-3.5 rounded-full active:scale-95 transition-all duration-300 font-poppins font-medium lowercase"
             >
               Explore PostX and see how it works.
