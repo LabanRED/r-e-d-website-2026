@@ -99,8 +99,19 @@ export default function ServicesPage({ onCtaClick }: ServicesPageProps) {
       </div>
 
       {/* Hero Banner Section */}
-      <section className="relative px-8 lg:px-0 mb-16 lg:w-[95%] max-w-[1600px] mx-auto">
-        <div className="w-full relative overflow-hidden rounded-[2rem] sm:rounded-[3rem]">
+      <section className="relative px-8 lg:px-0 mb-16 lg:w-[95%] max-w-[1600px] mx-auto flex flex-col gap-4 sm:block">
+
+        {/* Mobile Heading */}
+        <div className="flex flex-col sm:hidden pt-2">
+          <span className="font-poppins text-[#2c2c2c] text-sm mb-2">Our services</span>
+          <h1 className="font-poppins w-50 text-3xl leading-[1.3] text-[#2c2c2c] font-semibold tracking-tight">
+            Driving real growth
+            through <span className="text-[#00a5c5]">data-driven</span>
+            <span className="text-[#00a5c5]"> digital advertising</span>
+          </h1>
+        </div>
+
+        <div className="w-full relative overflow-hidden rounded-4xl sm:rounded-[3rem]">
           {/* Desktop Banner Image */}
           <img
             src={serviceDesktopBanner}
@@ -119,7 +130,7 @@ export default function ServicesPage({ onCtaClick }: ServicesPageProps) {
           />
 
           {/* Overlay Text */}
-          <div className="absolute inset-0 flex flex-col justify-center px-8 sm:px-12 md:px-20 lg:px-32 xl:px-40 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[65%] z-10 pointer-events-none">
+          <div className="absolute inset-0 hidden sm:flex flex-col justify-center px-8 sm:px-12 md:px-20 lg:px-32 xl:px-40 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[65%] z-10 pointer-events-none">
             <span className="font-poppins text-[#2c2c2c] text-sm sm:text-base lg:text-lg mb-2 sm:mb-4">Our services</span>
             <h1 className="font-poppins text-[2.5rem] sm:text-5xl md:text-6xl lg:text-6xl leading-[1.1] text-[#2c2c2c] font-semibold tracking-tight">
               Driving real growth <br className="hidden sm:block" />
@@ -144,7 +155,7 @@ export default function ServicesPage({ onCtaClick }: ServicesPageProps) {
       </section>
 
       {/* Services List */}
-      <section className="px-6 sm:px-8 lg:px-12 pb-24 max-w-[1200px] mx-auto">
+      <section className="px-6 sm:px-8 lg:px-12 pb-24 max-w-300 mx-auto">
         <div className="flex flex-col">
           {servicesList.map((service, index) => (
             <motion.div
