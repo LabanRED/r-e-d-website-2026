@@ -15,6 +15,8 @@ import { RuntimeConfig as UserRuntimeConfig, PublicRuntimeConfig as UserPublicRu
    },
   }
   interface SharedPublicRuntimeConfig {
+   gtmId: string,
+
    motion: any,
   }
 declare module '@nuxt/schema' {
