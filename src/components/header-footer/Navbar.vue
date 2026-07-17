@@ -5,7 +5,7 @@
       <div class="flex items-center justify-between w-full">
         
         <!-- Logo: R-E-D White Logo -->
-        <NuxtLink to="/" class="flex items-center group">
+        <NuxtLink to="/" class="flex items-center group" @click="scrollToTop">
           <img 
             :src="redWhiteLogo" 
             alt="R-E-D Logo" 
@@ -131,5 +131,11 @@ const links = [
 const handleMobileCta = () => {
   isOpen.value = false;
   emit('cta-click');
+};
+
+const scrollToTop = () => {
+  if (import.meta.client) {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 };
 </script>
