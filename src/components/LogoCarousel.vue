@@ -26,7 +26,7 @@
               <img
                 :src="logo.src"
                 :alt="`${logo.name} logo`"
-                class="h-6 md:h-8 w-auto object-contain opacity-50 hover:opacity-95 transition-opacity duration-300 grayscale"
+                class="h-6 md:h-8 w-auto object-contain opacity-50 hover:opacity-95 transition-opacity duration-300"
                 referrerpolicy="no-referrer"
               />
             </div>
@@ -72,7 +72,7 @@ const doubleLogos = [...logos, ...logos];
 
 <style scoped>
 .animate-marquee {
-  animation: marquee 8s linear infinite;
+  animation: marquee 5s linear infinite;
 }
 
 @keyframes marquee {

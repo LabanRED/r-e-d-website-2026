@@ -76,7 +76,7 @@
             <!-- Inactive State -->
             <div v-else class="flex flex-col justify-between min-h-54">
               <!-- Top right large faint number -->
-              <div class="absolute top-6 right-8 font-poppins font-semibold text-4xl sm:text-5xl text-neutral-100 select-none">
+              <div class="absolute top-6 right-8 font-poppins font-medium text-4xl sm:text-5xl text-neutral-300 select-none">
                 {{ step.number }}
               </div>
 
