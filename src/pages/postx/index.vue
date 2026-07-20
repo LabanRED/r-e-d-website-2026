@@ -36,7 +36,7 @@
               class="h-10 w-auto mb-6 object-contain"
               referrerpolicy="no-referrer"
             />
-            <h1 class="font-poppins font-medium text-3xl md:text-4xl lg:text-4xl mb-6 text-neutral-900">
+            <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl md:text-4xl lg:text-4xl mb-6 text-neutral-900">
               From First Click to Final Sale.<br />
               <span class="text-[#2ca8cb]">One Platform for Every Conversation.</span>
             </h1>
@@ -65,7 +65,7 @@
             referrerpolicy="no-referrer"
           />
           <!-- Mobile Heading -->
-          <h1 class="font-poppins font-medium text-3xl sm:text-[2.25rem] md:text-5xl leading-tight tracking-tight mb-4 text-neutral-950">
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-[2.25rem] md:text-5xl leading-tight tracking-tight mb-4 text-neutral-950">
             From First Click to Final Sale.<br />
             <span class="text-[#2ca8cb]">One Platform for Every Conversation.</span>
           </h1>
@@ -109,7 +109,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
           <!-- Left Column (7 cols on large screens to give ample room for beautiful typography) -->
           <div class="lg:col-span-7">
-            <h2 class="font-poppins font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-neutral-950 tracking-tight leading-[1.15]">
+            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] text-neutral-950 tracking-tight leading-[1.15]">
               Take control of<br />every conversation.
             </h2>
             <p class="font-poppins font-light text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] text-[#2ca8cb] italic mt-6 leading-tight">
@@ -135,7 +135,7 @@
       <div class="mx-auto max-w-[1600px] px-6 sm:px-8 lg:px-24">
         <!-- Header -->
         <div class="text-center mb-16">
-          <h2 class="font-poppins font-medium text-3xl sm:text-4xl lg:text-[2.75rem] tracking-tight text-neutral-950">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl lg:text-[2.75rem] tracking-tight text-neutral-950">
             <span class="text-[#2ca8cb] italic font-light">One platform.</span> Four Pillars.
           </h2>
           <p class="font-poppins font-regular text-neutral-500 text-sm sm:text-base mt-3">
@@ -161,7 +161,7 @@
                     referrerpolicy="no-referrer"
                   />
                 </div>
-                <h3 class="font-poppins font-semibold text-xl text-neutral-900">Create</h3>
+                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900">Create</h3>
               </div>
               <ul class="space-y-4">
                 <li v-for="(bullet, i) in ['Controlled Access', 'Omni-channel Posting & Scheduling', 'Brand Frames & Delivery Photos', 'Content Approval', 'AI Post Polisher & Moderator']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
@@ -188,7 +188,7 @@
                     referrerpolicy="no-referrer"
                   />
                 </div>
-                <h3 class="font-poppins font-semibold text-xl text-neutral-900">Connect</h3>
+                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900">Connect</h3>
               </div>
               <ul class="space-y-4">
                 <li v-for="(bullet, i) in ['Website, Meta & Google ads integration', 'Omni-channel Posting & Scheduling', 'Offline Activations & Events', 'Reviews, Ratings & CSI', 'Internal Cross Department Communication.']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
@@ -215,7 +215,7 @@
                     referrerpolicy="no-referrer"
                   />
                 </div>
-                <h3 class="font-poppins font-semibold text-xl text-neutral-900">Comms</h3>
+                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900">Comms</h3>
               </div>
               <ul class="space-y-4">
                 <li v-for="(bullet, i) in ['Customer communication via WhatsApp or Social Platforms', 'Leads via WhatsApp & 24/7 AI Lead Assistance', 'Omni-channel inbox', 'Smart Routing & SLA Monitoring', 'Service Bookings & Reminders']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
@@ -242,7 +242,7 @@
                     referrerpolicy="no-referrer"
                   />
                 </div>
-                <h3 class="font-poppins font-semibold text-xl text-neutral-900">Control</h3>
+                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900">Control</h3>
               </div>
               <ul class="space-y-4">
                 <li v-for="(bullet, i) in ['Lead Routing & Escalations', 'Reporting Dashboard', 'Team Activity', 'Leads integrated to CRM/CMS', 'Customer Data & Access Control']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
@@ -273,7 +273,7 @@
                         referrerpolicy="no-referrer"
                       />
                     </div>
-                    <h3 class="font-poppins font-semibold text-xl text-neutral-900">Create</h3>
+                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900">Create</h3>
                   </div>
                   <ul class="space-y-4">
                     <li v-for="(bullet, i) in ['Controlled Access', 'Omni-channel Posting & Scheduling', 'Brand Frames & Delivery Photos', 'Content Approval', 'AI Post Polisher & Moderator']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
@@ -297,7 +297,7 @@
                         referrerpolicy="no-referrer"
                       />
                     </div>
-                    <h3 class="font-poppins font-semibold text-xl text-neutral-900">Connect</h3>
+                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900">Connect</h3>
                   </div>
                   <ul class="space-y-4">
                     <li v-for="(bullet, i) in ['Website, Meta & Google ads integration', 'Omni-channel Posting & Scheduling', 'Offline Activations & Events', 'Reviews, Ratings & CSI', 'Internal Cross Department Communication.']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
@@ -321,7 +321,7 @@
                         referrerpolicy="no-referrer"
                       />
                     </div>
-                    <h3 class="font-poppins font-semibold text-xl text-neutral-900">Comms</h3>
+                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900">Comms</h3>
                   </div>
                   <ul class="space-y-4">
                     <li v-for="(bullet, i) in ['Customer communication via WhatsApp or Social Platforms', 'Leads via WhatsApp & 24/7 AI Lead Assistance', 'Omni-channel inbox', 'Smart Routing & SLA Monitoring', 'Service Bookings & Reminders']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
@@ -345,7 +345,7 @@
                         referrerpolicy="no-referrer"
                       />
                     </div>
-                    <h3 class="font-poppins font-semibold text-xl text-neutral-900">Control</h3>
+                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900">Control</h3>
                   </div>
                   <ul class="space-y-4">
                     <li v-for="(bullet, i) in ['Lead Routing & Escalations', 'Reporting Dashboard', 'Team Activity', 'Leads integrated to CRM/CMS', 'Customer Data & Access Control']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
@@ -408,7 +408,7 @@
       <div class="mx-auto max-w-[1600px] px-6 sm:px-8 lg:px-24">
         <!-- Header & Intro -->
         <div class="mb-16">
-          <h2 class="font-poppins text-3xl sm:text-4xl lg:text-5xl leading-tight text-neutral-950">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl lg:text-5xl leading-tight text-neutral-950">
             <span class="text-[#2ca8cb] italic font-light">Meet your 24/7 Sales Team</span><br />
             <span class="font-medium">- Powered by AI</span>
           </h2>
@@ -435,7 +435,7 @@
                   referrerpolicy="no-referrer"
                 />
               </div>
-              <h3 class="font-poppins font-semibold text-xl text-neutral-900 mb-3">Lead Qualification:</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900 mb-3">Lead Qualification:</h3>
               <p class="font-poppins font-regular text-neutral-700 text-sm sm:text-base leading-relaxed">
                 AI assistants engage new enquiries on WhatsApp within seconds, qualify intent, directly integrate and route hot leads to the right department.
               </p>
@@ -457,7 +457,7 @@
                   referrerpolicy="no-referrer"
                 />
               </div>
-              <h3 class="font-poppins font-semibold text-xl text-neutral-900 mb-3">Intelligent Conversations:</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900 mb-3">Intelligent Conversations:</h3>
               <p class="font-poppins font-regular text-neutral-700 text-sm sm:text-base leading-relaxed">
                 Trained on your stock, pricing, and dealership info. Handles FAQs, books test drives, and follows up on dormant leads - all on the customer's preferred platform.
               </p>
@@ -479,7 +479,7 @@
                   referrerpolicy="no-referrer"
                 />
               </div>
-              <h3 class="font-poppins font-semibold text-xl text-neutral-900 mb-3">Your team can focus on conversions</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-xl text-neutral-900 mb-3">Your team can focus on conversions</h3>
               <p class="font-poppins font-regular text-neutral-700 text-sm sm:text-base leading-relaxed">
                 With repetitive conversations automated, your sales team spends more time closing deals, not managing inboxes.
               </p>
@@ -504,7 +504,7 @@
           <p class="font-poppins text-neutral-800 font-medium text-sm md:text-base lg:text-[18px] mb-2 tracking-wide">
             Increase your conversion rate today.
           </p>
-          <h2 class="font-poppins font-semibold text-3xl md:text-4xl lg:text-[3rem] leading-[1.1] text-neutral-950 mb-8 tracking-tight">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-3xl md:text-4xl lg:text-[3rem] leading-[1.1] text-neutral-950 mb-8 tracking-tight">
             Ready to simplify<br />your conversations?
           </h2>
           <div class="font-poppins font-medium text-sm md:text-[16px] text-white bg-[#2ca8cb] group-hover:bg-[#209bbd] rounded-full py-4 px-10 transition-all duration-300 shadow-md">
@@ -523,7 +523,7 @@
           <p class="font-poppins text-neutral-800 font-medium text-sm mb-2 tracking-wide">
             Increase your conversion rate today.
           </p>
-          <h2 class="font-poppins font-semibold text-3xl leading-[2.5rem] text-neutral-950 mb-2 tracking-tight">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-3xl leading-[2.5rem] text-neutral-950 mb-2 tracking-tight">
             Ready to simplify<br />your conversations?
           </h2>
           <div class="font-poppins font-medium text-sm text-white bg-[#2ca8cb] rounded-full py-3 px-8 shadow-md">
@@ -537,7 +537,7 @@
     <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full bg-[#f2fafc] py-20 sm:py-24 px-6 sm:px-8 lg:px-12">
       <div class="max-w-[1200px] mx-auto text-center">
         <!-- Header -->
-        <h2 class="font-poppins font-medium text-3xl md:text-4xl lg:text-5xl leading-tight text-neutral-950 mb-6 tracking-tight">
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl md:text-4xl lg:text-5xl leading-tight text-neutral-950 mb-6 tracking-tight">
           Insight of <img loading="lazy" :src="postXLogo" alt="PostX" class="h-8 md:h-10 lg:h-12 inline-block align-middle mx-1 md:mx-2 -mt-2" /> Improving your<br />customer service
         </h2>
         <p class="font-poppins text-neutral-800 font-medium text-base md:text-lg max-w-6xl mx-auto mb-4 tracking-wide">
@@ -551,7 +551,7 @@
         <div class="mb-2">
           <span class="font-poppins text-neutral-500 uppercase tracking-widest text-sm font-semibold">POSTX INBOX</span>
         </div>
-        <h3 class="font-poppins font-medium text-xl md:text-2xl text-neutral-900 mb-10 tracking-tight">
+        <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl md:text-2xl text-neutral-900 mb-10 tracking-tight">
           All conversations funnel into one inbox
         </h3>
 
@@ -592,7 +592,7 @@
     <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full bg-white py-24 sm:py-28 px-6 sm:px-8 lg:px-12">
       <div class="max-w-[1000px] mx-auto text-center flex flex-col items-center">
 
-        <h2 class="font-poppins font-medium text-[2rem] sm:text-4xl lg:text-[3.25rem] leading-[1.3] text-neutral-950 mb-10 tracking-tight">
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-[2rem] sm:text-4xl lg:text-[3.25rem] leading-[1.3] text-neutral-950 mb-10 tracking-tight">
           <img loading="lazy" :src="postXLogo" alt="PostX" class="h-8 sm:h-10 lg:h-[3.5rem] inline-block align-middle mx-2 sm:mx-3 -mt-2 sm:-mt-3" /> has proven itself time and time again that it is a crucial part of our business setup
         </h2>
 
@@ -620,10 +620,10 @@
         <!-- Desktop Layout -->
         <div class="hidden lg:grid grid-cols-2 gap-12 items-center">
           <div class="flex flex-col items-start text-left">
-            <h2 class="font-poppins font-medium text-[#2ca8cb] text-[2.5rem] leading-[1.15] mb-4 tracking-tight">
+            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-[#2ca8cb] text-[2.5rem] leading-[1.15] mb-4 tracking-tight">
               Automate Every<br />Step of the<br />Customer Journey
             </h2>
-            <h3 class="font-poppins font-medium text-neutral-900 text-[1.8rem] leading-tight mb-8 tracking-tight">
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-neutral-900 text-[1.8rem] leading-tight mb-8 tracking-tight">
               From First Chat<br />to Final Deal
             </h3>
             <p class="font-poppins text-neutral-800 text-[1.05rem] font-medium leading-[1.6] mb-8 max-w-md tracking-wide">
@@ -640,10 +640,10 @@
 
         <!-- Mobile Layout -->
         <div class="flex flex-col lg:hidden">
-          <h2 class="font-poppins font-medium text-[#2ca8cb] text-[2rem] sm:text-4xl leading-[1.15] mb-2 tracking-tight">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-[#2ca8cb] text-[2rem] sm:text-4xl leading-[1.15] mb-2 tracking-tight">
             Automate Every<br />Step of the<br />Customer Journey
           </h2>
-          <h3 class="font-poppins font-medium text-neutral-900 text-[1.5rem] sm:text-3xl leading-tight mb-8 tracking-tight">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-neutral-900 text-[1.5rem] sm:text-3xl leading-tight mb-8 tracking-tight">
             From First Chat<br />to Final Deal
           </h3>
 
@@ -672,7 +672,7 @@
 
               <div class="w-1/2 flex flex-col items-start">
                 <div class="bg-white rounded-[32px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-12 mb-6 w-full">
-                  <h3 class="font-poppins text-[1.75rem] font-medium text-neutral-900 leading-[1.3] mb-4">
+                  <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.75rem] font-medium text-neutral-900 leading-[1.3] mb-4">
                     {{ feature.title }}
                   </h3>
                   <p class="font-poppins text-neutral-600 font-medium text-[1.05rem] leading-[1.6]">
@@ -711,7 +711,7 @@
               </div>
               <div class="w-full flex flex-col items-start px-2">
                 <div class="bg-white rounded-[32px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 mb-6 w-full text-left">
-                  <h3 class="font-poppins text-2xl font-medium text-neutral-900 leading-[1.3] mb-4">
+                  <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-medium text-neutral-900 leading-[1.3] mb-4">
                     {{ feature.title }}
                   </h3>
                   <p class="font-poppins text-neutral-600 font-medium text-base leading-[1.6]">
@@ -758,7 +758,7 @@
 
         <!-- Header -->
         <div class="mb-16 md:mb-20 text-left">
-          <h2 class="font-poppins text-[2.5rem] md:text-[3.5rem] font-medium leading-[1.2] tracking-tight text-neutral-900 mb-6">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[2.5rem] md:text-[3.5rem] font-medium leading-[1.2] tracking-tight text-neutral-900 mb-6">
             Dynamic service, <span class="font-normal text-neutral-600">tailored</span> and <br class="hidden md:block" />
             ready <span class="font-semibold">to</span> action.
           </h2>
@@ -774,14 +774,14 @@
           <div class="col-span-3 flex flex-col gap-16 relative z-10">
             <div>
               <img loading="lazy" :src="builtNotLicensedIcon" alt="Built, not licensed" class="h-8 md:h-10 w-auto mb-5" />
-              <h3 class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">Built, not licensed</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">Built, not licensed</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
                 Build from the ground up for dealer workflows and your local systems & compliance.
               </p>
             </div>
             <div>
               <img loading="lazy" :src="inhouseDevIcon" alt="Developed 100% in-house" class="h-8 md:h-10 w-auto mb-5" />
-              <h3 class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">Developed 100% in-house</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">Developed 100% in-house</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
                 No Third-party dependencies. Every feature is built, owned, and evolved by our team.
               </p>
@@ -797,14 +797,14 @@
           <div class="col-span-3 flex flex-col gap-16 relative z-10">
             <div>
               <img loading="lazy" :src="unlimitedUsersIcon" alt="Unlimited users" class="h-8 md:h-10 w-auto mb-5" />
-              <h3 class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">Unlimited users</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">Unlimited users</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
                 No per-seat pricing games. Your whole team gets access - sales, service, F&I, parts, everyone.
               </p>
             </div>
             <div>
               <img loading="lazy" :src="inhouseSupportIcon" alt="In-house support team" class="h-8 md:h-10 w-auto mb-5" />
-              <h3 class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">In-house support team</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">In-house support team</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
                 Direct access to the people who built it, No tickets disappearing into a vendor's queue
               </p>
@@ -816,28 +816,28 @@
         <div class="flex flex-col lg:hidden gap-12 mt-8">
           <div>
             <img loading="lazy" :src="builtNotLicensedIcon" alt="Built, not licensed" class="h-9 w-auto mb-4" />
-            <h3 class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">Built, not licensed</h3>
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">Built, not licensed</h3>
             <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-[1.6]">
               Build from the ground up for dealer workflows and your local systems & compliance.
             </p>
           </div>
           <div>
             <img loading="lazy" :src="inhouseDevIcon" alt="Developed 100% in-house" class="h-9 w-auto mb-4" />
-            <h3 class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">Developed 100% in-house</h3>
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">Developed 100% in-house</h3>
             <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-[1.6]">
               No Third-party dependencies. Every feature is built, owned, and evolved by our team.
             </p>
           </div>
           <div>
             <img loading="lazy" :src="unlimitedUsersIcon" alt="Unlimited users" class="h-9 w-auto mb-4" />
-            <h3 class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">Unlimited users</h3>
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">Unlimited users</h3>
             <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-[1.6]">
               No per-seat pricing games. Your whole team gets access - sales, service, F&I, parts, everyone.
             </p>
           </div>
           <div>
             <img loading="lazy" :src="inhouseSupportIcon" alt="In-house support team" class="h-9 w-auto mb-4" />
-            <h3 class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">In-house support team</h3>
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">In-house support team</h3>
             <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-[1.6]">
               Direct access to the people who built it, No tickets disappearing into a vendor's queue
             </p>
@@ -870,7 +870,7 @@
 
           <!-- Text Column -->
           <div class="w-full lg:w-[55%] flex flex-col items-start text-left">
-            <h2 class="font-poppins text-5xl md:text-5xl font-semibold text-neutral-900 leading-[1.3] tracking-tight mb-8">
+            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-5xl md:text-5xl font-semibold text-neutral-900 leading-[1.3] tracking-tight mb-8">
               <span class="text-[#00a5c5]">320+ Clients trusts</span> PostX to<br class="hidden xl:block" /> be part of their daily<br class="hidden xl:block" /> process.
             </h2>
             <p class="font-poppins text-lg md:text-xl text-neutral-800 font-medium leading-[1.7] max-w-2xl mb-12">
@@ -904,7 +904,7 @@
 
         <img loading="lazy" :src="postXLogo" alt="PostX" class="h-10 md:h-12 lg:h-[3.25rem] mb-4 object-contain" />
 
-        <h2 class="font-poppins text-3xl md:text-5xl lg:text-5xl leading-[1.2] tracking-tight text-neutral-900 mb-8">
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-5xl lg:text-5xl leading-[1.2] tracking-tight text-neutral-900 mb-8">
           <span class="text-[#00a5c5] font-semibold">Continuously</span> <span class="italic font-light">Updating...</span>
         </h2>
 
@@ -937,13 +937,13 @@
         <!-- Left Side: Headings & CTA Card -->
         <div class="w-full lg:w-[40%] flex flex-col items-start">
           <span class="text-[#00a5c5] font-poppins text-lg font-medium mb-4">Why us?</span>
-          <h2 class="font-poppins text-4xl sm:text-5xl lg:text-[4rem] leading-[1.1] font-medium text-neutral-900 mb-10 tracking-tight">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-[4rem] leading-[1.1] font-medium text-neutral-900 mb-10 tracking-tight">
             Frequently asked<br />questions
           </h2>
 
           <!-- CTA Card -->
           <div class="w-full bg-[#f0f9fa] rounded-[32px] p-8 sm:p-10 flex flex-col items-start mt-4">
-            <h3 class="font-poppins text-2xl font-semibold text-neutral-900 mb-4">
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-semibold text-neutral-900 mb-4">
               Still have a question?
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8">
@@ -951,7 +951,7 @@
             </p>
             <button
               @click="openModal"
-              class="bg-black hover:bg-[#00a5c5] text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-[15px] font-medium lowercase cursor-pointer"
+              class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-[15px] font-medium lowercase cursor-pointer btn-slide-in"
             >
               schedule a meeting today
             </button>
@@ -1005,7 +1005,7 @@
       <div class="max-w-3xl mx-auto flex flex-col items-center">
         <img loading="lazy" :src="postXLogo" alt="PostX" class="h-12 md:h-16 lg:h-[4.5rem] mb-6 object-contain" />
 
-        <h2 class="font-poppins text-3xl sm:text-5xl lg:text-5xl leading-[1.15] font-medium text-[#2c2c2c] mb-6 tracking-tight">
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-5xl lg:text-5xl leading-[1.15] font-medium text-[#2c2c2c] mb-6 tracking-tight">
           Ready to connect your<br class="hidden sm:block" /> Business?
         </h2>
 
@@ -1015,7 +1015,7 @@
 
         <button
           @click="openModal"
-          class="bg-black hover:bg-[#00a5c5] text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-base tracking-wide font-medium lowercase cursor-pointer"
+          class="bg-black text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-base tracking-wide font-medium lowercase cursor-pointer btn-slide-in"
         >
           schedule a meeting today
         </button>

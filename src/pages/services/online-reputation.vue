@@ -16,7 +16,7 @@
     </div>
 
     <section class="px-6 sm:px-8 lg:px-12 py-12 sm:py-20 max-w-[1200px] mx-auto text-center">
-      <h1 class="font-poppins text-4xl sm:text-5xl lg:text-6xl text-neutral-800 font-semibold mb-6">
+      <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl text-neutral-800 font-semibold mb-6">
         Online Reputation Solutions
       </h1>
       <p class="font-poppins text-neutral-600 text-lg sm:text-xl max-w-3xl mx-auto mb-12">

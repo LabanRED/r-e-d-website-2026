@@ -5,7 +5,7 @@
 
       <!-- NEW DESKTOP HEADING (Above Banner) -->
       <div class="hidden lg:flex flex-col items-center text-center mt-4">
-        <h1 class="font-poppins font-semibold text-[3.5rem] leading-[1.15] tracking-tight mb-4 text-neutral-900">
+        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-[3.5rem] leading-[1.15] tracking-tight mb-4 text-neutral-900">
           <span class="text-[#1ca3c4]">Conversion</span> based,<br />
           results driven marketing
         </h1>
@@ -14,7 +14,7 @@
         </p>
         <button
           @click="$emit('cta-click')"
-          class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-[#1ca3c4] rounded-full px-8 py-3 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md lowercase"
+          class="font-poppins font-medium text-[15px] text-white bg-black btn-slide-in rounded-full px-8 py-3 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md lowercase"
         >
           schedule a meeting today
         </button>
@@ -36,8 +36,13 @@
 
         <!-- Content Overlaid on Desktop with exactly 100px left spacing -->
         <div class="relative z-10 w-full lg:w-150 lg:pt-12 lg:pl-25 flex flex-col justify-center items-start text-left">
-          <h1 class="font-poppins font-medium lg:text-[4rem] lg:leading-17.5 mb-6 text-neutral-900">
-            Designed for businesses of all sizes.
+          <h1 class="font-poppins font-medium lg:text-[4rem] lg:leading-17.5 mb-6 text-neutral-900 flex flex-wrap">
+            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 800 } }" class="inline-block" style="margin-right: 0.25em;">Designed</span>
+            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 900 } }" class="inline-block" style="margin-right: 0.25em;">for</span>
+            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 1000 } }" class="inline-block" style="margin-right: 0.25em;">businesses</span>
+            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 1100 } }" class="inline-block" style="margin-right: 0.25em;">of</span>
+            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 1200 } }" class="inline-block" style="margin-right: 0.25em;">all</span>
+            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 1300 } }" class="inline-block">sizes.</span>
           </h1>
 
           <p class="font-poppins font-medium text-neutral-800 text-[16px] leading-normal max-w-2xl mb-8">
@@ -46,7 +51,7 @@
 
           <button
             @click="$emit('cta-click')"
-            class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-[#1ca3c4] rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg lowercase"
+            class="font-poppins font-medium text-[16px] text-white bg-black btn-slide-in rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg lowercase"
             style="padding: 20px"
           >
             schedule a meeting today
@@ -57,7 +62,7 @@
       <!-- MOBILE & TABLET LAYOUT (below lg) - Stacked Vertically, Center-aligned -->
       <div class="flex lg:hidden w-full flex-col items-center text-center px-4">
         <!-- Mobile Heading with Conversion highlighted in cyan -->
-        <h1 class="font-poppins font-medium text-3xl sm:text-[2.25rem] md:text-5xl leading-tight tracking-tight mb-4">
+        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-[2.25rem] md:text-5xl leading-tight tracking-tight mb-4">
           <span class="text-[#1ca3c4]">Conversion</span> based,<br />
           results driven marketing
         </h1>
@@ -70,7 +75,7 @@
         <!-- Mobile Button: outlined pill shape transitioning to filled cyan on hover/click -->
         <button
           @click="$emit('cta-click')"
-          class="font-poppins text-xs sm:text-sm tracking-widest text-white border-none rounded-full py-4 px-8 bg-black hover:bg-[#1ca3c4] active:bg-[#1ca3c4] transition-all duration-300 hover:scale-[1.02] active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase"
+          class="font-poppins text-xs sm:text-sm tracking-widest text-white border-none rounded-full py-4 px-8 bg-black btn-slide-in transition-all duration-300 hover:scale-[1.02] active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase"
         >
           schedule a meeting today
         </button>

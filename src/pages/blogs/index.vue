@@ -32,7 +32,7 @@
           <p class="font-poppins text-neutral-600 text-sm sm:text-base mb-4 tracking-wide font-medium">
             Our blogs
           </p>
-          <h1 class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 leading-[1.1] tracking-tight">
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 leading-[1.1] tracking-tight">
             Smarter Digital <br class="hidden sm:block" />
             Thinking for <span class="text-[#00a5c5]">Better <br class="hidden sm:block" />
               Conversions</span>
@@ -46,7 +46,7 @@
           <p class="font-poppins text-neutral-600 text-sm sm:text-base mb-4 tracking-wide font-medium">
             Our blogs
           </p>
-          <h1 class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight tracking-tight">
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight tracking-tight">
             Smarter Digital <br />
             Thinking for <span class="text-[#00a5c5]">Better <br />
               Conversions</span>
@@ -68,7 +68,7 @@
 
     <!-- All Articles Section -->
     <section class="px-6 sm:px-8 lg:px-12 max-w-[1600px] mx-auto mb-16">
-      <h2 class="font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-6">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-6">
         All articles
       </h2>
       <p class="font-poppins text-neutral-600 text-lg leading-relaxed max-w-4xl mb-8">
@@ -94,7 +94,7 @@
 
     <!-- Latest Blogs Section -->
     <section class="px-6 sm:px-8 lg:px-12 max-w-[1600px] mx-auto mb-20">
-      <h2 class="w-full px-0 md:px-[186px] font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-10">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="w-full px-0 md:px-[186px] font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-10">
         Latest blogs
       </h2>
 
@@ -115,7 +115,7 @@
               <span class="font-poppins text-xs text-neutral-500 mb-3 uppercase tracking-wider font-medium">
                 {{ blog.date }}
               </span>
-              <h3 class="font-poppins text-xl font-semibold text-neutral-800 mb-4 leading-snug group-hover:text-[#00a5c5] transition-colors line-clamp-2">
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl font-semibold text-neutral-800 mb-4 leading-snug group-hover:text-[#00a5c5] transition-colors line-clamp-2">
                 {{ blog.title }}
               </h3>
               <p class="font-poppins text-neutral-600 text-sm leading-relaxed mb-6 line-clamp-3 flex-1">
@@ -150,7 +150,7 @@
           alt="R-E-D Logo"
           class="h-10 sm:h-12 object-contain mb-8"
         />
-        <h3 class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
+        <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
           Ready to establish your digital presences?
         </h3>
         <p class="font-poppins text-neutral-600 text-base max-w-xl mb-10 leading-relaxed">
@@ -158,7 +158,7 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-sm lowercase cursor-pointer"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-sm lowercase cursor-pointer btn-slide-in"
         >
           schedule a meeting today
         </button>

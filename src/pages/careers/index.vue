@@ -33,7 +33,7 @@
           <p class="font-poppins text-neutral-600 text-xs sm:text-sm mb-4 tracking-wide font-medium uppercase">
             Our careers
           </p>
-          <h1 class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 leading-[1.1] tracking-tight mb-6">
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 leading-[1.1] tracking-tight mb-6">
             Join the future of <br class="hidden sm:block" />
             <span class="text-[#00a5c5]">digital advertising.</span>
           </h1>
@@ -50,7 +50,7 @@
           <p class="font-poppins text-neutral-600 text-xs sm:text-sm mb-4 tracking-wide font-medium uppercase">
             Our careers
           </p>
-          <h1 class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight tracking-tight mb-6">
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight tracking-tight mb-6">
             Join the future of <br />
             <span class="text-[#00a5c5]">digital advertising.</span>
           </h1>
@@ -75,7 +75,7 @@
     <!-- Open Roles Section -->
     <section class="mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-12 mb-24">
       <div class="mb-10">
-        <h2 class="font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-2">
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-2">
           Open Roles
         </h2>
         <p class="font-poppins text-neutral-600 text-sm sm:text-base font-medium">
@@ -93,7 +93,7 @@
               Marketing
             </span>
           </div>
-          <h3 class="font-poppins text-[32px] md:text-2xl font-semibold text-neutral-800 mb-4 md:mb-3 leading-tight">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-semibold text-neutral-800 mb-4 md:mb-3 leading-tight">
             Head Of Social Media
           </h3>
           <p class="font-poppins text-base md:text-sm text-neutral-700 md:text-neutral-600 leading-relaxed mb-8 flex-1 font-medium md:font-normal">
@@ -117,7 +117,7 @@
               Marketing
             </span>
           </div>
-          <h3 class="font-poppins text-[32px] md:text-2xl font-bold text-neutral-800 mb-4 md:mb-3 leading-tight">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-bold text-neutral-800 mb-4 md:mb-3 leading-tight">
             Head Of Search
           </h3>
           <p class="font-poppins text-base md:text-sm text-neutral-700 md:text-neutral-600 leading-relaxed mb-8 flex-1 font-medium md:font-normal">
@@ -141,7 +141,7 @@
               Marketing
             </span>
           </div>
-          <h3 class="font-poppins text-[32px] md:text-2xl font-bold text-neutral-800 mb-4 md:mb-3 leading-tight">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-bold text-neutral-800 mb-4 md:mb-3 leading-tight">
             Digital Marketing Intern
           </h3>
           <p class="font-poppins text-base md:text-sm text-neutral-700 md:text-neutral-600 leading-relaxed mb-8 flex-1 font-medium md:font-normal">
@@ -165,7 +165,7 @@
               Marketing
             </span>
           </div>
-          <h3 class="font-poppins text-[32px] md:text-2xl font-bold text-neutral-800 mb-4 md:mb-3 leading-tight">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-bold text-neutral-800 mb-4 md:mb-3 leading-tight">
             Digital Designer
           </h3>
           <p class="font-poppins text-base md:text-sm text-neutral-700 md:text-neutral-600 leading-relaxed mb-8 flex-1 font-medium md:font-normal">

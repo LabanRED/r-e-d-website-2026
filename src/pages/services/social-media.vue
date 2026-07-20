@@ -39,7 +39,7 @@
             <span class="font-poppins font-medium text-base text-neutral-500 mb-6 tracking-wide">
               Social Media Management
             </span>
-            <h1 class="font-poppins font-semibold text-6xl leading-[1.1] text-neutral-900 tracking-tight">
+            <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-6xl leading-[1.1] text-neutral-900 tracking-tight">
               Build Stronger <br /> Customer <br />
               <span class="text-[#1ca3c4]">Connections<br />Through Social<br />Media</span>
             </h1>
@@ -51,7 +51,7 @@
           <span class="font-poppins font-medium text-xs sm:text-sm text-neutral-500 mb-4 tracking-wide">
             Social Media Management
           </span>
-          <h1 class="font-poppins font-semibold text-4xl sm:text-5xl leading-[1.15] text-neutral-900 tracking-tight mb-8">
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-4xl sm:text-5xl leading-[1.15] text-neutral-900 tracking-tight mb-8">
             Build Stronger <br /> Customer <br />
             <span class="text-[#1ca3c4]">Connections Through Social Media</span>
           </h1>
@@ -95,7 +95,7 @@
 
         <!-- Right Column: Content -->
         <div class="flex flex-col items-start text-left lg:pl-10">
-          <h2 class="font-poppins font-bold text-4xl sm:text-[42px] lg:text-[48px] text-neutral-900 tracking-tight mb-12">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-bold text-4xl sm:text-[42px] lg:text-[48px] text-neutral-900 tracking-tight mb-12">
             Content management.
           </h2>
 
@@ -110,7 +110,7 @@
 
           <button
             @click="openModal"
-            class="font-poppins font-medium text-xs sm:text-[13px] tracking-widest text-white bg-black hover:bg-[#1ca3c4] px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 mb-16 cursor-pointer"
+            class="font-poppins font-medium text-xs sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg active:scale-95 mb-16 cursor-pointer"
           >
             schedule a meeting today
           </button>

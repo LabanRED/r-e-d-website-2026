@@ -40,7 +40,7 @@
             </div>
 
             <!-- Title -->
-            <h3 class="font-poppins font-normal text-3xl sm:text-[2.5rem] text-neutral-800 group-hover:text-white leading-tight mb-6 tracking-tight transition-colors duration-300">
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-normal text-3xl sm:text-[2.5rem] text-neutral-800 group-hover:text-white leading-tight mb-6 tracking-tight transition-colors duration-300">
               Growing your <br />business
             </h3>
 
@@ -96,7 +96,7 @@
             </div>
 
             <!-- Title -->
-            <h3 class="font-poppins font-normal text-3xl sm:text-[2.5rem] text-neutral-800 group-hover:text-white leading-tight mb-6 tracking-tight transition-colors duration-300">
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-normal text-3xl sm:text-[2.5rem] text-neutral-800 group-hover:text-white leading-tight mb-6 tracking-tight transition-colors duration-300">
               More than a <br />partnership.
             </h3>
 

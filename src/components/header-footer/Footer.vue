@@ -5,7 +5,7 @@
         
         <!-- Column 1: Our Services -->
         <div>
-          <h3 class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
             Our services
           </h3>
           <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">
@@ -39,7 +39,7 @@
 
         <!-- Column 2: Our Products -->
         <div>
-          <h3 class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
             Our products
           </h3>
           <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">
@@ -53,7 +53,7 @@
 
         <!-- Column 3: Our Socials -->
         <div>
-          <h3 class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
             Our socials
           </h3>
           <div class="flex items-center gap-5 mt-2">
@@ -88,7 +88,7 @@
         <!-- Column 4: Get in Touch & Logo -->
         <div class="flex flex-col justify-between h-full min-h-55">
           <div>
-            <h3 class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
               Get in touch
             </h3>
             <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">

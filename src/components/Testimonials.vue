@@ -7,7 +7,7 @@
         <span class="font-poppins text-sm sm:text-base font-regular text-[#1ca3c4] tracking-wide block mb-3">
           What our clients say
         </span>
-        <h2 class="font-poppins font-semibold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-tight max-w-3xl md:w-125 lg:w-125 mx-auto">
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-tight max-w-3xl md:w-125 lg:w-125 mx-auto">
           Honest feedback from valued clients
         </h2>
       </div>

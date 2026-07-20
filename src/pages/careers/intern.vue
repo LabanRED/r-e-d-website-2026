@@ -20,7 +20,7 @@
 
       <!-- Header Section -->
       <div class="mb-10">
-        <h1 class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight mb-4">
+        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight mb-4">
           Digital marketing <span class="text-[#00a5c5]">intern</span>
         </h1>
         <div class="flex items-center gap-3 mb-8">
@@ -40,7 +40,7 @@
       <div class="space-y-12 text-neutral-800">
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">About the role</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">About the role</h2>
           <div class="space-y-4 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <p>This vacancy is for a Digital marketing intern. As a Digital Marketing intern, you will be trained across loading campaigns and creating content on Social Media, Search and Web platforms.</p>
             <p>The program is for 1 year and is aimed at providing sufficient experience to gain a full-time position, either at R-E-D or elsewhere thereafter. Top performers may be offered permanent positions as and when they become available.</p>
@@ -48,7 +48,7 @@
         </section>
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-6">Key responsibilities</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-6">Key responsibilities</h2>
           <ul class="list-disc pl-5 space-y-2 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <li>Writing copy for campaigns and content</li>
             <li>Loading campaigns on social media and search platforms</li>
@@ -59,7 +59,7 @@
         </section>
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">What we're looking for</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">What we're looking for</h2>
           <ul class="list-disc pl-5 space-y-2 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <li>Attention to detail</li>
             <li>Creative writing</li>
@@ -71,7 +71,7 @@
         </section>
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Required Qualifications / Experience</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Required Qualifications / Experience</h2>
           <ul class="list-disc pl-5 space-y-2 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <li>Minimum Grade 12</li>
             <li>No experience necessary, as long as you are prepared to learn</li>
@@ -79,14 +79,14 @@
         </section>
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Preferred Qualifications</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Preferred Qualifications</h2>
           <ul class="list-disc pl-5 space-y-2 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <li>Tertiary Qualification in Marketing or associated fields</li>
           </ul>
         </section>
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Remuneration</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Remuneration</h2>
           <p class="font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             Negotiable based on qualifications and experience
           </p>
@@ -98,7 +98,7 @@
     <!-- Application Form Section -->
     <div class="w-full bg-[#f2f2f2] py-20 px-4">
       <div class="mx-auto max-w-xl bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-neutral-100">
-        <h2 class="font-poppins text-2xl sm:text-3xl font-bold text-center text-neutral-800 mb-8">
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-bold text-center text-neutral-800 mb-8">
           Apply for this role
         </h2>
 

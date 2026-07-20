@@ -20,7 +20,7 @@
 
       <!-- Header Section -->
       <div class="mb-10">
-        <h1 class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight mb-4">
+        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight mb-4">
           Digital <span class="text-[#00a5c5]">Designer</span>
         </h1>
         <div class="flex items-center gap-3 mb-8">
@@ -40,14 +40,14 @@
       <div class="space-y-12 text-neutral-800">
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">About the role</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">About the role</h2>
           <div class="space-y-4 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <p>This vacancy is for a Mid-Weight Digital Designer. As a Digital Designer, you will be responsible for designing still and animated images for use across digital and print.</p>
           </div>
         </section>
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-6">Key responsibilities</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-6">Key responsibilities</h2>
           <ul class="list-disc pl-5 space-y-2 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <li>Creating stills or animated pieces in accordance with the brief and CI</li>
             <li>Artwork used for Social Media, Google Ads, Websites, Emailers, Flyers, Print Media</li>
@@ -57,7 +57,7 @@
         </section>
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">What we're looking for</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">What we're looking for</h2>
           <ul class="list-disc pl-5 space-y-2 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <li>Attention to detail</li>
             <li>Photoshop and Illustrator</li>
@@ -68,7 +68,7 @@
         </section>
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Required Qualifications / Experience</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Required Qualifications / Experience</h2>
           <ul class="list-disc pl-5 space-y-2 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <li>Minimum of 2 years' experience in digital design</li>
             <li>Experience in Adobe Creative Cloud, particularly Photoshop and Illustrator</li>
@@ -76,14 +76,14 @@
         </section>
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Preferred Qualifications</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Preferred Qualifications</h2>
           <ul class="list-disc pl-5 space-y-2 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <li>Tertiary Qualification in Design or Marketing</li>
           </ul>
         </section>
 
         <section>
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Remuneration</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Remuneration</h2>
           <p class="font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             Negotiable based on qualifications and experience
           </p>
@@ -95,7 +95,7 @@
     <!-- Application Form Section -->
     <div class="w-full bg-[#f2f2f2] py-20 px-4">
       <div class="mx-auto max-w-xl bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-neutral-100">
-        <h2 class="font-poppins text-2xl sm:text-3xl font-bold text-center text-neutral-800 mb-8">
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-bold text-center text-neutral-800 mb-8">
           Apply for this role
         </h2>
 

@@ -42,7 +42,7 @@
                   <Star class="h-3 w-3 fill-[#1ca3c4] text-[#1ca3c4]" />
                   <span>R-E-D LEAD DESK</span>
                 </div>
-                <h3 class="font-sans text-2xl font-semibold tracking-tight text-neutral-900">Get in touch with us</h3>
+                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans text-2xl font-semibold tracking-tight text-neutral-900">Get in touch with us</h3>
                 <p class="font-sans text-sm text-neutral-500 mt-1.5">
                   Submit your details and we will formulate a tailor-made digital marketing roadmap for your brand.
                 </p>
@@ -129,7 +129,7 @@
             </div>
             
             <div class="space-y-2">
-              <h3 class="font-sans text-2xl font-semibold tracking-tight text-neutral-900">Details Received!</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans text-2xl font-semibold tracking-tight text-neutral-900">Details Received!</h3>
               <p class="font-sans text-sm text-neutral-500 max-w-sm leading-relaxed">
                 Thank you <span class="font-semibold text-neutral-900">{{ name }}</span>. Your enquiry for <span class="font-semibold text-neutral-900">{{ projectType }}</span> has been received. Our team will follow up at <span class="font-semibold text-neutral-900">{{ email }}</span>.
               </p>

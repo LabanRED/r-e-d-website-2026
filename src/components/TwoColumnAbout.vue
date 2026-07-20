@@ -33,7 +33,7 @@
           :visible-once="{ opacity: 1, x: 0, transition: { duration: 700 } }"
           class="w-full md:w-175 lg:w-200 lg:col-span-5 space-y-6 flex flex-col items-start"
         >
-          <h3 class="font-sans text-2xl sm:text-[28px] lg:text-2xl font-semibold text-neutral-950 leading-snug tracking-tight">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans text-2xl sm:text-[28px] lg:text-2xl font-semibold text-neutral-950 leading-snug tracking-tight">
             Turn every lead into a meaningful interaction with Post<span class="text-[#2ca8cb]">X</span>.
           </h3>
 
@@ -52,9 +52,18 @@
           <div class="pt-2">
             <NuxtLink
               to="/postx"
-              class="inline-block text-center text-sm sm:text-base text-white bg-black hover:bg-[#1ca3c4] px-7 py-3.5 rounded-full active:scale-95 transition-all duration-300 font-poppins font-medium lowercase"
+              class="group relative inline-flex items-center justify-center text-center text-sm sm:text-base text-white font-poppins font-medium lowercase"
             >
-              Explore PostX and see how it works.
+              <!-- First Rotating Outline (Before) -->
+              <span class="absolute inset-0 w-full h-full rounded-full border border-[#1ca3c4]/40 bg-[#1ca3c4]/10 transition-all duration-500 pointer-events-none group-hover:-rotate-45 group-hover:bg-transparent"></span>
+              
+              <!-- Second Rotating Outline (After) -->
+              <span class="absolute inset-0 w-full h-full rounded-full border border-[#1ca3c4]/40 bg-[#1ca3c4]/10 transition-all duration-500 pointer-events-none group-hover:rotate-45 group-hover:bg-transparent"></span>
+              
+              <!-- Inner Button Surface -->
+              <span class="relative z-10 bg-black hover:bg-[#2fb6e1] px-7 py-3.5 rounded-full active:scale-95 transition-transform duration-300 flex items-center justify-center w-full h-full">
+                Explore PostX and see how it works.
+              </span>
             </NuxtLink>
           </div>
         </div>

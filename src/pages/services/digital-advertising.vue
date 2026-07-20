@@ -24,7 +24,7 @@
           <p class="text-neutral-500 font-poppins text-sm sm:text-base mb-4 tracking-wide">
             Digital Advertising
           </p>
-          <h1 class="font-poppins text-4xl sm:text-6xl lg:text-6xl text-neutral-800 font-semibold leading-[1.1] tracking-tight">
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-6xl lg:text-6xl text-neutral-800 font-semibold leading-[1.1] tracking-tight">
             Driving real <br class="hidden sm:block" />
             growth through <br class="hidden sm:block" />
             <span class="text-[#00a5c5]">data-driven</span> <br class="hidden sm:block" />
@@ -54,7 +54,7 @@
         tailor campaigns around your goals to maximise impact and long-term success.
       </p>
 
-      <h2 class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-800 leading-tight mb-16">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-800 leading-tight mb-16">
         <span class="text-[#00a5c5]">Select</span> a relevant advertising <br class="hidden sm:block" />
         platform for more information
       </h2>
@@ -93,7 +93,7 @@
 
     <!-- Facebook & Instagram Section -->
     <section id="facebook-instagram" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         Facebook <span class="text-[#00a5c5]">&</span> Instagram advertising
       </h2>
 
@@ -107,7 +107,7 @@
 
       <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
         <div class="flex-1">
-          <h3 class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
             Through Facebook and Instagram our specialists can<span class="text-[#00a5c5]">:</span>
           </h3>
 
@@ -156,7 +156,7 @@
 
           <button
             @click="openModal"
-            class="mt-12 bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -174,7 +174,7 @@
     <!-- Google Advertising Section -->
     <div class="w-full h-px bg-neutral-200 my-16 max-w-[1600px] mx-auto px-6 sm:px-8"></div>
     <section id="google" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         Google advertising
       </h2>
       <p class="font-poppins text-neutral-800 text-lg mb-6 leading-relaxed max-w-[1600px]">
@@ -195,7 +195,7 @@
             alt="Google Stats"
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
-          <h3 class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
             Through Google our specialists can<span class="text-[#00a5c5]">:</span>
           </h3>
           <ul class="space-y-6">
@@ -218,7 +218,7 @@
           </ul>
           <button
             @click="openModal"
-            class="mt-12 bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -229,7 +229,7 @@
     <!-- LinkedIn Advertising Section -->
     <div class="w-full h-px bg-neutral-200 my-16 max-w-[1600px] mx-auto px-6 sm:px-8"></div>
     <section id="linkedin" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         LinkedIn advertising
       </h2>
       <p class="font-poppins text-neutral-800 text-lg mb-16 pb-12 leading-relaxed max-w-[1600px]">
@@ -241,7 +241,7 @@
             alt="LinkedIn Stats"
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
-          <h3 class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
             Through LinkedIn our specialists can<span class="text-[#00a5c5]">:</span>
           </h3>
           <ul class="space-y-6">
@@ -264,7 +264,7 @@
           </ul>
           <button
             @click="openModal"
-            class="mt-12 bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -281,7 +281,7 @@
     <!-- TikTok Advertising Section -->
     <div class="w-full h-px bg-neutral-200 my-16 max-w-[1600px] mx-auto px-6 sm:px-8"></div>
     <section id="tiktok" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         TikTok advertising
       </h2>
       <p class="font-poppins text-neutral-800 text-lg mb-6 leading-relaxed max-w-[1600px]">
@@ -302,7 +302,7 @@
             alt="TikTok Stats"
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
-          <h3 class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
             Through TikTok our specialists can<span class="text-[#00a5c5]">:</span>
           </h3>
           <ul class="space-y-6">
@@ -333,7 +333,7 @@
           </ul>
           <button
             @click="openModal"
-            class="mt-12 bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -344,7 +344,7 @@
     <!-- SMS Campaigns Section -->
     <div class="w-full h-px bg-neutral-200 my-16 max-w-[1600px] mx-auto px-6 sm:px-8"></div>
     <section id="sms" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         SMS campaigns
       </h2>
       <p class="font-poppins text-neutral-800 text-lg mb-16 pb-12 leading-relaxed max-w-[1600px]">
@@ -362,7 +362,7 @@
             alt="SMS Stats"
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
-          <h3 class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
             Through SMS campaigns our specialists can<span class="text-[#00a5c5]">:</span>
           </h3>
           <ul class="space-y-6">
@@ -409,7 +409,7 @@
           </ul>
           <button
             @click="openModal"
-            class="mt-12 bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -420,7 +420,7 @@
     <!-- Email Marketing Section -->
     <div class="w-full h-px bg-neutral-200 my-16 max-w-[1600px] mx-auto px-6 sm:px-8"></div>
     <section id="email" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         Email marketing
       </h2>
       <p class="font-poppins text-neutral-800 text-lg mb-16 pb-12 leading-relaxed max-w-[1600px]">
@@ -432,7 +432,7 @@
             alt="Email Stats"
             class="w-screen md:w-[690px] lg-w-[690px] h-auto object-contain mb-10"
           />
-          <h3 class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
             Through email marketing campaigns our specialists can<span class="text-[#00a5c5]">:</span>
           </h3>
           <ul class="space-y-6">
@@ -463,7 +463,7 @@
           </ul>
           <button
             @click="openModal"
-            class="mt-12 bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -479,10 +479,10 @@
 
     <!-- FAQ Section -->
     <section class="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 max-w-[900px] mx-auto flex flex-col items-center">
-      <h3 class="font-poppins text-[#00a5c5] text-lg sm:text-xl mb-2 text-center">
+      <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[#00a5c5] text-lg sm:text-xl mb-2 text-center">
         Why us?
       </h3>
-      <h2 class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 mb-16 text-center tracking-tight">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 mb-16 text-center tracking-tight">
         Frequently asked<br />questions
       </h2>
 
@@ -521,7 +521,7 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer"
+          class="bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
         >
           schedule a meeting today
         </button>

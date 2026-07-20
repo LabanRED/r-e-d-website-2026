@@ -17,7 +17,7 @@
       <!-- Mobile Heading -->
       <div class="flex flex-col sm:hidden pt-2">
         <span class="font-poppins text-[#2c2c2c] text-sm mb-2">Our services</span>
-        <h1 class="font-poppins w-50 text-3xl leading-[1.3] text-[#2c2c2c] font-semibold tracking-tight">
+        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins w-50 text-3xl leading-[1.3] text-[#2c2c2c] font-semibold tracking-tight">
           Driving real growth
           through <span class="text-[#00a5c5]">data-driven</span>
           <span class="text-[#00a5c5]"> digital advertising</span>
@@ -45,7 +45,7 @@
         <!-- Overlay Text -->
         <div class="absolute inset-0 hidden sm:flex flex-col justify-center px-8 sm:px-12 md:px-20 lg:px-32 xl:px-40 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[65%] z-10 pointer-events-none">
           <span class="font-poppins text-[#2c2c2c] text-sm sm:text-base lg:text-lg mb-2 sm:mb-4">Our services</span>
-          <h1 class="font-poppins text-[2.5rem] sm:text-5xl md:text-6xl lg:text-6xl leading-[1.1] text-[#2c2c2c] font-semibold tracking-tight">
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[2.5rem] sm:text-5xl md:text-6xl lg:text-6xl leading-[1.1] text-[#2c2c2c] font-semibold tracking-tight">
             Driving real growth <br class="hidden sm:block" />
             through <span class="text-[#00a5c5]">data-driven</span> <br />
             <span class="text-[#00a5c5]">digital advertising</span>
@@ -84,7 +84,7 @@
               <div class="bg-[#00a5c5] text-white text-[15px] sm:text-base font-semibold py-1.5 px-4 rounded-full mt-1 flex-shrink-0">
                 {{ service.id }}
               </div>
-              <h3 class="font-poppins text-2xl sm:text-3xl text-neutral-800 font-normal leading-tight">
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl text-neutral-800 font-normal leading-tight">
                 {{ service.title }}
               </h3>
             </div>

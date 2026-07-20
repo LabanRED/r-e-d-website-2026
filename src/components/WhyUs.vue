@@ -8,7 +8,7 @@
           <span class="font-poppins text-sm sm:text-base font-normal text-[#1ca3c4] tracking-wide block mb-3">
             Why us?
           </span>
-          <h2 class="font-poppins font-semibold text-2xl md:text-[3.5rem] lg:text-[3.5rem] tracking-tight leading-tight mx-auto">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl md:text-[3.5rem] lg:text-[3.5rem] tracking-tight leading-tight mx-auto">
             A better way to generate leads.
           </h2>
         </div>
@@ -32,7 +32,7 @@
             </span>
 
             <!-- Title -->
-            <h3 class="font-poppins font-semibold text-2xl sm:text-[32px] text-neutral-900 leading-tight mb-4">
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-[32px] text-neutral-900 leading-tight mb-4">
               Without a Specialised Lead Agency
             </h3>
 
@@ -78,7 +78,7 @@
             </span>
 
             <!-- Title -->
-            <h3 class="font-poppins font-semibold text-2xl sm:text-[32px] text-white leading-tight mb-4">
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-[32px] text-white leading-tight mb-4">
               With a Lead-Focused Agency
             </h3>
 
@@ -122,7 +122,7 @@
 
         <button
           @click="$emit('cta-click')"
-          class="font-poppins text-xs tracking-widest text-white bg-black hover:bg-[#1ca3c4] rounded-full py-4 px-10 hover:scale-[1.02] active:scale-95 transition-all duration-300 font-medium lowercase"
+          class="font-poppins text-xs tracking-widest text-white bg-black btn-slide-in rounded-full py-4 px-10 hover:scale-[1.02] active:scale-95 transition-all duration-300 font-medium lowercase"
         >
           schedule a meeting today
         </button>

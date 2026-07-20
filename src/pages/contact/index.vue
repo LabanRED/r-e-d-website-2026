@@ -16,7 +16,7 @@
 
       <!-- Mobile Heading -->
       <div class="block md:hidden mb-6 mt-4">
-        <h1 class="font-poppins justify-center text-center text-4xl font-semibold text-[#222] leading-[1.1]">
+        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins justify-center text-center text-4xl font-semibold text-[#222] leading-[1.1]">
           <span class="text-[#00a5c5]">Contact</span> our<br />team today.
         </h1>
       </div>
@@ -36,7 +36,7 @@
 
         <!-- Desktop Text Overlay -->
         <div class="hidden md:flex absolute inset-0 items-center justify-start px-8 sm:px-12 md:px-16 lg:px-24">
-          <h1 class="font-poppins md:mt-24 text-3xl md:text-6xl lg:text-6xl font-semibold text-[#222] leading-[1.1] max-w-[200px] sm:max-w-sm md:max-w-md">
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins md:mt-24 text-3xl md:text-6xl lg:text-6xl font-semibold text-[#222] leading-[1.1] max-w-[200px] sm:max-w-sm md:max-w-md">
             <span class="text-[#00a5c5]">Contact</span> our<br />team today.
           </h1>
         </div>
@@ -54,7 +54,7 @@
         <div class="w-full max-w-xl bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-neutral-100">
           <div class="flex flex-col items-center mb-8">
             <img loading="lazy" :src="redLogo" alt="R-E-D" class="h-6 mb-4 opacity-90" />
-            <h2 class="font-poppins text-2xl font-semibold text-neutral-800 text-center">
+            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-semibold text-neutral-800 text-center">
               Let's start with the basics
             </h2>
           </div>
@@ -134,7 +134,7 @@
       <!-- Office Information Section -->
       <div class="text-center mb-16">
         <p class="text-[#00a5c5] text-xs font-semibold tracking-widest uppercase mb-2">CONTACT US</p>
-        <h2 class="font-poppins text-3xl md:text-4xl font-semibold text-neutral-800 mb-16">Our office information</h2>
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-4xl font-semibold text-neutral-800 mb-16">Our office information</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           <!-- Column 1 -->
@@ -142,7 +142,7 @@
             <div class="w-12 h-12 rounded-full border border-neutral-200 flex items-center justify-center mb-4">
               <Phone class="w-5 h-5 text-neutral-800" />
             </div>
-            <h3 class="font-poppins text-sm font-semibold text-neutral-800 mb-2 uppercase tracking-wide">Call & Whatsapp</h3>
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-sm font-semibold text-neutral-800 mb-2 uppercase tracking-wide">Call & Whatsapp</h3>
             <p class="text-sm text-neutral-600">+27 10 300 0535</p>
           </div>
 
@@ -151,7 +151,7 @@
             <div class="w-12 h-12 rounded-full border border-neutral-200 flex items-center justify-center mb-4">
               <Clock class="w-5 h-5 text-neutral-800" />
             </div>
-            <h3 class="font-poppins text-sm font-semibold text-neutral-800 mb-2 uppercase tracking-wide">Office hours</h3>
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-sm font-semibold text-neutral-800 mb-2 uppercase tracking-wide">Office hours</h3>
             <p class="text-sm text-neutral-600 leading-relaxed">
               Mon - Fri: 7am - 5pm<br />
               Saturday & Sunday: Closed<br />
@@ -164,7 +164,7 @@
             <div class="w-12 h-12 rounded-full border border-neutral-200 flex items-center justify-center mb-4">
               <MapPin class="w-5 h-5 text-neutral-800" />
             </div>
-            <h3 class="font-poppins text-sm font-semibold text-neutral-800 mb-2 uppercase tracking-wide">Address</h3>
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-sm font-semibold text-neutral-800 mb-2 uppercase tracking-wide">Address</h3>
             <p class="text-sm text-neutral-600 leading-relaxed">
               3 Polo Crescent,<br />
               Woodmead, Sandton
@@ -176,7 +176,7 @@
             <div class="w-12 h-12 rounded-full border border-neutral-200 flex items-center justify-center mb-4">
               <Mail class="w-5 h-5 text-neutral-800" />
             </div>
-            <h3 class="font-poppins text-sm font-semibold text-neutral-800 mb-2 uppercase tracking-wide">Write to us</h3>
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-sm font-semibold text-neutral-800 mb-2 uppercase tracking-wide">Write to us</h3>
             <p class="text-sm text-neutral-600">hello@r-e-d.co.za</p>
           </div>
         </div>
@@ -186,7 +186,7 @@
       <div class="flex flex-col lg:flex-col items-center lg:items-center gap-12 lg:gap-20">
         <div class="w-full mx-auto text-center lg:text-center">
           <p class="text-[#00a5c5] text-xs font-semibold tracking-widest uppercase mb-2">OUR LOCATION</p>
-          <h2 class="font-poppins text-3xl md:text-4xl font-semibold text-neutral-800 mb-6">How to find us</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-4xl font-semibold text-neutral-800 mb-6">How to find us</h2>
           <p class="font-poppins px-4 md:px-48 lg:px-48 text-neutral-600 text-base leading-relaxed mb-8">
             Find your way to R-E-D with ease using our interactive map. Located in a prime business hub, we're accessible from major routes. If you need any assistance getting here, feel free to contact us for directions.
           </p>

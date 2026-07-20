@@ -9,7 +9,7 @@
           <span class="font-poppins text-sm sm:text-base font-normal text-[#1ca3c4] tracking-wide block mb-3">
             Why us?
           </span>
-          <h2 class="font-poppins font-semibold text-4xl sm:text-5xl md:text-[3.5rem] text-neutral-900 tracking-tight leading-none">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-4xl sm:text-5xl md:text-[3.5rem] text-neutral-900 tracking-tight leading-none">
             The R<span class="text-[#1ca3c4]">-</span>E<span class="text-[#1ca3c4]">-</span>D process
           </h2>
         </div>
@@ -21,7 +21,7 @@
           </p>
           <button
             @click="$emit('cta-click')"
-            class="inline-block font-poppins text-xs tracking-widest text-white bg-black hover:bg-[#1ca3c4] rounded-full py-4 px-10 hover:scale-[1.02] active:scale-95 transition-all duration-300 shadow-md font-medium lowercase"
+            class="inline-block font-poppins text-xs tracking-widest text-white bg-black btn-slide-in rounded-full py-4 px-10 hover:scale-[1.02] active:scale-95 transition-all duration-300 shadow-md font-medium lowercase"
           >
             schedule a meeting today
           </button>
@@ -63,7 +63,7 @@
               </div>
               
               <!-- Active Title -->
-              <h3 class="font-poppins font-semibold text-neutral-900 text-lg sm:text-xl leading-snug mb-3 tracking-tight">
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-neutral-900 text-lg sm:text-xl leading-snug mb-3 tracking-tight">
                 {{ step.activeTitle }}
               </h3>
 
@@ -89,7 +89,7 @@
 
               <!-- Card Label / Title -->
               <div class="mt-8">
-                <h3 class="font-poppins font-medium text-xl sm:text-2xl text-neutral-800 leading-tight">
+                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl sm:text-2xl text-neutral-800 leading-tight">
                   {{ step.title }}
                 </h3>
               </div>
