@@ -28,6 +28,8 @@ export const Testimonials: typeof import("../src/components/Testimonials.vue")['
 export const TwoColumnAbout: typeof import("../src/components/TwoColumnAbout.vue")['default']
 export const WhatsAppButton: typeof import("../src/components/WhatsAppButton.vue")['default']
 export const WhyUs: typeof import("../src/components/WhyUs.vue")['default']
+export const FormsCareerForm: typeof import("../src/components/forms/CareerForm.vue")['default']
+export const FormsContactForm: typeof import("../src/components/forms/ContactForm.vue")['default']
 export const HeaderFooter: typeof import("../src/components/header-footer/Footer.vue")['default']
 export const HeaderFooterNavbar: typeof import("../src/components/header-footer/Navbar.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
@@ -70,6 +72,8 @@ export const LazyTestimonials: LazyComponent<typeof import("../src/components/Te
 export const LazyTwoColumnAbout: LazyComponent<typeof import("../src/components/TwoColumnAbout.vue")['default']>
 export const LazyWhatsAppButton: LazyComponent<typeof import("../src/components/WhatsAppButton.vue")['default']>
 export const LazyWhyUs: LazyComponent<typeof import("../src/components/WhyUs.vue")['default']>
+export const LazyFormsCareerForm: LazyComponent<typeof import("../src/components/forms/CareerForm.vue")['default']>
+export const LazyFormsContactForm: LazyComponent<typeof import("../src/components/forms/ContactForm.vue")['default']>
 export const LazyHeaderFooter: LazyComponent<typeof import("../src/components/header-footer/Footer.vue")['default']>
 export const LazyHeaderFooterNavbar: LazyComponent<typeof import("../src/components/header-footer/Navbar.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>

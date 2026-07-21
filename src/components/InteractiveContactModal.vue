@@ -36,91 +36,17 @@
           </button>
 
           <div v-if="!isSubmitted">
-            <form @submit.prevent="handleSubmit" class="space-y-6">
-              <div>
-                <div class="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-[#1ca3c4] mb-3 select-none">
-                  <Star class="h-3 w-3 fill-[#1ca3c4] text-[#1ca3c4]" />
-                  <span>R-E-D LEAD DESK</span>
-                </div>
-                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans text-2xl font-semibold tracking-tight text-neutral-900">Get in touch with us</h3>
-                <p class="font-sans text-sm text-neutral-500 mt-1.5">
-                  Submit your details and we will formulate a tailor-made digital marketing roadmap for your brand.
-                </p>
+            <div class="mb-6">
+              <div class="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-[#1ca3c4] mb-3 select-none">
+                <Star class="h-3 w-3 fill-[#1ca3c4] text-[#1ca3c4]" />
+                <span>R-E-D LEAD DESK</span>
               </div>
-
-              <div class="space-y-4">
-                <!-- Name Input -->
-                <div class="space-y-1.5">
-                  <label class="block text-xs font-bold tracking-wider text-neutral-500 uppercase font-mono">
-                    Your Name *
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    v-model="name"
-                    placeholder="e.g. Jane Doe"
-                    class="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 focus:border-[#1ca3c4] focus:outline-none focus:ring-1 focus:ring-[#1ca3c4] transition-colors duration-200"
-                  />
-                </div>
-
-                <!-- Email Input -->
-                <div class="space-y-1.5">
-                  <label class="block text-xs font-bold tracking-wider text-neutral-500 uppercase font-mono">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    required
-                    v-model="email"
-                    placeholder="e.g. jane@company.com"
-                    class="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 focus:border-[#1ca3c4] focus:outline-none focus:ring-1 focus:ring-[#1ca3c4] transition-colors duration-200"
-                  />
-                </div>
-
-                <!-- Project Type -->
-                <div class="space-y-1.5">
-                  <label class="block text-xs font-bold tracking-wider text-neutral-500 uppercase font-mono">
-                    Core Objective
-                  </label>
-                  <select
-                    v-model="projectType"
-                    class="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 focus:border-[#1ca3c4] focus:outline-none focus:ring-1 focus:ring-[#1ca3c4] transition-colors duration-200"
-                  >
-                    <option>Lead Generation & Funnels</option>
-                    <option>Social Media Marketing</option>
-                    <option>Google Advertising</option>
-                    <option>Website Development & Maintenance</option>
-                    <option>Full Scale Marketing Support</option>
-                    <option>PostX Platform</option>
-                  </select>
-                </div>
-
-                <!-- Message -->
-                <div class="space-y-1.5">
-                  <label class="block text-xs font-bold tracking-wider text-neutral-500 uppercase font-mono">
-                    Brief Description
-                  </label>
-                  <textarea
-                    rows="3"
-                    v-model="message"
-                    placeholder="Tell us about your brand or requirements..."
-                    class="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 focus:border-[#1ca3c4] focus:outline-none focus:ring-1 focus:ring-[#1ca3c4] transition-colors duration-200 resize-none"
-                  ></textarea>
-                </div>
-              </div>
-
-              <button
-                type="submit"
-                :disabled="isLoading"
-                class="flex w-full items-center justify-center gap-2 rounded-xl bg-black hover:bg-[#1ca3c4] py-3.5 text-sm text-white shadow-lg shadow-[#1ca3c4]/10 active:scale-[0.98] transition-all duration-300 disabled:opacity-50 font-poppins font-medium lowercase"
-              >
-                <div v-if="isLoading" class="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
-                <template v-else>
-                  <span>Submit Details</span>
-                  <Send class="h-4 w-4" />
-                </template>
-              </button>
-            </form>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans text-2xl font-semibold tracking-tight text-neutral-900">Get in touch with us</h3>
+              <p class="font-sans text-sm text-neutral-500 mt-1.5">
+                Submit your details and we will formulate a tailor-made digital marketing roadmap for your brand.
+              </p>
+            </div>
+            <ContactForm variant="modal" @success="handleSuccess" />
           </div>
 
           <div v-else class="flex flex-col items-center text-center py-8 space-y-6">
@@ -131,7 +57,7 @@
             <div class="space-y-2">
               <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans text-2xl font-semibold tracking-tight text-neutral-900">Details Received!</h3>
               <p class="font-sans text-sm text-neutral-500 max-w-sm leading-relaxed">
-                Thank you <span class="font-semibold text-neutral-900">{{ name }}</span>. Your enquiry for <span class="font-semibold text-neutral-900">{{ projectType }}</span> has been received. Our team will follow up at <span class="font-semibold text-neutral-900">{{ email }}</span>.
+                Thank you <span class="font-semibold text-neutral-900">{{ submittedName }}</span>. Your enquiry for <span class="font-semibold text-neutral-900">{{ submittedService }}</span> has been received. Our team will follow up at <span class="font-semibold text-neutral-900">{{ submittedEmail }}</span>.
               </p>
             </div>
 
@@ -150,34 +76,25 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { X, Send, CheckCircle2, Star } from 'lucide-vue-next';
+import { X, CheckCircle2, Star } from 'lucide-vue-next';
+import ContactForm from '~/components/forms/ContactForm.vue';
 
 const props = defineProps<{ isOpen: boolean }>();
 const emit = defineEmits(['close']);
 
-const name = ref('');
-const email = ref('');
-const projectType = ref('Frontend Engineering');
-const message = ref('');
 const isSubmitted = ref(false);
-const isLoading = ref(false);
+const submittedName = ref('');
+const submittedEmail = ref('');
+const submittedService = ref('');
 
-const handleSubmit = () => {
-  if (!name.value || !email.value) return;
-
-  isLoading.value = true;
-  // Simulate API request
-  setTimeout(() => {
-    isLoading.value = false;
-    isSubmitted.value = true;
-  }, 1000);
+const handleSuccess = (data: any) => {
+  submittedName.value = data.name;
+  submittedEmail.value = data.email;
+  submittedService.value = data.service;
+  isSubmitted.value = true;
 };
 
 const handleReset = () => {
-  name.value = '';
-  email.value = '';
-  projectType.value = 'Frontend Engineering';
-  message.value = '';
   isSubmitted.value = false;
   emit('close');
 };

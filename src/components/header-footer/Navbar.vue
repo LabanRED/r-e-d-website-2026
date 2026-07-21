@@ -36,8 +36,24 @@
           </NuxtLink>
         </div>
 
-        <!-- CTA (Desktop) - Vibrant Cyan Pill Button -->
-        <div class="hidden md:flex items-center">
+        <!-- Right side: Dev Toggle & CTA -->
+        <div class="hidden md:flex items-center gap-4">
+          <!-- Dev Mode View Toggle -->
+          <ClientOnly>
+            <div v-if="isDev" class="flex items-center gap-1 bg-neutral-900/40 rounded-full p-1 border border-neutral-700/50 backdrop-blur-sm">
+              <button @click="setPreviewMode('mobile')" :class="['p-1.5 rounded-full transition-colors', activePreviewMode === 'mobile' ? 'bg-neutral-700 text-white' : 'text-neutral-400 hover:text-white hover:bg-neutral-800']" title="Mobile View">
+                <Smartphone class="w-4 h-4" />
+              </button>
+              <button @click="setPreviewMode('tablet')" :class="['p-1.5 rounded-full transition-colors', activePreviewMode === 'tablet' ? 'bg-neutral-700 text-white' : 'text-neutral-400 hover:text-white hover:bg-neutral-800']" title="Tablet View">
+                <Tablet class="w-4 h-4" />
+              </button>
+              <button @click="setPreviewMode('desktop')" :class="['p-1.5 rounded-full transition-colors', activePreviewMode === 'desktop' ? 'bg-neutral-700 text-white' : 'text-neutral-400 hover:text-white hover:bg-neutral-800']" title="Desktop View">
+                <Monitor class="w-4 h-4" />
+              </button>
+            </div>
+          </ClientOnly>
+
+          <!-- CTA (Desktop) - Vibrant Cyan Pill Button -->
           <NuxtLink
             to="/contact"
             class="h-10.5 inline-flex items-center justify-center rounded-full bg-[#00a2ca] hover:bg-[#00b5e2] px-7 text-sm text-white shadow-md shadow-cyan-500/10 transition-all duration-300 hover:scale-[1.02] active:scale-95 font-poppins font-medium lowercase"
@@ -95,6 +111,21 @@
             </template>
           </NuxtLink>
           <div class="pt-4 border-t border-neutral-900 mt-2">
+            <!-- Mobile Dev Mode Toggle -->
+            <ClientOnly>
+              <div v-if="isDev" class="flex items-center justify-center gap-2 mb-4 bg-neutral-900/40 rounded-xl p-2 border border-neutral-800">
+                <button @click="setPreviewMode('mobile')" :class="['p-2 rounded-full transition-colors', activePreviewMode === 'mobile' ? 'bg-neutral-700 text-white' : 'text-neutral-400 hover:text-white']" title="Mobile View">
+                  <Smartphone class="w-5 h-5" />
+                </button>
+                <button @click="setPreviewMode('tablet')" :class="['p-2 rounded-full transition-colors', activePreviewMode === 'tablet' ? 'bg-neutral-700 text-white' : 'text-neutral-400 hover:text-white']" title="Tablet View">
+                  <Tablet class="w-5 h-5" />
+                </button>
+                <button @click="setPreviewMode('desktop')" :class="['p-2 rounded-full transition-colors', activePreviewMode === 'desktop' ? 'bg-neutral-700 text-white' : 'text-neutral-400 hover:text-white']" title="Desktop View">
+                  <Monitor class="w-5 h-5" />
+                </button>
+              </div>
+            </ClientOnly>
+
             <NuxtLink
               to="/contact"
               @click="isOpen = false"
@@ -110,14 +141,46 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import { Menu, X } from 'lucide-vue-next';
+import { ref, onMounted, computed } from 'vue';
+import { Menu, X, Smartphone, Tablet, Monitor } from 'lucide-vue-next';
 import redWhiteLogo from '~/assets/images/r-e-d-white-logo.svg';
 import postXWhiteLogo from '~/assets/images/PostX_Web_white_Logo.png';
 
 const emit = defineEmits(['cta-click']);
 
 const isOpen = ref(false);
+
+const isDev = import.meta.env.DEV;
+const previewMode = useState('previewMode', () => 'desktop');
+const inIframe = ref(false);
+const windowWidth = ref(1024);
+
+onMounted(() => {
+  if (window.self !== window.top) {
+    inIframe.value = true;
+    windowWidth.value = window.innerWidth;
+    window.addEventListener('resize', () => {
+      windowWidth.value = window.innerWidth;
+    });
+  }
+});
+
+const activePreviewMode = computed(() => {
+  if (inIframe.value) {
+    if (windowWidth.value <= 400) return 'mobile';
+    if (windowWidth.value <= 800) return 'tablet';
+    return 'desktop';
+  }
+  return previewMode.value;
+});
+
+const setPreviewMode = (mode: string) => {
+  if (inIframe.value) {
+    window.parent.postMessage({ type: 'set-preview-mode', mode }, '*');
+  } else {
+    previewMode.value = mode;
+  }
+};
 
 const links = [
   { label: 'PostX', href: '/postx', isImage: true },

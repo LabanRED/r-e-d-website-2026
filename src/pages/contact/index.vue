@@ -59,75 +59,7 @@
             </h2>
           </div>
 
-          <form class="space-y-5" @submit.prevent="handleSubmit">
-            <div>
-              <label class="block text-[11px] font-semibold text-neutral-500 mb-1.5 ml-1 uppercase tracking-wider">Name</label>
-              <input
-                type="text"
-                v-model="name"
-                class="w-full bg-[#f8f8f8] border border-transparent rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#00a5c5] transition-colors"
-                placeholder="Jane Doe"
-                required
-              />
-            </div>
-
-            <div>
-              <label class="block text-[11px] font-semibold text-neutral-500 mb-1.5 ml-1 uppercase tracking-wider">Phone number</label>
-              <input
-                type="tel"
-                v-model="phone"
-                class="w-full bg-[#f8f8f8] border border-transparent rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#00a5c5] transition-colors"
-                placeholder="e.g. 082 123 4567"
-                required
-              />
-            </div>
-
-            <div>
-              <label class="block text-[11px] font-semibold text-neutral-500 mb-1.5 ml-1 uppercase tracking-wider">Email</label>
-              <input
-                type="email"
-                v-model="email"
-                class="w-full bg-[#f8f8f8] border border-transparent rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#00a5c5] transition-colors"
-                placeholder="jane@company.com"
-                required
-              />
-            </div>
-
-            <div>
-              <label class="block text-[11px] font-semibold text-neutral-500 mb-1.5 ml-1 uppercase tracking-wider">Select a service</label>
-              <select
-                v-model="service"
-                class="w-full bg-[#f8f8f8] border border-transparent rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#00a5c5] transition-colors appearance-none text-neutral-700"
-              >
-                <option value="Select a service" disabled>Select a service</option>
-                <option value="Digital Advertising">Digital Advertising</option>
-                <option value="Social Media Management">Social Media Management</option>
-                <option value="Website Development">Website Development</option>
-                <option value="Online Reputation">Online Reputation</option>
-                <option value="Location Listing">Location Listing</option>
-                <option value="PostX">PostX</option>
-              </select>
-            </div>
-
-            <div>
-              <label class="block text-[11px] font-semibold text-neutral-500 mb-1.5 ml-1 uppercase tracking-wider">Message</label>
-              <textarea
-                rows="4"
-                v-model="message"
-                class="w-full bg-[#f8f8f8] border border-transparent rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-[#00a5c5] transition-colors resize-none"
-                placeholder="How can we help you?"
-              ></textarea>
-            </div>
-
-            <div class="pt-2">
-              <button
-                type="submit"
-                class="w-full bg-black hover:bg-[#00a5c5] text-white font-poppins text-sm py-3.5 rounded-full transition-colors shadow-sm font-medium lowercase cursor-pointer"
-              >
-                Submit Request
-              </button>
-            </div>
-          </form>
+          <ContactForm variant="page" @success="handleSuccess" />
         </div>
       </div>
 
@@ -227,16 +159,10 @@ import { ArrowLeft, Phone, Clock, MapPin, Mail } from 'lucide-vue-next';
 import redLogo from '~/assets/images/r-e-d-dark-logo.svg';
 import desktopBanner from '~/assets/images/r-e-d-contact-us-desktop-banner.webp';
 import mobileBanner from '~/assets/images/r-e-d-contact-us-mobile-banner.webp';
+import ContactForm from '~/components/forms/ContactForm.vue';
 
-const name = ref('');
-const phone = ref('');
-const email = ref('');
-const service = ref('Select a service');
-const message = ref('');
-
-const handleSubmit = () => {
-  // Handle form submission
-  console.log('Form submitted:', { name: name.value, phone: phone.value, email: email.value, service: service.value, message: message.value });
+const handleSuccess = (data: any) => {
+  console.log('Form submitted:', data);
 };
 
 useHead({
