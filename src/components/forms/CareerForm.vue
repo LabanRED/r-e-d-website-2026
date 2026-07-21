@@ -115,15 +115,17 @@ const handleSubmit = async () => {
   
   try {
     const formData = new FormData();
+    formData.append('access_key', 'e4e9c81b-a340-4967-be21-9671338ae6d7');
+    formData.append('subject', `New Career Application from ${applicantName.value}`);
     formData.append('name', applicantName.value);
     formData.append('email', email.value);
     formData.append('portfolio', portfolio.value);
     formData.append('motivation', motivation.value);
     if (file.value) {
-      formData.append('file', file.value);
+      formData.append('attachment', file.value);
     }
 
-    await $fetch('/api/career', {
+    await $fetch('https://api.web3forms.com/submit', {
       method: 'POST',
       body: formData
     });

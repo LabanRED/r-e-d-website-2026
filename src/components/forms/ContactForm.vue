@@ -133,9 +133,15 @@ const handleSubmit = async () => {
   isLoading.value = true;
   
   try {
-    await $fetch('/api/contact', {
+    await $fetch('https://api.web3forms.com/submit', {
       method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
       body: {
+        access_key: 'e4e9c81b-a340-4967-be21-9671338ae6d7',
+        subject: `New Lead: ${service.value} from ${fullName.value}`,
         name: fullName.value,
         phone: phone.value,
         email: email.value,
