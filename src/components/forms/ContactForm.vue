@@ -127,15 +127,23 @@ const buttonClass = computed(() => {
     : 'w-full bg-black hover:bg-[#00a5c5] text-white font-poppins text-sm py-3.5 rounded-full transition-colors shadow-sm font-medium lowercase cursor-pointer flex justify-center items-center h-[52px]';
 });
 
-const handleSubmit = () => {
+const handleSubmit = async () => {
   if (!fullName.value || !email.value) return;
 
   isLoading.value = true;
   
-  // Simulate API request
-  setTimeout(() => {
-    isLoading.value = false;
-    
+  try {
+    await $fetch('/api/contact', {
+      method: 'POST',
+      body: {
+        name: fullName.value,
+        phone: phone.value,
+        email: email.value,
+        service: service.value,
+        message: message.value
+      }
+    });
+
     emit('success', {
       name: fullName.value,
       phone: phone.value,
@@ -153,6 +161,11 @@ const handleSubmit = () => {
       message.value = '';
       alert('Your request has been successfully submitted! We will be in touch shortly.');
     }
-  }, 1000);
+  } catch (error) {
+    console.error('Submission error:', error);
+    alert('There was an error sending your message. Please check your network and try again.');
+  } finally {
+    isLoading.value = false;
+  }
 };
 </script>

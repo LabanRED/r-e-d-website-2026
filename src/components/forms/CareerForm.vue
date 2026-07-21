@@ -108,15 +108,26 @@ const handleFileChange = (e: Event) => {
   }
 };
 
-const handleSubmit = () => {
+const handleSubmit = async () => {
   if (!applicantName.value || !email.value) return;
 
   isLoading.value = true;
   
-  // Simulate API request
-  setTimeout(() => {
-    isLoading.value = false;
-    
+  try {
+    const formData = new FormData();
+    formData.append('name', applicantName.value);
+    formData.append('email', email.value);
+    formData.append('portfolio', portfolio.value);
+    formData.append('motivation', motivation.value);
+    if (file.value) {
+      formData.append('file', file.value);
+    }
+
+    await $fetch('/api/career', {
+      method: 'POST',
+      body: formData
+    });
+
     emit('success', {
       name: applicantName.value,
       email: email.value,
@@ -134,6 +145,11 @@ const handleSubmit = () => {
     file.value = null;
     
     alert('Your application has been successfully submitted! We will review it and get back to you.');
-  }, 1000);
+  } catch (error) {
+    console.error('Submission error:', error);
+    alert('There was an error sending your application. Please check your network and try again.');
+  } finally {
+    isLoading.value = false;
+  }
 };
 </script>

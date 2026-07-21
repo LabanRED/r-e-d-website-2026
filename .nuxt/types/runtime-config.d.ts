@@ -10,6 +10,16 @@ import { RuntimeConfig as UserRuntimeConfig, PublicRuntimeConfig as UserPublicRu
       cdnURL: string,
    },
 
+   smtpHost: string,
+
+   smtpPort: string,
+
+   smtpUser: string,
+
+   smtpPass: string,
+
+   leadDeskEmail: string,
+
    nitro: {
       envPrefix: string,
    },
