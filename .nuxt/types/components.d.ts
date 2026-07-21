@@ -14,24 +14,24 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
-  AnimatedCounter: typeof import("../../src/components/AnimatedCounter.vue")['default']
-  EstablishPresence: typeof import("../../src/components/EstablishPresence.vue")['default']
-  FeatureRow: typeof import("../../src/components/FeatureRow.vue")['default']
-  Hero: typeof import("../../src/components/Hero.vue")['default']
-  InteractiveContactModal: typeof import("../../src/components/InteractiveContactModal.vue")['default']
-  LogoCarousel: typeof import("../../src/components/LogoCarousel.vue")['default']
-  Partnerships: typeof import("../../src/components/Partnerships.vue")['default']
-  RedProcess: typeof import("../../src/components/RedProcess.vue")['default']
-  ServicesGrid: typeof import("../../src/components/ServicesGrid.vue")['default']
-  StatsBar: typeof import("../../src/components/StatsBar.vue")['default']
-  Testimonials: typeof import("../../src/components/Testimonials.vue")['default']
-  TwoColumnAbout: typeof import("../../src/components/TwoColumnAbout.vue")['default']
-  WhatsAppButton: typeof import("../../src/components/WhatsAppButton.vue")['default']
-  WhyUs: typeof import("../../src/components/WhyUs.vue")['default']
-  FormsCareerForm: typeof import("../../src/components/forms/CareerForm.vue")['default']
-  FormsContactForm: typeof import("../../src/components/forms/ContactForm.vue")['default']
-  HeaderFooter: typeof import("../../src/components/header-footer/Footer.vue")['default']
-  HeaderFooterNavbar: typeof import("../../src/components/header-footer/Navbar.vue")['default']
+  CareerForm: typeof import("../../src/components/forms/CareerForm.vue")['default']
+  ContactForm: typeof import("../../src/components/forms/ContactForm.vue")['default']
+  Footer: typeof import("../../src/components/header-footer/Footer.vue")['default']
+  Navbar: typeof import("../../src/components/header-footer/Navbar.vue")['default']
+  AnimatedCounter: typeof import("../../src/components/unsorted/AnimatedCounter.vue")['default']
+  EstablishPresence: typeof import("../../src/components/unsorted/EstablishPresence.vue")['default']
+  FeatureRow: typeof import("../../src/components/unsorted/FeatureRow.vue")['default']
+  Hero: typeof import("../../src/components/unsorted/Hero.vue")['default']
+  InteractiveContactModal: typeof import("../../src/components/unsorted/InteractiveContactModal.vue")['default']
+  LogoCarousel: typeof import("../../src/components/unsorted/LogoCarousel.vue")['default']
+  Partnerships: typeof import("../../src/components/unsorted/Partnerships.vue")['default']
+  RedProcess: typeof import("../../src/components/unsorted/RedProcess.vue")['default']
+  ServicesGrid: typeof import("../../src/components/unsorted/ServicesGrid.vue")['default']
+  StatsBar: typeof import("../../src/components/unsorted/StatsBar.vue")['default']
+  Testimonials: typeof import("../../src/components/unsorted/Testimonials.vue")['default']
+  TwoColumnAbout: typeof import("../../src/components/unsorted/TwoColumnAbout.vue")['default']
+  WhatsAppButton: typeof import("../../src/components/unsorted/WhatsAppButton.vue")['default']
+  WhyUs: typeof import("../../src/components/unsorted/WhyUs.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   NuxtErrorBoundary: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -58,24 +58,24 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
-  LazyAnimatedCounter: LazyComponent<typeof import("../../src/components/AnimatedCounter.vue")['default']>
-  LazyEstablishPresence: LazyComponent<typeof import("../../src/components/EstablishPresence.vue")['default']>
-  LazyFeatureRow: LazyComponent<typeof import("../../src/components/FeatureRow.vue")['default']>
-  LazyHero: LazyComponent<typeof import("../../src/components/Hero.vue")['default']>
-  LazyInteractiveContactModal: LazyComponent<typeof import("../../src/components/InteractiveContactModal.vue")['default']>
-  LazyLogoCarousel: LazyComponent<typeof import("../../src/components/LogoCarousel.vue")['default']>
-  LazyPartnerships: LazyComponent<typeof import("../../src/components/Partnerships.vue")['default']>
-  LazyRedProcess: LazyComponent<typeof import("../../src/components/RedProcess.vue")['default']>
-  LazyServicesGrid: LazyComponent<typeof import("../../src/components/ServicesGrid.vue")['default']>
-  LazyStatsBar: LazyComponent<typeof import("../../src/components/StatsBar.vue")['default']>
-  LazyTestimonials: LazyComponent<typeof import("../../src/components/Testimonials.vue")['default']>
-  LazyTwoColumnAbout: LazyComponent<typeof import("../../src/components/TwoColumnAbout.vue")['default']>
-  LazyWhatsAppButton: LazyComponent<typeof import("../../src/components/WhatsAppButton.vue")['default']>
-  LazyWhyUs: LazyComponent<typeof import("../../src/components/WhyUs.vue")['default']>
-  LazyFormsCareerForm: LazyComponent<typeof import("../../src/components/forms/CareerForm.vue")['default']>
-  LazyFormsContactForm: LazyComponent<typeof import("../../src/components/forms/ContactForm.vue")['default']>
-  LazyHeaderFooter: LazyComponent<typeof import("../../src/components/header-footer/Footer.vue")['default']>
-  LazyHeaderFooterNavbar: LazyComponent<typeof import("../../src/components/header-footer/Navbar.vue")['default']>
+  LazyCareerForm: LazyComponent<typeof import("../../src/components/forms/CareerForm.vue")['default']>
+  LazyContactForm: LazyComponent<typeof import("../../src/components/forms/ContactForm.vue")['default']>
+  LazyFooter: LazyComponent<typeof import("../../src/components/header-footer/Footer.vue")['default']>
+  LazyNavbar: LazyComponent<typeof import("../../src/components/header-footer/Navbar.vue")['default']>
+  LazyAnimatedCounter: LazyComponent<typeof import("../../src/components/unsorted/AnimatedCounter.vue")['default']>
+  LazyEstablishPresence: LazyComponent<typeof import("../../src/components/unsorted/EstablishPresence.vue")['default']>
+  LazyFeatureRow: LazyComponent<typeof import("../../src/components/unsorted/FeatureRow.vue")['default']>
+  LazyHero: LazyComponent<typeof import("../../src/components/unsorted/Hero.vue")['default']>
+  LazyInteractiveContactModal: LazyComponent<typeof import("../../src/components/unsorted/InteractiveContactModal.vue")['default']>
+  LazyLogoCarousel: LazyComponent<typeof import("../../src/components/unsorted/LogoCarousel.vue")['default']>
+  LazyPartnerships: LazyComponent<typeof import("../../src/components/unsorted/Partnerships.vue")['default']>
+  LazyRedProcess: LazyComponent<typeof import("../../src/components/unsorted/RedProcess.vue")['default']>
+  LazyServicesGrid: LazyComponent<typeof import("../../src/components/unsorted/ServicesGrid.vue")['default']>
+  LazyStatsBar: LazyComponent<typeof import("../../src/components/unsorted/StatsBar.vue")['default']>
+  LazyTestimonials: LazyComponent<typeof import("../../src/components/unsorted/Testimonials.vue")['default']>
+  LazyTwoColumnAbout: LazyComponent<typeof import("../../src/components/unsorted/TwoColumnAbout.vue")['default']>
+  LazyWhatsAppButton: LazyComponent<typeof import("../../src/components/unsorted/WhatsAppButton.vue")['default']>
+  LazyWhyUs: LazyComponent<typeof import("../../src/components/unsorted/WhyUs.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   LazyNuxtErrorBoundary: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

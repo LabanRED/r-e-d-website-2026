@@ -3,6 +3,12 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   srcDir: 'src/',
+  components: [
+    {
+      path: '~/components',
+      pathPrefix: false,
+    },
+  ],
   runtimeConfig: {
     smtpHost: process.env.SMTP_HOST || '',
     smtpPort: process.env.SMTP_PORT || '587',

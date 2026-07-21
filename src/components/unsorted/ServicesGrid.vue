@@ -84,12 +84,10 @@
           class="group relative rounded-4xl overflow-hidden min-h-87.5 lg:min-h-full shadow-sm"
         >
           <img
-            v-motion
-            :hovered="{ scale: 1.1, transition: { duration: 800, ease: 'easeOut' } }"
             :src="servicesImg"
             alt="Team collaborating on design and marketing plans"
             referrerpolicy="no-referrer"
-            class="absolute inset-0 w-full h-full object-cover origin-center"
+            class="absolute inset-0 w-full h-full object-cover origin-center transform scale-100 transition-transform duration-1000 ease-in-out group-hover:scale-105 will-change-transform"
           />
         </div>
 

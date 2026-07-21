@@ -85,7 +85,7 @@
             </div>
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-sm font-semibold text-neutral-800 mb-2 uppercase tracking-wide">Office hours</h3>
             <p class="text-sm text-neutral-600 leading-relaxed">
-              Mon - Fri: 7am - 5pm<br />
+              Mon - Fri: 8am - 5pm<br />
               Saturday & Sunday: Closed<br />
               Public Holidays: Closed
             </p>

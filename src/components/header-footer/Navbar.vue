@@ -24,9 +24,9 @@
           >
             <template v-if="link.isImage">
               <img
-                :src="postXWhiteLogo"
+                :src="link.imageSrc"
                 :alt="link.label"
-                class="h-5 md:h-6 object-contain select-none opacity-85 hover:opacity-100 transition-opacity duration-200"
+                :class="[link.imageClass || 'h-5 md:h-6', 'object-contain select-none opacity-85 hover:opacity-100 transition-opacity duration-200']"
                 referrerpolicy="no-referrer"
               />
             </template>
@@ -100,9 +100,9 @@
           >
             <template v-if="link.isImage">
               <img
-                :src="postXWhiteLogo"
+                :src="link.imageSrc"
                 :alt="link.label"
-                class="h-5 object-contain select-none"
+                :class="[link.mobileImageClass || 'h-5', 'object-contain select-none']"
                 referrerpolicy="no-referrer"
               />
             </template>
@@ -145,6 +145,7 @@ import { ref, onMounted, computed } from 'vue';
 import { Menu, X, Smartphone, Tablet, Monitor } from 'lucide-vue-next';
 import redWhiteLogo from '~/assets/images/r-e-d-white-logo.svg';
 import postXWhiteLogo from '~/assets/images/PostX_Web_white_Logo.png';
+import conexaLogo from '~/assets/images/conexa-logo.svg';
 
 const emit = defineEmits(['cta-click']);
 
@@ -183,7 +184,8 @@ const setPreviewMode = (mode: string) => {
 };
 
 const links = [
-  { label: 'PostX', href: '/postx', isImage: true },
+  { label: 'PostX', href: '/postx', isImage: true, imageSrc: postXWhiteLogo },
+  { label: 'Conexa', href: '/conexa', isImage: true, imageSrc: conexaLogo, imageClass: 'h-[17px] md:h-[21px]', mobileImageClass: 'h-[17px]' },
   { label: 'Why Us', href: '/#why-us' },
   { label: 'Services', href: '/services' },
   { label: 'Blogs', href: '/blogs' },

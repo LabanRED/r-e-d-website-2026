@@ -51,12 +51,12 @@
 
             <!-- Action Button -->
             <div>
-              <button
-                @click="$emit('cta-click')"
-                class="font-poppins text-xs text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-white! hover:text-[#0866FF]! px-6 py-3 rounded-full transition-all duration-300 font-medium lowercase"
+              <NuxtLink
+                to="/contact"
+                class="inline-block font-poppins text-xs text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-white! hover:text-[#0866FF]! px-6 py-3 rounded-full transition-all duration-300 font-medium lowercase"
               >
                 Partner with us today
-              </button>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -107,12 +107,12 @@
 
             <!-- Action Button -->
             <div>
-              <button
-                @click="$emit('cta-click')"
-                class="font-poppins text-xs text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-white! hover:text-[#4F81BD]! px-6 py-3 rounded-full transition-all duration-300 font-medium lowercase"
+              <NuxtLink
+                to="/contact"
+                class="inline-block font-poppins text-xs text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-white! hover:text-[#4F81BD]! px-6 py-3 rounded-full transition-all duration-300 font-medium lowercase"
               >
                 Partner with us today
-              </button>
+              </NuxtLink>
             </div>
           </div>
         </div>
