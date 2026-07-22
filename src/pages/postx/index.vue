@@ -428,10 +428,10 @@
             class="bg-[#f1fafc] rounded-[24px] p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
           >
             <div>
-              <div class="w-12 h-12 flex items-center justify-center mb-6 ">
+              <div class="w-12 h-12 flex items-center justify-center mb-6">
                 <img loading="lazy" :src="leadQualIcon"
                   alt="Lead Qualification Icon"
-                  class="w-12 h-12 object-contain"
+                  class="w-12 h-12 object-contain transition-transform duration-300 hover:scale-105"
                   referrerpolicy="no-referrer"
                 />
               </div>
@@ -450,10 +450,10 @@
             class="bg-[#f1fafc] rounded-[24px] p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
           >
             <div>
-              <div class="w-12 h-12 flex items-center justify-center mb-6 ">
+              <div class="w-12 h-12 flex items-center justify-center mb-6">
                 <img loading="lazy" :src="intelConversationsIcon"
                   alt="Intelligent Conversations Icon"
-                  class="w-12 h-12 object-contain"
+                  class="w-12 h-12 object-contain transition-transform duration-300 hover:scale-105"
                   referrerpolicy="no-referrer"
                 />
               </div>
@@ -472,10 +472,10 @@
             class="bg-[#f1fafc] rounded-[24px] p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
           >
             <div>
-              <div class="w-12 h-12 flex items-center justify-center mb-6 ">
+              <div class="w-12 h-12 flex items-center justify-center mb-6">
                 <img loading="lazy" :src="teamFocusIcon"
                   alt="Team Focus Icon"
-                  class="w-12 h-12 object-contain"
+                  class="w-12 h-12 object-contain transition-transform duration-300 hover:scale-105"
                   referrerpolicy="no-referrer"
                 />
               </div>
@@ -855,14 +855,14 @@
           <!-- Left Column Features -->
           <div class="col-span-3 flex flex-col gap-16 relative z-10">
             <div>
-              <img loading="lazy" :src="builtNotLicensedIcon" alt="Built, not licensed" class="h-8 md:h-10 w-auto mb-5" />
+              <img loading="lazy" :src="builtNotLicensedIcon" alt="Built, not licensed" class="h-8 md:h-10 w-auto mb-5 transition-transform duration-300 hover:scale-105" />
               <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">Built, not licensed</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
                 Build from the ground up for dealer workflows and your local systems & compliance.
               </p>
             </div>
             <div>
-              <img loading="lazy" :src="inhouseDevIcon" alt="Developed 100% in-house" class="h-8 md:h-10 w-auto mb-5" />
+              <img loading="lazy" :src="inhouseDevIcon" alt="Developed 100% in-house" class="h-8 md:h-10 w-auto mb-5 transition-transform duration-300 hover:scale-105" />
               <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">Developed 100% in-house</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
                 No Third-party dependencies. Every feature is built, owned, and evolved by our team.
@@ -878,14 +878,14 @@
           <!-- Right Column Features -->
           <div class="col-span-3 flex flex-col gap-16 relative z-10">
             <div>
-              <img loading="lazy" :src="unlimitedUsersIcon" alt="Unlimited users" class="h-8 md:h-10 w-auto mb-5" />
+              <img loading="lazy" :src="unlimitedUsersIcon" alt="Unlimited users" class="h-8 md:h-10 w-auto mb-5 transition-transform duration-300 hover:scale-105" />
               <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">Unlimited users</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
                 No per-seat pricing games. Your whole team gets access - sales, service, F&I, parts, everyone.
               </p>
             </div>
             <div>
-              <img loading="lazy" :src="inhouseSupportIcon" alt="In-house support team" class="h-8 md:h-10 w-auto mb-5" />
+              <img loading="lazy" :src="inhouseSupportIcon" alt="In-house support team" class="h-8 md:h-10 w-auto mb-5 transition-transform duration-300 hover:scale-105" />
               <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-semibold text-neutral-800 mb-3">In-house support team</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
                 Direct access to the people who built it, No tickets disappearing into a vendor's queue
@@ -897,28 +897,28 @@
         <!-- Mobile Layout (1 Column Stacked Features) -->
         <div class="flex flex-col lg:hidden gap-12 mt-8">
           <div>
-            <img loading="lazy" :src="builtNotLicensedIcon" alt="Built, not licensed" class="h-9 w-auto mb-4" />
+            <img loading="lazy" :src="builtNotLicensedIcon" alt="Built, not licensed" class="h-9 w-auto mb-4 transition-transform duration-300 hover:scale-105" />
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">Built, not licensed</h3>
             <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-[1.6]">
               Build from the ground up for dealer workflows and your local systems & compliance.
             </p>
           </div>
           <div>
-            <img loading="lazy" :src="inhouseDevIcon" alt="Developed 100% in-house" class="h-9 w-auto mb-4" />
+            <img loading="lazy" :src="inhouseDevIcon" alt="Developed 100% in-house" class="h-9 w-auto mb-4 transition-transform duration-300 hover:scale-105" />
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">Developed 100% in-house</h3>
             <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-[1.6]">
               No Third-party dependencies. Every feature is built, owned, and evolved by our team.
             </p>
           </div>
           <div>
-            <img loading="lazy" :src="unlimitedUsersIcon" alt="Unlimited users" class="h-9 w-auto mb-4" />
+            <img loading="lazy" :src="unlimitedUsersIcon" alt="Unlimited users" class="h-9 w-auto mb-4 transition-transform duration-300 hover:scale-105" />
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">Unlimited users</h3>
             <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-[1.6]">
               No per-seat pricing games. Your whole team gets access - sales, service, F&I, parts, everyone.
             </p>
           </div>
           <div>
-            <img loading="lazy" :src="inhouseSupportIcon" alt="In-house support team" class="h-9 w-auto mb-4" />
+            <img loading="lazy" :src="inhouseSupportIcon" alt="In-house support team" class="h-9 w-auto mb-4 transition-transform duration-300 hover:scale-105" />
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.35rem] sm:text-2xl font-semibold text-neutral-800 mb-3">In-house support team</h3>
             <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-[1.6]">
               Direct access to the people who built it, No tickets disappearing into a vendor's queue
