@@ -56,7 +56,9 @@
         <option value="Website Development">Website Development</option>
         <option value="Online Reputation">Online Reputation</option>
         <option value="Location Listing">Location Listing</option>
-        <option value="PostX">PostX</option>
+        <option value="PostX - Demo">PostX - Demo</option>
+        <option value="PostX - General Enquiry">PostX - General Enquiry</option>
+        <option value="Conexa - Enquiry">Conexa - Enquiry</option>
       </select>
     </div>
 
