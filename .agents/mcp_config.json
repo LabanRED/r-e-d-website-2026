@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "figma": {
+      "command": "node",
+      "args": ["-e", "console.log('HTTP Server')"],
+      "url": "https://mcp.figma.com/mcp"
+    }
+  }
+}

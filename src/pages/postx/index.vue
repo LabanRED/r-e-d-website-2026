@@ -86,7 +86,7 @@
           </div>
 
           <!-- Mobile Image: object-contained, rounded corners -->
-          <div class="w-full max-w-lg sm:max-w-xl md:max-w-2xl overflow-hidden rounded-[24px] sm:rounded-[32px]">
+          <div class="w-full max-w-lg sm:max-w-xl md:max-w-2xl overflow-hidden rounded-3xl sm:rounded-3xl">
             <img
               :src="postXHeroMobileBanner"
               alt="PostX Hero Mobile Banner"
@@ -614,6 +614,88 @@
       </div>
     </section>
 
+    <!-- Omnichannel Workhorse Section -->
+    <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full bg-[#F5F5F5] py-8 md:pb-12 sm:pt-16 lg:px-12 overflow-hidden border-t border-b border-neutral-100">
+      <div class="max-w-350 mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-end">
+
+          <!-- Image Column (Left on desktop) -->
+          <div class="lg:col-span-6 flex items-end justify-center lg:justify-start self-end">
+            <img
+              loading="lazy"
+              :src="postxMobileLoginMockup"
+              alt="PostX Mobile App Login"
+              class="w-full max-w-[550px] lg:max-w-none h-auto object-contain drop-shadow-xl"
+            />
+          </div>
+
+          <!-- Content Column (Right on desktop) -->
+          <div class="bg-[#F5F5F5] lg:col-span-6 flex flex-col items-start text-left">
+            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.25] text-neutral-950 mb-6 tracking-tight">
+              Post<span class="text-[#00a5c5] font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
+            </h2>
+
+            <p class="font-poppins font-regular text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
+              Bring WhatsApp, social media, live chat and Google reviews into one shared inbox - and let AI help you reply faster, capture leads and keep customers coming back.
+            </p>
+
+            <ul class="space-y-3.5 mb-8">
+              <li v-for="(item, i) in ['Dedicated AI agents', 'Content posting & scheduling', 'Google Review Booster', 'Analytics & insights', 'Unlimited users on every plan']" :key="i" class="flex items-center gap-3 font-poppins text-neutral-800 font-medium text-sm sm:text-base">
+                <span class="w-2 h-2 rounded-full bg-[#00a5c5] flex-shrink-0" />
+                <span>{{ item }}</span>
+              </li>
+            </ul>
+
+            <div class="mb-10">
+              <button
+                @click="openModal"
+                class="font-poppins font-medium text-[16px] text-white bg-[#00a5c5] hover:bg-[#008eb0] rounded-full py-4 px-10 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
+              >
+                Book your demo
+              </button>
+            </div>
+
+            <!-- Download App Links -->
+            <div class="flex flex-col items-start gap-3">
+              <span class="font-poppins font-medium text-neutral-800 text-sm sm:text-base">
+                Download the app today.
+              </span>
+              <div class="flex items-center gap-4 flex-wrap">
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.postx.app&hl=en_ZA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="transition-transform duration-200 hover:scale-105"
+                >
+                  <img
+                    loading="lazy"
+                    :src="postxGooglePlayBadge"
+                    alt="Get it on Google Play"
+                    class="h-12 w-auto object-contain"
+                  />
+                </a>
+                <a
+                  href="https://apps.apple.com/za/app/postx-app/id1606876660"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="transition-transform duration-200 hover:scale-105"
+                >
+                  <img
+                    loading="lazy"
+                    :src="postxAppStoreBadge"
+                    alt="Download on the App Store"
+                    class="h-12 w-auto object-contain"
+                  />
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <!-- Automate Customer Journey Section -->
     <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" ref="automateFeaturesRef" class="w-full bg-[#f4f9fa] py-12 sm:py-24 px-6 sm:px-8 lg:px-12">
       <div class="max-w-[1200px] mx-auto">
@@ -626,8 +708,8 @@
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-neutral-900 text-[1.8rem] leading-tight mb-8 tracking-tight">
               From First Chat<br />to Final Deal
             </h3>
-            <p class="font-poppins text-neutral-800 text-[1.05rem] font-medium leading-[1.6] mb-8 max-w-md tracking-wide">
-              Capture 24/7 leads, schedule test drives, send automated reminders, and exchange secure documents, all while keeping your sales, service, and admin teams perfectly connected.
+            <p class="font-poppins text-neutral-800 text-md font-regular leading-[1.6] mb-8 max-w-xl tracking-wide">
+              Manage your customer lifecycle with outbound campaigns, automatic lead re-engagement, service, and appointment reminders.Capture24/7 leads, schedule test drives, and exchange secure documents - all while keeping your sales, service, and admin teams perfectly connected.
             </p>
             <button class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-[#00a5c5] active:scale-95 px-9 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer">
               Read more
@@ -754,12 +836,12 @@
 
     <!-- Dynamic Service Section -->
     <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full bg-white py-20 sm:py-28 px-6 sm:px-8 lg:px-12 overflow-hidden">
-      <div class="max-w-[1400px] mx-auto">
+      <div class="max-w-350 mx-auto">
 
         <!-- Header -->
         <div class="mb-16 md:mb-20 text-left">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[2.5rem] md:text-[3.5rem] font-medium leading-[1.2] tracking-tight text-neutral-900 mb-6">
-            Dynamic service, <span class="font-normal text-neutral-600">tailored</span> and <br class="hidden md:block" />
+            Dynamic service, <span class="font-normal text-[#2aa6c4]">tailored</span> and <br class="hidden md:block" />
             ready <span class="font-semibold">to</span> action.
           </h2>
           <p class="font-poppins text-lg md:text-xl text-neutral-600 font-medium max-w-3xl">
@@ -845,7 +927,7 @@
 
           <!-- Mobile Laptop Image -->
           <div class="w-full flex justify-center mt-6">
-            <img loading="lazy" :src="dynamicLaptopImg" alt="PostX Dashboard on Laptop" class="w-screen max-w-[500px] object-contain drop-shadow-2xl px-8" />
+            <img loading="lazy" :src="dynamicLaptopImg" alt="PostX Dashboard on Laptop" class="w-screen max-w-125 object-contain drop-shadow-2xl" />
           </div>
         </div>
 
@@ -900,22 +982,22 @@
       :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       class="w-full bg-white py-20 sm:py-28 px-6 sm:px-8 lg:px-12 text-center overflow-hidden"
     >
-      <div class="max-w-[1200px] mx-auto flex flex-col items-center">
+      <div class="max-w-300 mx-auto flex flex-col items-center">
 
-        <img loading="lazy" :src="postXLogo" alt="PostX" class="h-10 md:h-12 lg:h-[3.25rem] mb-4 object-contain" />
+        <img loading="lazy" :src="postXLogo" alt="PostX" class="h-10 md:h-12 lg:h-13 mb-4 object-contain" />
 
         <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-5xl lg:text-5xl leading-[1.2] tracking-tight text-neutral-900 mb-8">
-          <span class="text-[#00a5c5] font-semibold">Continuously</span> <span class="italic font-light">Updating...</span>
+          <span class="text-[#00a5c5] font-semibold"> Capabilities shipping continuosly -</span> <span class="italic font-light">your PostX gets smarter over time.</span>
         </h2>
 
         <p class="font-poppins text-base sm:text-lg md:text-xl text-neutral-700 font-medium leading-[1.7] max-w-4xl mx-auto mb-16 px-4">
-          We're updating PostX's Monitor features with a powerful new dashboard for reporting, messaging, and content management delivering improved visibility, streamlined workflows, and actionable insights from one intuitive platform.
+          Our recent update improved analytics, insights and general speed.
         </p>
 
         <div class="w-full flex justify-center">
           <img loading="lazy" :src="continouslyUpdatingImg"
             alt="Post Performance Analysis"
-            class="w-full max-w-[1100px] h-auto object-contain rounded-2xl md:rounded-[32px] drop-shadow-2xl"
+            class="w-full h-auto object-contain rounded-2xl md:rounded-4xl drop-shadow-2xl"
           />
         </div>
 
@@ -932,7 +1014,7 @@
       :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
       class="w-full bg-white py-20 sm:py-28 px-6 sm:px-8 lg:px-12"
     >
-      <div class="max-w-[1400px] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
+      <div class="max-w-350 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
 
         <!-- Left Side: Headings & CTA Card -->
         <div class="w-full lg:w-[40%] flex flex-col items-start">
@@ -1003,7 +1085,7 @@
       class="w-full bg-white py-24 sm:py-32 px-6 sm:px-8 lg:px-12 flex flex-col items-center text-center"
     >
       <div class="max-w-3xl mx-auto flex flex-col items-center">
-        <img loading="lazy" :src="postXLogo" alt="PostX" class="h-12 md:h-16 lg:h-[4.5rem] mb-6 object-contain" />
+        <img loading="lazy" :src="postXLogo" alt="PostX" class="h-12 md:h-16 lg:h-18 mb-6 object-contain" />
 
         <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-5xl lg:text-5xl leading-[1.15] font-medium text-[#2c2c2c] mb-6 tracking-tight">
           Ready to connect your<br class="hidden sm:block" /> Business?
@@ -1060,9 +1142,12 @@ import inhouseDevIcon from '~/assets/images/inhouse-developers-icon.svg';
 import unlimitedUsersIcon from '~/assets/images/unlimited-users-icon.svg';
 import inhouseSupportIcon from '~/assets/images/in-house-support-team.svg';
 import clientsTrustImg from '~/assets/images/clients-who-trust-postx.webp';
-import continouslyUpdatingImg from '~/assets/images/continously-updatating-desktop.webp';
+import continouslyUpdatingImg from '~/assets/images/postx-analytics-screenshot.webp';
 import testimonialGuyImg from '~/assets/images/testimonial-guy-image.webp';
 import postxInboxScreenshot from '~/assets/images/postx-inbox-screenshot.webp';
+import postxMobileLoginMockup from '~/assets/images/postx-mobile-login-screen-mockup.webp';
+import postxAppStoreBadge from '~/assets/images/postx-download-on-the-appstore_badge.webp';
+import postxGooglePlayBadge from '~/assets/images/postx-getitongoogleplay_badge.webp';
 
 const { openModal } = useModal();
 
