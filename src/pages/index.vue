@@ -34,4 +34,17 @@
 
 <script setup lang="ts">
 const { openModal } = useModal();
+
+useHead({
+  title: 'R-E-D | Digital Marketing & Sales Solutions Specialist',
+  meta: [
+    {
+      name: 'description',
+      content: 'Empower your brand with R-E-D. We specialize in performance digital advertising, social media management, custom web development, online reputation, and AI-powered sales automation.'
+    },
+    { property: 'og:title', content: 'R-E-D | Digital Marketing & Sales Solutions Specialist' },
+    { property: 'og:description', content: 'Empower your brand with R-E-D. We specialize in performance digital advertising, social media management, custom web development, online reputation, and AI-powered sales automation.' },
+    { property: 'og:type', content: 'website' }
+  ]
+});
 </script>

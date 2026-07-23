@@ -425,7 +425,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 } }"
-            class="bg-[#f1fafc] rounded-[24px] p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="bg-[#f1fafc] rounded-3xl p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
           >
             <div>
               <div class="w-12 h-12 flex items-center justify-center mb-6">
@@ -447,7 +447,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 200 } }"
-            class="bg-[#f1fafc] rounded-[24px] p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="bg-[#f1fafc] rounded-3xl p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
           >
             <div>
               <div class="w-12 h-12 flex items-center justify-center mb-6">
