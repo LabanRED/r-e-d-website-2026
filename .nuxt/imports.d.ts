@@ -34,4 +34,3 @@ export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
 export { useModal } from '../src/composables/useModal';
 export { pushToDataLayer } from '../src/utils/gtm';
 export { reactiveStyle, reactiveTransform, useElementStyle, useElementTransform, useMotion, useMotionControls, useMotionProperties, useMotions, useMotionTransitions, useMotionVariants, useSpring, useReducedMotion } from '../node_modules/@vueuse/motion/dist/nuxt/runtime/composables/index';
-export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
