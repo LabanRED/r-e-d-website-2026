@@ -55,13 +55,13 @@
               class="group relative inline-flex items-center justify-center text-center text-sm sm:text-base text-white font-poppins font-medium lowercase"
             >
               <!-- First Rotating Outline (Before) -->
-              <span class="absolute inset-0 w-full h-full rounded-full border border-[#1ca3c4]/40 bg-[#1ca3c4]/10 transition-all duration-500 pointer-events-none group-hover:-rotate-45 group-hover:bg-transparent"></span>
+              <span class="absolute inset-0 w-full h-full rounded-full border border-black/40 bg-black/10 transition-all duration-500 pointer-events-none group-hover:-rotate-45 group-hover:bg-transparent"></span>
               
               <!-- Second Rotating Outline (After) -->
-              <span class="absolute inset-0 w-full h-full rounded-full border border-[#1ca3c4]/40 bg-[#1ca3c4]/10 transition-all duration-500 pointer-events-none group-hover:rotate-45 group-hover:bg-transparent"></span>
+              <span class="absolute inset-0 w-full h-full rounded-full border border-black/40 bg-black/10 transition-all duration-500 pointer-events-none group-hover:rotate-45 group-hover:bg-transparent"></span>
               
               <!-- Inner Button Surface -->
-              <span class="relative z-10 bg-black hover:bg-[#2fb6e1] px-7 py-3.5 rounded-full active:scale-95 transition-transform duration-300 flex items-center justify-center w-full h-full">
+              <span class="relative z-10 bg-black hover:bg-neutral-800 px-7 py-3.5 rounded-full active:scale-95 transition-transform duration-300 flex items-center justify-center w-full h-full">
                 Explore PostX and see how it works.
               </span>
             </NuxtLink>

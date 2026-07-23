@@ -48,7 +48,7 @@
             <div class="flex flex-wrap items-center gap-4">
               <button
                 @click="openModal"
-                class="font-poppins font-medium text-[16px] text-white bg-[#2ca8cb] hover:bg-[#209bbd] rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
+                class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-neutral-800 rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
                 style="padding: 20px 40px"
               >
                 Book your demo
@@ -79,7 +79,7 @@
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 w-full sm:w-auto">
             <button
               @click="openModal"
-              class="font-poppins text-xs sm:text-sm tracking-widest text-[#2ca8cb] border-2 border-[#2ca8cb] rounded-full py-4 px-8 bg-white hover:bg-[#2ca8cb] hover:text-white active:bg-[#209bbd] active:text-white transition-all duration-300 hover:scale-[1.02] active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase cursor-pointer"
+              class="font-poppins text-xs sm:text-sm tracking-widest text-white border-2 border-black rounded-full py-4 px-8 bg-black hover:bg-neutral-800 active:bg-neutral-900 transition-all duration-300 hover:scale-[1.02] active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase cursor-pointer"
             >
               Book your demo
             </button>
@@ -150,7 +150,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 } }"
-            class="bg-white rounded-[24px] p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
           >
             <div>
               <div class="flex items-center gap-3 mb-6">
@@ -177,7 +177,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 200 } }"
-            class="bg-white rounded-[24px] p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
           >
             <div>
               <div class="flex items-center gap-3 mb-6">
@@ -204,7 +204,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 300 } }"
-            class="bg-white rounded-[24px] p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
           >
             <div>
               <div class="flex items-center gap-3 mb-6">
@@ -231,7 +231,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 400 } }"
-            class="bg-white rounded-[24px] p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
           >
             <div>
               <div class="flex items-center gap-3 mb-6">
@@ -263,7 +263,7 @@
           >
             <!-- Card 1: Create -->
             <div class="w-full flex-shrink-0 snap-center px-1">
-              <div class="bg-white rounded-[24px] p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] min-h-[380px] flex flex-col justify-between">
+              <div class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] min-h-[380px] flex flex-col justify-between">
                 <div>
                   <div class="flex items-center gap-3 mb-6">
                     <div class="w-10 h-10 rounded-xl flex items-center justify-center">
@@ -287,7 +287,7 @@
 
             <!-- Card 2: Connect -->
             <div class="w-full flex-shrink-0 snap-center px-1">
-              <div class="bg-white rounded-[24px] p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] min-h-[380px] flex flex-col justify-between">
+              <div class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] min-h-[380px] flex flex-col justify-between">
                 <div>
                   <div class="flex items-center gap-3 mb-6">
                     <div class="w-10 h-10 rounded-xl flex items-center justify-center">
@@ -311,7 +311,7 @@
 
             <!-- Card 3: Comms -->
             <div class="w-full flex-shrink-0 snap-center px-1">
-              <div class="bg-white rounded-[24px] p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] min-h-[380px] flex flex-col justify-between">
+              <div class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] min-h-[380px] flex flex-col justify-between">
                 <div>
                   <div class="flex items-center gap-3 mb-6">
                     <div class="w-10 h-10 rounded-xl flex items-center justify-center">
@@ -335,7 +335,7 @@
 
             <!-- Card 4: Control -->
             <div class="w-full flex-shrink-0 snap-center px-1">
-              <div class="bg-white rounded-[24px] p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] min-h-[380px] flex flex-col justify-between">
+              <div class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] min-h-[380px] flex flex-col justify-between">
                 <div>
                   <div class="flex items-center gap-3 mb-6">
                     <div class="w-10 h-10 rounded-xl flex items-center justify-center">
@@ -469,7 +469,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 300 } }"
-            class="bg-[#f1fafc] rounded-[24px] p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="bg-[#f1fafc] rounded-3xl p-8 sm:p-10 shadow-[0px_4px_30px_rgba(0,0,0,0.03)] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
           >
             <div>
               <div class="w-12 h-12 flex items-center justify-center mb-6">
@@ -507,7 +507,7 @@
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-3xl md:text-4xl lg:text-[3rem] leading-[1.1] text-neutral-950 mb-8 tracking-tight">
             Ready to simplify<br />your conversations?
           </h2>
-          <div class="font-poppins font-medium text-sm md:text-[16px] text-white bg-[#2ca8cb] group-hover:bg-[#209bbd] rounded-full py-4 px-10 transition-all duration-300 shadow-md">
+          <div class="font-poppins font-medium text-sm md:text-[16px] text-white bg-black group-hover:bg-neutral-800 rounded-full py-4 px-10 transition-all duration-300 shadow-md">
             Book your demo
           </div>
         </div>
@@ -526,7 +526,7 @@
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-3xl leading-[2.5rem] text-neutral-950 mb-2 tracking-tight">
             Ready to simplify<br />your conversations?
           </h2>
-          <div class="font-poppins font-medium text-sm text-white bg-[#2ca8cb] rounded-full py-3 px-8 shadow-md">
+          <div class="font-poppins font-medium text-sm text-white bg-black rounded-full py-3 px-8 shadow-md">
             Book your demo
           </div>
         </div>
@@ -556,7 +556,7 @@
         </h3>
 
         <!-- Carousel Image Container -->
-        <div class="relative w-full h-auto bg-white rounded-[24px] md:rounded-xl shadow-[0px_4px_30px_rgba(0,0,0,0.05)] border border-neutral-100 overflow-hidden mb-8">
+        <div class="relative w-full h-auto bg-white rounded-3xl md:rounded-xl shadow-[0px_4px_30px_rgba(0,0,0,0.05)] border border-neutral-100 overflow-hidden mb-8">
           <transition name="fade" mode="out-in">
             <div
               :key="insightIndex"
@@ -590,16 +590,16 @@
 
     <!-- Mid Page Testimonial Section -->
     <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full bg-white py-24 sm:py-28 px-6 sm:px-8 lg:px-12">
-      <div class="max-w-[1000px] mx-auto text-center flex flex-col items-center">
+      <div class="max-w-250 mx-auto text-center flex flex-col items-center">
 
         <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-[2rem] sm:text-4xl lg:text-[3.25rem] leading-[1.3] text-neutral-950 mb-10 tracking-tight">
-          <img loading="lazy" :src="postXLogo" alt="PostX" class="h-8 sm:h-10 lg:h-[3.5rem] inline-block align-middle mx-2 sm:mx-3 -mt-2 sm:-mt-3" /> has proven itself time and time again that it is a crucial part of our business setup
+          <img loading="lazy" :src="postXLogo" alt="PostX" class="h-8 sm:h-10 lg:h-14 inline-block align-middle mx-2 sm:mx-3 -mt-2 sm:-mt-3" /> has proven itself time and time again that it is a crucial part of our business setup
         </h2>
 
         <div class="flex items-center gap-5 text-left mt-4">
           <img loading="lazy" :src="testimonialGuyImg"
             alt="John Farrenson"
-            class="w-16 h-16 sm:w-[5.5rem] sm:h-[5.5rem] rounded-[1.25rem] object-cover shadow-sm"
+            class="w-16 h-16 sm:w-22 sm:h-22 rounded-[1.25rem] object-cover"
           />
           <div class="flex flex-col justify-center">
             <span class="font-poppins font-bold text-lg sm:text-[1.35rem] text-[#2c2c2c] mb-1">
@@ -615,83 +615,157 @@
     </section>
 
     <!-- Omnichannel Workhorse Section -->
-    <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full bg-[#F5F5F5] py-8 md:pb-12 sm:pt-16 lg:px-12 overflow-hidden border-t border-b border-neutral-100">
-      <div class="max-w-350 mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-end">
+    <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full border-t border-b border-neutral-200/60 overflow-hidden relative">
+      <!-- DESKTOP BANNER LAYOUT (lg and up) -->
+      <div class="hidden lg:block relative w-full max-w-[1600px] mx-auto min-h-[640px] px-6 sm:px-8 lg:px-12">
+        <!-- Desktop Background Banner Image Layer -->
+        <div class="absolute inset-0 w-full h-full z-0 pointer-events-none">
+          <img
+            loading="lazy"
+            :src="postxDesktopBanner"
+            alt="PostX Mobile App Interface"
+            class="w-full h-full object-cover object-left"
+          />
+        </div>
 
-          <!-- Image Column (Left on desktop) -->
-          <div class="lg:col-span-6 flex items-end justify-center lg:justify-start self-end">
-            <img
-              loading="lazy"
-              :src="postxMobileLoginMockup"
-              alt="PostX Mobile App Login"
-              class="w-full max-w-[550px] lg:max-w-none h-auto object-contain drop-shadow-xl"
-            />
+        <!-- Overlaid Desktop Content (Right-aligned over the background space) -->
+        <div class="relative z-10 ml-auto w-full lg:w-[52%] xl:w-[48%] py-16 flex flex-col items-start text-left">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.25] text-neutral-950 mb-6 tracking-tight">
+            Post<span class="text-[#00a5c5] font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
+          </h2>
+
+          <p class="font-poppins font-regular text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
+            Bring WhatsApp, social media, live chat and Google reviews into one shared inbox - and let AI help you reply faster, capture leads and keep customers coming back.
+          </p>
+
+          <ul class="space-y-3.5 mb-8">
+            <li v-for="(item, i) in ['Dedicated AI agents', 'Content posting & scheduling', 'Google Review Booster', 'Analytics & insights', 'Unlimited users on every plan']" :key="i" class="flex items-center gap-3 font-poppins text-neutral-800 font-medium text-sm sm:text-base">
+              <span class="w-2 h-2 rounded-full bg-[#00a5c5] flex-shrink-0" />
+              <span>{{ item }}</span>
+            </li>
+          </ul>
+
+          <div class="mb-10">
+            <button
+              @click="openModal"
+              class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-neutral-800 rounded-full py-4 px-10 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
+            >
+              Book your demo
+            </button>
           </div>
 
-          <!-- Content Column (Right on desktop) -->
-          <div class="bg-[#F5F5F5] lg:col-span-6 flex flex-col items-start text-left">
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.25] text-neutral-950 mb-6 tracking-tight">
-              Post<span class="text-[#00a5c5] font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
-            </h2>
-
-            <p class="font-poppins font-regular text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
-              Bring WhatsApp, social media, live chat and Google reviews into one shared inbox - and let AI help you reply faster, capture leads and keep customers coming back.
-            </p>
-
-            <ul class="space-y-3.5 mb-8">
-              <li v-for="(item, i) in ['Dedicated AI agents', 'Content posting & scheduling', 'Google Review Booster', 'Analytics & insights', 'Unlimited users on every plan']" :key="i" class="flex items-center gap-3 font-poppins text-neutral-800 font-medium text-sm sm:text-base">
-                <span class="w-2 h-2 rounded-full bg-[#00a5c5] flex-shrink-0" />
-                <span>{{ item }}</span>
-              </li>
-            </ul>
-
-            <div class="mb-10">
-              <button
-                @click="openModal"
-                class="font-poppins font-medium text-[16px] text-white bg-[#00a5c5] hover:bg-[#008eb0] rounded-full py-4 px-10 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
+          <!-- Download App Links -->
+          <div class="flex flex-col items-start gap-3">
+            <span class="font-poppins font-medium text-neutral-800 text-sm sm:text-base">
+              Download the app today.
+            </span>
+            <div class="flex items-center gap-4 flex-wrap">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.postx.app&hl=en_ZA"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-transform duration-200 hover:scale-105"
               >
-                Book your demo
-              </button>
+                <img
+                  loading="lazy"
+                  :src="postxGooglePlayBadge"
+                  alt="Get it on Google Play"
+                  class="h-12 w-auto object-contain"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/za/app/postx-app/id1606876660"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-transform duration-200 hover:scale-105"
+              >
+                <img
+                  loading="lazy"
+                  :src="postxAppStoreBadge"
+                  alt="Download on the App Store"
+                  class="h-12 w-auto object-contain"
+                />
+              </a>
             </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile App Banner Image -->
+      <div class="w-full flex justify-center">
+        <img
+          loading="lazy"
+          :src="postxMobileBanner"
+          alt="PostX Mobile App Interface"
+          class="w-full max-w-md h-auto object-contain"
+        />
+      </div>
 
-            <!-- Download App Links -->
-            <div class="flex flex-col items-start gap-3">
-              <span class="font-poppins font-medium text-neutral-800 text-sm sm:text-base">
-                Download the app today.
-              </span>
-              <div class="flex items-center gap-4 flex-wrap">
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.postx.app&hl=en_ZA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="transition-transform duration-200 hover:scale-105"
-                >
-                  <img
-                    loading="lazy"
-                    :src="postxGooglePlayBadge"
-                    alt="Get it on Google Play"
-                    class="h-12 w-auto object-contain"
-                  />
-                </a>
-                <a
-                  href="https://apps.apple.com/za/app/postx-app/id1606876660"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="transition-transform duration-200 hover:scale-105"
-                >
-                  <img
-                    loading="lazy"
-                    :src="postxAppStoreBadge"
-                    alt="Download on the App Store"
-                    class="h-12 w-auto object-contain"
-                  />
-                </a>
-              </div>
-            </div>
+      <!-- MOBILE BANNER LAYOUT (below lg) -->
+      <div class="block lg:hidden w-full px-6 py-12 flex flex-col items-center text-left">
 
+        
+
+        <!-- Content -->
+        <div class="w-full max-w-xl flex flex-col items-start">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl leading-[1.25] text-neutral-950 mb-6 tracking-tight">
+            Post<span class="text-[#00a5c5] font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
+          </h2>
+
+          <p class="font-poppins font-regular text-neutral-700 text-sm sm:text-base leading-relaxed mb-6">
+            Bring WhatsApp, social media, live chat and Google reviews into one shared inbox - and let AI help you reply faster, capture leads and keep customers coming back.
+          </p>
+
+          <ul class="space-y-3 mb-6">
+            <li v-for="(item, i) in ['Dedicated AI agents', 'Content posting & scheduling', 'Google Review Booster', 'Analytics & insights', 'Unlimited users on every plan']" :key="i" class="flex items-center gap-3 font-poppins text-neutral-800 font-medium text-sm">
+              <span class="w-2 h-2 rounded-full bg-[#00a5c5] flex-shrink-0" />
+              <span>{{ item }}</span>
+            </li>
+          </ul>
+
+          <div class="mb-8 w-full sm:w-auto">
+            <button
+              @click="openModal"
+              class="font-poppins font-medium text-sm sm:text-base text-white bg-black hover:bg-neutral-800 rounded-full py-3.5 px-8 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md lowercase cursor-pointer w-full sm:w-auto"
+            >
+              Book your demo
+            </button>
           </div>
 
+          <!-- Download App Links -->
+          <div class="flex flex-col items-start gap-3 w-full">
+            <span class="font-poppins font-medium text-neutral-800 text-sm">
+              Download the app today.
+            </span>
+            <div class="flex items-center gap-4 flex-wrap">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.postx.app&hl=en_ZA"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-transform duration-200 hover:scale-105"
+              >
+                <img
+                  loading="lazy"
+                  :src="postxGooglePlayBadge"
+                  alt="Get it on Google Play"
+                  class="h-11 w-auto object-contain"
+                />
+              </a>
+              <a
+                href="https://apps.apple.com/za/app/postx-app/id1606876660"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="transition-transform duration-200 hover:scale-105"
+              >
+                <img
+                  loading="lazy"
+                  :src="postxAppStoreBadge"
+                  alt="Download on the App Store"
+                  class="h-11 w-auto object-contain"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -1045,7 +1119,7 @@
           <div
             v-for="(faq, index) in faqData"
             :key="index"
-            class="bg-[#fafafa] rounded-[24px] overflow-hidden transition-all duration-300"
+            class="bg-[#fafafa] rounded-3xl overflow-hidden transition-all duration-300"
           >
             <button
               @click="toggleFaq(index)"
@@ -1097,7 +1171,7 @@
 
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-base tracking-wide font-medium lowercase cursor-pointer btn-slide-in"
+          class="bg-black hover:bg-neutral-800 text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-base tracking-wide font-medium lowercase cursor-pointer btn-slide-in"
         >
           schedule a meeting today
         </button>
@@ -1146,6 +1220,8 @@ import continouslyUpdatingImg from '~/assets/images/postx-analytics-screenshot.w
 import testimonialGuyImg from '~/assets/images/testimonial-guy-image.webp';
 import postxInboxScreenshot from '~/assets/images/postx-inbox-screenshot.webp';
 import postxMobileLoginMockup from '~/assets/images/postx-mobile-login-screen-mockup.webp';
+import postxDesktopBanner from '~/assets/images/postx-mobileapp-desktop-background-mockup.webp';
+import postxMobileBanner from '~/assets/images/postx-mobileapp-mobile-background-mockup.webp';
 import postxAppStoreBadge from '~/assets/images/postx-download-on-the-appstore_badge.webp';
 import postxGooglePlayBadge from '~/assets/images/postx-getitongoogleplay_badge.webp';
 
