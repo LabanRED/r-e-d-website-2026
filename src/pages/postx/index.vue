@@ -697,12 +697,12 @@
           loading="lazy"
           :src="postxMobileBanner"
           alt="PostX Mobile App Interface"
-          class="w-full max-w-md h-auto object-contain"
+          class="w-full max-w-md h-auto object-contain md:hidden lg:hidden"
         />
       </div>
 
       <!-- MOBILE BANNER LAYOUT (below lg) -->
-      <div class="block lg:hidden w-full px-6 py-12 flex flex-col items-center text-left">
+      <div class="lg:hidden w-full px-6 py-12 flex flex-col items-center text-left">
 
         
 
@@ -827,7 +827,7 @@
               </div>
 
               <div class="w-1/2 flex flex-col items-start">
-                <div class="bg-white rounded-[32px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-12 mb-6 w-full">
+                <div class="bg-white rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-12 mb-6 w-full">
                   <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.75rem] font-medium text-neutral-900 leading-[1.3] mb-4">
                     {{ feature.title }}
                   </h3>
@@ -855,7 +855,7 @@
         </div>
 
         <!-- Mobile Features Carousel -->
-        <div class="flex flex-col lg:hidden mt-20 -mx-6 sm:-mx-8">
+        <div class="flex flex-col lg:hidden mt-20  sm:-mx-8">
           <div
             ref="automateScrollContainerRef"
             @scroll="handleAutomateScroll"
@@ -863,10 +863,10 @@
           >
             <div v-for="(feature, idx) in automateFeaturesData" :key="idx" class="w-full flex-shrink-0 snap-center flex flex-col items-center">
               <div class="w-full flex justify-center mb-8 px-4">
-                <img loading="lazy" :src="feature.img" :alt="feature.title" class="w-full max-w-[340px] object-contain drop-shadow-xl" />
+                <img loading="lazy" :src="feature.img" :alt="feature.title" class="w-full max-w-85 object-contain drop-shadow-xl" />
               </div>
               <div class="w-full flex flex-col items-start px-2">
-                <div class="bg-white rounded-[32px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 mb-6 w-full text-left">
+                <div class="bg-white rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 mb-6 w-full text-left">
                   <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-medium text-neutral-900 leading-[1.3] mb-4">
                     {{ feature.title }}
                   </h3>
@@ -946,7 +946,7 @@
 
           <!-- Center Column Laptop Image -->
           <div class="col-span-6 flex justify-center relative z-0">
-            <img loading="lazy" :src="dynamicLaptopImg" alt="PostX Dashboard on Laptop" class="w-[120%] max-w-[850px] object-contain drop-shadow-2xl" />
+            <img loading="lazy" :src="dynamicLaptopImg" alt="PostX Dashboard on Laptop" class="w-[120%] max-w-212.5 object-contain drop-shadow-2xl" />
           </div>
 
           <!-- Right Column Features -->
@@ -1020,7 +1020,7 @@
           <div class="w-full lg:w-[45%] flex justify-center lg:justify-start">
             <img loading="lazy" :src="clientsTrustImg"
               alt="320+ Clients Trust PostX"
-              class="w-full max-w-[500px] lg:max-w-none rounded-[32px] object-cover drop-shadow-lg"
+              class="w-full max-w-[500px] lg:max-w-none rounded-4xl object-cover drop-shadow-lg"
             />
           </div>
 
@@ -1098,7 +1098,7 @@
           </h2>
 
           <!-- CTA Card -->
-          <div class="w-full bg-[#f0f9fa] rounded-[32px] p-8 sm:p-10 flex flex-col items-start mt-4">
+          <div class="w-full bg-[#f0f9fa] rounded-4xl p-8 sm:p-10 flex flex-col items-start mt-4">
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-semibold text-neutral-900 mb-4">
               Still have a question?
             </h3>
