@@ -73,7 +73,7 @@
         >
           <div>
             <!-- Badge -->
-            <span class="inline-block bg-[#1ca3c4] text-white font-poppins text-xs font-semibold px-4 py-1.5 rounded-full mb-8">
+            <span class="inline-block bg-[#1ca3c4] text-white font-poppins text-xs font-semibold px-4 py-2 rounded-full mb-8">
               With R-E-D
             </span>
 

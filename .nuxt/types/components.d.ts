@@ -14,6 +14,7 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
+  NotFound: typeof import("../../src/components/NotFound.vue")['default']
   CareerForm: typeof import("../../src/components/forms/CareerForm.vue")['default']
   ContactForm: typeof import("../../src/components/forms/ContactForm.vue")['default']
   Footer: typeof import("../../src/components/header-footer/Footer.vue")['default']
@@ -58,6 +59,7 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
+  LazyNotFound: LazyComponent<typeof import("../../src/components/NotFound.vue")['default']>
   LazyCareerForm: LazyComponent<typeof import("../../src/components/forms/CareerForm.vue")['default']>
   LazyContactForm: LazyComponent<typeof import("../../src/components/forms/ContactForm.vue")['default']>
   LazyFooter: LazyComponent<typeof import("../../src/components/header-footer/Footer.vue")['default']>
