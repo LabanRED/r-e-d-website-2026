@@ -121,20 +121,18 @@
           </div>
 
           <!-- Share Section -->
-          <div class="border-t border-b border-neutral-200 py-8 mb-20 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <span class="font-poppins font-semibold text-neutral-800">Share this article:</span>
-            <div class="flex items-center gap-4">
-              <button class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-600 hover:bg-black hover:text-[#00a5c5] transition-colors font-poppins font-medium lowercase cursor-pointer">
-                <Facebook class="w-5 h-5" />
-              </button>
-              <button class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-600 hover:bg-black hover:text-[#00a5c5] transition-colors font-poppins font-medium lowercase cursor-pointer">
-                <Twitter class="w-5 h-5" />
-              </button>
-              <button class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-600 hover:bg-black hover:text-[#00a5c5] transition-colors font-poppins font-medium lowercase cursor-pointer">
-                <Linkedin class="w-5 h-5" />
-              </button>
-              <button class="w-10 h-10 rounded-full bg-neutral-100 flex items-center justify-center text-neutral-600 hover:bg-black hover:text-[#00a5c5] transition-colors font-poppins font-medium lowercase cursor-pointer">
-                <Link2 class="w-5 h-5" />
+          <div class="border-t border-neutral-300 pt-8 mb-20 flex flex-col items-start gap-4">
+            <span class="font-poppins font-semibold text-neutral-900 text-sm sm:text-base">Share this article:</span>
+            <div class="flex items-center gap-3 sm:gap-4 flex-wrap">
+              <button
+                v-for="(item, index) in sharePlatforms"
+                :key="index"
+                @click="shareTo(item.platform)"
+                :aria-label="`Share on ${item.name}`"
+                :title="`Share on ${item.name}`"
+                class="hover:scale-110 hover:opacity-80 active:scale-95 transition-all duration-300 cursor-pointer flex items-center justify-center"
+              >
+                <img :src="item.icon" :alt="`Share on ${item.name}`" class="w-10 h-10 sm:w-11 sm:h-11 object-contain" />
               </button>
             </div>
           </div>
@@ -157,7 +155,7 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-sm lowercase cursor-pointer btn-slide-in"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 text-sm lowercase cursor-pointer btn-slide-in"
         >
           schedule a meeting today
         </button>
@@ -168,13 +166,66 @@
 </template>
 
 <script setup lang="ts">
-import { ArrowLeft, Facebook, Twitter, Linkedin, Link2 } from 'lucide-vue-next';
+import { ArrowLeft } from 'lucide-vue-next';
 import redLogo from '~/assets/images/r-e-d-dark-logo.svg';
 import redWhiteLogo from '~/assets/images/r-e-d-white-logo.svg';
 import heroDesktop from '~/assets/images/article-3-winning-socila-media-strategies-hero-desktop-banner.webp';
 import heroMobile from '~/assets/images/article-3-winning-socila-media-strategies-hero-mobile-banner.webp';
 import midBannerDesktop from '~/assets/images/mid-article-social-media-strategy-banner-desktop-banner.webp';
 import midBannerMobile from '~/assets/images/mid-article-social-media-strategy-banner-mobile-banner.webp';
+import fbShareIcon from '~/assets/images/facebook-share-article-icon.svg';
+import linkedinShareIcon from '~/assets/images/linkedin-share-article-icon.svg';
+import xShareIcon from '~/assets/images/x-twitter-share-article-icon.svg';
+import whatsappShareIcon from '~/assets/images/whatsapp-share-article-icon.svg';
+import emailShareIcon from '~/assets/images/email-share-article-icon.svg';
 
 const { openModal } = useModal();
+
+const sharePlatforms = [
+  { name: 'Facebook', platform: 'facebook', icon: fbShareIcon },
+  { name: 'LinkedIn', platform: 'linkedin', icon: linkedinShareIcon },
+  { name: 'X', platform: 'twitter', icon: xShareIcon },
+  { name: 'WhatsApp', platform: 'whatsapp', icon: whatsappShareIcon },
+  { name: 'Email', platform: 'email', icon: emailShareIcon },
+];
+
+const shareTo = (platform: string) => {
+  const url = typeof window !== 'undefined' ? window.location.href : 'https://r-e-d.co.za/blogs/3-winning-social-media-strategies';
+  const title = typeof document !== 'undefined' && document.title ? document.title : '3 Winning Social Media Strategies For South African Car Dealers';
+  
+  const summaryText = "Discover how car dealerships in South Africa can leverage Facebook ads, Instagram stories, and YouTube comparison videos to boost sales and connect with modern car shoppers!";
+  const quoteText = `"${title}" — ${summaryText}`;
+
+  let shareLink = '';
+  switch (platform) {
+    case 'facebook':
+      shareLink = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}&quote=${encodeURIComponent(quoteText)}`;
+      break;
+    case 'linkedin':
+      shareLink = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}&summary=${encodeURIComponent(summaryText)}&source=${encodeURIComponent('R-E-D')}`;
+      break;
+    case 'twitter':
+      shareLink = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(`${quoteText}\n\nRead more:`)}`;
+      break;
+    case 'whatsapp': {
+      const waMessage = `*${title}*\n\n${summaryText}\n\nRead the full article here:\n${url}`;
+      shareLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(waMessage)}`;
+      break;
+    }
+    case 'email': {
+      const emailSubject = `Recommended Reading: ${title}`;
+      const emailBody = `Hi,\n\nI thought you might find this article interesting!\n\nTitle: ${title}\n\nSummary:\n${summaryText}\n\nKey Takeaways:\n1. Facebook Advertising for targeted lead generation & dynamic carousels.\n2. Instagram Stories & Highlights to build trust and showcase inventory.\n3. YouTube reviews and comparison videos to capture active buyers.\n\nRead the full article here:\n${url}\n\nBest regards,`;
+      shareLink = `mailto:?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+      break;
+    }
+  }
+  
+  if (shareLink) {
+    if (platform === 'email') {
+      window.location.href = shareLink;
+    } else {
+      window.open(shareLink, '_blank', 'noopener,noreferrer,width=600,height=500');
+    }
+  }
+};
 </script>

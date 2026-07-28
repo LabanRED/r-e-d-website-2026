@@ -156,7 +156,7 @@
 
           <button
             @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -218,7 +218,7 @@
           </ul>
           <button
             @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -264,7 +264,7 @@
           </ul>
           <button
             @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -333,7 +333,7 @@
           </ul>
           <button
             @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -409,7 +409,7 @@
           </ul>
           <button
             @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -463,7 +463,7 @@
           </ul>
           <button
             @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
+            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
           >
             schedule a meeting today
           </button>
@@ -521,7 +521,7 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in"
+          class="bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
         >
           schedule a meeting today
         </button>

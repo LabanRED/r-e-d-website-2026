@@ -86,7 +86,7 @@
           v-model="searchQuery"
           class="w-full pl-12 pr-32 py-4 bg-transparent border border-neutral-300 rounded-full focus:outline-none focus:border-[#00a5c5] font-poppins text-neutral-700"
         />
-        <button class="absolute right-2 top-2 bottom-2 bg-black hover:bg-[#00a5c5] text-white px-6 rounded-full font-poppins font-medium transition-colors text-sm lowercase cursor-pointer">
+        <button class="absolute right-2 top-2 bottom-2 bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white px-6 rounded-full font-poppins font-medium transition-all duration-300 text-sm lowercase cursor-pointer">
           Search
         </button>
       </div>
@@ -122,7 +122,7 @@
                 {{ blog.excerpt }}
               </p>
               <div class="mt-auto">
-                <button class="px-6 py-2 border border-[#00a5c5] text-[#00a5c5] rounded-full font-poppins text-xs hover:bg-black hover:text-[#00a5c5] transition-colors font-medium lowercase cursor-pointer">
+                <button class="px-6 py-2 bg-black text-white hover:bg-[#1ca3c4] hover:scale-105 rounded-full font-poppins text-xs transition-all duration-300 font-medium lowercase cursor-pointer">
                   Read article
                 </button>
               </div>
@@ -137,7 +137,7 @@
       </div>
 
       <div class="flex justify-center">
-        <button class="bg-black hover:bg-[#00a5c5] text-white px-8 py-3 rounded-full font-poppins text-sm transition-colors shadow-sm font-medium lowercase cursor-pointer">
+        <button class="bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white px-8 py-3 rounded-full font-poppins text-sm transition-all duration-300 shadow-sm font-medium lowercase cursor-pointer">
           Load more...
         </button>
       </div>

@@ -126,8 +126,8 @@ const inputClass = computed(() => {
 
 const buttonClass = computed(() => {
   return props.variant === 'modal'
-    ? 'flex w-full items-center justify-center gap-2 rounded-xl bg-black hover:bg-[#1ca3c4] py-3.5 text-sm text-white shadow-lg shadow-[#1ca3c4]/10 active:scale-[0.98] transition-all duration-300 disabled:opacity-50 font-poppins font-medium lowercase'
-    : 'w-full bg-black hover:bg-[#00a5c5] text-white font-poppins text-sm py-3.5 rounded-full transition-colors shadow-sm font-medium lowercase cursor-pointer flex justify-center items-center h-[52px]';
+    ? 'flex w-full items-center justify-center gap-2 rounded-xl bg-black hover:bg-[#1ca3c4] hover:scale-105 py-3.5 text-sm text-white shadow-lg shadow-[#1ca3c4]/10 active:scale-[0.98] transition-all duration-300 disabled:opacity-50 font-poppins font-medium lowercase'
+    : 'w-full bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-sm py-3.5 rounded-full transition-all duration-300 shadow-sm font-medium lowercase cursor-pointer flex justify-center items-center h-[52px]';
 });
 
 const handleSubmit = async () => {

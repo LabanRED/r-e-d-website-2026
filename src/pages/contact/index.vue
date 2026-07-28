@@ -126,7 +126,7 @@
             href="https://maps.google.com"
             target="_blank"
             rel="noreferrer"
-            class="inline-block bg-black hover:bg-[#00a5c5] text-white font-poppins text-sm font-semibold px-8 py-3 rounded-full transition-colors shadow-sm cursor-pointer"
+            class="inline-block bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-sm font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-sm cursor-pointer"
           >
             Directions
           </a>
