@@ -14,7 +14,7 @@
         </p>
         <button
           @click="$emit('cta-click')"
-          class="font-poppins font-medium text-[15px] text-white bg-black btn-slide-in rounded-full px-8 py-3 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md lowercase"
+          class="font-poppins font-medium text-[15px] text-white bg-black btn-slide-in rounded-full px-8 py-3 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md lowercase"
         >
           schedule a meeting today
         </button>
@@ -51,7 +51,7 @@
 
           <button
             @click="$emit('cta-click')"
-            class="font-poppins font-medium text-[16px] text-white bg-black btn-slide-in rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg lowercase"
+            class="font-poppins font-medium text-[16px] text-white bg-black btn-slide-in rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg lowercase"
             style="padding: 20px"
           >
             schedule a meeting today
@@ -75,7 +75,7 @@
         <!-- Mobile Button: outlined pill shape transitioning to filled cyan on hover/click -->
         <button
           @click="$emit('cta-click')"
-          class="font-poppins text-xs sm:text-sm tracking-widest text-white border-none rounded-full py-4 px-8 bg-black btn-slide-in transition-all duration-300 hover:scale-[1.02] active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase"
+          class="font-poppins text-xs sm:text-sm tracking-widest text-white border-none rounded-full py-4 px-8 bg-black btn-slide-in transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase"
         >
           schedule a meeting today
         </button>

@@ -39,6 +39,7 @@ body {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  transition: transform 0.3s ease-out, background-color 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
 .btn-slide-in::before {
@@ -56,4 +57,8 @@ body {
 
 .btn-slide-in:hover::before {
   transform: translateX(0);
+}
+
+.btn-slide-in:hover {
+  transform: scale(1.05);
 }

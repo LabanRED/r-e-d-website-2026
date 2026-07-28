@@ -53,7 +53,7 @@
             <div>
               <NuxtLink
                 to="/contact"
-                class="inline-block font-poppins text-xs text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-white! hover:text-[#0866FF]! px-6 py-3 rounded-full transition-all duration-300 font-medium lowercase"
+                class="inline-block font-poppins text-xs text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-[#1ca3c4]! hover:text-white! hover:scale-105 px-6 py-3 rounded-full transition-all duration-300 font-medium lowercase"
               >
                 Partner with us today
               </NuxtLink>
@@ -109,7 +109,7 @@
             <div>
               <NuxtLink
                 to="/contact"
-                class="inline-block font-poppins text-xs text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-white! hover:text-[#4F81BD]! px-6 py-3 rounded-full transition-all duration-300 font-medium lowercase"
+                class="inline-block font-poppins text-xs text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-[#1ca3c4]! hover:text-white! hover:scale-105 px-6 py-3 rounded-full transition-all duration-300 font-medium lowercase"
               >
                 Partner with us today
               </NuxtLink>

@@ -8,7 +8,7 @@
       </p>
       
       <div class="mt-12">
-        <NuxtLink to="/" class="inline-flex items-center justify-center rounded-full bg-white text-black hover:bg-neutral-200 px-8 py-3.5 text-sm font-semibold transition-colors duration-200">
+        <NuxtLink to="/" class="inline-flex items-center justify-center rounded-full bg-black text-white hover:bg-[#1ca3c4] hover:scale-105 px-8 py-3.5 text-sm font-semibold transition-all duration-300">
           Return Home
         </NuxtLink>
       </div>

@@ -48,7 +48,7 @@
             <div class="flex flex-wrap items-center gap-4">
               <button
                 @click="openModal"
-                class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-neutral-800 rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
+                class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-[#1ca3c4] rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
                 style="padding: 20px 40px"
               >
                 Book your demo
@@ -79,7 +79,7 @@
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 w-full sm:w-auto">
             <button
               @click="openModal"
-              class="font-poppins text-xs sm:text-sm tracking-widest text-white border-2 border-black rounded-full py-4 px-8 bg-black hover:bg-neutral-800 active:bg-neutral-900 transition-all duration-300 hover:scale-[1.02] active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase cursor-pointer"
+              class="font-poppins text-xs sm:text-sm tracking-widest text-white border-2 border-black rounded-full py-4 px-8 bg-black hover:bg-[#1ca3c4] active:bg-[#1ca3c4] transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase cursor-pointer"
             >
               Book your demo
             </button>
@@ -648,7 +648,7 @@
           <div class="mb-10">
             <button
               @click="openModal"
-              class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-neutral-800 rounded-full py-4 px-10 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
+              class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-[#1ca3c4] rounded-full py-4 px-10 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
             >
               Book your demo
             </button>
@@ -726,7 +726,7 @@
           <div class="mb-8 w-full sm:w-auto">
             <button
               @click="openModal"
-              class="font-poppins font-medium text-sm sm:text-base text-white bg-black hover:bg-neutral-800 rounded-full py-3.5 px-8 transition-all duration-300 hover:scale-[1.02] active:scale-95 shadow-md lowercase cursor-pointer w-full sm:w-auto"
+              class="font-poppins font-medium text-sm sm:text-base text-white bg-black hover:bg-[#1ca3c4] rounded-full py-3.5 px-8 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md lowercase cursor-pointer w-full sm:w-auto"
             >
               Book your demo
             </button>
@@ -785,7 +785,7 @@
             <p class="font-poppins text-neutral-800 text-md font-regular leading-[1.6] mb-8 max-w-xl tracking-wide">
               Manage your customer lifecycle with outbound campaigns, automatic lead re-engagement, service, and appointment reminders.Capture24/7 leads, schedule test drives, and exchange secure documents - all while keeping your sales, service, and admin teams perfectly connected.
             </p>
-            <button class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-[#00a5c5] active:scale-95 px-9 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer">
+            <button class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-[#1ca3c4] hover:scale-105 active:scale-95 px-9 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer">
               Read more
             </button>
           </div>
@@ -811,7 +811,7 @@
             Capture 24/7 leads, schedule test drives, send automated reminders, and exchange secure documents, all while keeping your sales, service, and admin teams perfectly connected.
           </p>
           <div>
-            <button class="font-poppins font-medium text-sm sm:text-base text-white bg-black hover:bg-[#00a5c5] active:bg-[#00a5c5] active:scale-95 px-8 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer">
+            <button class="font-poppins font-medium text-sm sm:text-base text-white bg-black hover:bg-[#1ca3c4] hover:scale-105 active:bg-[#1ca3c4] active:scale-95 px-8 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer">
               Read more
             </button>
           </div>
@@ -835,7 +835,7 @@
                     {{ feature.desc }}
                   </p>
                 </div>
-                <button @click="openModal" class="ml-6 bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer">
+                <button @click="openModal" class="ml-6 bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer">
                   Enquire today
                 </button>
               </div>
@@ -846,7 +846,7 @@
 
         <!-- Desktop View More / View Less Button -->
         <div class="hidden lg:flex mt-20 justify-center">
-          <button v-if="!isFeaturesExpanded" @click="isFeaturesExpanded = true" class="bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 text-lg cursor-pointer">
+          <button v-if="!isFeaturesExpanded" @click="isFeaturesExpanded = true" class="bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 text-lg cursor-pointer">
             View more
           </button>
           <button v-else @click="collapseFeatures" class="bg-transparent border-2 border-[#00a5c5] text-[#00a5c5] hover:bg-black hover:text-[#00a5c5] font-poppins font-medium px-10 py-3.5 rounded-full transition-all duration-300 active:scale-95 text-lg cursor-pointer">
@@ -874,7 +874,7 @@
                     {{ feature.desc }}
                   </p>
                 </div>
-                <button @click="openModal" class="ml-4 bg-black hover:bg-[#00a5c5] active:bg-[#00a5c5] text-white font-poppins font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer">
+                <button @click="openModal" class="ml-4 bg-black hover:bg-[#1ca3c4] hover:scale-105 active:bg-[#1ca3c4] text-white font-poppins font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer">
                   Enquire today
                 </button>
               </div>
@@ -1036,7 +1036,7 @@
             </p>
             <button
               @click="openModal"
-              class="bg-black hover:bg-[#00a5c5] text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 text-lg lowercase cursor-pointer"
+              class="bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 text-lg lowercase cursor-pointer"
             >
               Contact us today
             </button>
@@ -1171,7 +1171,7 @@
 
         <button
           @click="openModal"
-          class="bg-black hover:bg-neutral-800 text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-base tracking-wide font-medium lowercase cursor-pointer btn-slide-in"
+          class="bg-black hover:bg-[#1ca3c4] text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 text-base tracking-wide font-medium lowercase cursor-pointer btn-slide-in"
         >
           schedule a meeting today
         </button>

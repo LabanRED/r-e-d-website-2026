@@ -63,7 +63,7 @@
 
             <button
               @click="handleReset"
-              class="rounded-full bg-black hover:bg-[#1ca3c4] px-8 py-3 text-sm text-white transition-all duration-300 shadow-md shadow-[#1ca3c4]/10 font-poppins font-medium lowercase"
+              class="rounded-full bg-black hover:bg-[#1ca3c4] hover:scale-105 px-8 py-3 text-sm text-white transition-all duration-300 shadow-md shadow-[#1ca3c4]/10 font-poppins font-medium lowercase"
             >
               Return to Site
             </button>

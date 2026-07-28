@@ -24,7 +24,7 @@
       </p>
       <NuxtLink
         to="/services"
-        class="inline-block bg-black hover:bg-[#00a5c5] text-white font-poppins text-[14px] sm:text-[15px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 tracking-wide font-medium lowercase cursor-pointer"
+        class="inline-block bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-[14px] sm:text-[15px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 tracking-wide font-medium lowercase cursor-pointer"
       >
         Back to services
       </NuxtLink>

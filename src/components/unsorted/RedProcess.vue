@@ -21,7 +21,7 @@
           </p>
           <button
             @click="$emit('cta-click')"
-            class="inline-block font-poppins text-xs tracking-widest text-white bg-black btn-slide-in rounded-full py-4 px-10 hover:scale-[1.02] active:scale-95 transition-all duration-300 shadow-md font-medium lowercase"
+            class="inline-block font-poppins text-xs tracking-widest text-white bg-black btn-slide-in rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-md font-medium lowercase"
           >
             schedule a meeting today
           </button>
