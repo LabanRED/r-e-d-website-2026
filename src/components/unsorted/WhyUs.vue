@@ -5,7 +5,7 @@
       <!-- Header Section -->
       <div class="text-center mb-16">
         <div class="h-auto justify-center items-center mx-auto text-center w-3xs md:w-lg lg:w-lg">
-          <span class="font-poppins text-sm sm:text-base font-normal text-[#1ca3c4] tracking-wide block mb-3">
+          <span class="font-poppins text-sm sm:text-base font-normal text-primary tracking-wide block mb-3">
             Why us?
           </span>
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl md:text-[3.5rem] lg:text-[3.5rem] tracking-tight leading-tight mx-auto">
@@ -73,7 +73,7 @@
         >
           <div>
             <!-- Badge -->
-            <span class="inline-block bg-[#1ca3c4] text-white font-poppins text-xs font-semibold px-4 py-2 rounded-full mb-8">
+            <span class="inline-block bg-primary text-white font-poppins text-xs font-semibold px-4 py-2 rounded-full mb-8">
               With R-E-D
             </span>
 
@@ -122,7 +122,7 @@
 
         <button
           @click="$emit('cta-click')"
-          class="font-poppins text-xs tracking-widest text-white bg-black btn-slide-in rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 font-medium lowercase"
+          class="font-poppins tracking-widest text-white bg-black btn-slide-in rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 font-medium lowercase text-base"
         >
           schedule a meeting today
         </button>

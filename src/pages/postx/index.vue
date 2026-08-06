@@ -48,7 +48,7 @@
             <div class="flex flex-wrap items-center gap-4">
               <button
                 @click="openModal"
-                class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-[#1ca3c4] rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
+                class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
                 style="padding: 20px 40px"
               >
                 Book your demo
@@ -79,7 +79,7 @@
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 w-full sm:w-auto">
             <button
               @click="openModal"
-              class="font-poppins text-xs sm:text-sm tracking-widest text-white border-2 border-black rounded-full py-4 px-8 bg-black hover:bg-[#1ca3c4] active:bg-[#1ca3c4] transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase cursor-pointer"
+              class="font-poppins tracking-widest text-white border-2 border-black rounded-full py-4 px-8 bg-black hover:bg-primary active:bg-primary transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase cursor-pointer text-base"
             >
               Book your demo
             </button>
@@ -361,10 +361,10 @@
           <!-- Pagination Controls -->
           <div class="flex justify-between items-center mt-6 px-1">
             <!-- Pagination Pill -->
-            <div class="border border-[#00A5C5] text-[#00A5C5] rounded-full px-5 h-[34px] text-sm font-poppins font-medium flex items-center justify-center gap-1">
+            <div class="border border-primary text-primary rounded-full px-5 h-[34px] text-sm font-poppins font-medium flex items-center justify-center gap-1">
               <div class="relative w-3 h-5 overflow-hidden flex items-center justify-center">
                 <transition name="pop">
-                  <span :key="activePillar" class="absolute font-semibold text-[#00A5C5]">
+                  <span :key="activePillar" class="absolute font-semibold text-primary">
                     {{ activePillar + 1 }}
                   </span>
                 </transition>
@@ -507,7 +507,7 @@
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-3xl md:text-4xl lg:text-[3rem] leading-[1.1] text-neutral-950 mb-8 tracking-tight">
             Ready to simplify<br />your conversations?
           </h2>
-          <div class="font-poppins font-medium text-sm md:text-[16px] text-white bg-black group-hover:bg-neutral-800 rounded-full py-4 px-10 transition-all duration-300 shadow-md">
+          <div class="font-poppins font-medium md:text-[16px] text-white bg-black group-hover:bg-neutral-800 rounded-full py-4 px-10 transition-all duration-300 shadow-md text-base">
             Book your demo
           </div>
         </div>
@@ -574,13 +574,13 @@
         <div class="flex items-center justify-center gap-4">
           <button
             @click="prevInsight"
-            class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#00a5c5] flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 font-poppins font-medium lowercase cursor-pointer"
+            class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 font-poppins font-medium lowercase cursor-pointer"
           >
             <img loading="lazy" :src="cartLeftChevron" alt="Previous" class="w-5 h-5 md:w-6 md:h-6 object-contain" />
           </button>
           <button
             @click="nextInsight"
-            class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#00a5c5] flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 font-poppins font-medium lowercase cursor-pointer"
+            class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 font-poppins font-medium lowercase cursor-pointer"
           >
             <img loading="lazy" :src="cartRightChevron" alt="Next" class="w-5 h-5 md:w-6 md:h-6 object-contain" />
           </button>
@@ -631,7 +631,7 @@
         <!-- Overlaid Desktop Content (Right-aligned over the background space) -->
         <div class="relative z-10 ml-auto w-full lg:w-[52%] xl:w-[48%] py-16 flex flex-col items-start text-left">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.25] text-neutral-950 mb-6 tracking-tight">
-            Post<span class="text-[#00a5c5] font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
+            Post<span class="text-primary font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
           </h2>
 
           <p class="font-poppins font-regular text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
@@ -640,7 +640,7 @@
 
           <ul class="space-y-3.5 mb-8">
             <li v-for="(item, i) in ['Dedicated AI agents', 'Content posting & scheduling', 'Google Review Booster', 'Analytics & insights', 'Unlimited users on every plan']" :key="i" class="flex items-center gap-3 font-poppins text-neutral-800 font-medium text-sm sm:text-base">
-              <span class="w-2 h-2 rounded-full bg-[#00a5c5] flex-shrink-0" />
+              <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
               <span>{{ item }}</span>
             </li>
           </ul>
@@ -648,7 +648,7 @@
           <div class="mb-10">
             <button
               @click="openModal"
-              class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-[#1ca3c4] rounded-full py-4 px-10 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
+              class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full py-4 px-10 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
             >
               Book your demo
             </button>
@@ -709,7 +709,7 @@
         <!-- Content -->
         <div class="w-full max-w-xl flex flex-col items-start">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl leading-[1.25] text-neutral-950 mb-6 tracking-tight">
-            Post<span class="text-[#00a5c5] font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
+            Post<span class="text-primary font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
           </h2>
 
           <p class="font-poppins font-regular text-neutral-700 text-sm sm:text-base leading-relaxed mb-6">
@@ -718,7 +718,7 @@
 
           <ul class="space-y-3 mb-6">
             <li v-for="(item, i) in ['Dedicated AI agents', 'Content posting & scheduling', 'Google Review Booster', 'Analytics & insights', 'Unlimited users on every plan']" :key="i" class="flex items-center gap-3 font-poppins text-neutral-800 font-medium text-sm">
-              <span class="w-2 h-2 rounded-full bg-[#00a5c5] flex-shrink-0" />
+              <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
               <span>{{ item }}</span>
             </li>
           </ul>
@@ -726,7 +726,7 @@
           <div class="mb-8 w-full sm:w-auto">
             <button
               @click="openModal"
-              class="font-poppins font-medium text-sm sm:text-base text-white bg-black hover:bg-[#1ca3c4] rounded-full py-3.5 px-8 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md lowercase cursor-pointer w-full sm:w-auto"
+              class="font-poppins font-medium text-white bg-black hover:bg-primary rounded-full py-3.5 px-8 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md lowercase cursor-pointer w-full sm:w-auto text-base"
             >
               Book your demo
             </button>
@@ -785,7 +785,7 @@
             <p class="font-poppins text-neutral-800 text-md font-regular leading-[1.6] mb-8 max-w-xl tracking-wide">
               Manage your customer lifecycle with outbound campaigns, automatic lead re-engagement, service, and appointment reminders.Capture24/7 leads, schedule test drives, and exchange secure documents - all while keeping your sales, service, and admin teams perfectly connected.
             </p>
-            <button class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-[#1ca3c4] hover:scale-105 active:scale-95 px-9 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer">
+            <button class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-primary hover:scale-105 active:scale-95 px-9 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer">
               Read more
             </button>
           </div>
@@ -811,7 +811,7 @@
             Capture 24/7 leads, schedule test drives, send automated reminders, and exchange secure documents, all while keeping your sales, service, and admin teams perfectly connected.
           </p>
           <div>
-            <button class="font-poppins font-medium text-sm sm:text-base text-white bg-black hover:bg-[#1ca3c4] hover:scale-105 active:bg-[#1ca3c4] active:scale-95 px-8 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer">
+            <button class="font-poppins font-medium text-white bg-black hover:bg-primary hover:scale-105 active:bg-primary active:scale-95 px-8 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer text-base">
               Read more
             </button>
           </div>
@@ -835,7 +835,7 @@
                     {{ feature.desc }}
                   </p>
                 </div>
-                <button @click="openModal" class="ml-6 bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer">
+                <button @click="openModal" class="ml-6 bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer">
                   Enquire today
                 </button>
               </div>
@@ -846,10 +846,10 @@
 
         <!-- Desktop View More / View Less Button -->
         <div class="hidden lg:flex mt-20 justify-center">
-          <button v-if="!isFeaturesExpanded" @click="isFeaturesExpanded = true" class="bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 text-lg cursor-pointer">
+          <button v-if="!isFeaturesExpanded" @click="isFeaturesExpanded = true" class="bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 cursor-pointer text-base">
             View more
           </button>
-          <button v-else @click="collapseFeatures" class="bg-transparent border-2 border-[#00a5c5] text-[#00a5c5] hover:bg-black hover:text-[#00a5c5] font-poppins font-medium px-10 py-3.5 rounded-full transition-all duration-300 active:scale-95 text-lg cursor-pointer">
+          <button v-else @click="collapseFeatures" class="bg-transparent border-2 border-primary text-primary hover:bg-black hover:text-primary font-poppins font-medium px-10 py-3.5 rounded-full transition-all duration-300 active:scale-95 cursor-pointer text-base">
             View less
           </button>
         </div>
@@ -874,7 +874,7 @@
                     {{ feature.desc }}
                   </p>
                 </div>
-                <button @click="openModal" class="ml-4 bg-black hover:bg-[#1ca3c4] hover:scale-105 active:bg-[#1ca3c4] text-white font-poppins font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer">
+                <button @click="openModal" class="ml-4 bg-black hover:bg-primary hover:scale-105 active:bg-primary text-white font-poppins font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer">
                   Enquire today
                 </button>
               </div>
@@ -891,13 +891,13 @@
             <div class="flex items-center gap-4">
               <button
                 @click="scrollToAutomateFeature(Math.max(0, activeAutomateFeature - 1))"
-                class="w-12 h-12 rounded-full bg-[#00a5c5] flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 cursor-pointer"
+                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 cursor-pointer"
               >
                 <img loading="lazy" :src="cartLeftChevron" alt="Previous" class="w-5 h-5 object-contain" />
               </button>
               <button
                 @click="scrollToAutomateFeature(Math.min(automateFeaturesData.length - 1, activeAutomateFeature + 1))"
-                class="w-12 h-12 rounded-full bg-[#00a5c5] flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 cursor-pointer"
+                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 cursor-pointer"
               >
                 <img loading="lazy" :src="cartRightChevron" alt="Next" class="w-5 h-5 object-contain" />
               </button>
@@ -1027,7 +1027,7 @@
           <!-- Text Column -->
           <div class="w-full lg:w-[55%] flex flex-col items-start text-left">
             <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-5xl md:text-5xl font-semibold text-neutral-900 leading-[1.3] tracking-tight mb-8">
-              <span class="text-[#00a5c5]">320+ Clients trusts</span> PostX to<br class="hidden xl:block" /> be part of their daily<br class="hidden xl:block" /> process.
+              <span class="text-primary">320+ Clients trusts</span> PostX to<br class="hidden xl:block" /> be part of their daily<br class="hidden xl:block" /> process.
             </h2>
             <p class="font-poppins text-lg md:text-xl text-neutral-800 font-medium leading-[1.7] max-w-2xl mb-12">
               From a small independent business to a multi-franchise motor
@@ -1036,7 +1036,7 @@
             </p>
             <button
               @click="openModal"
-              class="bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 text-lg lowercase cursor-pointer"
+              class="bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 lowercase cursor-pointer text-base"
             >
               Contact us today
             </button>
@@ -1061,7 +1061,7 @@
         <img loading="lazy" :src="postXLogo" alt="PostX" class="h-10 md:h-12 lg:h-13 mb-4 object-contain" />
 
         <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-5xl lg:text-5xl leading-[1.2] tracking-tight text-neutral-900 mb-8">
-          <span class="text-[#00a5c5] font-semibold"> Capabilities shipping continuosly -</span> <span class="italic font-light">your PostX gets smarter over time.</span>
+          <span class="text-primary font-semibold"> Capabilities shipping continuosly -</span> <span class="italic font-light">your PostX gets smarter over time.</span>
         </h2>
 
         <p class="font-poppins text-base sm:text-lg md:text-xl text-neutral-700 font-medium leading-[1.7] max-w-4xl mx-auto mb-16 px-4">
@@ -1092,7 +1092,7 @@
 
         <!-- Left Side: Headings & CTA Card -->
         <div class="w-full lg:w-[40%] flex flex-col items-start">
-          <span class="text-[#00a5c5] font-poppins text-lg font-medium mb-4">Why us?</span>
+          <span class="text-primary font-poppins text-lg font-medium mb-4">Why us?</span>
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-[4rem] leading-[1.1] font-medium text-neutral-900 mb-10 tracking-tight">
             Frequently asked<br />questions
           </h2>
@@ -1128,7 +1128,7 @@
               <span class="font-poppins font-semibold text-lg sm:text-xl text-neutral-900 pr-4">
                 {{ faq.question }}
               </span>
-              <div class="flex-shrink-0 text-[#00a5c5] transition-transform duration-300" :class="{ 'rotate-180': activeFaq === index }">
+              <div class="flex-shrink-0 text-primary transition-transform duration-300" :class="{ 'rotate-180': activeFaq === index }">
                 <ChevronDown class="w-6 h-6" stroke-width="2.5" />
               </div>
             </button>
@@ -1166,12 +1166,12 @@
         </h2>
 
         <p class="font-poppins text-neutral-500 text-lg sm:text-[1.3rem] font-medium leading-[1.6] max-w-2xl mx-auto mb-10">
-          If you'd like to know more about how Post<span class="text-[#00a5c5]">X</span><br class="hidden sm:block" /> can help your business manage leads.
+          If you'd like to know more about how Post<span class="text-primary">X</span><br class="hidden sm:block" /> can help your business manage leads.
         </p>
 
         <button
           @click="openModal"
-          class="bg-black hover:bg-[#1ca3c4] text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 text-base tracking-wide font-medium lowercase cursor-pointer btn-slide-in"
+          class="bg-black hover:bg-primary text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 tracking-wide font-medium lowercase cursor-pointer btn-slide-in text-base"
         >
           schedule a meeting today
         </button>

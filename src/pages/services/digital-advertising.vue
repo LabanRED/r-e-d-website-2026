@@ -9,7 +9,7 @@
     <div class="mx-auto lg:w-[95%] max-w-[1600px] px-8 lg:px-0 mb-6">
       <NuxtLink
         to="/services"
-        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-[#00a5c5] transition-colors duration-200"
+        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
         Back to Services
@@ -27,8 +27,8 @@
           <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-6xl lg:text-6xl text-neutral-800 font-semibold leading-[1.1] tracking-tight">
             Driving real <br class="hidden sm:block" />
             growth through <br class="hidden sm:block" />
-            <span class="text-[#00a5c5]">data-driven</span> <br class="hidden sm:block" />
-            <span class="text-[#00a5c5]">digital advertising</span>
+            <span class="text-primary">data-driven</span> <br class="hidden sm:block" />
+            <span class="text-primary">digital advertising</span>
           </h1>
         </div>
 
@@ -55,7 +55,7 @@
       </p>
 
       <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-800 leading-tight mb-16">
-        <span class="text-[#00a5c5]">Select</span> a relevant advertising <br class="hidden sm:block" />
+        <span class="text-primary">Select</span> a relevant advertising <br class="hidden sm:block" />
         platform for more information
       </h2>
 
@@ -94,7 +94,7 @@
     <!-- Facebook & Instagram Section -->
     <section id="facebook-instagram" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
       <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
-        Facebook <span class="text-[#00a5c5]">&</span> Instagram advertising
+        Facebook <span class="text-primary">&</span> Instagram advertising
       </h2>
 
       <p class="font-poppins text-neutral-800 text-lg mb-6 leading-relaxed max-w-[1600px]">
@@ -108,12 +108,12 @@
       <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
         <div class="flex-1">
           <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through Facebook and Instagram our specialists can<span class="text-[#00a5c5]">:</span>
+            Through Facebook and Instagram our specialists can<span class="text-primary">:</span>
           </h3>
 
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -121,7 +121,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -129,7 +129,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -137,7 +137,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -145,7 +145,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -155,8 +155,8 @@
           </ul>
 
           <button
-            @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
+            @click="openModal('Digital Advertising')"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
           >
             schedule a meeting today
           </button>
@@ -196,11 +196,11 @@
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
           <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through Google our specialists can<span class="text-[#00a5c5]">:</span>
+            Through Google our specialists can<span class="text-primary">:</span>
           </h3>
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -208,7 +208,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -217,8 +217,8 @@
             </li>
           </ul>
           <button
-            @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
+            @click="openModal('Digital Advertising')"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
           >
             schedule a meeting today
           </button>
@@ -242,11 +242,11 @@
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
           <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through LinkedIn our specialists can<span class="text-[#00a5c5]">:</span>
+            Through LinkedIn our specialists can<span class="text-primary">:</span>
           </h3>
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -254,7 +254,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -263,8 +263,8 @@
             </li>
           </ul>
           <button
-            @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
+            @click="openModal('Digital Advertising')"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
           >
             schedule a meeting today
           </button>
@@ -303,11 +303,11 @@
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
           <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through TikTok our specialists can<span class="text-[#00a5c5]">:</span>
+            Through TikTok our specialists can<span class="text-primary">:</span>
           </h3>
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -315,7 +315,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -323,7 +323,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -332,8 +332,8 @@
             </li>
           </ul>
           <button
-            @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
+            @click="openModal('Digital Advertising')"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
           >
             schedule a meeting today
           </button>
@@ -363,11 +363,11 @@
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
           <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through SMS campaigns our specialists can<span class="text-[#00a5c5]">:</span>
+            Through SMS campaigns our specialists can<span class="text-primary">:</span>
           </h3>
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -375,7 +375,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -383,7 +383,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -391,7 +391,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -399,7 +399,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -408,8 +408,8 @@
             </li>
           </ul>
           <button
-            @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
+            @click="openModal('Digital Advertising')"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
           >
             schedule a meeting today
           </button>
@@ -433,11 +433,11 @@
             class="w-screen md:w-[690px] lg-w-[690px] h-auto object-contain mb-10"
           />
           <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through email marketing campaigns our specialists can<span class="text-[#00a5c5]">:</span>
+            Through email marketing campaigns our specialists can<span class="text-primary">:</span>
           </h3>
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -445,7 +445,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -453,7 +453,7 @@
               </p>
             </li>
             <li class="flex items-start gap-4">
-              <div class="mt-1 bg-[#00a5c5] rounded-full p-1 text-white shrink-0">
+              <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
               <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
@@ -462,8 +462,8 @@
             </li>
           </ul>
           <button
-            @click="openModal"
-            class="mt-12 bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
+            @click="openModal('Digital Advertising')"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
           >
             schedule a meeting today
           </button>
@@ -479,7 +479,7 @@
 
     <!-- FAQ Section -->
     <section class="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 max-w-[900px] mx-auto flex flex-col items-center">
-      <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[#00a5c5] text-lg sm:text-xl mb-2 text-center">
+      <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-primary text-lg sm:text-xl mb-2 text-center">
         Why us?
       </h3>
       <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 mb-16 text-center tracking-tight">
@@ -489,10 +489,10 @@
       <div class="w-full flex flex-col mb-16">
         <div v-for="(faq, index) in faqData" :key="index" class="w-full border-b border-neutral-200 overflow-hidden transition-all duration-300">
           <button @click="toggleFaq(index)" class="w-full flex items-center justify-between py-6 sm:py-8 text-left focus:outline-none group cursor-pointer">
-            <span class="font-poppins text-lg sm:text-xl text-neutral-800 group-hover:text-[#00a5c5] transition-colors pr-4">
+            <span class="font-poppins text-lg sm:text-xl text-neutral-800 group-hover:text-primary transition-colors pr-4">
               {{ faq.question }}
             </span>
-            <div :class="['flex-shrink-0 text-[#00a5c5] transition-transform duration-300', activeFaq === index ? 'rotate-180' : 'rotate-0']">
+            <div :class="['flex-shrink-0 text-primary transition-transform duration-300', activeFaq === index ? 'rotate-180' : 'rotate-0']">
               <ChevronDown class="w-6 h-6" stroke-width="2" />
             </div>
           </button>
@@ -517,11 +517,11 @@
 
       <div class="text-center flex flex-col items-center">
         <p class="font-poppins text-neutral-600 text-lg sm:text-xl leading-relaxed mb-8 max-w-[600px]">
-          If you'd like to know more about how R<span class="text-[#00a5c5]">-</span>E<span class="text-[#00a5c5]">-</span>D can help your business generate more leads.
+          If you'd like to know more about how R<span class="text-primary">-</span>E<span class="text-primary">-</span>D can help your business generate more leads.
         </p>
         <button
-          @click="openModal"
-          class="bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
+          @click="openModal('Digital Advertising')"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
         >
           schedule a meeting today
         </button>

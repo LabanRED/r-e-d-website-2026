@@ -6,11 +6,11 @@
       <!-- NEW DESKTOP HEADING (Above Banner) -->
       <div class="hidden lg:flex flex-col items-center text-center mt-4">
         <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-[3.5rem] leading-[1.15] tracking-tight mb-4 text-neutral-900">
-          <span class="text-[#1ca3c4]">Conversion</span> based,<br />
+          <span class="text-primary">Conversion</span> based,<br />
           results driven marketing
         </h1>
         <p class="font-poppins text-neutral-500 text-lg leading-relaxed max-w-2xl mb-8">
-          Over <span class="text-[#1ca3c4] font-semibold">500+</span> satisfied clients across South Africa trust us to manage their monthly lead generation and Ad spend.
+          Over <span class="text-primary font-semibold">500+</span> satisfied clients across South Africa trust us to manage their monthly lead generation and Ad spend.
         </p>
         <button
           @click="$emit('cta-click')"
@@ -63,19 +63,19 @@
       <div class="flex lg:hidden w-full flex-col items-center text-center px-4">
         <!-- Mobile Heading with Conversion highlighted in cyan -->
         <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-[2.25rem] md:text-5xl leading-tight tracking-tight mb-4">
-          <span class="text-[#1ca3c4]">Conversion</span> based,<br />
+          <span class="text-primary">Conversion</span> based,<br />
           results driven marketing
         </h1>
 
         <!-- Mobile Description with 500+ highlighted -->
         <p class="font-poppins text-neutral-600 text-sm sm:text-base leading-relaxed max-w-xl mb-6">
-          Over <span class="text-[#1ca3c4] font-semibold">500+</span> satisfied clients across South Africa trust us to manage their monthly lead generation and Ad spend.
+          Over <span class="text-primary font-semibold">500+</span> satisfied clients across South Africa trust us to manage their monthly lead generation and Ad spend.
         </p>
 
         <!-- Mobile Button: outlined pill shape transitioning to filled cyan on hover/click -->
         <button
           @click="$emit('cta-click')"
-          class="font-poppins text-xs sm:text-sm tracking-widest text-white border-none rounded-full py-4 px-8 bg-black btn-slide-in transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase"
+          class="font-poppins tracking-widest text-white border-none rounded-full py-4 px-8 bg-black btn-slide-in transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase text-base"
         >
           schedule a meeting today
         </button>

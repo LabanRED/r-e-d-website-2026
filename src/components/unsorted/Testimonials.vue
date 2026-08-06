@@ -4,7 +4,7 @@
       
       <!-- Header Section -->
       <div class="text-center mb-16">
-        <span class="font-poppins text-sm sm:text-base font-regular text-[#1ca3c4] tracking-wide block mb-3">
+        <span class="font-poppins text-sm sm:text-base font-regular text-primary tracking-wide block mb-3">
           What our clients say
         </span>
         <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-3xl sm:text-4xl md:text-5xl tracking-tight leading-tight max-w-3xl md:w-125 lg:w-125 mx-auto">
@@ -77,7 +77,7 @@
             @click="scrollTo(idx)"
             :class="[
               'w-3 h-3 rounded-full transition-colors',
-              activeIndex === idx ? 'bg-[#00a5c5]' : 'bg-neutral-200'
+              activeIndex === idx ? 'bg-primary' : 'bg-neutral-200'
             ]"
             :aria-label="`Go to slide ${idx + 1}`"
           ></button>
@@ -92,7 +92,7 @@
               'w-14 h-14 rounded-full flex items-center justify-center transition-all',
               activeIndex === 0 
                 ? 'bg-neutral-200 text-neutral-400' 
-                : 'bg-[#00a5c5] text-white hover:bg-[#0092af] active:scale-95 shadow-md'
+                : 'bg-primary text-white hover:bg-[#0092af] active:scale-95 shadow-md'
             ]"
             aria-label="Previous testimonial"
           >
@@ -105,7 +105,7 @@
               'w-14 h-14 rounded-full flex items-center justify-center transition-all',
               activeIndex === testimonials.length - 1 
                 ? 'bg-neutral-200 text-neutral-400' 
-                : 'bg-[#00a5c5] text-white hover:bg-[#0092af] active:scale-95 shadow-md'
+                : 'bg-primary text-white hover:bg-[#0092af] active:scale-95 shadow-md'
             ]"
             aria-label="Next testimonial"
           >

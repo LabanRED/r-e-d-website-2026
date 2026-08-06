@@ -11,6 +11,13 @@
 @theme {
   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  /* Theme Colors */
+  --color-primary: #00A5C5;
+  --color-secondary: #2C8799;
+  --color-tertiary: #284D55;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #000000;
 }
 
 /* Custom smooth scroll behaviors */
@@ -49,7 +56,7 @@ body {
   left: -5%;
   width: 110%;
   height: calc(100% + 10px);
-  background-color: #1ca3c4;
+  background-color: var(--color-primary);
   transform: translateX(-100%);
   transition: transform 0.3s ease-out;
   z-index: -1;

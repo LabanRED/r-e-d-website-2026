@@ -7,7 +7,7 @@
       <div class="mb-8">
         <NuxtLink
           to="/"
-          class="inline-flex items-center gap-2 text-sm mt-8 font-medium text-neutral-500 hover:text-[#00a5c5] transition-colors duration-200"
+          class="inline-flex items-center gap-2 text-sm mt-8 font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
         >
           <ArrowLeft class="w-4 h-4" />
           Back to home
@@ -17,7 +17,7 @@
       <!-- Mobile Heading -->
       <div class="block md:hidden mb-6 mt-4">
         <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins justify-center text-center text-4xl font-semibold text-[#222] leading-[1.1]">
-          <span class="text-[#00a5c5]">Contact</span> our<br />team today.
+          <span class="text-primary">Contact</span> our<br />team today.
         </h1>
       </div>
 
@@ -37,7 +37,7 @@
         <!-- Desktop Text Overlay -->
         <div class="hidden md:flex absolute inset-0 items-center justify-start px-8 sm:px-12 md:px-16 lg:px-24">
           <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins md:mt-24 text-3xl md:text-6xl lg:text-6xl font-semibold text-[#222] leading-[1.1] max-w-[200px] sm:max-w-sm md:max-w-md">
-            <span class="text-[#00a5c5]">Contact</span> our<br />team today.
+            <span class="text-primary">Contact</span> our<br />team today.
           </h1>
         </div>
       </div>
@@ -65,7 +65,7 @@
 
       <!-- Office Information Section -->
       <div class="text-center mb-16">
-        <p class="text-[#00a5c5] text-xs font-semibold tracking-widest uppercase mb-2">CONTACT US</p>
+        <p class="text-primary text-xs font-semibold tracking-widest uppercase mb-2">CONTACT US</p>
         <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-4xl font-semibold text-neutral-800 mb-16">Our office information</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
@@ -117,7 +117,7 @@
       <!-- Location Section -->
       <div class="flex flex-col lg:flex-col items-center lg:items-center gap-12 lg:gap-20">
         <div class="w-full mx-auto text-center lg:text-center">
-          <p class="text-[#00a5c5] text-xs font-semibold tracking-widest uppercase mb-2">OUR LOCATION</p>
+          <p class="text-primary text-xs font-semibold tracking-widest uppercase mb-2">OUR LOCATION</p>
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-4xl font-semibold text-neutral-800 mb-6">How to find us</h2>
           <p class="font-poppins px-4 md:px-48 lg:px-48 text-neutral-600 text-base leading-relaxed mb-8">
             Find your way to R-E-D with ease using our interactive map. Located in a prime business hub, we're accessible from major routes. If you need any assistance getting here, feel free to contact us for directions.
@@ -126,7 +126,7 @@
             href="https://maps.google.com"
             target="_blank"
             rel="noreferrer"
-            class="inline-block bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-sm font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-sm cursor-pointer"
+            class="inline-block bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-sm cursor-pointer text-base"
           >
             Directions
           </a>
@@ -134,7 +134,7 @@
 
         <div class="w-full">
           <!-- Map Placeholder -->
-          <div class="w-full h-[300px] md:h-[400px] rounded-3xl overflow-hidden border border-[#00A5C5] shadow-xl">
+          <div class="w-full h-[300px] md:h-[400px] rounded-3xl overflow-hidden border border-primary shadow-xl">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3584.09503023249!2d28.0645605!3d-26.0631388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95730a84e1b723%3A0xb3cfbfd4004c2759!2s3%20Polo%20Cres%2C%20Woodmead%2C%20Sandton%2C%202080%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
               width="100%"

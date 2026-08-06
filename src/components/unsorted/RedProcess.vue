@@ -6,11 +6,11 @@
       <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-8 mb-16">
         <!-- Left Title -->
         <div>
-          <span class="font-poppins text-sm sm:text-base font-normal text-[#1ca3c4] tracking-wide block mb-3">
+          <span class="font-poppins text-sm sm:text-base font-normal text-primary tracking-wide block mb-3">
             Why us?
           </span>
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-4xl sm:text-5xl md:text-[3.5rem] text-neutral-900 tracking-tight leading-none">
-            The R<span class="text-[#1ca3c4]">-</span>E<span class="text-[#1ca3c4]">-</span>D process
+            The R<span class="text-primary">-</span>E<span class="text-primary">-</span>D process
           </h2>
         </div>
 
@@ -21,7 +21,7 @@
           </p>
           <button
             @click="$emit('cta-click')"
-            class="inline-block font-poppins text-xs tracking-widest text-white bg-black btn-slide-in rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-md font-medium lowercase"
+            class="inline-block font-poppins tracking-widest text-white bg-black btn-slide-in rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-md font-medium lowercase text-base"
           >
             schedule a meeting today
           </button>
@@ -40,7 +40,7 @@
           :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: index * 50 } }"
           class="relative bg-white rounded-4xl transition-all duration-300 border border-neutral-100/50 cursor-pointer overflow-hidden flex flex-col"
-          :class="hoveredIdx === index ? 'p-6 shadow-xl ring-1 ring-[#1ca3c4]/10 min-h-105' : 'p-8 min-h-70 justify-between shadow-sm hover:shadow-md'"
+          :class="hoveredIdx === index ? 'p-6 shadow-xl ring-1 ring-primary/10 min-h-105' : 'p-8 min-h-70 justify-between shadow-sm hover:shadow-md'"
         >
           <transition
             mode="out-in"
@@ -82,7 +82,7 @@
 
               <!-- Icon Container -->
               <div class="mt-8">
-                <div class="w-12 h-12 rounded-xl bg-[#1ca3c4] flex items-center justify-center text-white shadow-sm select-none">
+                <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white shadow-sm select-none">
                   <Star class="w-5 h-5 fill-current text-white" />
                 </div>
               </div>

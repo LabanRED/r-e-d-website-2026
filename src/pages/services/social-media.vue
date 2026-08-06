@@ -9,7 +9,7 @@
     <div class="mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-0 mb-6">
       <NuxtLink
         to="/services"
-        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-[#1ca3c4] transition-colors duration-200"
+        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
         Back to Services
@@ -41,7 +41,7 @@
             </span>
             <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-6xl leading-[1.1] text-neutral-900 tracking-tight">
               Build Stronger <br /> Customer <br />
-              <span class="text-[#1ca3c4]">Connections<br />Through Social<br />Media</span>
+              <span class="text-primary">Connections<br />Through Social<br />Media</span>
             </h1>
           </div>
         </div>
@@ -53,7 +53,7 @@
           </span>
           <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-4xl sm:text-5xl leading-[1.15] text-neutral-900 tracking-tight mb-8">
             Build Stronger <br /> Customer <br />
-            <span class="text-[#1ca3c4]">Connections Through Social Media</span>
+            <span class="text-primary">Connections Through Social Media</span>
           </h1>
           <div class="w-full relative mt-4 -mb-4 flex justify-end">
             <img
@@ -101,7 +101,7 @@
 
           <ul class="space-y-6 mb-16">
             <li v-for="(point, index) in contentManagementPoints" :key="index" class="flex items-start gap-4">
-              <CheckCircle2 class="w-6 h-6 text-[#1ca3c4] flex-shrink-0 fill-[#1ca3c4]/10 mt-0.5" />
+              <CheckCircle2 class="w-6 h-6 text-primary flex-shrink-0 fill-primary/10 mt-0.5" />
               <span class="font-poppins text-neutral-700 font-medium text-[15px] sm:text-[17px]">
                 {{ point }}
               </span>
@@ -109,8 +109,8 @@
           </ul>
 
           <button
-            @click="openModal"
-            class="font-poppins font-medium text-xs sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer"
+            @click="openModal('Social Media Management')"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-base"
           >
             schedule a meeting today
           </button>
@@ -145,7 +145,7 @@
 
           <ul class="space-y-6 mb-16">
             <li v-for="(point, index) in moderationPoints" :key="index" class="flex items-start gap-4">
-              <CheckCircle2 class="w-6 h-6 text-[#1ca3c4] flex-shrink-0 fill-[#1ca3c4]/10 mt-0.5" />
+              <CheckCircle2 class="w-6 h-6 text-primary flex-shrink-0 fill-primary/10 mt-0.5" />
               <span class="font-poppins text-neutral-700 font-medium text-[15px] sm:text-[17px]">
                 {{ point }}
               </span>
@@ -153,8 +153,8 @@
           </ul>
 
           <button
-            @click="openModal"
-            class="font-poppins font-medium text-xs sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer"
+            @click="openModal('Social Media Management')"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-base"
           >
             schedule a meeting today
           </button>
@@ -209,7 +209,7 @@
 
           <ul class="space-y-6 mb-16">
             <li v-for="(point, index) in profileManagementPoints" :key="index" class="flex items-start gap-4">
-              <CheckCircle2 class="w-6 h-6 text-[#1ca3c4] flex-shrink-0 fill-[#1ca3c4]/10 mt-0.5" />
+              <CheckCircle2 class="w-6 h-6 text-primary flex-shrink-0 fill-primary/10 mt-0.5" />
               <span class="font-poppins text-neutral-700 font-medium text-[15px] sm:text-[17px]">
                 {{ point }}
               </span>
@@ -217,8 +217,8 @@
           </ul>
 
           <button
-            @click="openModal"
-            class="font-poppins font-medium text-xs sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer"
+            @click="openModal('Social Media Management')"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-base"
           >
             schedule a meeting today
           </button>
@@ -247,13 +247,13 @@
 
         <!-- Left Column: Content -->
         <div class="flex flex-col items-start text-left lg:pr-10 order-2 lg:order-1">
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-4xl sm:text-[42px] lg:text-[48px] text-neutral-900 tracking-tight mb-12">
-            AI enabled Live Chat.
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-4xl sm:text-[42px] lg:text-[42px] text-neutral-900 tracking-tight mb-12">
+            AI-powered live chat that qualifies, books & routes - 24/7
           </h2>
 
           <ul class="space-y-6 mb-16">
             <li v-for="(point, index) in liveChatPoints" :key="index" class="flex items-start gap-4">
-              <CheckCircle2 class="w-6 h-6 text-[#1ca3c4] flex-shrink-0 fill-[#1ca3c4]/10 mt-0.5" />
+              <CheckCircle2 class="w-6 h-6 text-primary flex-shrink-0 fill-primary/10 mt-0.5" />
               <span class="font-poppins text-neutral-700 font-medium text-[15px] sm:text-[17px]">
                 {{ point }}
               </span>
@@ -261,8 +261,8 @@
           </ul>
 
           <button
-            @click="openModal"
-            class="font-poppins font-medium text-xs sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer"
+            @click="openModal('Social Media Management')"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-base"
           >
             schedule a meeting today
           </button>
@@ -297,7 +297,7 @@
 
     <!-- FAQ Section -->
     <section class="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 max-w-[900px] mx-auto flex flex-col items-center">
-      <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[#1ca3c4] text-lg sm:text-xl mb-2 text-center">
+      <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-primary text-lg sm:text-xl mb-2 text-center">
         Why us?
       </h3>
       <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 mb-16 text-center tracking-tight">
@@ -307,10 +307,10 @@
       <div class="w-full flex flex-col mb-16">
         <div v-for="(faq, index) in faqData" :key="index" class="w-full border-b border-neutral-200 overflow-hidden transition-all duration-300">
           <button @click="toggleFaq(index)" class="w-full flex items-center justify-between py-6 sm:py-8 text-left focus:outline-none group cursor-pointer">
-            <span class="font-poppins text-lg sm:text-xl text-neutral-800 group-hover:text-[#1ca3c4] transition-colors pr-4">
+            <span class="font-poppins text-lg sm:text-xl text-neutral-800 group-hover:text-primary transition-colors pr-4">
               {{ faq.question }}
             </span>
-            <div :class="['flex-shrink-0 text-[#1ca3c4] transition-transform duration-300', activeFaq === index ? 'rotate-180' : 'rotate-0']">
+            <div :class="['flex-shrink-0 text-primary transition-transform duration-300', activeFaq === index ? 'rotate-180' : 'rotate-0']">
               <ChevronDown class="w-6 h-6" stroke-width="2" />
             </div>
           </button>
@@ -335,11 +335,11 @@
 
       <div class="text-center flex flex-col items-center">
         <p class="font-poppins text-neutral-600 text-lg sm:text-xl leading-relaxed mb-8 max-w-[600px]">
-          If you'd like to know more about how R<span class="text-[#1ca3c4]">-</span>E<span class="text-[#1ca3c4]">-</span>D can help your business generate more leads.
+          If you'd like to know more about how R<span class="text-primary">-</span>E<span class="text-primary">-</span>D can help your business generate more leads.
         </p>
         <button
-          @click="openModal"
-          class="bg-black text-white font-poppins font-medium text-sm sm:text-base px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in"
+          @click="openModal('Social Media Management')"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
         >
           schedule a meeting today
         </button>

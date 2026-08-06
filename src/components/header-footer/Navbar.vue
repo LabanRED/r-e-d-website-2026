@@ -16,24 +16,44 @@
 
         <!-- Desktop Nav Links -->
         <div class="hidden md:flex items-center gap-10">
-          <!-- Products Sub Floating Menu (PostX & Conexa) -->
+          
+          <NuxtLink
+            to="/postx"
+            class="flex items-center group transition-colors duration-200"
+          >
+            <img
+              :src="postXWhiteLogo"
+              alt="PostX"
+              class="h-6 object-contain select-none opacity-85 group-hover:opacity-100 transition-opacity duration-200"
+              referrerpolicy="no-referrer"
+            />
+          </NuxtLink>
+
+          <!-- Why Us -->
+          <NuxtLink
+            to="/#why-us"
+            class="font-sans text-base font-normal tracking-wide text-neutral-300 transition-colors duration-200 hover:text-white flex items-center"
+          >
+            Why Us
+          </NuxtLink>
+
+          <!-- Services Dropdown -->
           <div 
             class="relative group"
-            @mouseenter="isProductsOpen = true"
-            @mouseleave="isProductsOpen = false"
+            @mouseenter="isServicesOpen = true"
+            @mouseleave="isServicesOpen = false"
           >
-            <button
+            <NuxtLink to="/services"
               class="font-sans text-base font-normal tracking-wide text-neutral-300 transition-colors duration-200 hover:text-white flex items-center gap-1.5 py-2 cursor-pointer"
-              @click="isProductsOpen = !isProductsOpen"
             >
-              <span>Products</span>
+              <span>Services</span>
               <ChevronDown 
                 :class="[
                   'w-4 h-4 text-neutral-400 transition-transform duration-200 group-hover:text-white',
-                  isProductsOpen ? 'rotate-180' : ''
+                  isServicesOpen ? 'rotate-180' : ''
                 ]" 
               />
-            </button>
+            </NuxtLink>
 
             <!-- Floating Sub Menu -->
             <transition
@@ -45,33 +65,43 @@
               leave-to-class="transform opacity-0 translate-y-1 scale-95"
             >
               <div
-                v-if="isProductsOpen"
-                class="absolute left-1/2 -translate-x-1/2 mt-7.5 w-52 rounded-3xl border border-neutral-800 bg-black backdrop-blur-md p-4 shadow-2xl flex flex-col gap-2 z-50 before:absolute before:-top-7.5 before:left-0 before:right-0 before:h-7.5 before:content-['']"
+                v-if="isServicesOpen"
+                class="absolute left-1/2 -translate-x-1/2 mt-7.5 w-72 rounded-3xl border border-neutral-800 bg-black backdrop-blur-md p-4 shadow-2xl flex flex-col gap-2 z-50 before:absolute before:-top-7.5 before:left-0 before:right-0 before:h-7.5 before:content-['']"
               >
                 <NuxtLink
-                  to="/postx"
-                  @click="isProductsOpen = false"
-                  class="flex items-center justify-center py-3 px-4 rounded-2xl hover:bg-neutral-900/80 transition-colors duration-200 group/item"
+                  to="/services/digital-advertising"
+                  @click="isServicesOpen = false"
+                  class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
                 >
-                  <img
-                    :src="postXWhiteLogo"
-                    alt="PostX"
-                    class="h-6 object-contain select-none opacity-85 group-hover/item:opacity-100 transition-opacity duration-200"
-                    referrerpolicy="no-referrer"
-                  />
+                  Digital advertising
                 </NuxtLink>
-                <div class="h-px bg-neutral-800/80 w-full"></div>
                 <NuxtLink
-                  to="/conexa"
-                  @click="isProductsOpen = false"
-                  class="flex items-center justify-center py-3 px-4 rounded-2xl hover:bg-neutral-900/80 transition-colors duration-200 group/item"
+                  to="/services/social-media"
+                  @click="isServicesOpen = false"
+                  class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
                 >
-                  <img
-                    :src="conexaLogo"
-                    alt="Conexa"
-                    class="h-5.25 object-contain select-none opacity-85 group-hover/item:opacity-100 transition-opacity duration-200"
-                    referrerpolicy="no-referrer"
-                  />
+                  Social media management
+                </NuxtLink>
+                <NuxtLink
+                  to="/services/website-dev"
+                  @click="isServicesOpen = false"
+                  class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
+                >
+                  Website development & maintenance
+                </NuxtLink>
+                <NuxtLink
+                  to="/services/online-reputation"
+                  @click="isServicesOpen = false"
+                  class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
+                >
+                  Online reputation solutions
+                </NuxtLink>
+                <NuxtLink
+                  to="/services/location-listing"
+                  @click="isServicesOpen = false"
+                  class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
+                >
+                  Location listing and solutions
                 </NuxtLink>
               </div>
             </transition>
@@ -108,7 +138,7 @@
           <!-- CTA (Desktop) - Vibrant Cyan Pill Button -->
           <NuxtLink
             to="/contact"
-            class="h-10.5 inline-flex items-center justify-center rounded-full bg-[#00a2ca] hover:bg-[#00b5e2] px-7 text-sm text-white shadow-md shadow-cyan-500/10 transition-all duration-300 hover:scale-[1.02] active:scale-95 font-poppins font-medium lowercase"
+            class="h-10.5 inline-flex items-center justify-center rounded-full bg-[#00a2ca] hover:bg-[#00b5e2] px-7 text-white shadow-md shadow-cyan-500/10 transition-all duration-300 hover:scale-[1.02] active:scale-95 font-poppins font-medium lowercase text-base"
           >
             Contact us
           </NuxtLink>
@@ -143,25 +173,57 @@
         class="md:hidden mt-3 mx-2 rounded-2xl border border-neutral-900 bg-black/95 backdrop-blur-md p-5 shadow-xl"
       >
         <div class="space-y-2 flex flex-col">
-          <NuxtLink
-            v-for="link in mobileLinks"
-            :key="link.label"
-            :to="link.href"
-            @click="isOpen = false"
-            class="rounded-lg px-3 py-2 text-base font-normal text-neutral-300 hover:bg-neutral-900 hover:text-white transition-colors flex items-center"
-          >
-            <template v-if="link.isImage">
-              <img
-                :src="link.imageSrc"
-                :alt="link.label"
-                :class="[link.mobileImageClass || 'h-5', 'object-contain select-none']"
-                referrerpolicy="no-referrer"
-              />
-            </template>
-            <template v-else>
-              {{ link.label }}
-            </template>
-          </NuxtLink>
+          <template v-for="link in mobileLinks" :key="link.label">
+            <div v-if="link.children" class="flex flex-col">
+              <div class="flex items-center justify-between rounded-lg px-3 py-2 hover:bg-neutral-900 transition-colors cursor-pointer group" @click="link.isOpen = !link.isOpen">
+                <NuxtLink :to="link.href" @click="isOpen = false" class="text-base font-normal text-neutral-300 group-hover:text-white">
+                  {{ link.label }}
+                </NuxtLink>
+                <button class="p-1 text-neutral-400 group-hover:text-white transition-colors focus:outline-none" aria-label="Toggle Submenu">
+                  <ChevronDown :class="['w-4 h-4 transition-transform duration-200', link.isOpen ? 'rotate-180' : '']" />
+                </button>
+              </div>
+              <transition
+                enter-active-class="transition duration-200 ease-out"
+                enter-from-class="transform opacity-0 -translate-y-2"
+                enter-to-class="transform opacity-100 translate-y-0"
+                leave-active-class="transition duration-150 ease-in"
+                leave-from-class="transform opacity-100 translate-y-0"
+                leave-to-class="transform opacity-0 -translate-y-2"
+              >
+                <div v-show="link.isOpen" class="pl-4 flex flex-col gap-1 mt-1">
+                  <NuxtLink
+                    v-for="child in link.children"
+                    :key="child.label"
+                    :to="child.href"
+                    @click="isOpen = false"
+                    class="rounded-lg px-3 py-2 text-sm font-normal text-neutral-400 hover:bg-neutral-900 hover:text-white transition-colors"
+                  >
+                    {{ child.label }}
+                  </NuxtLink>
+                </div>
+              </transition>
+            </div>
+
+            <NuxtLink
+              v-else
+              :to="link.href"
+              @click="isOpen = false"
+              class="rounded-lg px-3 py-2 text-base font-normal text-neutral-300 hover:bg-neutral-900 hover:text-white transition-colors flex items-center"
+            >
+              <template v-if="link.isImage">
+                <img
+                  :src="link.imageSrc"
+                  :alt="link.label"
+                  :class="[link.mobileImageClass || 'h-5', 'object-contain select-none opacity-85']"
+                  referrerpolicy="no-referrer"
+                />
+              </template>
+              <template v-else>
+                {{ link.label }}
+              </template>
+            </NuxtLink>
+          </template>
           <div class="pt-4 border-t border-neutral-900 mt-2">
             <!-- Mobile Dev Mode Toggle -->
             <ClientOnly>
@@ -197,12 +259,11 @@ import { ref, onMounted, computed } from 'vue';
 import { Menu, X, Smartphone, Tablet, Monitor, ChevronDown } from 'lucide-vue-next';
 import redWhiteLogo from '~/assets/images/r-e-d-white-logo.svg';
 import postXWhiteLogo from '~/assets/images/PostX_Web_white_Logo.png';
-import conexaLogo from '~/assets/images/conexa-logo.svg';
 
 const emit = defineEmits(['cta-click']);
 
 const isOpen = ref(false);
-const isProductsOpen = ref(false);
+const isServicesOpen = ref(false);
 
 const isDev = import.meta.env.DEV;
 const previewMode = useState('previewMode', () => 'desktop');
@@ -237,22 +298,30 @@ const setPreviewMode = (mode: string) => {
 };
 
 const desktopNavLinks = [
-  { label: 'Why Us', href: '/#why-us' },
-  { label: 'Services', href: '/services' },
   { label: 'Blogs', href: '/blogs' },
   { label: 'Careers', href: '/careers' },
   { label: 'About', href: '/about' },
 ];
 
-const mobileLinks = [
+const mobileLinks = ref([
   { label: 'PostX', href: '/postx', isImage: true, imageSrc: postXWhiteLogo },
-  { label: 'Conexa', href: '/conexa', isImage: true, imageSrc: conexaLogo, imageClass: 'h-[17px] md:h-[21px]', mobileImageClass: 'h-[17px]' },
   { label: 'Why Us', href: '/#why-us' },
-  { label: 'Services', href: '/services' },
+  { 
+    label: 'Services', 
+    href: '/services',
+    isOpen: false,
+    children: [
+      { label: 'Digital advertising', href: '/services/digital-advertising' },
+      { label: 'Social media management', href: '/services/social-media' },
+      { label: 'Website development & maintenance', href: '/services/website-dev' },
+      { label: 'Online reputation solutions', href: '/services/online-reputation' },
+      { label: 'Location listing and solutions', href: '/services/location-listing' },
+    ]
+  },
   { label: 'Blogs', href: '/blogs' },
   { label: 'Careers', href: '/careers' },
   { label: 'About', href: '/about' },
-];
+]);
 
 const handleMobileCta = () => {
   isOpen.value = false;

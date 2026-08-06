@@ -56,13 +56,13 @@
           accept=".pdf,.doc,.docx"
         />
         <div class="flex flex-col items-center justify-center text-center gap-2">
-          <Upload class="w-5 h-5 text-neutral-400 group-hover:text-[#00a5c5] transition-colors" />
+          <Upload class="w-5 h-5 text-neutral-400 group-hover:text-primary transition-colors" />
           <template v-if="fileName">
-            <span class="text-sm font-medium text-[#00a5c5] truncate max-w-full px-4">{{ fileName }}</span>
+            <span class="text-sm font-medium text-primary truncate max-w-full px-4">{{ fileName }}</span>
           </template>
           <template v-else>
             <span class="text-sm font-medium text-neutral-600">
-              <span class="text-[#00a5c5]">Click to upload</span> or drag and drop
+              <span class="text-primary">Click to upload</span> or drag and drop
             </span>
             <span class="text-xs text-neutral-400">PDF, DOC up to 5MB</span>
           </template>
@@ -74,7 +74,7 @@
       <button
         type="submit"
         :disabled="isLoading"
-        class="w-full bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-sm py-3.5 rounded-full transition-all duration-300 shadow-sm font-medium lowercase cursor-pointer flex items-center justify-center h-[52px]"
+        class="w-full bg-black hover:bg-primary hover:scale-105 text-white font-poppins text-sm py-3.5 rounded-full transition-all duration-300 shadow-sm font-medium lowercase cursor-pointer flex items-center justify-center h-[52px]"
       >
         <div v-if="isLoading" class="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
         <span v-else>Submit Application</span>
@@ -122,7 +122,7 @@ const handleSubmit = async () => {
     formData.append('portfolio', portfolio.value);
     formData.append('motivation', motivation.value);
     if (file.value) {
-      formData.append('attachment', file.value);
+      formData.append('attachment', file.value as Blob, fileName.value);
     }
 
     await $fetch('https://api.web3forms.com/submit', {

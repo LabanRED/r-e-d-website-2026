@@ -8,7 +8,7 @@
     <div class="mx-auto lg:w-[95%] max-w-[1600px] px-8 lg:px-0 mb-6">
       <NuxtLink
         to="/services"
-        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-[#00a5c5] transition-colors duration-200"
+        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
         Back to Services
@@ -24,7 +24,7 @@
       </p>
       <NuxtLink
         to="/services"
-        class="inline-block bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-[14px] sm:text-[15px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 tracking-wide font-medium lowercase cursor-pointer"
+        class="inline-block bg-black hover:bg-primary hover:scale-105 text-white font-poppins text-[14px] sm:text-[15px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 tracking-wide font-medium lowercase cursor-pointer"
       >
         Back to services
       </NuxtLink>

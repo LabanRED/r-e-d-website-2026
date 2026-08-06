@@ -12,6 +12,7 @@
       
       <InteractiveContactModal :is-open="isModalOpen" @close="closeModal" />
       <WhatsAppButton />
+      <PrivacyPolicyPopup />
     </div>
 
     <!-- Device Preview Overlay -->
@@ -26,7 +27,7 @@
             <Tablet class="w-5 h-5" />
           </button>
           <div class="w-px h-6 bg-neutral-700 mx-1"></div>
-          <button @click="previewMode = 'desktop'" class="px-4 py-1.5 rounded-full text-sm font-medium text-neutral-300 hover:text-white hover:bg-neutral-700 transition-colors">
+          <button @click="previewMode = 'desktop'" class="px-4 py-1.5 rounded-full font-medium text-neutral-300 hover:text-white hover:bg-neutral-700 transition-colors text-base">
             Exit Preview
           </button>
         </div>

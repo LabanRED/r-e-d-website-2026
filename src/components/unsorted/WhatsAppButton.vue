@@ -3,7 +3,10 @@
     href="https://wa.me/27720688509"
     target="_blank"
     rel="noopener noreferrer"
-    class="fixed w-42 md:w-48 bottom-[2%] right-[2%] z-9999 group flex items-center justify-center transition-transform hover:scale-105"
+    :class="[
+      'fixed w-42 md:w-48 right-[2%] z-9999 group flex items-center justify-center transition-all duration-500 ease-out hover:scale-105',
+      isCookieBannerVisible ? 'bottom-[200px] lg:bottom-[110px]' : 'bottom-[2%]'
+    ]"
     aria-label="Contact us on WhatsApp"
   >
     <div class="relative w-full drop-shadow-2xl">
@@ -26,4 +29,6 @@
 <script setup lang="ts">
 import defaultCta from '~/assets/images/whatsapp-cta.svg';
 import hoverCta from '~/assets/images/whatsapp-hover-cta.svg';
+
+const isCookieBannerVisible = useState('isCookieBannerVisible', () => false);
 </script>
