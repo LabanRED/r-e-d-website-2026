@@ -38,7 +38,7 @@
               </h3>
               <!-- Support Text -->
               <p class="font-poppins text-neutral-500 group-hover:text-white/90 transition-all duration-300 ease-in-out text-sm sm:text-base leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et porttitor leo. Sed ullamcorper gravida ligula, a venenatis risus feugiat a. Nam venenatis diam sit amet laoreet ultricies.
+                Build brand awareness and generate leads with targeted Facebook campaigns designed to connect your business with the right customers.
               </p>
             </div>
             <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">
@@ -67,7 +67,7 @@
               </h3>
               <!-- Support Text -->
               <p class="font-poppins text-neutral-500 group-hover:text-white/90 transition-all duration-300 ease-in-out text-sm sm:text-base leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et porttitor leo. Sed ullamcorper gravida ligula, a venenatis risus feugiat a. Nam venenatis diam sit amet laoreet ultricies.
+                Reach, engage and convert your audience with strategic paid media and social media campaigns built around your business goals.
               </p>
             </div>
             <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">
@@ -114,7 +114,7 @@
               </h3>
               <!-- Support Text -->
               <p class="font-poppins text-neutral-500 group-hover:text-white/90 transition-all duration-300 ease-in-out text-sm sm:text-base leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et porttitor leo. Sed ullamcorper gravida ligula, a venenatis risus feugiat a. Nam venenatis diam sit amet laoreet ultricies.
+                Reach customers actively searching for your products and services with targeted Google advertising built to drive traffic, leads and conversions.
               </p>
             </div>
             <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">
@@ -144,7 +144,7 @@
               </h3>
               <!-- Support Text -->
               <p class="font-poppins text-neutral-500 group-hover:text-white/90 transition-all duration-300 ease-in-out text-sm sm:text-base leading-relaxed mb-6">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et porttitor leo. Sed ullamcorper gravida ligula, a venenatis risus feugiat a. Nam venenatis diam sit amet laoreet ultricies.
+                Create a fast, responsive and SEO-friendly website designed to engage visitors, showcase your brand and drive conversions.
               </p>
             </div>
             <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">

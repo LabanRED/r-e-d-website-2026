@@ -100,7 +100,7 @@
 
       <div class="flex flex-wrap justify-center gap-8 lg:gap-10 mb-12">
         <template v-if="filteredBlogs.length > 0">
-          <NuxtLink v-for="blog in filteredBlogs" :key="blog.id" :to="blog.link || '/blogs/article'" class="flex flex-col group cursor-pointer block w-full md:w-[350px]">
+          <NuxtLink v-for="blog in filteredBlogs" :key="blog.id" :to="blog.link || '/blogs/article'" class="flex flex-col group cursor-pointer block w-full md:w-[350px]" v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }">
             <!-- Blog Image Placeholder -->
             <div class="w-full aspect-[4/3] bg-neutral-200 rounded-2xl mb-6 overflow-hidden flex items-center justify-center relative">
               <template v-if="blog.image">
@@ -158,7 +158,7 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
         >
           schedule a meeting today
         </button>
@@ -209,6 +209,7 @@ const blogsData = [
     date: "R-E-D | 2023",
     excerpt: "Facebook ads work best when you're focused on what you want to achieve.",
     image: thirdBlogImg,
+    link: "/blogs/ads-ads-and-more-ads",
   },
   {
     id: 4,

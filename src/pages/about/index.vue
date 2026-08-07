@@ -158,7 +158,7 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:scale-105 cursor-pointer btn-slide-in text-base"
+          class="bg-black text-white font-poppins font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:scale-105 cursor-pointer btn-slide-in text-xs sm:text-base"
         >
           Schedule a meeting today
         </button>

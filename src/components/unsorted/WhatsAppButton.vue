@@ -1,5 +1,8 @@
 <template>
   <a
+    v-motion
+    :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
+    :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
     href="https://wa.me/27720688509"
     target="_blank"
     rel="noopener noreferrer"

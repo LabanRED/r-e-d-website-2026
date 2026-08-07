@@ -54,15 +54,15 @@
         tailor campaigns around your goals to maximise impact and long-term success.
       </p>
 
-      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-800 leading-tight mb-16">
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-5xl lg:text-6xl font-medium text-neutral-800 leading-tight mb-16">
         <span class="text-primary">Select</span> a relevant advertising <br class="hidden sm:block" />
         platform for more information
       </h2>
 
       <!-- Platform Cards Section -->
-      <div class="flex flex-col items-center gap-6">
-        <div class="flex flex-wrap justify-center gap-4 sm:gap-6 max-w-[1600px]">
-          <a v-for="platform in socialPlatforms" :key="platform.name" :href="`#${platform.id}`" @click.prevent="scrollToPlatform(platform.id)" class="relative cursor-pointer group w-[160px] h-[100px] sm:w-[200px] sm:h-[130px] flex-shrink-0">
+      <div class="flex flex-col items-center gap-6 w-full px-4 sm:px-0">
+        <div class="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-4 sm:gap-6 w-full max-w-[1600px]">
+          <a v-for="platform in socialPlatforms" :key="platform.name" :href="`#${platform.id}`" @click.prevent="scrollToPlatform(platform.id)" class="relative cursor-pointer group w-full h-[100px] sm:w-[200px] sm:h-[130px] flex-shrink-0">
             <img loading="lazy" :src="platform.defaultImg"
               :alt="platform.name"
               class="absolute inset-0 m-auto w-[90%] h-[85%] object-contain transition-all duration-500 ease-in-out opacity-100 group-hover:opacity-0"
@@ -73,8 +73,8 @@
             />
           </a>
         </div>
-        <div class="flex flex-wrap justify-center gap-4 sm:gap-6">
-          <a v-for="platform in communicationPlatforms" :key="platform.name" :href="`#${platform.id}`" @click.prevent="scrollToPlatform(platform.id)" class="relative cursor-pointer group w-[160px] h-[100px] sm:w-[200px] sm:h-[130px] flex-shrink-0">
+        <div class="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-4 sm:gap-6 w-full max-w-[1600px]">
+          <a v-for="platform in communicationPlatforms" :key="platform.name" :href="`#${platform.id}`" @click.prevent="scrollToPlatform(platform.id)" class="relative cursor-pointer group w-full h-[100px] sm:w-[200px] sm:h-[130px] flex-shrink-0">
             <img loading="lazy" :src="platform.defaultImg"
               :alt="platform.name"
               class="absolute inset-0 m-auto w-[90%] h-[85%] object-contain transition-all duration-500 ease-in-out opacity-100 group-hover:opacity-0"
@@ -97,11 +97,11 @@
         Facebook <span class="text-primary">&</span> Instagram advertising
       </h2>
 
-      <p class="font-poppins text-neutral-800 text-lg mb-6 leading-relaxed max-w-[1600px]">
+      <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-6 leading-relaxed max-w-[1600px]">
         <strong>R-E-D specialises in high-performance Facebook and Instagram advertising</strong>, managing hundreds of accounts with a results-driven approach. We handle the full funnel—from strategy and creative to campaign execution and conversion optimisation.
       </p>
 
-      <p class="font-poppins text-neutral-800 text-lg mb-16 leading-relaxed max-w-[1600px]">
+      <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-16 leading-relaxed max-w-[1600px]">
         Our team manages ad design, audience targeting, media buying, performance tracking, and continuous optimisation, delivering clear reporting and measurable growth for your business.
       </p>
 
@@ -116,7 +116,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Boost your brand awareness</strong> and get your business, offers and deals to reach as many people as possible.
               </p>
             </li>
@@ -124,7 +124,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Drive traffic to your website</strong> and send potential clients to find out more about your business, see all your product catalogues, request quotes all while building a custom database of hot leads.
               </p>
             </li>
@@ -132,7 +132,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Generate leads</strong> for your products and services.
               </p>
             </li>
@@ -140,7 +140,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Encourage prospects</strong> to communicate with your brand through messenger
               </p>
             </li>
@@ -148,7 +148,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>We can also boost engagement</strong>, maximise video views, drive foot traffic and much more.
               </p>
             </li>
@@ -156,7 +156,7 @@
 
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
           >
             schedule a meeting today
           </button>
@@ -177,10 +177,10 @@
       <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         Google advertising
       </h2>
-      <p class="font-poppins text-neutral-800 text-lg mb-6 leading-relaxed max-w-[1600px]">
+      <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-6 leading-relaxed max-w-[1600px]">
         Google has a massive user base and is one of the largest digital advertising mediums in existence. Google AdWords is Google's digital advertising programme which allows businesses to target their campaigns to very specific audiences. Google AdWords is an extremely powerful marketing tool for any business, that is if it's done right. AdWords can be tricky, but at R-E-D we have perfected the art and science that is Google AdWords.
       </p>
-      <p class="font-poppins text-neutral-800 text-lg font-semibold mb-16 pb-12 leading-relaxed max-w-[1600px]">
+      <p class="font-poppins text-neutral-800 text-base sm:text-lg font-semibold mb-16 pb-12 leading-relaxed max-w-[1600px]">
         Our AdWords specialists will help you create and deliver the most effective campaigns.
       </p>
       <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
@@ -203,7 +203,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Generate immediate traffic</strong> targeting high-intent search queries.
               </p>
             </li>
@@ -211,14 +211,14 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Increase conversion rates</strong> through precise audience targeting and compelling ad copy.
               </p>
             </li>
           </ul>
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
           >
             schedule a meeting today
           </button>
@@ -232,7 +232,7 @@
       <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         LinkedIn advertising
       </h2>
-      <p class="font-poppins text-neutral-800 text-lg mb-16 pb-12 leading-relaxed max-w-[1600px]">
+      <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-4 pb-12 leading-relaxed max-w-[1600px]">
         LinkedIn is a platform which supplies a unique audience of business professionals. Our specialists can use LinkedIn to target your ads to <strong>highly specific audiences</strong>, where we can target <strong>decision makers, income brackets</strong> and <strong>various industries</strong>. LinkedIn is great for B2B marketing; however, our specialists can also move beyond B2B to highly specific B2C audiences.
       </p>
       <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
@@ -249,7 +249,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 Generate your <strong>leads</strong> for your business, <strong>drive website traffic</strong> and <strong>increase brand awareness</strong> through targeted text or video ads.
               </p>
             </li>
@@ -257,14 +257,14 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 Deliver <strong>personalised message ads</strong> directly to prospects inboxes.
               </p>
             </li>
           </ul>
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
           >
             schedule a meeting today
           </button>
@@ -284,10 +284,10 @@
       <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         TikTok advertising
       </h2>
-      <p class="font-poppins text-neutral-800 text-lg mb-6 leading-relaxed max-w-[1600px]">
+      <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-6 leading-relaxed max-w-[1600px]">
         TikTok is a platform which supplies a unique audience of highly engaged users. Our specialists can use TikTok to target your ads to <strong>highly specific audiences</strong>, creating viral content that resonates with modern consumers. TikTok is great for B2C marketing; however, our specialists can also move beyond B2C to highly specific B2B audiences.
       </p>
-      <p class="font-poppins text-neutral-800 text-lg font-semibold mb-16 pb-12 leading-relaxed max-w-[1600px]">
+      <p class="font-poppins text-neutral-800 text-base sm:text-lg font-semibold mb-16 pb-12 leading-relaxed max-w-[1600px]">
         Our TikTok specialists will help you create and deliver the most effective campaigns.
       </p>
       <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
@@ -310,7 +310,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Data-sriven TikTok campaign strategy</strong> Reach the right audience with precise targeting, trend insights, and performance-focused planning.
               </p>
             </li>
@@ -318,7 +318,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>High-conversion creative & video production.</strong> Stand out with scroll-stopping content designed to engage, convert, and align with TikTok trends.
               </p>
             </li>
@@ -326,14 +326,14 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Continuous optimisation & performance</strong> Scaling maximise ROI through real-time tracking, A/B testing, and ongoing campaign refinement.
               </p>
             </li>
           </ul>
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
           >
             schedule a meeting today
           </button>
@@ -347,7 +347,7 @@
       <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         SMS campaigns
       </h2>
-      <p class="font-poppins text-neutral-800 text-lg mb-16 pb-12 leading-relaxed max-w-[1600px]">
+      <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-16 pb-12 leading-relaxed max-w-[1600px]">
         SMS marketing campaigns are a giant in the digital marketing space with its massive reach and high engagement rates. The SMS open rates are far higher than other digital platforms with an astonishing 98% open rate. SMS campaigns can have immediate results with 95% of text messages are red within 3 minutes. At R-E-D our digital specialists can get your businesses message in front of thousands of prospect clients in a matter of hours.
       </p>
       <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
@@ -370,7 +370,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Create distinctive</strong>, unique call to actions for your campaigns
               </p>
             </li>
@@ -378,7 +378,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Launch click to web campaigns</strong> to drive traffic to your businesses website
               </p>
             </li>
@@ -386,7 +386,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Spread your businesses</strong> message rapidly
               </p>
             </li>
@@ -394,7 +394,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Retarget</strong> your current clients
               </p>
             </li>
@@ -402,14 +402,14 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Reach thousands</strong> of prospect clients
               </p>
             </li>
           </ul>
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
           >
             schedule a meeting today
           </button>
@@ -423,7 +423,7 @@
       <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
         Email marketing
       </h2>
-      <p class="font-poppins text-neutral-800 text-lg mb-16 pb-12 leading-relaxed max-w-[1600px]">
+      <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-16 pb-12 leading-relaxed max-w-[1600px]">
         Email marketing campaigns are highly effective tools for nurturing leads and maintaining customer engagement. With personalized content and targeted messaging, email campaigns can drive conversions and build brand loyalty. At R-E-D, our specialists use data-driven strategies to ensure your emails reach the right inbox at the perfect time.
       </p>
       <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
@@ -440,7 +440,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Drive traffic</strong> to your website
               </p>
             </li>
@@ -448,7 +448,7 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Mass market your events</strong>, offers, specials and more
               </p>
             </li>
@@ -456,14 +456,14 @@
               <div class="mt-1 bg-primary rounded-full p-1 text-white shrink-0">
                 <Check class="w-4 h-4 stroke-[3]" />
               </div>
-              <p class="font-poppins text-neutral-700 text-lg leading-relaxed">
+              <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed">
                 <strong>Re-target</strong> to previous <strong>customers</strong> and interested prospects
               </p>
             </li>
           </ul>
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
+            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
           >
             schedule a meeting today
           </button>
@@ -521,7 +521,7 @@
         </p>
         <button
           @click="openModal('Digital Advertising')"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
         >
           schedule a meeting today
         </button>
