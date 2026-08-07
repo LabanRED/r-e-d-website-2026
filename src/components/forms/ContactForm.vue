@@ -58,7 +58,6 @@
         <option value="Location Listing">Location Listing</option>
         <option value="PostX - Demo">PostX - Demo</option>
         <option value="PostX - General Enquiry">PostX - General Enquiry</option>
-        <option value="Conexa - Enquiry">Conexa - Enquiry</option>
         <option value="Other">Other</option>
       </select>
     </div>
@@ -94,7 +93,8 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 import { Send } from 'lucide-vue-next';
 
 const props = withDefaults(defineProps<{
@@ -112,6 +112,22 @@ const service = ref('Select a service');
 const message = ref('');
 const isLoading = ref(false);
 
+const route = useRoute();
+
+onMounted(() => {
+  if (route.query.service) {
+    const serviceQuery = route.query.service as string;
+    // Check if the service exists in our list of options to prevent invalid values
+    const validServices = [
+      'Digital Advertising', 'Social Media Management', 'Website Development',
+      'Online Reputation', 'Location Listing', 'PostX - Demo', 'PostX - General Enquiry', 'Other'
+    ];
+    if (validServices.includes(serviceQuery)) {
+      service.value = serviceQuery;
+    }
+  }
+});
+
 const labelClass = computed(() => {
   return props.variant === 'modal'
     ? 'block text-xs font-bold tracking-wider text-neutral-500 uppercase font-mono'
@@ -120,14 +136,14 @@ const labelClass = computed(() => {
 
 const inputClass = computed(() => {
   return props.variant === 'modal'
-    ? 'w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 focus:border-[#1ca3c4] focus:outline-none focus:ring-1 focus:ring-[#1ca3c4] transition-colors duration-200'
-    : 'w-full bg-[#f8f8f8] border border-transparent rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-[#00a5c5] transition-colors';
+    ? 'w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 placeholder-neutral-400 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors duration-200'
+    : 'w-full bg-[#f8f8f8] border border-transparent rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-primary transition-colors';
 });
 
 const buttonClass = computed(() => {
   return props.variant === 'modal'
-    ? 'flex w-full items-center justify-center gap-2 rounded-xl bg-black hover:bg-[#1ca3c4] hover:scale-105 py-3.5 text-sm text-white shadow-lg shadow-[#1ca3c4]/10 active:scale-[0.98] transition-all duration-300 disabled:opacity-50 font-poppins font-medium lowercase'
-    : 'w-full bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-sm py-3.5 rounded-full transition-all duration-300 shadow-sm font-medium lowercase cursor-pointer flex justify-center items-center h-[52px]';
+    ? 'flex w-full items-center justify-center gap-2 rounded-xl bg-black hover:bg-primary hover:scale-105 py-3.5 text-sm text-white shadow-lg shadow-primary/10 active:scale-[0.98] transition-all duration-300 disabled:opacity-50 font-poppins font-medium lowercase'
+    : 'w-full bg-black hover:bg-primary hover:scale-105 text-white font-poppins text-sm py-3.5 rounded-full transition-all duration-300 shadow-sm font-medium lowercase cursor-pointer flex justify-center items-center h-[52px]';
 });
 
 const handleSubmit = async () => {

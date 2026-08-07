@@ -11,7 +11,7 @@
       <div class="mb-8">
         <NuxtLink
           to="/careers"
-          class="inline-flex items-center mt-4 md:mt-12 gap-2 text-sm font-medium text-neutral-500 hover:text-[#00a5c5] transition-colors duration-200"
+          class="inline-flex items-center mt-4 md:mt-12 gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
         >
           <ArrowLeft class="w-4 h-4" />
           Back to careers
@@ -21,13 +21,13 @@
       <!-- Header Section -->
       <div class="mb-10">
         <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight mb-4">
-          Head of <span class="text-[#00a5c5]">search</span>
+          Head of <span class="text-primary">search</span>
         </h1>
         <div class="flex items-center gap-3 mb-8">
-          <span class="bg-[#00a5c5] text-white text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full tracking-wide">
+          <span class="bg-primary text-white text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full tracking-wide">
             Full-Time
           </span>
-          <span class="bg-[#00a5c5] text-white text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full tracking-wide">
+          <span class="bg-primary text-white text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full tracking-wide">
             Marketing
           </span>
         </div>

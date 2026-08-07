@@ -7,7 +7,7 @@
       <div class="mb-6 md:px-8 mt-4 md:mt-8">
         <NuxtLink
           to="/"
-          class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-[#00a5c5] transition-colors duration-200"
+          class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
         >
           <ArrowLeft class="w-4 h-4" />
           Back to Home
@@ -33,7 +33,7 @@
             About us
           </span>
           <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-5xl md:text-[3.5rem] font-semibold text-neutral-800 leading-tight max-w-3xl">
-            Tailored digital solutions <span class="text-[#00a5c5]">driving growth.</span>
+            Tailored digital solutions <span class="text-primary">driving growth.</span>
           </h1>
         </div>
       </div>
@@ -76,7 +76,7 @@
 
         <!-- Core Values Column -->
         <div>
-          <div class="bg-[#00a5c5] text-white text-center py-4 rounded-xl mb-4">
+          <div class="bg-primary text-white text-center py-4 rounded-xl mb-4">
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-medium tracking-wide">Core values</h3>
           </div>
           <div class="space-y-2">
@@ -86,7 +86,7 @@
                 class="w-full flex items-center justify-between px-6 py-4 text-left focus:outline-none"
               >
                 <span class="font-poppins text-sm text-neutral-800 font-medium">{{ item.title }}</span>
-                <ChevronDown class="w-4 h-4 text-[#00a5c5] transition-transform duration-300" :class="{ 'rotate-180': openValueId === item.id }" />
+                <ChevronDown class="w-4 h-4 text-primary transition-transform duration-300" :class="{ 'rotate-180': openValueId === item.id }" />
               </button>
               
               <!-- Vue transition for accordion -->
@@ -110,7 +110,7 @@
 
         <!-- Our Philosophy Column -->
         <div>
-          <div class="bg-[#00a5c5] text-white text-center py-4 rounded-xl mb-4">
+          <div class="bg-primary text-white text-center py-4 rounded-xl mb-4">
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-medium tracking-wide">Our Philosophy</h3>
           </div>
           <div class="space-y-2">
@@ -120,7 +120,7 @@
                 class="w-full flex items-center justify-between px-6 py-4 text-left focus:outline-none"
               >
                 <span class="font-poppins text-sm text-neutral-800 font-medium">{{ item.title }}</span>
-                <ChevronDown class="w-4 h-4 text-[#00a5c5] transition-transform duration-300" :class="{ 'rotate-180': openPhilosophyId === item.id }" />
+                <ChevronDown class="w-4 h-4 text-primary transition-transform duration-300" :class="{ 'rotate-180': openPhilosophyId === item.id }" />
               </button>
               
               <!-- Vue transition for accordion -->
@@ -158,7 +158,7 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins text-sm font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:scale-105 cursor-pointer btn-slide-in"
+          class="bg-black text-white font-poppins font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:scale-105 cursor-pointer btn-slide-in text-base"
         >
           Schedule a meeting today
         </button>

@@ -13,7 +13,7 @@
           <span class="text-3xl sm:text-4xl lg:text-[42px] font-bold text-neutral-900 tracking-tight">
             <AnimatedCounter :text="stat.number" />
           </span>
-          <span class="text-2xl sm:text-3xl lg:text-[36px] font-bold text-[#1ca3c4] ml-1">
+          <span class="text-2xl sm:text-3xl lg:text-[36px] font-bold text-primary ml-1">
             +
           </span>
         </div>

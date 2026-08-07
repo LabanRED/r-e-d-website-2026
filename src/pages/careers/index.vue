@@ -4,7 +4,7 @@
     <div class="pl-8 mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-12 mb-6">
       <NuxtLink
         to="/"
-        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-[#00a5c5] transition-colors duration-200"
+        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
         Back to home
@@ -35,7 +35,7 @@
           </p>
           <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 leading-[1.1] tracking-tight mb-6">
             Join the future of <br class="hidden sm:block" />
-            <span class="text-[#00a5c5]">digital advertising.</span>
+            <span class="text-primary">digital advertising.</span>
           </h1>
           <p class="font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed max-w-lg font-medium">
             We're looking for visionaries, makers, and strategists to build what's next.
@@ -52,7 +52,7 @@
           </p>
           <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight tracking-tight mb-6">
             Join the future of <br />
-            <span class="text-[#00a5c5]">digital advertising.</span>
+            <span class="text-primary">digital advertising.</span>
           </h1>
           <p class="font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed max-w-lg font-medium mx-auto">
             We're looking for visionaries, makers, and strategists to build what's next.
@@ -89,7 +89,7 @@
         <!-- Role 1 -->
         <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm flex flex-col">
           <div class="mb-4 md:mb-4">
-            <span class="bg-[#00a5c5] text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
+            <span class="bg-primary text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
               Marketing
             </span>
           </div>
@@ -104,7 +104,7 @@
             <span class="font-poppins text-neutral-800 md:text-neutral-500 text-[15px] md:text-xs font-medium">
               Facebook | Instagram | TikTok | X | LinkedIn
             </span>
-            <NuxtLink to="/careers/head-of-social-media" class="w-full md:w-auto bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-base md:text-xs font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer">
+            <NuxtLink to="/careers/head-of-social-media" class="w-full md:w-auto bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer text-base">
               View Role
             </NuxtLink>
           </div>
@@ -113,7 +113,7 @@
         <!-- Role 2 -->
         <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm flex flex-col">
           <div class="mb-4 md:mb-4">
-            <span class="bg-[#00a5c5] text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
+            <span class="bg-primary text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
               Marketing
             </span>
           </div>
@@ -128,7 +128,7 @@
             <span class="font-poppins text-neutral-800 md:text-neutral-500 text-[15px] md:text-xs font-medium">
               Facebook | Instagram | TikTok | X | LinkedIn
             </span>
-            <NuxtLink to="/careers/head-of-search" class="w-full md:w-auto bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-base md:text-xs font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer">
+            <NuxtLink to="/careers/head-of-search" class="w-full md:w-auto bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer text-base">
               View Role
             </NuxtLink>
           </div>
@@ -137,7 +137,7 @@
         <!-- Role 3 -->
         <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm flex flex-col">
           <div class="mb-4 md:mb-4">
-            <span class="bg-[#00a5c5] text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
+            <span class="bg-primary text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
               Marketing
             </span>
           </div>
@@ -152,7 +152,7 @@
             <span class="font-poppins text-neutral-800 md:text-neutral-500 text-[15px] md:text-xs font-medium">
               Facebook | Instagram | TikTok | X | LinkedIn
             </span>
-            <NuxtLink to="/careers/intern" class="w-full md:w-auto bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-base md:text-xs font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer">
+            <NuxtLink to="/careers/intern" class="w-full md:w-auto bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer text-base">
               View Role
             </NuxtLink>
           </div>
@@ -161,7 +161,7 @@
         <!-- Role 4 -->
         <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm flex flex-col">
           <div class="mb-4 md:mb-4">
-            <span class="bg-[#00a5c5] text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
+            <span class="bg-primary text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
               Marketing
             </span>
           </div>
@@ -176,7 +176,7 @@
             <span class="font-poppins text-neutral-800 md:text-neutral-500 text-[15px] md:text-xs font-medium">
               Facebook | Instagram | TikTok | X | LinkedIn
             </span>
-            <NuxtLink to="/careers/designer" class="w-full md:w-auto bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins text-base md:text-xs font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer">
+            <NuxtLink to="/careers/designer" class="w-full md:w-auto bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer text-base">
               View Role
             </NuxtLink>
           </div>
@@ -189,7 +189,7 @@
       <!-- Section Header -->
       <div class="flex flex-col justify-center items-center text-center mb-12">
         <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-semibold text-neutral-900 tracking-tight">
-          Life at R<span class="text-[#00a5c5]">-</span>E<span class="text-[#00a5c5]">-</span>D
+          Life at R<span class="text-primary">-</span>E<span class="text-primary">-</span>D
         </h2>
         <p class="font-poppins text-neutral-600 text-base sm:text-lg mt-3 max-w-2xl mx-auto font-medium">
           We believe in hard work, big ideas, and taking care of the people who make it all happen.
@@ -215,7 +215,7 @@
             />
           </div>
           <!-- Cyan Bottom Banner -->
-          <div class="bg-[#00a5c5] p-6 sm:p-8 md:p-10 flex flex-col justify-center text-white">
+          <div class="bg-primary p-6 sm:p-8 md:p-10 flex flex-col justify-center text-white">
             <h3 class="font-poppins text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight mb-2">
               Creative engine
             </h3>

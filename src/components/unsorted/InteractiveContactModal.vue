@@ -37,8 +37,8 @@
 
           <div v-if="!isSubmitted">
             <div class="mb-6">
-              <div class="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-[#1ca3c4] mb-3 select-none">
-                <Star class="h-3 w-3 fill-[#1ca3c4] text-[#1ca3c4]" />
+              <div class="inline-flex items-center gap-1.5 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-primary mb-3 select-none">
+                <Star class="h-3 w-3 fill-primary text-primary" />
                 <span>R-E-D LEAD DESK</span>
               </div>
               <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans text-2xl font-semibold tracking-tight text-neutral-900">Get in touch with us</h3>
@@ -50,7 +50,7 @@
           </div>
 
           <div v-else class="flex flex-col items-center text-center py-8 space-y-6">
-            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-[#1ca3c4]/10 text-[#1ca3c4] border border-[#1ca3c4]/20">
+            <div class="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary border border-primary/20">
               <CheckCircle2 class="h-10 w-10" />
             </div>
             
@@ -63,7 +63,7 @@
 
             <button
               @click="handleReset"
-              class="rounded-full bg-black hover:bg-[#1ca3c4] hover:scale-105 px-8 py-3 text-sm text-white transition-all duration-300 shadow-md shadow-[#1ca3c4]/10 font-poppins font-medium lowercase"
+              class="rounded-full bg-black hover:bg-primary hover:scale-105 px-8 py-3 text-white transition-all duration-300 shadow-md shadow-primary/10 font-poppins font-medium lowercase text-base"
             >
               Return to Site
             </button>

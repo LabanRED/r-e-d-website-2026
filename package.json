@@ -14,7 +14,6 @@
   "dependencies": {
     "@fontsource/jetbrains-mono": "^5.2.8",
     "@fontsource/poppins": "^5.2.7",
-    "@google/genai": "^2.4.0",
     "@tailwindcss/vite": "^4.3.2",
     "@vueuse/core": "^14.3.0",
     "@vueuse/motion": "^3.0.3",

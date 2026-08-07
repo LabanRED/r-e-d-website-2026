@@ -44,7 +44,7 @@
       >
         <button
           @click="$emit('cta-click')"
-          class="font-poppins text-sm sm:text-base text-white bg-black btn-slide-in px-8 py-4 sm:px-10 sm:py-5 rounded-full shadow-lg shadow-[#1ca3c4]/10 hover:shadow-xl hover:shadow-[#1ca3c4]/20 hover:scale-105 active:scale-[0.98] transition-all duration-300 font-medium lowercase"
+          class="font-poppins text-white bg-black btn-slide-in px-8 py-4 sm:px-10 sm:py-5 rounded-full shadow-lg shadow-primary/10 hover:shadow-xl hover:shadow-primary/20 hover:scale-105 active:scale-[0.98] transition-all duration-300 font-medium lowercase text-base"
         >
           schedule a meeting today
         </button>

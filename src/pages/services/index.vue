@@ -4,7 +4,7 @@
     <div class="mx-auto lg:w-[95%] max-w-[1600px] px-8 lg:px-0 mb-6">
       <NuxtLink
         to="/"
-        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-[#00a5c5] transition-colors duration-200"
+        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
         Back to R-E-D Home
@@ -19,8 +19,8 @@
         <span class="font-poppins text-[#2c2c2c] text-sm mb-2">Our services</span>
         <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins w-50 text-3xl leading-[1.3] text-[#2c2c2c] font-semibold tracking-tight">
           Driving real growth
-          through <span class="text-[#00a5c5]">data-driven</span>
-          <span class="text-[#00a5c5]"> digital advertising</span>
+          through <span class="text-primary">data-driven</span>
+          <span class="text-primary"> digital advertising</span>
         </h1>
       </div>
 
@@ -47,8 +47,8 @@
           <span class="font-poppins text-[#2c2c2c] text-sm sm:text-base lg:text-lg mb-2 sm:mb-4">Our services</span>
           <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[2.5rem] sm:text-5xl md:text-6xl lg:text-6xl leading-[1.1] text-[#2c2c2c] font-semibold tracking-tight">
             Driving real growth <br class="hidden sm:block" />
-            through <span class="text-[#00a5c5]">data-driven</span> <br />
-            <span class="text-[#00a5c5]">digital advertising</span>
+            through <span class="text-primary">data-driven</span> <br />
+            <span class="text-primary">digital advertising</span>
           </h1>
         </div>
       </div>
@@ -62,7 +62,7 @@
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
         class="font-poppins text-3xl sm:text-4xl lg:text-5xl leading-[1.3] text-neutral-800 font-normal tracking-tight"
       >
-        We turn attention into action with <span class="text-[#00a5c5] font-normal">performance-driven campaigns</span> that generate leads, maximise ROI, and scale your brand.
+        We turn attention into action with <span class="text-primary font-normal">performance-driven campaigns</span> that generate leads, maximise ROI, and scale your brand.
       </h2>
     </section>
 
@@ -81,7 +81,7 @@
 
             <!-- Left Column (Number & Title) -->
             <div class="flex-1 flex gap-6 items-start">
-              <div class="bg-[#00a5c5] text-white text-[15px] sm:text-base font-semibold py-1.5 px-4 rounded-full mt-1 flex-shrink-0">
+              <div class="bg-primary text-white text-[15px] sm:text-base font-semibold py-1.5 px-4 rounded-full mt-1 flex-shrink-0">
                 {{ service.id }}
               </div>
               <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl text-neutral-800 font-normal leading-tight">
@@ -95,7 +95,7 @@
               </p>
               <NuxtLink
                 :to="service.link"
-                class="inline-block bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-8 py-3 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 tracking-wide text-center"
+                class="inline-block bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-8 py-3 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 tracking-wide text-center"
               >
                 I'm interested
               </NuxtLink>
@@ -124,31 +124,31 @@ const servicesList = [
     id: '01',
     title: 'Digital advertising',
     link: '/services/digital-advertising',
-    description: `Integrated, multi-channel advertising solutions across all major digital platforms:<br /><span class="text-[#00a5c5] font-semibold">Facebook | Instagram | Google | LinkedIn | TikTok and X(Twitter)</span>`
+    description: `Integrated, multi-channel advertising solutions across all major digital platforms:<br /><span class="text-primary font-semibold">Facebook | Instagram | Google | LinkedIn | TikTok and X(Twitter)</span>`
   },
   {
     id: '02',
     title: 'Social media management',
     link: '/services/social-media',
-    description: `Creating, monitoring and managing social interactions:<br /><span class="text-[#00a5c5] font-semibold">Content | Moderation | Profile management</span>`
+    description: `Creating, monitoring and managing social interactions:<br /><span class="text-primary font-semibold">Content | Moderation | Profile management</span>`
   },
   {
     id: '03',
     title: 'Website development & maintenance',
     link: '/services/website-dev',
-    description: `Fully responsive, integrated websites that compliment your objectives and drive value:<br /><span class="text-[#00a5c5] font-semibold">Building | Maintenance | Integration | SEO | Analytics</span>`
+    description: `Fully responsive, integrated websites that compliment your objectives and drive value:<br /><span class="text-primary font-semibold">Building | Maintenance | Integration | SEO | Analytics</span>`
   },
   {
     id: '04',
     title: 'Online reputation solutions',
     link: '/services/online-reputation',
-    description: `Review monitoring and response management across all digital platforms.<br /><span class="text-[#00a5c5] font-semibold">World class solutions to drive positive reviews.</span>`
+    description: `Review monitoring and response management across all digital platforms.<br /><span class="text-primary font-semibold">World class solutions to drive positive reviews.</span>`
   },
   {
     id: '05',
     title: 'Location listing & maintenance',
     link: '/services/location-listing',
-    description: `Don't lose customers to competitors because you can't be found.<br /><span class="text-[#00a5c5] font-semibold">We ensure you project the right image of your business and all of your contact information is up to date.</span>`
+    description: `Don't lose customers to competitors because you can't be found.<br /><span class="text-primary font-semibold">We ensure you project the right image of your business and all of your contact information is up to date.</span>`
   }
 ];
 

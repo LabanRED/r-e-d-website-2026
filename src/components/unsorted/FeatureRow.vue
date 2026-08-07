@@ -5,7 +5,7 @@
       <!-- Section Header -->
       <div class="mb-16 text-center">
         <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans leading-tight mb-3">
-          <span class="text-[36px] sm:text-[56px] font-light italic text-[#00A5C5] tracking-tight mr-2 sm:mr-3">
+          <span class="text-[36px] sm:text-[56px] font-light italic text-primary tracking-tight mr-2 sm:mr-3">
             One platform.
           </span>
           <span class="text-[36px] sm:text-[48px] font-medium text-neutral-950 tracking-tight">

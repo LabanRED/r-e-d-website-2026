@@ -4,7 +4,7 @@
     <div class="pl-8 mx-auto lg:w-[95%] max-w-[1600px] lg:px-12 mb-6">
       <NuxtLink
         to="/"
-        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-[#00a5c5] transition-colors duration-200"
+        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
         Back to home
@@ -34,7 +34,7 @@
           </p>
           <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 leading-[1.1] tracking-tight">
             Smarter Digital <br class="hidden sm:block" />
-            Thinking for <span class="text-[#00a5c5]">Better <br class="hidden sm:block" />
+            Thinking for <span class="text-primary">Better <br class="hidden sm:block" />
               Conversions</span>
           </h1>
         </div>
@@ -48,7 +48,7 @@
           </p>
           <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight tracking-tight">
             Smarter Digital <br />
-            Thinking for <span class="text-[#00a5c5]">Better <br />
+            Thinking for <span class="text-primary">Better <br />
               Conversions</span>
           </h1>
         </div>
@@ -84,9 +84,9 @@
           type="text"
           placeholder="Search articles..."
           v-model="searchQuery"
-          class="w-full pl-12 pr-32 py-4 bg-transparent border border-neutral-300 rounded-full focus:outline-none focus:border-[#00a5c5] font-poppins text-neutral-700"
+          class="w-full pl-12 pr-32 py-4 bg-transparent border border-neutral-300 rounded-full focus:outline-none focus:border-primary font-poppins text-neutral-700"
         />
-        <button class="absolute right-2 top-2 bottom-2 bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white px-6 rounded-full font-poppins font-medium transition-all duration-300 text-sm lowercase cursor-pointer">
+        <button class="absolute right-2 top-2 bottom-2 bg-black hover:bg-primary hover:scale-105 text-white px-6 rounded-full font-poppins font-medium transition-all duration-300 lowercase cursor-pointer text-base">
           Search
         </button>
       </div>
@@ -100,7 +100,7 @@
 
       <div class="flex flex-wrap justify-center gap-8 lg:gap-10 mb-12">
         <template v-if="filteredBlogs.length > 0">
-          <NuxtLink v-for="blog in filteredBlogs" :key="blog.id" to="/blogs/article" class="flex flex-col group cursor-pointer block w-full md:w-[350px]">
+          <NuxtLink v-for="blog in filteredBlogs" :key="blog.id" :to="blog.link || '/blogs/article'" class="flex flex-col group cursor-pointer block w-full md:w-[350px]">
             <!-- Blog Image Placeholder -->
             <div class="w-full aspect-[4/3] bg-neutral-200 rounded-2xl mb-6 overflow-hidden flex items-center justify-center relative">
               <template v-if="blog.image">
@@ -115,14 +115,14 @@
               <span class="font-poppins text-xs text-neutral-500 mb-3 uppercase tracking-wider font-medium">
                 {{ blog.date }}
               </span>
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl font-semibold text-neutral-800 mb-4 leading-snug group-hover:text-[#00a5c5] transition-colors line-clamp-2">
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl font-semibold text-neutral-800 mb-4 leading-snug group-hover:text-primary transition-colors line-clamp-2">
                 {{ blog.title }}
               </h3>
               <p class="font-poppins text-neutral-600 text-sm leading-relaxed mb-6 line-clamp-3 flex-1">
                 {{ blog.excerpt }}
               </p>
               <div class="mt-auto">
-                <button class="px-6 py-2 bg-black text-white hover:bg-[#1ca3c4] hover:scale-105 rounded-full font-poppins text-xs transition-all duration-300 font-medium lowercase cursor-pointer">
+                <button class="px-6 py-2 bg-black text-white hover:bg-primary hover:scale-105 rounded-full font-poppins transition-all duration-300 font-medium lowercase cursor-pointer text-base">
                   Read article
                 </button>
               </div>
@@ -137,7 +137,7 @@
       </div>
 
       <div class="flex justify-center">
-        <button class="bg-black hover:bg-[#1ca3c4] hover:scale-105 text-white px-8 py-3 rounded-full font-poppins text-sm transition-all duration-300 shadow-sm font-medium lowercase cursor-pointer">
+        <button class="bg-black hover:bg-primary hover:scale-105 text-white px-8 py-3 rounded-full font-poppins transition-all duration-300 shadow-sm font-medium lowercase cursor-pointer text-base">
           Load more...
         </button>
       </div>
@@ -158,7 +158,7 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-sm lowercase cursor-pointer btn-slide-in"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
         >
           schedule a meeting today
         </button>
@@ -193,6 +193,7 @@ const blogsData = [
     date: "R-E-D | 12 May 2023",
     excerpt: "Many car shoppers are now turning to social media to begin their buying journey.",
     image: firstBlogImg,
+    link: "/blogs/article",
   },
   {
     id: 2,
@@ -200,6 +201,7 @@ const blogsData = [
     date: "R-E-D | 20 January 2023",
     excerpt: "If for one second you think that social media is not for your business, you are grossly mistaken.",
     image: secondBlogImg,
+    link: "/blogs/social-media-for-your-business",
   },
   {
     id: 3,

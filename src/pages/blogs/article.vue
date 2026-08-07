@@ -8,7 +8,7 @@
     <div class="mx-auto lg:w-[95%] max-w-[1600px] px-6 sm:px-8 lg:px-12 mb-8">
       <NuxtLink
         to="/blogs"
-        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-[#00a5c5] transition-colors duration-200"
+        class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
         Back to blogs
@@ -69,7 +69,7 @@
               It is evident that social media is playing an increasingly important role in the purchase decisions of car buyers, and dealerships must respond to this shift. With recommendations and instant availability of information massively impacting car purchases, dealerships can leverage social media to improve their sales figures.
             </p>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-[#00a5c5] mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               1. Facebook Advertising for Your Dealership
             </h2>
             <p class="mb-6">
@@ -93,7 +93,7 @@
               </picture>
             </div>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-[#00a5c5] mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               2. Instagram Stories for Your Dealership
             </h2>
             <p class="mb-6">
@@ -106,7 +106,7 @@
               Instagram has enabled a function called highlights, which are albums where selected stories are kept after the 24-hour period. This could be a great way to display your inventory to your Instagram followers.
             </p>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-[#00a5c5] mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               3. YouTube Videos for Your Dealership
             </h2>
             <p class="mb-10">
@@ -115,7 +115,7 @@
 
             <hr class="border-neutral-200 my-8" />
 
-            <p class="text-[#00a5c5] font-medium">
+            <p class="text-primary font-medium">
               Social media marketing for car dealerships in South Africa can be challenging, so if you are ever looking for a partner to help you through the process don't hesitate to give R-E-D a call!
             </p>
           </div>
@@ -155,7 +155,7 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 text-sm lowercase cursor-pointer btn-slide-in"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
         >
           schedule a meeting today
         </button>
