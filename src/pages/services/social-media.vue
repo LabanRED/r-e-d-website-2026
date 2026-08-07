@@ -110,7 +110,7 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-base"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
           >
             schedule a meeting today
           </button>
@@ -154,7 +154,7 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-base"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
           >
             schedule a meeting today
           </button>
@@ -218,7 +218,7 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-base"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
           >
             schedule a meeting today
           </button>
@@ -262,7 +262,7 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-base"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
           >
             schedule a meeting today
           </button>
@@ -339,7 +339,7 @@
         </p>
         <button
           @click="openModal('Social Media Management')"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-base"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
         >
           schedule a meeting today
         </button>

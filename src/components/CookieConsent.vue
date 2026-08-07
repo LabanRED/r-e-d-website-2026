@@ -52,7 +52,7 @@ const declineCookies = () => {
           </div>
           <div>
             <h3 class="text-neutral-900 font-bold text-base tracking-tight mb-1">We value your privacy</h3>
-            <p class="text-neutral-500 text-sm leading-relaxed">
+            <p class="text-neutral-500 text-xs leading-relaxed">
               We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. Please choose your preferences. Read our 
               <NuxtLink to="/privacy-policy" class="text-primary hover:underline font-medium">Privacy Policy</NuxtLink> and 
               <NuxtLink to="/cookie-policy" class="text-primary hover:underline font-medium">Cookie Policy</NuxtLink>.

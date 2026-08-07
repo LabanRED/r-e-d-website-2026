@@ -1107,7 +1107,7 @@
             </p>
             <button
               @click="openModal"
-              class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-[15px] font-medium lowercase cursor-pointer btn-slide-in"
+              class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium lowercase cursor-pointer btn-slide-in"
             >
               schedule a meeting today
             </button>
@@ -1171,7 +1171,7 @@
 
         <button
           @click="openModal"
-          class="bg-black hover:bg-primary text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 tracking-wide font-medium lowercase cursor-pointer btn-slide-in text-base"
+          class="bg-black hover:bg-primary text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 tracking-wide font-medium lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
         >
           schedule a meeting today
         </button>

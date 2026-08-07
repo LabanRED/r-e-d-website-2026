@@ -13,11 +13,11 @@
         <!-- Sliding Marquee Area -->
         <div class="relative grow w-full overflow-hidden">
           <!-- Left and right gradient overlays for faded edges -->
-          <div class="absolute left-0 top-0 bottom-0 z-10 w-12 md:w-32 bg-linear-to-r from-[#fafafa] to-transparent pointer-events-none" />
-          <div class="absolute right-0 top-0 bottom-0 z-10 w-12 md:w-32 bg-linear-to-l from-[#fafafa] to-transparent pointer-events-none" />
+          <div class="absolute left-0 top-0 bottom-0 z-10 w-24 md:w-32 bg-linear-to-r from-[#fafafa] to-transparent pointer-events-none" />
+          <div class="absolute right-0 top-0 bottom-0 z-10 w-24 md:w-32 bg-linear-to-l from-[#fafafa] to-transparent pointer-events-none" />
 
           <!-- Sliding Track -->
-          <div class="flex gap-12 md:gap-16 items-center whitespace-nowrap py-2 animate-marquee">
+          <div class="flex gap-12 md:gap-12 items-center whitespace-nowrap py-2 animate-marquee">
             <div
               v-for="(logo, idx) in doubleLogos"
               :key="`${logo.name}-${idx}`"
@@ -26,7 +26,7 @@
               <img
                 :src="logo.src"
                 :alt="`${logo.name} logo`"
-                class="h-6 md:h-8 w-auto object-contain opacity-50 hover:opacity-95 transition-opacity duration-300"
+                class="h-6 md:h-16 w-auto object-contain opacity-50 hover:opacity-95 transition-opacity duration-300"
                 referrerpolicy="no-referrer"
               />
             </div>
