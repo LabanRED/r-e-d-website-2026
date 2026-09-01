@@ -7,7 +7,7 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back to R-E-D Home
+        Back To R-E-D Home
       </NuxtLink>
     </div>
 
@@ -97,7 +97,7 @@
                 :to="service.link"
                 class="inline-block bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-8 py-3 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 tracking-wide text-center"
               >
-                I'm interested
+                I'm Interested
               </NuxtLink>
             </div>
 

@@ -14,9 +14,9 @@
         </p>
         <button
           @click="$emit('cta-click')"
-          class="font-poppins font-medium text-xs sm:text-[15px] text-white bg-black btn-slide-in rounded-full px-8 py-3 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md lowercase"
+          class="font-poppins font-medium text-xs sm:text-[15px] text-white bg-black btn-slide-in rounded-full px-8 py-3 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
       </div>
 
@@ -51,10 +51,10 @@
 
           <button
             @click="$emit('cta-click')"
-            class="font-poppins font-medium text-xs sm:text-[16px] text-white bg-black btn-slide-in rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg lowercase"
+            class="font-poppins font-medium text-xs sm:text-[16px] text-white bg-black btn-slide-in rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg"
             style="padding: 20px"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
         </div>
       </div>
@@ -75,9 +75,9 @@
         <!-- Mobile Button: outlined pill shape transitioning to filled cyan on hover/click -->
         <button
           @click="$emit('cta-click')"
-          class="font-poppins tracking-widest text-white border-none rounded-full py-4 px-8 bg-black btn-slide-in transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase text-xs sm:text-base"
+          class="font-poppins tracking-widest text-white border-none rounded-full py-4 px-8 bg-black btn-slide-in transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium text-xs sm:text-base"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
 
         <!-- Mobile Image: object-contained, rounded corners, no unnecessary padding -->

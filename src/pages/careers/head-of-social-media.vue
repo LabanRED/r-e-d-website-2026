@@ -14,7 +14,7 @@
           class="inline-flex items-center mt-4 md:mt-12 gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
         >
           <ArrowLeft class="w-4 h-4" />
-          Back to careers
+          Back To Careers
         </NuxtLink>
       </div>
 

@@ -7,7 +7,7 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-[#2ca8cb] transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back to R-E-D Home
+        Back To R-E-D Home
       </NuxtLink>
     </div>
 
@@ -48,10 +48,10 @@
             <div class="flex flex-wrap items-center gap-4">
               <button
                 @click="openModal"
-                class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
+                class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg cursor-pointer"
                 style="padding: 20px 40px"
               >
-                Book your demo
+                Book Your Demo
               </button>
             </div>
           </div>
@@ -79,9 +79,9 @@
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 w-full sm:w-auto">
             <button
               @click="openModal"
-              class="font-poppins tracking-widest text-white border-2 border-black rounded-full py-4 px-8 bg-black hover:bg-primary active:bg-primary transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium lowercase cursor-pointer text-base"
+              class="font-poppins tracking-widest text-white border-2 border-black rounded-full py-4 px-8 bg-black hover:bg-primary active:bg-primary transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium cursor-pointer text-base"
             >
-              Book your demo
+              Book Your Demo
             </button>
           </div>
 
@@ -376,7 +376,7 @@
             <div class="flex items-center gap-3">
               <button
                 @click="prevPillar"
-                class="transition-transform active:scale-95 duration-200 font-poppins font-medium lowercase cursor-pointer"
+                class="transition-transform active:scale-95 duration-200 font-poppins font-medium cursor-pointer"
                 aria-label="Previous card"
               >
                 <img loading="lazy" :src="cartLeftChevron"
@@ -386,7 +386,7 @@
               </button>
               <button
                 @click="nextPillar"
-                class="transition-transform active:scale-95 duration-200 font-poppins font-medium lowercase cursor-pointer"
+                class="transition-transform active:scale-95 duration-200 font-poppins font-medium cursor-pointer"
                 aria-label="Next card"
               >
                 <img loading="lazy" :src="cartRightChevron"
@@ -507,8 +507,8 @@
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-3xl md:text-4xl lg:text-[3rem] leading-[1.1] text-neutral-950 mb-8 tracking-tight">
             Ready to simplify<br />your conversations?
           </h2>
-          <div class="font-poppins font-medium md:text-[16px] text-white bg-black group-hover:bg-neutral-800 rounded-full py-4 px-10 transition-all duration-300 shadow-md text-base">
-            Book your demo
+          <div class="font-poppins font-medium md:text-[16px] text-white bg-black hover:bg-primary rounded-full py-4 px-10 transition-all duration-300 shadow-md text-base">
+            Book Your Demo
           </div>
         </div>
       </div>
@@ -574,13 +574,13 @@
         <div class="flex items-center justify-center gap-4">
           <button
             @click="prevInsight"
-            class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 font-poppins font-medium lowercase cursor-pointer"
+            class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 font-poppins font-medium cursor-pointer"
           >
             <img loading="lazy" :src="cartLeftChevron" alt="Previous" class="w-5 h-5 md:w-6 md:h-6 object-contain" />
           </button>
           <button
             @click="nextInsight"
-            class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 font-poppins font-medium lowercase cursor-pointer"
+            class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 font-poppins font-medium cursor-pointer"
           >
             <img loading="lazy" :src="cartRightChevron" alt="Next" class="w-5 h-5 md:w-6 md:h-6 object-contain" />
           </button>
@@ -588,31 +588,6 @@
       </div>
     </section>
 
-    <!-- Mid Page Testimonial Section -->
-    <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full bg-white py-24 sm:py-28 px-6 sm:px-8 lg:px-12">
-      <div class="max-w-250 mx-auto text-center flex flex-col items-center">
-
-        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-[2rem] sm:text-4xl lg:text-[3.25rem] leading-[1.3] text-neutral-950 mb-10 tracking-tight">
-          <img loading="lazy" :src="postXLogo" alt="PostX" class="h-8 sm:h-10 lg:h-14 inline-block align-middle mx-2 sm:mx-3 -mt-2 sm:-mt-3" /> has proven itself time and time again that it is a crucial part of our business setup
-        </h2>
-
-        <div class="flex items-center gap-5 text-left mt-4">
-          <img loading="lazy" :src="testimonialGuyImg"
-            alt="John Farrenson"
-            class="w-16 h-16 sm:w-22 sm:h-22 rounded-[1.25rem] object-cover"
-          />
-          <div class="flex flex-col justify-center">
-            <span class="font-poppins font-bold text-lg sm:text-[1.35rem] text-[#2c2c2c] mb-1">
-              John Farrenson
-            </span>
-            <span class="font-poppins font-medium text-neutral-600 text-sm sm:text-[1.05rem]">
-              Business World Of Ergonomics
-            </span>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
     <!-- Omnichannel Workhorse Section -->
     <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full border-t border-b border-neutral-200/60 overflow-hidden relative">
@@ -648,9 +623,9 @@
           <div class="mb-10">
             <button
               @click="openModal"
-              class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full py-4 px-10 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg lowercase cursor-pointer"
+              class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full py-4 px-10 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg cursor-pointer"
             >
-              Book your demo
+              Book Your Demo
             </button>
           </div>
 
@@ -726,9 +701,9 @@
           <div class="mb-8 w-full sm:w-auto">
             <button
               @click="openModal"
-              class="font-poppins font-medium text-white bg-black hover:bg-primary rounded-full py-3.5 px-8 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md lowercase cursor-pointer w-full sm:w-auto text-base"
+              class="font-poppins font-medium text-white bg-black hover:bg-primary rounded-full py-3.5 px-8 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md cursor-pointer w-full sm:w-auto text-base"
             >
-              Book your demo
+              Book Your Demo
             </button>
           </div>
 
@@ -785,8 +760,8 @@
             <p class="font-poppins text-neutral-800 text-md font-regular leading-[1.6] mb-8 max-w-xl tracking-wide">
               Manage your customer lifecycle with outbound campaigns, automatic lead re-engagement, service, and appointment reminders.Capture24/7 leads, schedule test drives, and exchange secure documents - all while keeping your sales, service, and admin teams perfectly connected.
             </p>
-            <button class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-primary hover:scale-105 active:scale-95 px-9 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer">
-              Read more
+            <button class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-primary hover:scale-105 active:scale-95 px-9 py-3.5 rounded-full transition-all duration-300 shadow-md cursor-pointer">
+              Read More
             </button>
           </div>
           <div class="flex justify-end">
@@ -811,8 +786,8 @@
             Capture 24/7 leads, schedule test drives, send automated reminders, and exchange secure documents, all while keeping your sales, service, and admin teams perfectly connected.
           </p>
           <div>
-            <button class="font-poppins font-medium text-white bg-black hover:bg-primary hover:scale-105 active:bg-primary active:scale-95 px-8 py-3.5 rounded-full transition-all duration-300 shadow-md lowercase cursor-pointer text-base">
-              Read more
+            <button class="font-poppins font-medium text-white bg-black hover:bg-primary hover:scale-105 active:bg-primary active:scale-95 px-8 py-3.5 rounded-full transition-all duration-300 shadow-md cursor-pointer text-base">
+              Read More
             </button>
           </div>
         </div>
@@ -835,8 +810,8 @@
                     {{ feature.desc }}
                   </p>
                 </div>
-                <button @click="openModal" class="ml-6 bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer">
-                  Enquire today
+                <button @click="openModal" class="ml-6 bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 cursor-pointer">
+                  Enquire Today
                 </button>
               </div>
 
@@ -847,10 +822,10 @@
         <!-- Desktop View More / View Less Button -->
         <div class="hidden lg:flex mt-20 justify-center">
           <button v-if="!isFeaturesExpanded" @click="isFeaturesExpanded = true" class="bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 cursor-pointer text-base">
-            View more
+            View More
           </button>
-          <button v-else @click="collapseFeatures" class="bg-transparent border-2 border-primary text-primary hover:bg-black hover:text-primary font-poppins font-medium px-10 py-3.5 rounded-full transition-all duration-300 active:scale-95 cursor-pointer text-base">
-            View less
+          <button v-else @click="collapseFeatures" class="bg-transparent border-2 border-primary text-primary hover:bg-black hover:text-white hover:border-transparent hover:scale-105 font-poppins font-medium px-10 py-3.5 rounded-full transition-all duration-300 active:scale-95 cursor-pointer text-base">
+            View Less
           </button>
         </div>
 
@@ -874,8 +849,8 @@
                     {{ feature.desc }}
                   </p>
                 </div>
-                <button @click="openModal" class="ml-4 bg-black hover:bg-primary hover:scale-105 active:bg-primary text-white font-poppins font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer">
-                  Enquire today
+                <button @click="openModal" class="ml-4 bg-black hover:bg-primary hover:scale-105 active:bg-primary text-white font-poppins font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 cursor-pointer">
+                  Enquire Today
                 </button>
               </div>
             </div>
@@ -1036,9 +1011,9 @@
             </p>
             <button
               @click="openModal"
-              class="bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 lowercase cursor-pointer text-base"
+              class="bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 cursor-pointer text-base"
             >
-              Contact us today
+              Contact Us Today
             </button>
           </div>
 
@@ -1107,9 +1082,9 @@
             </p>
             <button
               @click="openModal"
-              class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium lowercase cursor-pointer btn-slide-in"
+              class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>
@@ -1171,9 +1146,9 @@
 
         <button
           @click="openModal"
-          class="bg-black hover:bg-primary text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 tracking-wide font-medium lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
+          class="bg-black hover:bg-primary text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 tracking-wide font-medium cursor-pointer btn-slide-in text-xs sm:text-base"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
       </div>
     </section>
@@ -1217,7 +1192,6 @@ import unlimitedUsersIcon from '~/assets/images/unlimited-users-icon.svg';
 import inhouseSupportIcon from '~/assets/images/in-house-support-team.svg';
 import clientsTrustImg from '~/assets/images/clients-who-trust-postx.webp';
 import continouslyUpdatingImg from '~/assets/images/postx-analytics-screenshot.webp';
-import testimonialGuyImg from '~/assets/images/testimonial-guy-image.webp';
 import postxInboxScreenshot from '~/assets/images/postx-inbox-screenshot.webp';
 import postxMobileLoginMockup from '~/assets/images/postx-mobile-login-screen-mockup.webp';
 import postxDesktopBanner from '~/assets/images/postx-mobileapp-desktop-background-mockup.webp';

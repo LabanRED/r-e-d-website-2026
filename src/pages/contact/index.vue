@@ -10,7 +10,7 @@
           class="inline-flex items-center gap-2 text-sm mt-8 font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
         >
           <ArrowLeft class="w-4 h-4" />
-          Back to home
+          Back To Home
         </NuxtLink>
       </div>
 

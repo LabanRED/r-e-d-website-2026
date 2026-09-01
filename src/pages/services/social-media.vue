@@ -12,7 +12,7 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back to Services
+        Back To Services
       </NuxtLink>
     </div>
 
@@ -110,9 +110,9 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
 
           <!-- Circular Icons -->
@@ -154,9 +154,9 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
 
           <!-- Circular Icons -->
@@ -218,9 +218,9 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
 
           <!-- Circular Icons -->
@@ -262,9 +262,9 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full lowercase transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
+            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
 
           <!-- Circular Icons -->
@@ -296,53 +296,72 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="px-6 sm:px-8 lg:px-12 py-16 sm:py-24 max-w-[900px] mx-auto flex flex-col items-center">
-      <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-primary text-lg sm:text-xl mb-2 text-center">
-        Why us?
-      </h3>
-      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 mb-16 text-center tracking-tight">
-        Frequently asked<br />questions
-      </h2>
+    <section
+      v-motion
+      :initial="{ opacity: 0, y: 30 }"
+      :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+      class="w-full bg-white py-20 sm:py-28 px-6 sm:px-8 lg:px-12"
+    >
+      <div class="max-w-350 mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20">
 
-      <div class="w-full flex flex-col mb-16">
-        <div v-for="(faq, index) in faqData" :key="index" class="w-full border-b border-neutral-200 overflow-hidden transition-all duration-300">
-          <button @click="toggleFaq(index)" class="w-full flex items-center justify-between py-6 sm:py-8 text-left focus:outline-none group cursor-pointer">
-            <span class="font-poppins text-lg sm:text-xl text-neutral-800 group-hover:text-primary transition-colors pr-4">
-              {{ faq.question }}
-            </span>
-            <div :class="['flex-shrink-0 text-primary transition-transform duration-300', activeFaq === index ? 'rotate-180' : 'rotate-0']">
-              <ChevronDown class="w-6 h-6" stroke-width="2" />
-            </div>
-          </button>
-          <transition
-            enter-active-class="transition-[grid-template-rows,opacity,margin] duration-300 ease-in-out"
-            leave-active-class="transition-[grid-template-rows,opacity,margin] duration-300 ease-in-out"
-            enter-from-class="grid-rows-[0fr] opacity-0 mb-0"
-            enter-to-class="grid-rows-[1fr] opacity-100 mb-6"
-            leave-from-class="grid-rows-[1fr] opacity-100 mb-6"
-            leave-to-class="grid-rows-[0fr] opacity-0 mb-0"
-          >
-            <div v-show="activeFaq === index" class="grid">
-              <div class="overflow-hidden">
-                <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-relaxed pr-8">
-                  {{ faq.answer }}
-                </p>
-              </div>
-            </div>
-          </transition>
+        <!-- Left Side: Headings & CTA Card -->
+        <div class="w-full lg:w-[40%] flex flex-col items-start">
+          <span class="text-primary font-poppins text-lg font-medium mb-4">Why us?</span>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-[4rem] leading-[1.1] font-medium text-neutral-900 mb-10 tracking-tight">
+            Frequently asked<br />questions
+          </h2>
+
+          <!-- CTA Card -->
+          <div class="w-full bg-[#f0f9fa] rounded-4xl p-8 sm:p-10 flex flex-col items-start mt-4">
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-semibold text-neutral-900 mb-4">
+              Still have a question?
+            </h3>
+            <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8">
+              If you'd like to know more about how<br />R-E-D can help your business generate more leads.
+            </p>
+            <button
+              @click="openModal('Social Media Management')"
+              class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
+            >
+              Schedule A Meeting Today
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div class="text-center flex flex-col items-center">
-        <p class="font-poppins text-neutral-600 text-lg sm:text-xl leading-relaxed mb-8 max-w-[600px]">
-          If you'd like to know more about how R<span class="text-primary">-</span>E<span class="text-primary">-</span>D can help your business generate more leads.
-        </p>
-        <button
-          @click="openModal('Social Media Management')"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
-        >
-          schedule a meeting today
-        </button>
+        <!-- Right Side: Accordion -->
+        <div class="w-full lg:w-[60%] flex flex-col gap-4">
+          <div
+            v-for="(faq, index) in faqData"
+            :key="index"
+            class="bg-[#fafafa] rounded-3xl overflow-hidden transition-all duration-300"
+          >
+            <button
+              @click="toggleFaq(index)"
+              class="w-full flex items-center justify-between p-6 sm:px-8 sm:py-7 text-left focus:outline-none cursor-pointer"
+            >
+              <span class="font-poppins font-semibold text-lg sm:text-xl text-neutral-900 pr-4">
+                {{ faq.question }}
+              </span>
+              <div class="flex-shrink-0 text-primary transition-transform duration-300" :class="{ 'rotate-180': activeFaq === index }">
+                <ChevronDown class="w-6 h-6" stroke-width="2.5" />
+              </div>
+            </button>
+            <transition
+              enter-active-class="transition-[height,opacity] duration-300 ease-in-out"
+              leave-active-class="transition-[height,opacity] duration-300 ease-in-out"
+              @enter="enter"
+              @after-enter="afterEnter"
+              @leave="leave"
+            >
+              <div v-show="activeFaq === index" class="overflow-hidden">
+                <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 mx-6 sm:mx-8 font-poppins text-neutral-600 text-base sm:text-lg leading-relaxed border-t border-neutral-200">
+                  <div class="pt-6">{{ faq.answer }}</div>
+                </div>
+              </div>
+            </transition>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -459,5 +478,24 @@ const activeFaq = ref<number | null>(null);
 
 const toggleFaq = (index: number) => {
   activeFaq.value = activeFaq.value === index ? null : index;
+};
+
+// Accordion Transition Methods
+const enter = (el: Element) => {
+  (el as HTMLElement).style.height = 'auto';
+  const height = getComputedStyle(el).height;
+  (el as HTMLElement).style.height = '0px';
+  getComputedStyle(el).height; // Force reflow
+  (el as HTMLElement).style.height = height;
+  (el as HTMLElement).style.opacity = '1';
+};
+const afterEnter = (el: Element) => {
+  (el as HTMLElement).style.height = 'auto';
+};
+const leave = (el: Element) => {
+  (el as HTMLElement).style.height = getComputedStyle(el).height;
+  getComputedStyle(el).height; // Force reflow
+  (el as HTMLElement).style.height = '0px';
+  (el as HTMLElement).style.opacity = '0';
 };
 </script>

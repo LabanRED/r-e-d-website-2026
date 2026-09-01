@@ -148,7 +148,7 @@
               </p>
             </div>
             <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">
-              Learn more <span class="text-lg leading-none">&rarr;</span>
+              Learn More <span class="text-lg leading-none">&rarr;</span>
             </div>
           </NuxtLink>
         </div>
@@ -159,9 +159,9 @@
       <div class="text-center mt-8">
         <NuxtLink
           to="/services"
-          class="inline-block font-poppins tracking-widest text-white bg-black hover:bg-primary rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-sm font-medium lowercase text-base"
+          class="inline-block font-poppins tracking-widest text-white bg-black hover:bg-primary rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-sm font-medium text-base"
         >
-          View all services
+          View All Services
         </NuxtLink>
       </div>
 

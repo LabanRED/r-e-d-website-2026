@@ -74,7 +74,7 @@
       <button
         type="submit"
         :disabled="isLoading"
-        class="w-full bg-black hover:bg-primary hover:scale-105 text-white font-poppins text-sm py-3.5 rounded-full transition-all duration-300 shadow-sm font-medium lowercase cursor-pointer flex items-center justify-center h-[52px]"
+        class="w-full bg-black hover:bg-primary hover:scale-105 text-white font-poppins text-sm py-3.5 rounded-full transition-all duration-300 shadow-sm font-medium cursor-pointer flex items-center justify-center h-[52px]"
       >
         <div v-if="isLoading" class="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
         <span v-else>Submit Application</span>
