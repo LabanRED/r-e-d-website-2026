@@ -7,7 +7,7 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back to home
+        Back To Home
       </NuxtLink>
     </div>
 
@@ -32,7 +32,7 @@
           <p class="font-poppins text-neutral-600 text-sm sm:text-base mb-4 tracking-wide font-medium">
             Our blogs
           </p>
-          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 leading-[1.1] tracking-tight">
+          <h1 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 leading-[1.1] tracking-tight">
             Smarter Digital <br class="hidden sm:block" />
             Thinking for <span class="text-primary">Better <br class="hidden sm:block" />
               Conversions</span>
@@ -46,7 +46,7 @@
           <p class="font-poppins text-neutral-600 text-sm sm:text-base mb-4 tracking-wide font-medium">
             Our blogs
           </p>
-          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight tracking-tight">
+          <h1 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight tracking-tight">
             Smarter Digital <br />
             Thinking for <span class="text-primary">Better <br />
               Conversions</span>
@@ -68,7 +68,7 @@
 
     <!-- All Articles Section -->
     <section class="px-6 sm:px-8 lg:px-12 max-w-[1600px] mx-auto mb-16">
-      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-6">
+      <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-6">
         All articles
       </h2>
       <p class="font-poppins text-neutral-600 text-lg leading-relaxed max-w-4xl mb-8">
@@ -86,7 +86,7 @@
           v-model="searchQuery"
           class="w-full pl-12 pr-32 py-4 bg-transparent border border-neutral-300 rounded-full focus:outline-none focus:border-primary font-poppins text-neutral-700"
         />
-        <button class="absolute right-2 top-2 bottom-2 bg-black hover:bg-primary hover:scale-105 text-white px-6 rounded-full font-poppins font-medium transition-all duration-300 lowercase cursor-pointer text-base">
+        <button class="absolute right-2 top-2 bottom-2 bg-black hover:bg-primary hover:scale-105 text-white px-6 rounded-full font-poppins font-medium transition-all duration-300 cursor-pointer text-base">
           Search
         </button>
       </div>
@@ -94,13 +94,13 @@
 
     <!-- Latest Blogs Section -->
     <section class="px-6 sm:px-8 lg:px-12 max-w-[1600px] mx-auto mb-20">
-      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="w-full px-0 md:px-[186px] font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-10">
+      <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full px-0 md:px-[186px] font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-10">
         Latest blogs
       </h2>
 
       <div class="flex flex-wrap justify-center gap-8 lg:gap-10 mb-12">
         <template v-if="filteredBlogs.length > 0">
-          <NuxtLink v-for="blog in filteredBlogs" :key="blog.id" :to="blog.link || '/blogs/article'" class="flex flex-col group cursor-pointer block w-full md:w-[350px]" v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }">
+          <NuxtLink v-for="blog in filteredBlogs" :key="blog.id" :to="blog.link || '/blogs/article'" class="flex flex-col group cursor-pointer block w-full md:w-[350px]" v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }">
             <!-- Blog Image Placeholder -->
             <div class="w-full aspect-[4/3] bg-neutral-200 rounded-2xl mb-6 overflow-hidden flex items-center justify-center relative">
               <template v-if="blog.image">
@@ -115,15 +115,15 @@
               <span class="font-poppins text-xs text-neutral-500 mb-3 uppercase tracking-wider font-medium">
                 {{ blog.date }}
               </span>
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl font-semibold text-neutral-800 mb-4 leading-snug group-hover:text-primary transition-colors line-clamp-2">
+              <h3 class="font-poppins text-xl font-semibold text-neutral-800 mb-4 leading-snug group-hover:text-primary transition-colors line-clamp-2">
                 {{ blog.title }}
               </h3>
               <p class="font-poppins text-neutral-600 text-sm leading-relaxed mb-6 line-clamp-3 flex-1">
                 {{ blog.excerpt }}
               </p>
               <div class="mt-auto">
-                <button class="px-6 py-2 bg-black text-white hover:bg-primary hover:scale-105 rounded-full font-poppins transition-all duration-300 font-medium lowercase cursor-pointer text-base">
-                  Read article
+                <button class="px-6 py-2 bg-black text-white hover:bg-primary hover:scale-105 rounded-full font-poppins transition-all duration-300 font-medium cursor-pointer text-base">
+                  Read Article
                 </button>
               </div>
             </div>
@@ -136,9 +136,9 @@
         </template>
       </div>
 
-      <div class="flex justify-center">
-        <button class="bg-black hover:bg-primary hover:scale-105 text-white px-8 py-3 rounded-full font-poppins transition-all duration-300 shadow-sm font-medium lowercase cursor-pointer text-base">
-          Load more...
+      <div v-if="filteredBlogs.length >= 7" class="flex justify-center">
+        <button class="bg-black hover:bg-primary hover:scale-105 text-white px-8 py-3 rounded-full font-poppins transition-all duration-300 shadow-sm font-medium cursor-pointer text-base">
+          Load More...
         </button>
       </div>
     </section>
@@ -150,7 +150,7 @@
           alt="R-E-D Logo"
           class="h-10 sm:h-12 object-contain mb-8"
         />
-        <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
+        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
           Ready to establish your digital presences?
         </h3>
         <p class="font-poppins text-neutral-600 text-base max-w-xl mb-10 leading-relaxed">
@@ -158,9 +158,9 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
       </div>
     </section>

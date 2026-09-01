@@ -7,7 +7,7 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back to home
+        Back To Home
       </NuxtLink>
     </div>
 
@@ -39,7 +39,7 @@
           </h1>
           <p class="font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed max-w-lg font-medium">
             We're looking for visionaries, makers, and strategists to build what's next.
-            At Digitalcraft, we don't just adapt to the future; we design it.
+            At R-E-D, we don't just adapt to the future; we design it.
           </p>
         </div>
       </div>

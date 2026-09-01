@@ -138,9 +138,9 @@
           <!-- CTA (Desktop) - Vibrant Cyan Pill Button -->
           <NuxtLink
             to="/contact"
-            class="h-10.5 inline-flex items-center justify-center rounded-full bg-[#00a2ca] hover:bg-[#00b5e2] px-7 text-white shadow-md shadow-cyan-500/10 transition-all duration-300 hover:scale-[1.02] active:scale-95 font-poppins font-medium lowercase text-base"
+            class="h-10.5 inline-flex items-center justify-center rounded-full bg-[#00a2ca] hover:bg-[#00b5e2] px-7 text-white shadow-md shadow-cyan-500/10 transition-all duration-300 hover:scale-[1.02] active:scale-95 font-poppins font-medium text-base"
           >
-            Contact us
+            Contact Us
           </NuxtLink>
         </div>
 
@@ -245,7 +245,7 @@
               @click="isOpen = false"
               class="block w-full rounded-full bg-[#00a2ca] py-3 text-base font-semibold text-white text-center shadow-lg hover:bg-[#00b5e2] transition-colors"
             >
-              Contact us
+              Contact Us
             </NuxtLink>
           </div>
         </div>

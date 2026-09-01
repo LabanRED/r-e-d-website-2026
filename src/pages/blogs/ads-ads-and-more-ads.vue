@@ -11,14 +11,14 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back to blogs
+        Back To Blogs
       </NuxtLink>
     </div>
 
     <!-- Article Header -->
     <article class="max-w-[1600px] mx-auto px-6 sm:px-8">
       <header class="mb-10 text-center">
-        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="w-full md:w-275 lg:w-275 mx-auto font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-900 leading-tight tracking-tight mb-6">
+        <h1 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full md:w-275 lg:w-275 mx-auto font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-900 leading-tight tracking-tight mb-6">
           Ads, ads and more ads
         </h1>
       </header>
@@ -57,7 +57,7 @@
               Don't worry, there's a Facebook ad to match your exact goal... and then some!
             </p>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
               Awareness:
             </h2>
             <p class="mb-6">
@@ -69,14 +69,14 @@
 
             <!-- Awareness blocks -->
             <div class="flex flex-col gap-6 mb-12">
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="brandAwarenessImg" alt="Brand Awareness" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">Brand Awareness</h3>
                         <p class="text-base text-neutral-700">Tell people what makes your business valuable.</p>
                     </div>
                 </div>
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="reachImg" alt="Reach" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">Reach</h3>
@@ -85,7 +85,7 @@
                 </div>
             </div>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
               Considerations:
             </h2>
             <p class="mb-6">
@@ -97,7 +97,7 @@
 
             <!-- Considerations blocks -->
             <div class="flex flex-col gap-6 mb-12">
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="trafficImg" alt="Traffic" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">Traffic</h3>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="engagementImg" alt="Engagement" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">Engagement</h3>
@@ -113,7 +113,7 @@
                     </div>
                 </div>
 
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="appInstallsImg" alt="App Installs" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">App Installs</h3>
@@ -122,7 +122,7 @@
                 </div>
 
                 <!-- Using Engagement image as fallback for Video Views -->
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="engagementImg" alt="Video Views" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">Video Views</h3>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
 
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="leadGenImg" alt="Lead Generation" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">Lead Generation</h3>
@@ -138,7 +138,7 @@
                     </div>
                 </div>
 
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="messagesImg" alt="Messages" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">Messages</h3>
@@ -147,7 +147,7 @@
                 </div>
             </div>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
               Conversions:
             </h2>
             <p class="mb-6">
@@ -156,7 +156,7 @@
 
             <!-- Conversions blocks -->
             <div class="flex flex-col gap-6 mb-12">
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="conversionsImg" alt="Conversions" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">Conversions</h3>
@@ -164,7 +164,7 @@
                     </div>
                 </div>
 
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="catalogImg" alt="Catalog Sales" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">Catalog Sales</h3>
@@ -172,7 +172,7 @@
                     </div>
                 </div>
 
-                <div v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
+                <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="storeTrafficImg" alt="Store Traffic" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
                         <h3 class="text-lg font-semibold text-neutral-900 mb-2">Store Traffic</h3>
@@ -214,7 +214,7 @@
           alt="R-E-D Logo"
           class="h-10 sm:h-12 object-contain mb-8"
         />
-        <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
+        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
           Ready to establish your digital presences?
         </h3>
         <p class="font-poppins text-neutral-600 text-base max-w-xl mb-10 leading-relaxed">
@@ -222,9 +222,9 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
       </div>
     </section>

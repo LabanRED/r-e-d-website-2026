@@ -9,9 +9,6 @@
     <!-- Trusted by Clients Logo Carousel -->
     <LogoCarousel />
 
-    <!-- Testimonials Section -->
-    <Testimonials />
-
     <!-- Why Us / Comparison Section -->
     <WhyUs @cta-click="openModal" />
 
@@ -33,6 +30,10 @@
 </template>
 
 <script setup lang="ts">
+definePageMeta({
+  alias: ['/']
+});
+
 const { openModal } = useModal();
 
 useHead({

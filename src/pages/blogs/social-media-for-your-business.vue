@@ -11,14 +11,14 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back to blogs
+        Back To Blogs
       </NuxtLink>
     </div>
 
     <!-- Article Header -->
     <article class="max-w-[1600px] mx-auto px-6 sm:px-8">
       <header class="mb-10 text-center">
-        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="w-full md:w-275 lg:w-275 mx-auto font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-900 leading-tight tracking-tight mb-6">
+        <h1 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full md:w-275 lg:w-275 mx-auto font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-900 leading-tight tracking-tight mb-6">
           Social Media for Your Business:<br> 5 Tips to Get It Right.
         </h1>
       </header>
@@ -72,7 +72,7 @@
               Here are five tips to help you effectively use social media for your business:
             </p>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               1. Choose the right social media platform for your business
             </h2>
             <ul class="list-disc pl-6 mb-6 space-y-4">
@@ -104,7 +104,7 @@
               />
             </div>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               2. Optimize Your Business Social Media Profile
             </h2>
             <p class="mb-6">
@@ -125,7 +125,7 @@
               </li>
             </ul>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               3. Create Engaging Content
             </h2>
             <p class="mb-6">
@@ -146,7 +146,7 @@
               />
             </div>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               4. Use Video
             </h2>
             <p class="mb-6">
@@ -156,7 +156,7 @@
               Although video takes slightly more time and a little bit more money than other types of posts, it is worth the effort! High quality and professional video content will rapidly increase your performance across social media channels and the internet itself.
             </p>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               5. Don't be afraid to get help!
             </h2>
             <p class="mb-6">
@@ -191,7 +191,7 @@
           alt="R-E-D Logo"
           class="h-10 sm:h-12 object-contain mb-8"
         />
-        <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
+        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
           Ready to establish your digital presences?
         </h3>
         <p class="font-poppins text-neutral-600 text-base max-w-xl mb-10 leading-relaxed">
@@ -199,9 +199,9 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 lowercase cursor-pointer btn-slide-in text-xs sm:text-base"
+          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
       </div>
     </section>

@@ -30,7 +30,7 @@
           <!-- Close Button -->
           <button
             @click="onClose"
-            class="absolute top-6 right-6 rounded-full p-1.5 text-neutral-400 hover:bg-neutral-50 hover:text-neutral-800 transition-colors duration-200 font-poppins font-medium lowercase"
+            class="absolute top-6 right-6 rounded-full p-1.5 text-neutral-400 hover:bg-neutral-50 hover:text-neutral-800 transition-colors duration-200 font-poppins font-medium"
           >
             <X class="h-5 w-5" />
           </button>
@@ -63,9 +63,9 @@
 
             <button
               @click="handleReset"
-              class="rounded-full bg-black hover:bg-primary hover:scale-105 px-8 py-3 text-white transition-all duration-300 shadow-md shadow-primary/10 font-poppins font-medium lowercase text-base"
+              class="rounded-full bg-black hover:bg-primary hover:scale-105 px-8 py-3 text-white transition-all duration-300 shadow-md shadow-primary/10 font-poppins font-medium text-base"
             >
-              Return to Site
+              Return To Site
             </button>
           </div>
         </div>
