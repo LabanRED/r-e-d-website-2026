@@ -30,15 +30,15 @@
           </div>
 
           <!-- Content Overlaid on Desktop with exactly 100px left spacing -->
-          <div class="relative z-10 w-full lg:w-[760px] lg:pt-12 lg:pl-[100px] flex flex-col justify-center items-start text-left">
+          <div class="relative z-10 w-full lg:w-[760px] lg:pt-22 lg:pl-[100px] flex flex-col justify-center items-start text-left">
             <img loading="lazy" :src="postXLogo"
               alt="PostX Logo"
               class="h-10 w-auto mb-6 object-contain"
               referrerpolicy="no-referrer"
             />
-            <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl md:text-4xl lg:text-4xl mb-6 text-neutral-900">
+            <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl md:text-5xl lg:text-4xl mb-6 text-neutral-900">
               From First Click to Final Sale.<br />
-              <span class="text-[#2ca8cb]">One Platform for Every Conversation.</span>
+              <span class="text-[#2ca8cb] md:text-4xl">One Platform for Every Conversation.</span>
             </h1>
 
             <p class="font-poppins font-regular text-neutral-800 text-base leading-6 max-w-2xl mb-8">
@@ -47,7 +47,7 @@
 
             <div class="flex flex-wrap items-center gap-4">
               <button
-                @click="openModal"
+                @click="openModal('PostX - Demo')"
                 class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg cursor-pointer"
                 style="padding: 20px 40px"
               >
@@ -78,7 +78,7 @@
           <!-- Mobile Buttons -->
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 w-full sm:w-auto">
             <button
-              @click="openModal"
+              @click="openModal('PostX - Demo')"
               class="font-poppins tracking-widest text-white border-2 border-black rounded-full py-4 px-8 bg-black hover:bg-primary active:bg-primary transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium cursor-pointer text-base"
             >
               Book Your Demo
@@ -497,7 +497,7 @@
       <!-- Desktop Banner -->
       <div
         class="hidden sm:block w-full max-w-[1600px] mx-auto px-6 sm:px-8 lg:px-12 cursor-pointer relative group"
-        @click="openModal"
+        @click="openModal('PostX - Demo')"
       >
         <img loading="lazy" :src="desktopMidCta" alt="PostX Mid Page CTA" class="w-full h-auto object-contain transition-transform duration-300 group-hover:opacity-95" referrerpolicy="no-referrer" />
         <div class="absolute inset-y-0 left-[8%] md:left-[10%] lg:left-[12%] flex flex-col justify-center items-start text-left max-w-[500px]">
@@ -516,7 +516,7 @@
       <!-- Mobile Banner -->
       <div
         class="block sm:hidden w-full cursor-pointer relative transition-transform duration-300 active:opacity-95"
-        @click="openModal"
+        @click="openModal('PostX - Demo')"
       >
         <img loading="lazy" :src="mobileMidCta" alt="PostX Mid Page CTA" class="w-full h-auto object-contain" referrerpolicy="no-referrer" />
         <div class="absolute top-[5%] left-6 right-6 flex flex-col items-start text-left">
@@ -622,7 +622,7 @@
 
           <div class="mb-10">
             <button
-              @click="openModal"
+              @click="openModal('PostX - Demo')"
               class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full py-4 px-10 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg cursor-pointer"
             >
               Book Your Demo
@@ -700,7 +700,7 @@
 
           <div class="mb-8 w-full sm:w-auto">
             <button
-              @click="openModal"
+              @click="openModal('PostX - Demo')"
               class="font-poppins font-medium text-white bg-black hover:bg-primary rounded-full py-3.5 px-8 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md cursor-pointer w-full sm:w-auto text-base"
             >
               Book Your Demo

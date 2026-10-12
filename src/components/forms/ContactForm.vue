@@ -93,7 +93,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { Send } from 'lucide-vue-next';
 
@@ -114,18 +114,23 @@ const isLoading = ref(false);
 
 const route = useRoute();
 
-onMounted(() => {
-  if (route.query.service) {
-    const serviceQuery = route.query.service as string;
-    // Check if the service exists in our list of options to prevent invalid values
-    const validServices = [
-      'Digital Advertising', 'Social Media Management', 'Website Development',
-      'Online Reputation', 'Location Listing', 'PostX - Demo', 'PostX - General Enquiry', 'Other'
-    ];
-    if (validServices.includes(serviceQuery)) {
-      service.value = serviceQuery;
-    }
+const validServices = [
+  'Digital Advertising', 'Social Media Management', 'Website Development',
+  'Online Reputation', 'Location Listing', 'PostX - Demo', 'PostX - General Enquiry', 'Other'
+];
+
+const updateServiceFromQuery = (val: unknown) => {
+  if (val && typeof val === 'string' && validServices.includes(val)) {
+    service.value = val;
   }
+};
+
+onMounted(() => {
+  updateServiceFromQuery(route.query.service);
+});
+
+watch(() => route.query.service, (newVal) => {
+  updateServiceFromQuery(newVal);
 });
 
 const labelClass = computed(() => {

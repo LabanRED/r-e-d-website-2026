@@ -73,35 +73,35 @@
                   @click="isServicesOpen = false"
                   class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
                 >
-                  Digital advertising
+                  Digital Advertising
                 </NuxtLink>
                 <NuxtLink
                   to="/services/social-media"
                   @click="isServicesOpen = false"
                   class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
                 >
-                  Social media management
+                  Social Media Management
                 </NuxtLink>
                 <NuxtLink
                   to="/services/website-dev"
                   @click="isServicesOpen = false"
                   class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
                 >
-                  Website development & maintenance
+                  Website Development & Maintenance
                 </NuxtLink>
                 <NuxtLink
                   to="/services/online-reputation"
                   @click="isServicesOpen = false"
                   class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
                 >
-                  Online reputation solutions
+                  Online Reputation Solutions
                 </NuxtLink>
                 <NuxtLink
                   to="/services/location-listing"
                   @click="isServicesOpen = false"
                   class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
                 >
-                  Location listing and solutions
+                  Location Listing and Solutions
                 </NuxtLink>
               </div>
             </transition>

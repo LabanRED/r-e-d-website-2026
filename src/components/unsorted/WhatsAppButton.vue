@@ -8,7 +8,7 @@
     rel="noopener noreferrer"
     :class="[
       'fixed w-42 md:w-48 right-[2%] z-9999 group flex items-center justify-center transition-all duration-500 ease-out hover:scale-105',
-      isCookieBannerVisible ? 'bottom-[200px] lg:bottom-[110px]' : 'bottom-[2%]'
+      bottomPositionClass
     ]"
     aria-label="Contact us on WhatsApp"
   >
@@ -30,8 +30,23 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue';
 import defaultCta from '~/assets/images/whatsapp-cta.svg';
 import hoverCta from '~/assets/images/whatsapp-hover-cta.svg';
 
 const isCookieBannerVisible = useState('isCookieBannerVisible', () => false);
+const isCookiecustomiseOpen = useState('isCookiecustomiseOpen', () => false);
+
+const bottomPositionClass = computed(() => {
+  if (!isCookieBannerVisible.value) {
+    return 'bottom-[2%]';
+  }
+  // When user is customizing cookie options, banner is taller (+30px margin)
+  if (isCookiecustomiseOpen.value) {
+    return 'bottom-[490px] sm:bottom-[350px] lg:bottom-[260px]';
+  }
+  // Standard compact cookie banner height
+  return 'bottom-[200px] lg:bottom-[110px]';
+});
 </script>
+

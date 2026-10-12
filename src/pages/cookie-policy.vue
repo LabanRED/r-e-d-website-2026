@@ -13,7 +13,7 @@
         </NuxtLink>
         
         <button 
-          @click="openPrivacyPopup" 
+          @click="openCookieSettings" 
           class="bg-primary hover:bg-[#008ba6] text-white text-[16px] font-semibold py-2.5 px-6 rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm cursor-pointer"
         >
           Change your cookie settings
@@ -27,7 +27,7 @@
         <p>Last updated: {{ new Date().toLocaleDateString() }}</p>
 
         <h2 class="text-xl font-semibold text-neutral-800 mt-8 mb-4">Introduction</h2>
-        <p>Reach Engage Develop (PTY) Ltd (“we” or “us” or “our”) may use cookies, web beacons, tracking pixels, and other tracking technologies when you visit our website www.reachengagedevelop.com, including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the “Site”) to help customize the Site and improve your experience.</p>
+        <p>Reach Engage Develop (PTY) Ltd (“we” or “us” or “our”) may use cookies, web beacons, tracking pixels, and other tracking technologies when you visit our website www.reachengagedevelop.com, including any other media form, media channel, mobile website, or mobile application related or connected thereto (collectively, the “Site”) to help customise the Site and improve your experience.</p>
         <p>We reserve the right to make changes to this Cookie Policy at any time and for any reason. Any changes or modifications will be effective immediately upon posting the updated content on the site, and you waive the right to receive specific notice of each such change or modification.</p>
         <p>You are encouraged to periodically review this Cookie Policy to stay informed of updates. You will be deemed to have been made aware of, will be subject to, and will be deemed to have accepted the changes in any revised Cookie Policy by your continued use of the Site after the date such revised Cookie Policy is posted.</p>
 
@@ -63,7 +63,7 @@
         <p>For more information on how to control cookies, check your browser or device’s settings for how you can control or reject cookies.</p>
 
         <h2 class="text-xl font-semibold text-neutral-800 mt-8 mb-4">OTHER TRACKING TECHNOLOGIES</h2>
-        <p>In addition to cookies, we may use web beacons, pixel tags, and other tracking technologies on the Site to help customize the Site and improve your experience. A “web beacon” or “pixel tag” is tiny object or image embedded in a web page or email. They are used to track the number of users who have visited particular pages and viewed emails, and acquire other statistical data. They collect only a limited set of data, such as a cookie number, time and date of page or email view, and a description of the page or email on which they reside. Web beacons and pixel tags cannot be declined. However, you can limit their use by controlling the cookies that interact with them.</p>
+        <p>In addition to cookies, we may use web beacons, pixel tags, and other tracking technologies on the Site to help customise the Site and improve your experience. A “web beacon” or “pixel tag” is tiny object or image embedded in a web page or email. They are used to track the number of users who have visited particular pages and viewed emails, and acquire other statistical data. They collect only a limited set of data, such as a cookie number, time and date of page or email view, and a description of the page or email on which they reside. Web beacons and pixel tags cannot be declined. However, you can limit their use by controlling the cookies that interact with them.</p>
 
         <h2 class="text-xl font-semibold text-neutral-800 mt-8 mb-4">PRIVACY POLICY</h2>
         <p>For more information about how we use information collected by cookies and other tracking technologies, please refer to our <NuxtLink to="/privacy-policy" class="text-primary hover:underline font-medium">Privacy Policy</NuxtLink> posted on the Site. This Cookie Policy is part of and is incorporated into our Privacy Policy. By using the Site, you agree to be bound by this Cookie Policy and our Privacy Policy.</p>
@@ -86,10 +86,10 @@
 import { useState } from '#app';
 import { ArrowLeft } from 'lucide-vue-next';
 
-const isPrivacyPopupOpen = useState('isPrivacyPopupOpen', () => false);
+const isCookieBannerVisible = useState('isCookieBannerVisible', () => false);
 
-const openPrivacyPopup = () => {
-  isPrivacyPopupOpen.value = true;
+const openCookieSettings = () => {
+  isCookieBannerVisible.value = true;
 };
 
 useHead({
