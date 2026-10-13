@@ -6,7 +6,7 @@
         <!-- Static Left Text -->
         <div class="shrink-0 text-center md:text-left">
           <span class="font-poppins font-medium text-neutral-500 text-sm md:text-base tracking-wide whitespace-nowrap">
-            Trusted by the industry leaders
+            {{ title || 'Trusted by 500+ dealers country wide.' }}
           </span>
         </div>
 
@@ -39,6 +39,15 @@
 </template>
 
 <script setup lang="ts">
+const props = withDefaults(
+  defineProps<{
+    title?: string;
+  }>(),
+  {
+    title: 'Trusted by 500+ dealers country wide.'
+  }
+);
+
 import audi from '~/assets/images/audi.svg';
 import byd from '~/assets/images/byd.svg';
 import chery from '~/assets/images/chery.svg';

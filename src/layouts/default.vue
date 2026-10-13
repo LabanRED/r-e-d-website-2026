@@ -28,7 +28,7 @@
           </button>
           <div class="w-px h-6 bg-neutral-700 mx-1"></div>
           <button @click="previewMode = 'desktop'" class="px-4 py-1.5 rounded-full font-medium text-neutral-300 hover:text-white hover:bg-neutral-700 transition-colors text-base">
-            Exit Preview
+            exit preview
           </button>
         </div>
 

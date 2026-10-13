@@ -9,15 +9,13 @@
           class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
         >
           <ArrowLeft class="w-4 h-4" />
-          Back to Home
+          back to home
         </NuxtLink>
         
         <button 
           @click="openCookieSettings" 
           class="bg-primary hover:bg-[#008ba6] text-white text-[16px] font-semibold py-2.5 px-6 rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm cursor-pointer"
-        >
-          Change your cookie settings
-        </button>
+        >change your cookie settings</button>
       </div>
 
       <!-- Content -->

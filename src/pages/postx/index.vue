@@ -1,13 +1,13 @@
 <template>
   <div class="bg-[#fcfcfc] text-neutral-900 min-h-screen pt-12 pb-16">
-    <!-- Back to Home Breadcrumb Indicator -->
+    <!-- back to home Breadcrumb Indicator -->
     <div class="mx-auto max-w-[1600px] px-6 sm:px-8 lg:px-12 mb-6">
       <NuxtLink
         to="/"
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-[#2ca8cb] transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back To R-E-D Home
+        back to r-e-d home
       </NuxtLink>
     </div>
 
@@ -51,7 +51,7 @@
                 class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg cursor-pointer"
                 style="padding: 20px 40px"
               >
-                Book Your Demo
+                book your demo
               </button>
             </div>
           </div>
@@ -81,7 +81,7 @@
               @click="openModal('PostX - Demo')"
               class="font-poppins tracking-widest text-white border-2 border-black rounded-full py-4 px-8 bg-black hover:bg-primary active:bg-primary transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium cursor-pointer text-base"
             >
-              Book Your Demo
+              book your demo
             </button>
           </div>
 
@@ -508,7 +508,7 @@
             Ready to simplify<br />your conversations?
           </h2>
           <div class="font-poppins font-medium md:text-[16px] text-white bg-black hover:bg-primary rounded-full py-4 px-10 transition-all duration-300 shadow-md text-base">
-            Book Your Demo
+            book your demo
           </div>
         </div>
       </div>
@@ -527,7 +527,7 @@
             Ready to simplify<br />your conversations?
           </h2>
           <div class="font-poppins font-medium text-sm text-white bg-black rounded-full py-3 px-8 shadow-md">
-            Book your demo
+            book your demo
           </div>
         </div>
       </div>
@@ -625,7 +625,7 @@
               @click="openModal('PostX - Demo')"
               class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full py-4 px-10 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg cursor-pointer"
             >
-              Book Your Demo
+              book your demo
             </button>
           </div>
 
@@ -703,7 +703,7 @@
               @click="openModal('PostX - Demo')"
               class="font-poppins font-medium text-white bg-black hover:bg-primary rounded-full py-3.5 px-8 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md cursor-pointer w-full sm:w-auto text-base"
             >
-              Book Your Demo
+              book your demo
             </button>
           </div>
 
@@ -760,9 +760,7 @@
             <p class="font-poppins text-neutral-800 text-md font-regular leading-[1.6] mb-8 max-w-xl tracking-wide">
               Manage your customer lifecycle with outbound campaigns, automatic lead re-engagement, service, and appointment reminders.Capture24/7 leads, schedule test drives, and exchange secure documents - all while keeping your sales, service, and admin teams perfectly connected.
             </p>
-            <button class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-primary hover:scale-105 active:scale-95 px-9 py-3.5 rounded-full transition-all duration-300 shadow-md cursor-pointer">
-              Read More
-            </button>
+            <button class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-primary hover:scale-105 active:scale-95 px-9 py-3.5 rounded-full transition-all duration-300 shadow-md cursor-pointer">read more</button>
           </div>
           <div class="flex justify-end">
             <img loading="lazy" :src="automateDesktop" alt="Automate Customer Journey" class="w-full max-w-[550px] h-auto object-contain" referrerpolicy="no-referrer" />
@@ -786,9 +784,7 @@
             Capture 24/7 leads, schedule test drives, send automated reminders, and exchange secure documents, all while keeping your sales, service, and admin teams perfectly connected.
           </p>
           <div>
-            <button class="font-poppins font-medium text-white bg-black hover:bg-primary hover:scale-105 active:bg-primary active:scale-95 px-8 py-3.5 rounded-full transition-all duration-300 shadow-md cursor-pointer text-base">
-              Read More
-            </button>
+            <button class="font-poppins font-medium text-white bg-black hover:bg-primary hover:scale-105 active:bg-primary active:scale-95 px-8 py-3.5 rounded-full transition-all duration-300 shadow-md cursor-pointer text-base">read more</button>
           </div>
         </div>
 
@@ -811,7 +807,7 @@
                   </p>
                 </div>
                 <button @click="openModal" class="ml-6 bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 cursor-pointer">
-                  Enquire Today
+                  enquire today
                 </button>
               </div>
 
@@ -821,12 +817,8 @@
 
         <!-- Desktop View More / View Less Button -->
         <div class="hidden lg:flex mt-20 justify-center">
-          <button v-if="!isFeaturesExpanded" @click="isFeaturesExpanded = true" class="bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 cursor-pointer text-base">
-            View More
-          </button>
-          <button v-else @click="collapseFeatures" class="bg-transparent border-2 border-primary text-primary hover:bg-black hover:text-white hover:border-transparent hover:scale-105 font-poppins font-medium px-10 py-3.5 rounded-full transition-all duration-300 active:scale-95 cursor-pointer text-base">
-            View Less
-          </button>
+          <button v-if="!isFeaturesExpanded" @click="isFeaturesExpanded = true" class="bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 cursor-pointer text-base">view more</button>
+          <button v-else @click="collapseFeatures" class="bg-transparent border-2 border-primary text-primary hover:bg-black hover:text-white hover:border-transparent hover:scale-105 font-poppins font-medium px-10 py-3.5 rounded-full transition-all duration-300 active:scale-95 cursor-pointer text-base">view less</button>
         </div>
 
         <!-- Mobile Features Carousel -->
@@ -850,7 +842,7 @@
                   </p>
                 </div>
                 <button @click="openModal" class="ml-4 bg-black hover:bg-primary hover:scale-105 active:bg-primary text-white font-poppins font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 cursor-pointer">
-                  Enquire Today
+                  enquire today
                 </button>
               </div>
             </div>
@@ -1013,7 +1005,7 @@
               @click="openModal"
               class="bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 cursor-pointer text-base"
             >
-              Contact Us Today
+              contact us today
             </button>
           </div>
 
@@ -1084,7 +1076,7 @@
               @click="openModal"
               class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
             >
-              Schedule A Meeting Today
+              schedule a meeting today
             </button>
           </div>
         </div>
@@ -1148,7 +1140,7 @@
           @click="openModal"
           class="bg-black hover:bg-primary text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 tracking-wide font-medium cursor-pointer btn-slide-in text-xs sm:text-base"
         >
-          Schedule A Meeting Today
+          schedule a meeting today
         </button>
       </div>
     </section>

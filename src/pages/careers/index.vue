@@ -7,7 +7,7 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back To Home
+        back to home
       </NuxtLink>
     </div>
 
@@ -105,7 +105,7 @@
               Facebook | Instagram | TikTok | X | LinkedIn
             </span>
             <NuxtLink to="/careers/head-of-social-media" class="w-full md:w-auto bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer text-base">
-              View Role
+              view role
             </NuxtLink>
           </div>
         </div>
@@ -129,7 +129,7 @@
               Facebook | Instagram | TikTok | X | LinkedIn
             </span>
             <NuxtLink to="/careers/head-of-search" class="w-full md:w-auto bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer text-base">
-              View Role
+              view role
             </NuxtLink>
           </div>
         </div>
@@ -153,7 +153,7 @@
               Facebook | Instagram | TikTok | X | LinkedIn
             </span>
             <NuxtLink to="/careers/intern" class="w-full md:w-auto bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer text-base">
-              View Role
+              view role
             </NuxtLink>
           </div>
         </div>
@@ -177,7 +177,7 @@
               Facebook | Instagram | TikTok | X | LinkedIn
             </span>
             <NuxtLink to="/careers/designer" class="w-full md:w-auto bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-6 py-3 md:py-2 rounded-full transition-all duration-300 shadow-sm text-center block md:inline-block cursor-pointer text-base">
-              View Role
+              view role
             </NuxtLink>
           </div>
         </div>

@@ -23,7 +23,7 @@
             @click="$emit('cta-click')"
             class="inline-block font-poppins tracking-widest text-white bg-black btn-slide-in rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-md font-medium text-xs sm:text-base"
           >
-            Schedule A Meeting Today
+            schedule a meeting today
           </button>
         </div>
       </div>

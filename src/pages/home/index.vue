@@ -6,7 +6,7 @@
     <!-- Stats Bar (Responsive Metrics) -->
     <StatsBar />
 
-    <!-- Trusted by Clients Logo Carousel -->
+    <!-- Trusted by 500+ Dealers Logo Carousel -->
     <LogoCarousel />
 
     <!-- Why Us / Comparison Section -->

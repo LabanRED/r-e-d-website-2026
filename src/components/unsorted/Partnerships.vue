@@ -55,7 +55,7 @@
                 to="/contact"
                 class="inline-block font-poppins text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-primary! hover:text-white! hover:scale-105 px-6 py-3 rounded-full transition-all duration-300 font-medium text-base"
               >
-                Partner With Us Today
+                partner with us today
               </NuxtLink>
             </div>
           </div>
@@ -111,7 +111,7 @@
                 to="/contact"
                 class="inline-block font-poppins text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-primary! hover:text-white! hover:scale-105 px-6 py-3 rounded-full transition-all duration-300 font-medium text-base"
               >
-                Partner With Us Today
+                partner with us today
               </NuxtLink>
             </div>
           </div>

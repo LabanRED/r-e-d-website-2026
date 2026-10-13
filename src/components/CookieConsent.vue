@@ -161,26 +161,20 @@ const saveCustomPreferences = () => {
               type="button"
               @click="declineAll"
               class="flex-1 sm:flex-none bg-neutral-100 hover:bg-neutral-200 text-neutral-700 text-xs sm:text-sm font-semibold py-2.5 px-5 rounded-xl transition-colors duration-200 cursor-pointer"
-            >
-              Decline All
-            </button>
+            >decline all</button>
 
             <button 
               v-if="showPreferences"
               type="button"
               @click="saveCustomPreferences"
               class="w-full sm:w-auto bg-neutral-800 hover:bg-black text-white text-xs sm:text-sm font-semibold py-2.5 px-5 rounded-xl transition-all duration-200 cursor-pointer shadow-sm"
-            >
-              Save Preferences
-            </button>
+            >save preferences</button>
             
             <button 
               type="button"
               @click="acceptAll"
               class="flex-1 sm:flex-none bg-black hover:bg-primary text-white text-xs sm:text-sm font-semibold py-2.5 px-6 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm cursor-pointer"
-            >
-              Accept All
-            </button>
+            >accept all</button>
           </div>
 
         </div>
@@ -273,9 +267,7 @@ const saveCustomPreferences = () => {
                 type="button" 
                 @click="saveCustomPreferences" 
                 class="text-primary hover:underline font-medium cursor-pointer"
-              >
-                Apply selection
-              </button>
+              >apply selection</button>
             </div>
           </div>
         </Transition>

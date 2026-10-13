@@ -65,7 +65,7 @@
               @click="handleReset"
               class="rounded-full bg-black hover:bg-primary hover:scale-105 px-8 py-3 text-white transition-all duration-300 shadow-md shadow-primary/10 font-poppins font-medium text-base"
             >
-              Return To Site
+              return to site
             </button>
           </div>
         </div>
