@@ -62,7 +62,7 @@
               
               <!-- Inner Button Surface -->
               <span class="relative z-10 bg-black hover:bg-neutral-800 px-7 py-3.5 rounded-full active:scale-95 transition-transform duration-300 flex items-center justify-center w-full h-full">
-                Explore PostX And See How It Works.
+                explore postx and see how it works.
               </span>
             </NuxtLink>
           </div>

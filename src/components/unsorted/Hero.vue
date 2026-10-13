@@ -16,7 +16,7 @@
           @click="$emit('cta-click')"
           class="font-poppins font-medium text-xs sm:text-[15px] text-white bg-black btn-slide-in rounded-full px-8 py-3 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md"
         >
-          Schedule A Meeting Today
+          schedule a meeting today
         </button>
       </div>
 
@@ -54,7 +54,7 @@
             class="font-poppins font-medium text-xs sm:text-[16px] text-white bg-black btn-slide-in rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg"
             style="padding: 20px"
           >
-            Schedule A Meeting Today
+            schedule a meeting today
           </button>
         </div>
       </div>
@@ -77,7 +77,7 @@
           @click="$emit('cta-click')"
           class="font-poppins tracking-widest text-white border-none rounded-full py-4 px-8 bg-black btn-slide-in transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium text-xs sm:text-base"
         >
-          Schedule A Meeting Today
+          schedule a meeting today
         </button>
 
         <!-- Mobile Image: object-contained, rounded corners, no unnecessary padding -->

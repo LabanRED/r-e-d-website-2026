@@ -10,7 +10,7 @@
           class="inline-flex items-center gap-2 text-sm mt-8 font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
         >
           <ArrowLeft class="w-4 h-4" />
-          Back To Home
+          back to home
         </NuxtLink>
       </div>
 
@@ -127,9 +127,7 @@
             target="_blank"
             rel="noreferrer"
             class="inline-block bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-sm cursor-pointer text-base"
-          >
-            Directions
-          </a>
+          >directions</a>
         </div>
 
         <div class="w-full">

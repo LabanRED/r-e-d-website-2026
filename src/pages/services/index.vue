@@ -1,13 +1,13 @@
 <template>
   <div class="w-full bg-[#f8f9fa] min-h-screen relative font-sans overflow-x-hidden pt-8 sm:pt-16 pb-0">
-    <!-- Back to Home Breadcrumb Indicator -->
+    <!-- back to home Breadcrumb Indicator -->
     <div class="mx-auto lg:w-[95%] max-w-[1600px] px-8 lg:px-0 mb-6">
       <NuxtLink
         to="/"
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back To R-E-D Home
+        back to r-e-d home
       </NuxtLink>
     </div>
 
@@ -97,7 +97,7 @@
                 :to="service.link"
                 class="inline-block bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-8 py-3 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 tracking-wide text-center"
               >
-                I'm Interested
+                i'm interested
               </NuxtLink>
             </div>
 

@@ -12,7 +12,7 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back To Services
+        back to services
       </NuxtLink>
     </div>
 
@@ -158,7 +158,7 @@
             @click="openModal('Digital Advertising')"
             class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
           >
-            Schedule A Meeting Today
+            schedule a meeting today
           </button>
         </div>
 
@@ -220,7 +220,7 @@
             @click="openModal('Digital Advertising')"
             class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
           >
-            Schedule A Meeting Today
+            schedule a meeting today
           </button>
         </div>
       </div>
@@ -266,7 +266,7 @@
             @click="openModal('Digital Advertising')"
             class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
           >
-            Schedule A Meeting Today
+            schedule a meeting today
           </button>
         </div>
         <div class="flex-1 w-full lg:mt-[-4rem]">
@@ -335,7 +335,7 @@
             @click="openModal('Digital Advertising')"
             class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
           >
-            Schedule A Meeting Today
+            schedule a meeting today
           </button>
         </div>
       </div>
@@ -411,7 +411,7 @@
             @click="openModal('Digital Advertising')"
             class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
           >
-            Schedule A Meeting Today
+            schedule a meeting today
           </button>
         </div>
       </div>
@@ -465,7 +465,7 @@
             @click="openModal('Digital Advertising')"
             class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
           >
-            Schedule A Meeting Today
+            schedule a meeting today
           </button>
         </div>
         <div class="flex-1 w-full lg:mt-[-4rem]">
@@ -505,7 +505,7 @@
               @click="openModal('Digital Advertising')"
               class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
             >
-              Schedule A Meeting Today
+              schedule a meeting today
             </button>
           </div>
         </div>

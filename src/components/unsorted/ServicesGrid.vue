@@ -41,9 +41,7 @@
                 Build brand awareness and generate leads with targeted Facebook campaigns designed to connect your business with the right customers.
               </p>
             </div>
-            <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">
-              Learn more <span class="text-lg leading-none">&rarr;</span>
-            </div>
+            <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">learn more <span class="text-lg leading-none">&rarr;</span></div>
           </NuxtLink>
 
           <!-- Card 2: Paid Media & Social Media -->
@@ -70,9 +68,7 @@
                 Reach, engage and convert your audience with strategic paid media and social media campaigns built around your business goals.
               </p>
             </div>
-            <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">
-              Learn more <span class="text-lg leading-none">&rarr;</span>
-            </div>
+            <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">learn more <span class="text-lg leading-none">&rarr;</span></div>
           </NuxtLink>
         </div>
 
@@ -117,9 +113,7 @@
                 Reach customers actively searching for your products and services with targeted Google advertising built to drive traffic, leads and conversions.
               </p>
             </div>
-            <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">
-              Learn more <span class="text-lg leading-none">&rarr;</span>
-            </div>
+            <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">learn more <span class="text-lg leading-none">&rarr;</span></div>
           </NuxtLink>
 
           <!-- Card 4: Website Development -->
@@ -147,21 +141,19 @@
                 Create a fast, responsive and SEO-friendly website designed to engage visitors, showcase your brand and drive conversions.
               </p>
             </div>
-            <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">
-              Learn More <span class="text-lg leading-none">&rarr;</span>
-            </div>
+            <div class="mt-auto pt-4 flex items-center text-primary group-hover:text-white transition-all duration-300 ease-in-out font-poppins font-medium text-sm gap-2">learn more <span class="text-lg leading-none">&rarr;</span></div>
           </NuxtLink>
         </div>
 
       </div>
 
-      <!-- View All Services Button -->
+      <!-- view all services Button -->
       <div class="text-center mt-8">
         <NuxtLink
           to="/services"
           class="inline-block font-poppins tracking-widest text-white bg-black hover:bg-primary rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-sm font-medium text-base"
         >
-          View All Services
+          view all services
         </NuxtLink>
       </div>
 

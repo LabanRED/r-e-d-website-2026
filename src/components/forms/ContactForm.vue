@@ -84,7 +84,7 @@
       >
         <div v-if="isLoading" class="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
         <template v-else>
-          <span>Submit Request</span>
+          <span>submit request</span>
           <Send v-if="variant === 'modal'" class="h-4 w-4 ml-2 inline-block" />
         </template>
       </button>

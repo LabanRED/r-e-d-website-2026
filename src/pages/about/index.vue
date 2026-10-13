@@ -10,7 +10,7 @@
           class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
         >
           <ArrowLeft class="w-4 h-4" />
-          Back to Home
+          back to home
         </NuxtLink>
       </div>
 
@@ -160,7 +160,7 @@
           @click="openModal"
           class="bg-black text-white font-poppins font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:scale-105 cursor-pointer btn-slide-in text-xs sm:text-base"
         >
-          Schedule A Meeting Today
+          schedule a meeting today
         </button>
       </div>
 

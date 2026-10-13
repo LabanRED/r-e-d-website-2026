@@ -7,7 +7,7 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back To Home
+        back to home
       </NuxtLink>
     </div>
 
@@ -138,7 +138,7 @@
 
       <div v-if="filteredBlogs.length >= 7" class="flex justify-center">
         <button class="bg-black hover:bg-primary hover:scale-105 text-white px-8 py-3 rounded-full font-poppins transition-all duration-300 shadow-sm font-medium cursor-pointer text-base">
-          Load More...
+          load more...
         </button>
       </div>
     </section>
@@ -160,7 +160,7 @@
           @click="openModal"
           class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
         >
-          Schedule A Meeting Today
+          schedule a meeting today
         </button>
       </div>
     </section>

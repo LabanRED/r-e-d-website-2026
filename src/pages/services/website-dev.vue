@@ -12,7 +12,7 @@
         class="inline-flex items-center gap-2 text-sm font-medium text-neutral-500 hover:text-primary transition-colors duration-200"
       >
         <ArrowLeft class="w-4 h-4" />
-        Back To Services
+        back to services
       </NuxtLink>
     </div>
 
@@ -36,7 +36,7 @@
           @click="openModal('Website Development & Maintenance')"
           class="w-full max-w-[340px] bg-black hover:bg-primary text-white font-poppins text-base font-medium py-3.5 px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in mb-8"
         >
-          I Want a Website
+          i want a website
         </button>
         <div class="w-full flex justify-center">
           <img
@@ -71,7 +71,7 @@
               @click="openModal('Website Development & Maintenance')"
               class="bg-black hover:bg-primary text-white font-poppins text-[13px] sm:text-[14px] font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
             >
-              I Want a Website
+              i want a website
             </button>
           </div>
 
@@ -156,7 +156,7 @@
             @click="openModal('Website Development & Maintenance - Building')"
             class="bg-black hover:bg-primary text-white font-poppins font-medium text-[13px] sm:text-[14px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
           >
-            I'm Interested
+            i'm interested
           </button>
         </div>
         <!-- Image -->
@@ -226,7 +226,7 @@
             @click="openModal('Website Development & Maintenance - Maintenance')"
             class="bg-black hover:bg-primary text-white font-poppins font-medium text-[13px] sm:text-[14px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
           >
-            I'm Interested
+            i'm interested
           </button>
         </div>
       </div>
@@ -278,7 +278,7 @@
             @click="openModal('Website Development & Maintenance - Integration')"
             class="bg-black hover:bg-primary text-white font-poppins font-medium text-[13px] sm:text-[14px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
           >
-            I'm Interested
+            i'm interested
           </button>
         </div>
         <!-- Image -->
@@ -348,7 +348,7 @@
             @click="openModal('Website Development & Maintenance - SEO')"
             class="bg-black hover:bg-primary text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
           >
-            I'm Interested
+            i'm interested
           </button>
         </div>
       </div>
@@ -400,7 +400,7 @@
             @click="openModal('Website Development & Maintenance - Analytics')"
             class="bg-black hover:bg-primary text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
           >
-            I'm Interested
+            i'm interested
           </button>
         </div>
         <!-- Image -->
@@ -445,7 +445,7 @@
             @click="openModal('Website Development & Maintenance - CTA')"
             class="bg-black hover:bg-primary text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
           >
-            I'm Interested
+            i'm interested
           </button>
         </div>
       </div>
@@ -488,7 +488,7 @@
               @click="openModal('Website Development & Maintenance - FAQ')"
               class="bg-black hover:bg-primary text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
             >
-              Schedule A Meeting Today
+              schedule a meeting today
             </button>
           </div>
         </div>
