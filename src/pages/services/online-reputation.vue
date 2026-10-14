@@ -21,7 +21,7 @@
     </div>
 
     <!-- Hero Banner Section -->
-    <section class="px-4 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto mb-16 sm:mb-24">
+    <section class="px-4 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto mb-16 sm:mb-12">
       <!-- MOBILE HERO LAYOUT (visible on small screens < lg) -->
       <div class="flex flex-col items-center text-center lg:hidden">
         <span class="font-poppins text-neutral-800 text-sm sm:text-base font-normal mb-3">
@@ -33,8 +33,8 @@
           :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
           class="font-poppins text-[2.1rem] sm:text-5xl font-semibold text-neutral-900 leading-[1.15] tracking-tight mb-6"
         >
-          <span class="text-primary font-semibold">Keep your Google rating high.</span><br />
-          Everything else follows.
+          <span class="text-primary font-semibold">Keep Your Google Rating High.</span><br />
+          Everything Else Follows.
         </h1>
         <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed max-w-xl mx-auto mb-8">
           Your star rating affects where you show up on Google, how your ads perform, what AI assistants say about you, and whether a customer chooses you or a competitor. R-E-D helps businesses earn more reviews, reply faster and protect their rating, with tools for your team or specialists who handle it for you.
@@ -47,9 +47,9 @@
         </button>
         <div class="w-full flex justify-center">
           <img
-            :src="heroBgImg"
+            :src="heroMobileImg"
             alt="Keep your Google rating high - Online Reputation Solutions"
-            class="w-full max-w-[560px] h-auto object-contain"
+            class="w-full max-w-[440px] h-auto object-contain"
             fetchpriority="high"
             loading="eager"
           />
@@ -78,7 +78,7 @@
               :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
               class="font-poppins text-3xl lg:text-[2.65rem] xl:text-[3.1rem] font-semibold text-neutral-900 leading-[1.15] tracking-tight mb-6"
             >
-              <span class="text-primary font-semibold">Keep your Google rating high.</span> Everything else follows.
+              <span class="text-primary font-semibold">Keep Your Google Rating High.</span> Everything Else Follows.
             </h1>
             <p class="font-poppins text-neutral-700 text-sm sm:text-base xl:text-lg leading-relaxed max-w-xl mb-8">
               Your star rating affects where you show up on Google, how your ads perform, what AI assistants say about you, and whether a customer chooses you or a competitor. R-E-D helps businesses earn more reviews, reply faster and protect their rating, with tools for your team or specialists who handle it for you.
@@ -273,7 +273,7 @@
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
         class="font-poppins text-2xl sm:text-4xl lg:text-[44px] font-medium text-neutral-900 leading-tight mb-4 tracking-tight"
       >
-        <span class="text-primary">Master the Digital Duopoly<br class="hidden sm:inline" /> with</span> Professional Oversight
+        <span class="text-primary">Master The Digital Duopoly<br class="hidden sm:inline" /> With</span> Professional Oversight
       </h3>
       <p class="font-poppins text-neutral-600 text-base sm:text-lg max-w-2xl mx-auto mb-14 leading-relaxed">
         Take total control over your digital storefront. Post<span class="text-primary font-semibold">X</span> brings structure and expertise to every step of your customer review pipeline.
@@ -290,7 +290,7 @@
         >
           <div>
             <h4 class="font-poppins text-lg sm:text-xl font-semibold text-neutral-900 mb-5 min-h-[56px] flex items-center">
-              Master the Digital Duopoly with Professional Oversight
+              Master The Digital Duopoly With Professional Oversight
             </h4>
             <div class="w-full rounded-2xl overflow-hidden mb-6 aspect-[2/1]">
               <img
@@ -381,9 +381,9 @@
         </div>
 
         <!-- Overlaid Desktop Content (Right-aligned over the background space) -->
-        <div class="relative z-10 ml-auto w-full lg:w-[56%] xl:w-[52%] py-16 xl:py-20 flex flex-col items-start text-left">
-          <h2 class="font-poppins text-2xl sm:text-3xl lg:text-[2.1rem] xl:text-[2.35rem] font-bold text-neutral-900 leading-[1.25] mb-3 sm:mb-4 max-w-2xl">
-            Post<span class="text-primary font-bold">X</span> is the omnichannel workhorse for teams that live in the conversation.
+        <div class="relative z-10 ml-auto w-full lg:w-[52%] md:px-20 lg:px-20 xl:w-[52%] py-16 xl:py-20 flex flex-col items-start text-left">
+          <h2 class="font-poppins text-2xl sm:text-3xl lg:text-[2.1rem] xl:text-[2.35rem] font-semibold text-neutral-900 leading-[1.25] mb-3 sm:mb-4 max-w-2xl">
+            Post<span class="text-primary font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
           </h2>
           <h3 class="font-poppins text-xl sm:text-2xl lg:text-[1.45rem] xl:text-[1.65rem] font-semibold text-primary leading-snug mb-5 sm:mb-6 max-w-2xl">
             Bring Google Ratings, complaints, reviews and more into one place.
@@ -446,8 +446,8 @@
 
         <!-- Mobile Text Content -->
         <div class="w-full px-6 sm:px-8 py-10 flex flex-col items-start text-left max-w-xl mx-auto">
-          <h2 class="font-poppins text-2xl sm:text-3xl font-bold text-neutral-900 leading-snug mb-3">
-            Post<span class="text-primary font-bold">X</span> is the omnichannel workhorse for teams that live in the conversation.
+          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 leading-snug mb-3">
+            Post<span class="text-primary font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
           </h2>
           <h3 class="font-poppins text-xl sm:text-2xl font-semibold text-primary leading-snug mb-5">
             Bring Google Ratings, complaints, reviews and more into one place.
@@ -521,13 +521,9 @@
             <h3 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 mb-4">
               Connect &amp; Integrate:
             </h3>
-            <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-sm">
+            <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed max-w-sm">
               We link your business locations, social channels, and customer touchpoints directly into the Post<span class="text-primary font-semibold">X</span> platform.
             </p>
-            <button
-              @click="openModal('Connect & Integrate')"
-              class="bg-black hover:bg-primary text-white font-poppins text-[13px] sm:text-[14px] font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer"
-            >learn more</button>
           </div>
           <div class="md:col-span-5 h-full flex justify-end items-center relative overflow-hidden">
             <img
@@ -558,13 +554,9 @@
             <h3 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 mb-4">
               Engage &amp; Request:
             </h3>
-            <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-sm">
+            <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed max-w-sm">
               Tailored workflows guide satisfied buyers to share their experiences on Google and Facebook.
             </p>
-            <button
-              @click="openModal('Engage & Request')"
-              class="bg-black hover:bg-primary text-white font-poppins text-[13px] sm:text-[14px] font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer"
-            >learn more</button>
           </div>
         </div>
 
@@ -579,13 +571,9 @@
             <h3 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 mb-4">
               Monitor &amp; Resolve:
             </h3>
-            <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-sm">
+            <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed max-w-sm">
               Every review resolving complaints discreetly and celebrating positive feedback to drive sales growth.
             </p>
-            <button
-              @click="openModal('Monitor & Resolve')"
-              class="bg-black hover:bg-primary text-white font-poppins text-[13px] sm:text-[14px] font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer"
-            >learn more</button>
           </div>
           <div class="md:col-span-5 h-full flex justify-end items-center relative overflow-hidden">
             <img
@@ -726,6 +714,7 @@ import LogoCarousel from '~/components/unsorted/LogoCarousel.vue';
 
 // Image Imports
 import heroBgImg from '~/assets/images/online-reputation-solutions-hero-background-desktop-image.webp';
+import heroMobileImg from '~/assets/images/online-reputation-solutions-hero-background-mobile-image.webp';
 import bodyDesktopBgImg from '~/assets/images/online-reputation-body-desktop-image.webp';
 import searchEnginesImg from '~/assets/images/search-engines-image.webp';
 import strongerAdsImg from '~/assets/images/stronger-ads-image.webp';
