@@ -1,6 +1,8 @@
 <template>
   <div class="w-full bg-[#f8f9fa] min-h-screen relative font-sans overflow-x-hidden pt-6 sm:pt-10 pb-20">
     <Head>
+      <Link rel="preload" as="image" :href="heroDesktopBanner" media="(min-width: 1024px)" fetchpriority="high" />
+      <Link rel="preload" as="image" :href="heroMobileBanner" media="(max-width: 1023px)" fetchpriority="high" />
       <Title>Location Listing & Solutions | R-E-D</Title>
       <Meta
         name="description"
@@ -30,9 +32,9 @@
           v-motion
           :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
           :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-          class="font-poppins text-3xl sm:text-4xl font-semibold text-neutral-900 leading-[1.2] tracking-tight mb-6"
+          class="font-poppins text-3xl sm:text-4xl font-medium text-neutral-900 leading-[1.2] tracking-tight mb-6"
         >
-          <span class="text-primary font-semibold">If They Can't Find You,</span><br />
+          <span class="text-primary font-medium">If They Can't Find You,</span><br />
           They'll Find Your Competitors.
         </h1>
         <button
@@ -43,9 +45,9 @@
         </button>
         <div class="w-full flex justify-center rounded-2xl overflow-hidden shadow-sm">
           <img
-            :src="heroImg"
+            :src="heroMobileBanner"
             alt="If They Can't Find You, They'll Find Your Competitors."
-            class="w-full max-w-[560px] h-auto object-cover object-right"
+            class="w-full max-w-[500px] h-auto object-contain mx-auto"
             fetchpriority="high"
             loading="eager"
           />
@@ -55,15 +57,15 @@
       <!-- DESKTOP HERO LAYOUT (hidden on mobile, visible on lg and up) -->
       <div class="hidden lg:block relative w-full rounded-3xl sm:rounded-[2.5rem] overflow-hidden shadow-sm">
         <img
-          :src="heroImg"
+          :src="heroDesktopBanner"
           alt="If They Can't Find You, They'll Find Your Competitors."
-          class="w-full h-auto object-cover select-none pointer-events-none"
+          class="w-full h-auto block select-none pointer-events-none"
           fetchpriority="high"
           loading="eager"
         />
 
         <!-- Overlay Content positioned on the left side -->
-        <div class="absolute inset-0 flex items-center z-10 px-10 xl:px-16 py-8">
+        <div class="absolute inset-y-0 left-0 w-[55%] flex flex-col justify-center items-start pl-10 xl:pl-16 pr-4 z-10 text-left">
           <div class="w-full max-w-[580px] xl:max-w-[620px] flex flex-col items-start justify-center">
             <span class="font-poppins text-neutral-800 text-sm xl:text-base font-normal tracking-wide mb-4">
               Location Listing &amp; Maintenance
@@ -72,9 +74,9 @@
               v-motion
               :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
               :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-              class="font-poppins text-3xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold text-neutral-900 leading-[1.15] tracking-tight mb-8"
+              class="font-poppins text-3xl lg:text-[2.75rem] xl:text-[3.25rem] font-medium text-neutral-900 leading-[1.15] tracking-tight mb-8"
             >
-              <span class="text-primary font-semibold">If They Can't Find<br />You,</span> They'll Find<br />Your Competitors.
+              <span class="text-primary font-medium">If They Can't Find<br />You,</span> They'll Find<br />Your Competitors.
             </h1>
             <button
               @click="openModal('Location Listing - Hero Desktop')"
@@ -100,10 +102,10 @@
           v-motion
           :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
           :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-          class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 leading-tight tracking-tight mb-5"
+          class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 leading-tight tracking-tight mb-5"
         >
-          <span class="text-primary font-semibold">A Single Outdated Address</span> Can<br />
-          Cost You Thousands in Lost Sales
+          <span class="text-primary font-medium">A Single Outdated Address</span> Can<br />
+          Cost You Thousands In Lost Sales
         </h2>
         <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-relaxed max-w-4xl mx-auto">
           Today's consumers rely entirely on digital maps and local directories to find showrooms, service centers, and storefronts. If your operating hours are wrong, your phone number goes to voicemail, or your map pin lands a block away, you don't just lose a visitor you hand a high-intent buyer straight to your competitor.
@@ -171,7 +173,7 @@
         >
           <div>
             <h3 class="font-poppins text-[24px] font-medium text-neutral-900 mb-4">
-              Zero Friction for Buyers
+              Zero Friction For Buyers
             </h3>
             <div class="w-full max-w-[580px] h-[200px] overflow-hidden rounded-xl sm:rounded-2xl mb-4 mx-auto">
               <img
@@ -206,9 +208,9 @@
           v-motion
           :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
           :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-          class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 leading-tight tracking-tight mb-4"
+          class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 leading-tight tracking-tight mb-4"
         >
-          <span class="text-primary font-semibold">Complete Control</span> Over Every<br />
+          <span class="text-primary font-medium">Complete Control</span> Over Every<br />
           Digital Storefront
         </h2>
         <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
@@ -226,7 +228,7 @@
           class="w-full md:w-[900px] min-h-[460px] md:h-[500px] bg-[#e6ecf8] rounded-3xl sm:rounded-4xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center border border-neutral-200/50 shadow-sm text-left transition-all duration-300 hover:shadow-md"
         >
           <div class="p-8 sm:p-10 lg:p-12 md:col-span-7 flex flex-col items-start justify-center">
-            <h3 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 mb-4">
+            <h3 class="font-poppins text-2xl sm:text-3xl font-medium text-neutral-900 mb-4">
               Unified Directory Sync:
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-sm">
@@ -265,7 +267,7 @@
             />
           </div>
           <div class="p-8 sm:p-10 lg:p-12 md:col-span-7 flex flex-col items-start justify-center order-1 md:order-2">
-            <h3 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 mb-4">
+            <h3 class="font-poppins text-2xl sm:text-3xl font-medium text-neutral-900 mb-4">
               Brand Image Protection:
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-sm">
@@ -288,7 +290,7 @@
           class="w-full md:w-[900px] min-h-[460px] md:h-[500px] bg-[#fae8e8] rounded-3xl sm:rounded-4xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center border border-neutral-200/50 shadow-sm text-left transition-all duration-300 hover:shadow-md"
         >
           <div class="p-8 sm:p-10 lg:p-12 md:col-span-7 flex flex-col items-start justify-center">
-            <h3 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 mb-4">
+            <h3 class="font-poppins text-2xl sm:text-3xl font-medium text-neutral-900 mb-4">
               Proactive Monitoring &amp;<br class="hidden sm:inline" />Maintenance:
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-sm">
@@ -320,9 +322,9 @@
           v-motion
           :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
           :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-          class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 leading-tight tracking-tight mb-4"
+          class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 leading-tight tracking-tight mb-4"
         >
-          <span class="text-primary font-semibold">Built for Multi-Location Brands</span> and<br />
+          <span class="text-primary font-medium">Built For Multi-Location Brands</span> And<br />
           Dealer Networks
         </h2>
         <p class="font-poppins text-neutral-600 text-base sm:text-lg leading-relaxed max-w-3xl mx-auto">
@@ -354,7 +356,7 @@
             >
               <div>
                 <h3 class="font-poppins text-[22px] sm:text-[24px] font-medium text-neutral-900 mb-4">
-                  Master-to-Regional Architecture
+                  Master-To-Regional Architecture
                 </h3>
                 <div class="w-full h-[180px] overflow-hidden rounded-xl sm:rounded-2xl mb-4">
                   <img
@@ -431,9 +433,9 @@
           v-motion
           :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
           :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-          class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 leading-tight tracking-tight"
+          class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 leading-tight tracking-tight"
         >
-          Secure Your Local Presence in Three Simple Steps
+          Secure Your Local Presence In Three Simple Steps
         </h2>
       </div>
 
@@ -520,7 +522,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 leading-[1.2] tracking-tight mb-5"
+            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 leading-[1.2] tracking-tight mb-5"
           >
             Are Your Locations Costing<br />You Customers Right Now?
           </h2>
@@ -554,7 +556,7 @@
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
             class="font-poppins text-4xl sm:text-5xl lg:text-[4rem] leading-[1.1] font-medium text-neutral-900 mb-10 tracking-tight"
           >
-            Frequently asked<br />questions
+            Frequently Asked<br />Questions
           </h2>
 
           <!-- CTA Card -->
@@ -563,9 +565,9 @@
               v-motion
               :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
               :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-              class="font-poppins text-2xl font-semibold text-neutral-900 mb-4"
+              class="font-poppins text-2xl font-medium text-neutral-900 mb-4"
             >
-              Still have a question?
+              Still Have A Question?
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8">
               If you'd like to know more about how R-E-D can help your business generate more leads.
@@ -628,7 +630,8 @@ import { ArrowLeft, Check, ChevronDown } from 'lucide-vue-next';
 import LogoCarousel from '~/components/unsorted/LogoCarousel.vue';
 
 // Assets
-import heroImg from '~/assets/images/person-using-gps-map-laptop-edited.png';
+import heroDesktopBanner from '~/assets/images/r-e-d-location-and-listing-solutions-desktop-hero-banner.png';
+import heroMobileBanner from '~/assets/images/r-e-d-location-and-listing-solutions-mobile-hero-banner.png';
 import instantTrustImg from '~/assets/images/instant-trust-credibility-image.png';
 import localSearchDominanceImg from '~/assets/images/local-search-dominance-image.png';
 import zeroFrictionImg from '~/assets/images/zero-friction-for-buyers-image.png';

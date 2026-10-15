@@ -20,8 +20,8 @@
 
       <!-- Header Section -->
       <div class="mb-10">
-        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight mb-4">
-          Head of <span class="text-primary">social media</span>
+        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-medium text-neutral-800 leading-tight mb-4">
+          Head Of <span class="text-primary">Social Media</span>
         </h1>
         <div class="flex items-center gap-3 mb-8">
           <span class="bg-primary text-white text-xs sm:text-sm font-semibold px-4 py-1.5 rounded-full tracking-wide">
@@ -40,7 +40,7 @@
       <div class="space-y-12 text-neutral-800">
 
         <section>
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">About the role</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-medium mb-4">About The Role</h2>
           <div class="space-y-4 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <p>We are looking for an experienced and strategic Head of Social Media to lead our social media department and agency advertising work for our clients. This person will manage a team of social media planners and coordinators, overseeing the development, activation, and performance tracking of both organic and paid social media campaigns for clients.</p>
             <p>The ideal candidate will bring deep expertise in social media strategy, team leadership, and client management, with a strong focus on operational efficiency, creative innovation, and measurable performance.</p>
@@ -48,7 +48,7 @@
         </section>
 
         <section>
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-6">Key responsibilities</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-medium mb-6">Key Responsibilities</h2>
 
           <div class="space-y-8">
             <div>
@@ -99,7 +99,7 @@
         </section>
 
         <section>
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">What we're looking for</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-medium mb-4">What We're Looking For</h2>
           <ul class="list-disc pl-5 space-y-2 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <li>Proven experience (5+ years) in a senior social media role within an agency setting.</li>
             <li>Deep expertise in social media strategy, both organic and paid, across platforms (Facebook, Instagram, LinkedIn, TikTok, X, etc.).</li>
@@ -111,7 +111,7 @@
         </section>
 
         <section>
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Key Performance Indicators</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-medium mb-4">Key Performance Indicators</h2>
           <ul class="list-disc pl-5 space-y-2 font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             <li>Client satisfaction and retention.</li>
             <li>Campaign performance (reach, engagement, ROI).</li>
@@ -122,7 +122,7 @@
         </section>
 
         <section>
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-semibold mb-4">Remuneration</h2>
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-medium mb-4">Remuneration</h2>
           <p class="font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed">
             Negotiable based on qualifications and experience.
           </p>
@@ -134,8 +134,8 @@
     <!-- Application Form Section -->
     <div class="w-full bg-[#f2f2f2] py-20 px-4">
       <div class="mx-auto max-w-xl bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-neutral-100">
-        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-bold text-center text-neutral-800 mb-8">
-          Apply for this role
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl font-medium text-center text-neutral-800 mb-8">
+          Apply For This Role
         </h2>
 
         <CareerForm @success="handleSuccess" />

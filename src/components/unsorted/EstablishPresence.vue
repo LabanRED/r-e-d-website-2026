@@ -21,9 +21,9 @@
         v-motion
         :initial="{ opacity: 0, y: 25 }"
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 600, delay: 100 } }"
-        class="font-poppins font-normal text-3xl sm:text-4xl lg:text-5xl text-neutral-800 leading-[1.1] mb-6 tracking-tight max-w-3xl"
+        class="font-poppins font-medium text-3xl sm:text-4xl lg:text-5xl text-neutral-800 leading-[1.1] mb-6 tracking-tight max-w-3xl"
       >
-        Ready to establish your <br class="hidden sm:inline" /> digital presences?
+        Ready To Establish Your <br class="hidden sm:inline" /> Digital Presences?
       </h2>
 
       <!-- Subheading Description -->

@@ -19,7 +19,7 @@
     <article class="max-w-[1600px] mx-auto px-6 sm:px-8">
       <header class="mb-10 text-center">
         <h1 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full md:w-275 lg:w-275 mx-auto font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-900 leading-tight tracking-tight mb-6">
-          Ads, ads and more ads
+          Ads, Ads And More Ads
         </h1>
       </header>
 
@@ -57,7 +57,7 @@
               Don't worry, there's a Facebook ad to match your exact goal... and then some!
             </p>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
               Awareness:
             </h2>
             <p class="mb-6">
@@ -72,20 +72,20 @@
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="brandAwarenessImg" alt="Brand Awareness" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">Brand Awareness</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">Brand Awareness</h3>
                         <p class="text-base text-neutral-700">Tell people what makes your business valuable.</p>
                     </div>
                 </div>
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="reachImg" alt="Reach" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">Reach</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">Reach</h3>
                         <p class="text-base text-neutral-700">Show your ad to the maximum number of people in your audience.</p>
                     </div>
                 </div>
             </div>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
               Considerations:
             </h2>
             <p class="mb-6">
@@ -100,7 +100,7 @@
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="trafficImg" alt="Traffic" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">Traffic</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">Traffic</h3>
                         <p class="text-base text-neutral-700">Send people to a destination, like a website, app or Facebook event, or let them tap to call you.</p>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="engagementImg" alt="Engagement" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">Engagement</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">Engagement</h3>
                         <p class="text-base text-neutral-700">Get more page likes, event responses, or post reacts, comments or shares.</p>
                     </div>
                 </div>
@@ -116,7 +116,7 @@
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="appInstallsImg" alt="App Installs" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">App Installs</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">App Installs</h3>
                         <p class="text-base text-neutral-700">Send people to the store where they can download your business's app.</p>
                     </div>
                 </div>
@@ -125,7 +125,7 @@
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="engagementImg" alt="Video Views" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">Video Views</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">Video Views</h3>
                         <p class="text-base text-neutral-700">Promote videos that show behind-the-scenes footage, product launches or customer stories to raise awareness about your brand.</p>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="leadGenImg" alt="Lead Generation" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">Lead Generation</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">Lead Generation</h3>
                         <p class="text-base text-neutral-700">Collect leads for your business. Create ads that collect info from people interested in your product, such as sign-ups for newsletters.</p>
                     </div>
                 </div>
@@ -141,13 +141,13 @@
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="messagesImg" alt="Messages" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">Messages</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">Messages</h3>
                         <p class="text-base text-neutral-700">Get more people to have conversations with your business in Messenger, WhatsApp or Instagram Direct to complete purchases, answer questions or offer support.</p>
                     </div>
                 </div>
             </div>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-neutral-900 mt-12 mb-6">
               Conversions:
             </h2>
             <p class="mb-6">
@@ -159,7 +159,7 @@
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="conversionsImg" alt="Conversions" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">Conversions</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">Conversions</h3>
                         <p class="text-base text-neutral-700">Encourage people to take a specific action on your business's site, such as having them add items to a cart, download your app, register for your site, or make a purchase.</p>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row-reverse items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="catalogImg" alt="Catalog Sales" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">Catalog Sales</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">Catalog Sales</h3>
                         <p class="text-base text-neutral-700">Show products from your ecommerce store's catalog to generate sales.</p>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                 <div v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="bg-[#f0f4f8] rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center gap-8 shadow-sm">
                     <img loading="lazy" :src="storeTrafficImg" alt="Store Traffic" class="w-full sm:w-1/3 object-contain rounded-xl mix-blend-multiply" />
                     <div>
-                        <h3 class="text-lg font-semibold text-neutral-900 mb-2">Store Traffic</h3>
+                        <h3 class="font-poppins text-lg font-medium text-neutral-900 mb-2">Store Traffic</h3>
                         <p class="text-base text-neutral-700">Promote your brick-and-mortar business locations to people that are nearby.</p>
                     </div>
                 </div>
@@ -214,8 +214,8 @@
           alt="R-E-D Logo"
           class="h-10 sm:h-12 object-contain mb-8"
         />
-        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
-          Ready to establish your digital presences?
+        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-medium text-neutral-800 mb-6 leading-tight max-w-2xl">
+          Ready To Establish Your Digital Presences?
         </h3>
         <p class="font-poppins text-neutral-600 text-base max-w-xl mb-10 leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ex ultricies, ornare velit vel, rhoncus metus.

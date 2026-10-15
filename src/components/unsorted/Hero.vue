@@ -5,54 +5,47 @@
 
       <!-- NEW DESKTOP HEADING (Above Banner) -->
       <div class="hidden lg:flex flex-col items-center text-center mt-4">
-        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-[3.5rem] leading-[1.15] tracking-tight mb-4 text-neutral-900">
-          <span class="text-primary">Conversion</span> based,<br />
-          results driven marketing
+        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-[3.5rem] leading-[1.15] tracking-tight mb-4 text-neutral-900">
+          <span class="text-primary">Conversion</span> Based,<br />
+          Results Driven Marketing
         </h1>
         <p class="font-poppins text-neutral-500 text-lg leading-relaxed max-w-2xl mb-8">
           Over <span class="text-primary font-semibold">500+</span> satisfied clients across South Africa trust us to manage their monthly lead generation and Ad spend.
         </p>
         <button
           @click="$emit('cta-click')"
-          class="font-poppins font-medium text-xs sm:text-[15px] text-white bg-black btn-slide-in rounded-full px-8 py-3 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md"
+          class="font-poppins font-medium text-xs sm:text-[15px] text-white bg-black btn-slide-in rounded-full px-8 py-3.5 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md"
         >
           schedule a meeting today
         </button>
       </div>
 
       <!-- DESKTOP LAYOUT (lg and up) -->
-      <div class="hidden lg:flex relative w-full lg:h-180 items-center overflow-hidden rounded-[40px]">
+      <div class="hidden lg:block relative w-full rounded-[40px] overflow-hidden mt-8">
         <!-- Background Image Layer -->
-        <div class="absolute inset-0 w-full h-full z-0">
-          <img
-            :src="heroBanner"
-            alt="R-E-D Solutions Hero Banner"
-            referrerpolicy="no-referrer"
-            class="w-full h-full object-contain object-right"
-            fetchpriority="high"
-            loading="eager"
-          />
-        </div>
+        <img
+          :src="heroBanner"
+          alt="R-E-D Solutions Hero Banner"
+          class="w-full h-auto block select-none pointer-events-none"
+          fetchpriority="high"
+          loading="eager"
+        />
 
-        <!-- Content Overlaid on Desktop with exactly 100px left spacing -->
-        <div class="relative z-10 w-full lg:w-150 lg:pt-12 lg:pl-25 flex flex-col justify-center items-start text-left">
-          <h1 class="font-poppins font-medium lg:text-[4rem] lg:leading-17.5 mb-6 text-neutral-900 flex flex-wrap">
-            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 800 } }" class="inline-block" style="margin-right: 0.25em;">Designed</span>
-            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 900 } }" class="inline-block" style="margin-right: 0.25em;">for</span>
-            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 1000 } }" class="inline-block" style="margin-right: 0.25em;">businesses</span>
-            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 1100 } }" class="inline-block" style="margin-right: 0.25em;">of</span>
-            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 1200 } }" class="inline-block" style="margin-right: 0.25em;">all</span>
-            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 1300 } }" class="inline-block">sizes.</span>
+        <!-- Content Overlaid on Desktop with left spacing -->
+        <div class="absolute inset-y-0 left-0 w-[46%] lg:w-[42%] max-w-[480px] xl:max-w-[520px] flex flex-col justify-center items-start pl-10 lg:pl-14 xl:pl-20 pr-2 z-10 text-left">
+          <h1 class="font-poppins font-medium text-3xl lg:text-[2.25rem] xl:text-[3rem] lg:leading-[1.12] mb-4 text-neutral-900">
+            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 800 } }" class="block">Designed For</span>
+            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 1000 } }" class="block">Businesses Of</span>
+            <span v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut', delay: 1200 } }" class="block">All Sizes.</span>
           </h1>
 
-          <p class="font-poppins font-medium text-neutral-800 text-[16px] leading-normal max-w-2xl mb-8">
+          <p class="font-poppins font-normal text-neutral-700 text-xs sm:text-sm lg:text-[14px] xl:text-[15px] leading-relaxed max-w-sm xl:max-w-md mb-6">
             From early stage start-ups to industry leading corporations, R-E-D is the choice of modern CEO's and CFO's. Make us your marketing partner and maximise your growth and results today!
           </p>
 
           <button
             @click="$emit('cta-click')"
-            class="font-poppins font-medium text-xs sm:text-[16px] text-white bg-black btn-slide-in rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg"
-            style="padding: 20px"
+            class="font-poppins font-medium text-xs sm:text-sm lg:text-[15px] text-white bg-black hover:bg-primary btn-slide-in rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg py-3.5 px-8 cursor-pointer"
           >
             schedule a meeting today
           </button>
@@ -63,8 +56,8 @@
       <div class="flex lg:hidden w-full flex-col items-center text-center px-4">
         <!-- Mobile Heading with Conversion highlighted in cyan -->
         <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-[2.25rem] md:text-5xl leading-tight tracking-tight mb-4">
-          <span class="text-primary">Conversion</span> based,<br />
-          results driven marketing
+          <span class="text-primary">Conversion</span> Based,<br />
+          Results Driven Marketing
         </h1>
 
         <!-- Mobile Description with 500+ highlighted -->
@@ -75,7 +68,7 @@
         <!-- Mobile Button: outlined pill shape transitioning to filled cyan on hover/click -->
         <button
           @click="$emit('cta-click')"
-          class="font-poppins tracking-widest text-white border-none rounded-full py-4 px-8 bg-black btn-slide-in transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium text-xs sm:text-base"
+          class="font-poppins tracking-widest text-white border-none rounded-full py-3.5 px-8 bg-black btn-slide-in transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium text-xs sm:text-base"
         >
           schedule a meeting today
         </button>
@@ -99,8 +92,8 @@
 
 <script setup lang="ts">
 import { useHead } from '#imports';
-import heroBanner from '~/assets/images/r-e-d-landing-page-hero-banner.webp';
-import heroMobileBanner from '~/assets/images/r-e-d-landing-page-hero-mobile-banner.webp';
+import heroBanner from '~/assets/images/r-e-d-landing-page-hero-banner.png';
+import heroMobileBanner from '~/assets/images/r-e-d-landing-page-hero-mobile-banner.png';
 
 useHead({
   link: [

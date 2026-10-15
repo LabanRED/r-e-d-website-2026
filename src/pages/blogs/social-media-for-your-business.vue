@@ -19,7 +19,7 @@
     <article class="max-w-[1600px] mx-auto px-6 sm:px-8">
       <header class="mb-10 text-center">
         <h1 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full md:w-275 lg:w-275 mx-auto font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-900 leading-tight tracking-tight mb-6">
-          Social Media for Your Business:<br> 5 Tips to Get It Right.
+          Social Media For Your Business:<br> 5 Tips To Get It Right.
         </h1>
       </header>
 
@@ -72,8 +72,8 @@
               Here are five tips to help you effectively use social media for your business:
             </p>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
-              1. Choose the right social media platform for your business
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+              1. Choose The Right Social Media Platform For Your Business
             </h2>
             <ul class="list-disc pl-6 mb-6 space-y-4">
               <li>
@@ -104,7 +104,7 @@
               />
             </div>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               2. Optimize Your Business Social Media Profile
             </h2>
             <p class="mb-6">
@@ -125,7 +125,7 @@
               </li>
             </ul>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               3. Create Engaging Content
             </h2>
             <p class="mb-6">
@@ -146,7 +146,7 @@
               />
             </div>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
               4. Use Video
             </h2>
             <p class="mb-6">
@@ -156,8 +156,8 @@
               Although video takes slightly more time and a little bit more money than other types of posts, it is worth the effort! High quality and professional video content will rapidly increase your performance across social media channels and the internet itself.
             </p>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
-              5. Don't be afraid to get help!
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+              5. Don't Be Afraid To Get Help!
             </h2>
             <p class="mb-6">
               All things social media are time-consuming and sometimes tricky if you don't know the ropes. You should use your time effectively on managing your business, and that is where R-E-D can help you!
@@ -191,8 +191,8 @@
           alt="R-E-D Logo"
           class="h-10 sm:h-12 object-contain mb-8"
         />
-        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
-          Ready to establish your digital presences?
+        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-medium text-neutral-800 mb-6 leading-tight max-w-2xl">
+          Ready To Establish Your Digital Presences?
         </h3>
         <p class="font-poppins text-neutral-600 text-base max-w-xl mb-10 leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ex ultricies, ornare velit vel, rhoncus metus.

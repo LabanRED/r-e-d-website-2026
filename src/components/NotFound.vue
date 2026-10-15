@@ -12,8 +12,8 @@
     <div class="relative mt-56 md:mt-0 lg:mt-0  z-10 max-w-xl w-full flex flex-col items-center">
       
       <!-- Main Heading -->
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-neutral-900 pb-4 font-sans">
-        Page not found
+      <h1 class="font-poppins font-medium text-4xl sm:text-5xl md:text-6xl tracking-tight text-neutral-900 pb-4">
+        Page Not Found
       </h1>
 
       <!-- Subtitle -->

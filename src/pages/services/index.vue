@@ -16,11 +16,11 @@
 
       <!-- Mobile Heading -->
       <div class="flex flex-col sm:hidden pt-2">
-        <span class="font-poppins text-[#2c2c2c] text-sm mb-2">Our services</span>
-        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins w-50 text-3xl leading-[1.3] text-[#2c2c2c] font-semibold tracking-tight">
-          Driving real growth
-          through <span class="text-primary">data-driven</span>
-          <span class="text-primary"> digital advertising</span>
+        <span class="font-poppins text-[#2c2c2c] text-sm mb-2">Our Services</span>
+        <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins w-50 text-3xl leading-[1.3] text-[#2c2c2c] font-medium tracking-tight">
+          Driving Real Growth
+          Through <span class="text-primary">Data-Driven</span>
+          <span class="text-primary"> Digital Advertising</span>
         </h1>
       </div>
 
@@ -44,11 +44,11 @@
 
         <!-- Overlay Text -->
         <div class="absolute inset-0 hidden sm:flex flex-col justify-center px-8 sm:px-12 md:px-20 lg:px-32 xl:px-40 w-[90%] sm:w-[80%] md:w-[70%] lg:w-[65%] z-10 pointer-events-none">
-          <span class="font-poppins text-[#2c2c2c] text-sm sm:text-base lg:text-lg mb-2 sm:mb-4">Our services</span>
-          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[2.5rem] sm:text-5xl md:text-6xl lg:text-6xl leading-[1.1] text-[#2c2c2c] font-semibold tracking-tight">
-            Driving real growth <br class="hidden sm:block" />
-            through <span class="text-primary">data-driven</span> <br />
-            <span class="text-primary">digital advertising</span>
+          <span class="font-poppins text-[#2c2c2c] text-sm sm:text-base lg:text-lg mb-2 sm:mb-4">Our Services</span>
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[2.5rem] sm:text-5xl md:text-6xl lg:text-6xl leading-[1.1] text-[#2c2c2c] font-medium tracking-tight">
+            Driving Real Growth <br class="hidden sm:block" />
+            Through <span class="text-primary">Data-Driven</span> <br />
+            <span class="text-primary">Digital Advertising</span>
           </h1>
         </div>
       </div>
@@ -60,9 +60,9 @@
         v-motion
         :initial="{ opacity: 0, y: 20 }"
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-        class="font-poppins text-3xl sm:text-4xl lg:text-5xl leading-[1.3] text-neutral-800 font-normal tracking-tight"
+        class="font-poppins text-3xl sm:text-4xl lg:text-5xl leading-[1.3] text-neutral-800 font-medium tracking-tight"
       >
-        We turn attention into action with <span class="text-primary font-normal">performance-driven campaigns</span> that generate leads, maximise ROI, and scale your brand.
+        We Turn Attention Into Action With <span class="text-primary font-medium">Performance-Driven Campaigns</span> That Generate Leads, Maximise ROI, And Scale Your Brand.
       </h2>
     </section>
 
@@ -84,7 +84,7 @@
               <div class="bg-primary text-white text-[15px] sm:text-base font-semibold py-1.5 px-4 rounded-full mt-1 flex-shrink-0">
                 {{ service.id }}
               </div>
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl text-neutral-800 font-normal leading-tight">
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl sm:text-3xl text-neutral-800 font-medium leading-tight">
                 {{ service.title }}
               </h3>
             </div>
@@ -122,31 +122,31 @@ const { openModal } = useModal();
 const servicesList = [
   {
     id: '01',
-    title: 'Digital advertising',
+    title: 'Digital Advertising',
     link: '/services/digital-advertising',
     description: `Integrated, multi-channel advertising solutions across all major digital platforms:<br /><span class="text-primary font-semibold">Facebook | Instagram | Google | LinkedIn | TikTok and X(Twitter)</span>`
   },
   {
     id: '02',
-    title: 'Social media management',
+    title: 'Social Media Management',
     link: '/services/social-media',
     description: `Creating, monitoring and managing social interactions:<br /><span class="text-primary font-semibold">Content | Moderation | Profile management</span>`
   },
   {
     id: '03',
-    title: 'Website development & maintenance',
+    title: 'Website Development & Maintenance',
     link: '/services/website-dev',
     description: `Fully responsive, integrated websites that compliment your objectives and drive value:<br /><span class="text-primary font-semibold">Building | Maintenance | Integration | SEO | Analytics</span>`
   },
   {
     id: '04',
-    title: 'Online reputation solutions',
+    title: 'Online Reputation Solutions',
     link: '/services/online-reputation',
     description: `Review monitoring and response management across all digital platforms.<br /><span class="text-primary font-semibold">World class solutions to drive positive reviews.</span>`
   },
   {
     id: '05',
-    title: 'Location listing & maintenance',
+    title: 'Location Listing & Maintenance',
     link: '/services/location-listing',
     description: `Don't lose customers to competitors because you can't be found.<br /><span class="text-primary font-semibold">We ensure you project the right image of your business and all of your contact information is up to date.</span>`
   }

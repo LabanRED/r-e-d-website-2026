@@ -39,7 +39,7 @@
             <span class="font-poppins font-medium text-base text-neutral-500 mb-6 tracking-wide">
               Social Media Management
             </span>
-            <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-6xl leading-[1.1] text-neutral-900 tracking-tight">
+            <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-6xl leading-[1.1] text-neutral-900 tracking-tight">
               Build Stronger <br /> Customer <br />
               <span class="text-primary">Connections<br />Through Social<br />Media</span>
             </h1>
@@ -51,7 +51,7 @@
           <span class="font-poppins font-medium text-xs sm:text-sm text-neutral-500 mb-4 tracking-wide">
             Social Media Management
           </span>
-          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-4xl sm:text-5xl leading-[1.15] text-neutral-900 tracking-tight mb-8">
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-4xl sm:text-5xl leading-[1.15] text-neutral-900 tracking-tight mb-8">
             Build Stronger <br /> Customer <br />
             <span class="text-primary">Connections Through Social Media</span>
           </h1>
@@ -96,7 +96,7 @@
         <!-- Right Column: Content -->
         <div class="flex flex-col items-start text-left lg:pl-10 order-2">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-4xl sm:text-[42px] lg:text-[48px] text-neutral-900 tracking-tight mb-12">
-            Content management.
+            Content Management.
           </h2>
 
           <ul class="space-y-6 mb-16">
@@ -140,7 +140,7 @@
         <!-- Left Column: Content -->
         <div class="flex flex-col items-start text-left lg:pr-10 order-2 lg:order-1">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-4xl sm:text-[42px] lg:text-[48px] text-neutral-900 tracking-tight mb-12">
-            Social media moderation.
+            Social Media Moderation.
           </h2>
 
           <ul class="space-y-6 mb-16">
@@ -204,7 +204,7 @@
         <!-- Right Column: Content -->
         <div class="flex flex-col items-start text-left lg:pl-10 order-2">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-4xl sm:text-[42px] lg:text-[48px] text-neutral-900 tracking-tight mb-12">
-            Profile management.
+            Profile Management.
           </h2>
 
           <ul class="space-y-6 mb-16">
@@ -248,7 +248,7 @@
         <!-- Left Column: Content -->
         <div class="flex flex-col items-start text-left lg:pr-10 order-2 lg:order-1">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-4xl sm:text-[42px] lg:text-[42px] text-neutral-900 tracking-tight mb-12">
-            AI-powered live chat that qualifies, books & routes - 24/7
+            AI-Powered Live Chat That Qualifies, Books & Routes - 24/7
           </h2>
 
           <ul class="space-y-6 mb-16">
@@ -308,13 +308,13 @@
         <div class="w-full lg:w-[40%] flex flex-col items-start">
           <span class="text-primary font-poppins text-lg font-medium mb-4">Why us?</span>
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-[4rem] leading-[1.1] font-medium text-neutral-900 mb-10 tracking-tight">
-            Frequently asked<br />questions
+            Frequently Asked<br />Questions
           </h2>
 
           <!-- CTA Card -->
           <div class="w-full bg-[#f0f9fa] rounded-4xl p-8 sm:p-10 flex flex-col items-start mt-4">
-            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-semibold text-neutral-900 mb-4">
-              Still have a question?
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-medium text-neutral-900 mb-4">
+              Still Have A Question?
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8">
               If you'd like to know more about how<br />R-E-D can help your business generate more leads.

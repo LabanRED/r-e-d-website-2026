@@ -31,15 +31,15 @@
         <!-- Text Content overlay -->
         <div class="relative z-10 w-full md:w-[60%] m-0 md:pt-32 lg:pt-36 p-8 sm:p-12 lg:p-20">
           <p class="font-poppins text-neutral-600 text-xs sm:text-sm mb-4 tracking-wide font-medium uppercase">
-            Our careers
+            Our Careers
           </p>
-          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 leading-[1.1] tracking-tight mb-6">
-            Join the future of <br class="hidden sm:block" />
-            <span class="text-primary">digital advertising.</span>
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-800 leading-[1.1] tracking-tight mb-6">
+            Join The Future Of <br class="hidden sm:block" />
+            <span class="text-primary">Digital Advertising.</span>
           </h1>
           <p class="font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed max-w-lg font-medium">
-            We're looking for visionaries, makers, and strategists to build what's next.
-            At R-E-D, we don't just adapt to the future; we design it.
+            We're looking for visionaries, marketers, and strategists to build what's next.
+            At R-E-D, we don't just adapt to the future,<br>we design it.
           </p>
         </div>
       </div>
@@ -48,15 +48,15 @@
       <div class="block lg:hidden w-full flex flex-col items-center text-center">
         <div class="mb-8">
           <p class="font-poppins text-neutral-600 text-xs sm:text-sm mb-4 tracking-wide font-medium uppercase">
-            Our careers
+            Our Careers
           </p>
-          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight tracking-tight mb-6">
-            Join the future of <br />
-            <span class="text-primary">digital advertising.</span>
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-medium text-neutral-800 leading-tight tracking-tight mb-6">
+            Join The Future Of <br />
+            <span class="text-primary">Digital Advertising.</span>
           </h1>
           <p class="font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed max-w-lg font-medium mx-auto">
-            We're looking for visionaries, makers, and strategists to build what's next.
-            At Digitalcraft, we don't just adapt to the future; we design it.
+            We're looking for visionaries, marketers, and strategists to build what's next.
+            At R-E-D, we don't just adapt to the future,<br>we design it.
           </p>
         </div>
 
@@ -75,7 +75,7 @@
     <!-- Open Roles Section -->
     <section class="mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-12 mb-24">
       <div class="mb-10">
-        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-2">
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl font-medium text-neutral-800 mb-2">
           Open Roles
         </h2>
         <p class="font-poppins text-neutral-600 text-sm sm:text-base font-medium">
@@ -90,10 +90,10 @@
         <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm flex flex-col">
           <div class="mb-4 md:mb-4">
             <span class="bg-primary text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
-              Marketing
+              marketing
             </span>
           </div>
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-semibold text-neutral-800 mb-4 md:mb-3 leading-tight">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-medium text-neutral-800 mb-4 md:mb-3 leading-tight">
             Head Of Social Media
           </h3>
           <p class="font-poppins text-base md:text-sm text-neutral-700 md:text-neutral-600 leading-relaxed mb-8 flex-1 font-medium md:font-normal">
@@ -114,10 +114,10 @@
         <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm flex flex-col">
           <div class="mb-4 md:mb-4">
             <span class="bg-primary text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
-              Marketing
+              marketing
             </span>
           </div>
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-bold text-neutral-800 mb-4 md:mb-3 leading-tight">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-medium text-neutral-800 mb-4 md:mb-3 leading-tight">
             Head Of Search
           </h3>
           <p class="font-poppins text-base md:text-sm text-neutral-700 md:text-neutral-600 leading-relaxed mb-8 flex-1 font-medium md:font-normal">
@@ -138,10 +138,10 @@
         <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm flex flex-col">
           <div class="mb-4 md:mb-4">
             <span class="bg-primary text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
-              Marketing
+              marketing
             </span>
           </div>
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-bold text-neutral-800 mb-4 md:mb-3 leading-tight">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-medium text-neutral-800 mb-4 md:mb-3 leading-tight">
             Digital Marketing Intern
           </h3>
           <p class="font-poppins text-base md:text-sm text-neutral-700 md:text-neutral-600 leading-relaxed mb-8 flex-1 font-medium md:font-normal">
@@ -162,10 +162,10 @@
         <div class="bg-white rounded-3xl p-6 md:p-8 shadow-sm flex flex-col">
           <div class="mb-4 md:mb-4">
             <span class="bg-primary text-white font-poppins text-sm md:text-xs font-medium md:font-semibold px-4 py-1.5 rounded-full tracking-wide">
-              Marketing
+              marketing
             </span>
           </div>
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-bold text-neutral-800 mb-4 md:mb-3 leading-tight">
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[32px] md:text-2xl font-medium text-neutral-800 mb-4 md:mb-3 leading-tight">
             Digital Designer
           </h3>
           <p class="font-poppins text-base md:text-sm text-neutral-700 md:text-neutral-600 leading-relaxed mb-8 flex-1 font-medium md:font-normal">
@@ -188,8 +188,8 @@
     <section class="flex justify-center items-center flex-col mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-12 mb-24">
       <!-- Section Header -->
       <div class="flex flex-col justify-center items-center text-center mb-12">
-        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-semibold text-neutral-900 tracking-tight">
-          Life at R<span class="text-primary">-</span>E<span class="text-primary">-</span>D
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium text-neutral-900 tracking-tight">
+          Life At R<span class="text-primary">-</span>E<span class="text-primary">-</span>D
         </h2>
         <p class="font-poppins text-neutral-600 text-base sm:text-lg mt-3 max-w-2xl mx-auto font-medium">
           We believe in hard work, big ideas, and taking care of the people who make it all happen.
@@ -216,8 +216,8 @@
           </div>
           <!-- Cyan Bottom Banner -->
           <div class="bg-primary p-6 sm:p-8 md:p-10 flex flex-col justify-center text-white">
-            <h3 class="font-poppins text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-tight mb-2">
-              Creative engine
+            <h3 class="font-poppins text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight mb-2">
+              Creative Engine
             </h3>
             <p class="font-poppins text-sm sm:text-base lg:text-lg text-white/95 font-medium leading-relaxed">
               We give you the tools and trust to build your best work.
@@ -234,7 +234,7 @@
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 600, delay: 150 } }"
             class="bg-[#24889c] text-white rounded-3xl p-8 sm:p-10 flex flex-col justify-center flex-1 h-auto md-min-h-[220px] shadow-sm transition-transform duration-300 hover:scale-[1.01]"
           >
-            <h3 class="font-poppins text-xl sm:text-2xl font-semibold tracking-tight mb-3">
+            <h3 class="font-poppins text-xl sm:text-2xl font-medium tracking-tight mb-3">
               Innovation That Drives Results
             </h3>
             <p class="font-poppins text-sm sm:text-base text-white leading-relaxed font-normal">

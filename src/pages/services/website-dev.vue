@@ -27,10 +27,10 @@
           v-motion
           :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
           :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-          class="font-poppins text-[2rem] sm:text-5xl font-semibold text-neutral-900 leading-[1.15] tracking-tight mb-6"
+          class="font-poppins text-[2rem] sm:text-5xl font-medium text-neutral-900 leading-[1.15] tracking-tight mb-6"
         >
           Build, Maintain &amp;<br />
-          Scale <span class="text-primary font-semibold">Your Digital<br />Presence with<br />Purpose</span>
+          Scale <span class="text-primary font-medium">Your Digital<br />Presence With<br />Purpose</span>
         </h1>
         <button
           @click="openModal('Website Development & Maintenance')"
@@ -61,10 +61,10 @@
               v-motion
               :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
               :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-              class="font-poppins text-4xl lg:text-[3.5rem] font-semibold text-neutral-900 leading-[1.15] tracking-tight mb-8"
+              class="font-poppins text-4xl lg:text-[3.5rem] font-medium text-neutral-900 leading-[1.15] tracking-tight mb-8"
             >
               Build, Maintain &amp;<br />
-              Scale <span class="text-primary font-semibold">Your Digital<br />Presence with<br />
+              Scale <span class="text-primary font-medium">Your Digital<br />Presence With<br />
               Purpose</span>
             </h1>
             <button
@@ -97,8 +97,8 @@
         :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
         class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium text-neutral-900 leading-tight mb-8 tracking-tight"
       >
-        <span class="text-primary">Your website</span> is your most crucial digital asset.<br class="hidden sm:inline" />
-        We make sure it delivers maximum value.
+        <span class="text-primary">Your Website</span> Is Your Most Crucial Digital Asset.<br class="hidden sm:inline" />
+        We Make Sure It Delivers Maximum Value.
       </h2>
       <p class="font-poppins text-neutral-700 text-base sm:text-lg lg:text-xl leading-relaxed max-w-4xl mx-auto">
         Today having a website is an absolute essential for any business. Your businesses website
@@ -119,7 +119,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 mb-6 tracking-tight"
+            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 mb-6 tracking-tight"
           >
             1. Building
           </h2>
@@ -189,7 +189,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 mb-6 tracking-tight"
+            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 mb-6 tracking-tight"
           >
             2. Maintenance
           </h2>
@@ -241,7 +241,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 mb-6 tracking-tight"
+            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 mb-6 tracking-tight"
           >
             3. Integration
           </h2>
@@ -311,7 +311,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 mb-6 tracking-tight"
+            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 mb-6 tracking-tight"
           >
             4. Search Engine Optimisation (SEO)
           </h2>
@@ -363,7 +363,7 @@
             v-motion
             :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 mb-6 tracking-tight"
+            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 mb-6 tracking-tight"
           >
             5. Analytics &amp; Performance Tracking
           </h2>
@@ -437,9 +437,9 @@
             v-motion
             :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-            class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-semibold text-neutral-900 leading-[1.15] tracking-tight mb-8"
+            class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium text-neutral-900 leading-[1.15] tracking-tight mb-8"
           >
-            Ready to Transform Your Business's Digital Hub?
+            Ready To Transform Your Business's Digital Hub?
           </h2>
           <button
             @click="openModal('Website Development & Maintenance - CTA')"
@@ -468,7 +468,7 @@
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
             class="font-poppins text-4xl sm:text-5xl lg:text-[4rem] leading-[1.1] font-medium text-neutral-900 mb-10 tracking-tight"
           >
-            Frequently asked<br />questions
+            Frequently Asked<br />Questions
           </h2>
 
           <!-- CTA Card -->
@@ -477,9 +477,9 @@
               v-motion
               :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
               :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-              class="font-poppins text-2xl font-semibold text-neutral-900 mb-4"
+              class="font-poppins text-2xl font-medium text-neutral-900 mb-4"
             >
-              Still have a question?
+              Still Have A Question?
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8">
               If you'd like to know more about how R-E-D can help develop, maintain, and scale your website.

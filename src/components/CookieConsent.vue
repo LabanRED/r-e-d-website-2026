@@ -132,7 +132,7 @@ const saveCustomPreferences = () => {
             </div>
             <div>
               <div class="flex items-center gap-2 mb-1 flex-wrap">
-                <h3 class="text-neutral-900 font-bold text-base tracking-tight">We value your privacy</h3>
+                <h3 class="font-poppins font-medium text-neutral-900 text-base tracking-tight">We Value Your Privacy</h3>
                 <span class="inline-flex items-center gap-1 text-[11px] font-medium bg-neutral-100 text-neutral-600 px-2 py-0.5 rounded-full">
                   <ShieldCheck class="w-3 h-3 text-primary" /> Privacy Protected
                 </span>

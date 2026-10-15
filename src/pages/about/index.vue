@@ -30,18 +30,18 @@
         <!-- Text Overlay -->
         <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
           <span class="font-poppins text-neutral-800 text-sm md:text-base font-medium mb-4">
-            About us
+            About Us
           </span>
-          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-5xl md:text-[3.5rem] font-semibold text-neutral-800 leading-tight max-w-3xl">
-            Tailored digital solutions <span class="text-primary">driving growth.</span>
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-5xl md:text-[3.5rem] font-medium text-neutral-800 leading-tight max-w-3xl">
+            Tailored Digital Solutions <span class="text-primary">Driving Growth.</span>
           </h1>
         </div>
       </div>
 
       <!-- Our Story Section -->
       <div class="mb-20 md:mb-32">
-        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-4xl font-semibold text-neutral-800 mb-6">
-          Our story
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-4xl font-medium text-neutral-800 mb-6">
+          Our Story
         </h2>
         <p class="font-poppins text-neutral-700 text-sm md:text-base leading-relaxed max-w-full md:max-w-[95%]">
           Reach Engage Develop is a unique digital solutions provider. We are not a traditional digital marketing agency where all the attention is focused on the big spenders and everyone else gets the bare minimum. At R-E-D, we give every client the undivided attention they deserve. We provide tailor made digital solutions where our clients have access to our extensive expertise in digital advertising, website development and maintenance, social media management, online reputation management, location listing and much more. At R-E-D we specialise in the automotive, hospitality and restaurant industry where we have an impressive track record with our clients.
@@ -51,12 +51,12 @@
       <!-- Our Team Section -->
       <div class="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start mb-20 md:mb-32">
         <div class="w-full lg:w-1/2">
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-4xl font-semibold text-neutral-800 mb-6">
-            Our team
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-4xl font-medium text-neutral-800 mb-6">
+            Our Team
           </h2>
           <div class="space-y-6 font-poppins text-neutral-700 text-sm md:text-base leading-relaxed">
             <p>
-              The Team at R-E-D stems from the corporate sector with many years of senior management experience, across multiple industries, with the past 10 years being within digital marketing and systems, both locally and internationally.
+              The Team at R-E-D stems from the corporate sector with many years of senior management experience, across multiple industries, with the past 12 years being within digital marketing and systems, both locally and internationally.
             </p>
             <p>
               The combined experience stretches across working with large corporates and SMEs at varying levels within the supply chain. With this experience, we have learnt the importance and relevance of customer engagement in driving revenue sustainment and growth.
@@ -77,7 +77,7 @@
         <!-- Core Values Column -->
         <div>
           <div class="bg-primary text-white text-center py-4 rounded-xl mb-4">
-            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-medium tracking-wide">Core values</h3>
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-medium tracking-wide">Core Values</h3>
           </div>
           <div class="space-y-2">
             <div v-for="item in coreValues" :key="item.id" class="bg-[#f0f0f0] border-b border-white rounded-lg overflow-hidden">
@@ -150,8 +150,8 @@
         style="background: linear-gradient(135deg, #e6e9f0 0%, #eef1f5 100%)"
       >
         <img loading="lazy" :src="redLogo" alt="R-E-D Logo" class="h-8 mb-6" />
-        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-4xl font-semibold text-neutral-800 mb-4">
-          Ready to establish your<br />digital presences?
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-4xl font-medium text-neutral-800 mb-4">
+          Ready To Establish Your<br />Digital Presences?
         </h2>
         <p class="font-poppins text-neutral-500 text-sm md:text-sm max-w-lg mb-8 leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ex ultricies, ornare velit vel, rhoncus metus.

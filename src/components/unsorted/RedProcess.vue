@@ -9,8 +9,8 @@
           <span class="font-poppins text-sm sm:text-base font-normal text-primary tracking-wide block mb-3">
             Why us?
           </span>
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-4xl sm:text-5xl md:text-[3.5rem] text-neutral-900 tracking-tight leading-none">
-            The R<span class="text-primary">-</span>E<span class="text-primary">-</span>D process
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-4xl sm:text-5xl md:text-[3.5rem] text-neutral-900 tracking-tight leading-none">
+            The R<span class="text-primary">-</span>E<span class="text-primary">-</span>D Process
           </h2>
         </div>
 
@@ -63,7 +63,7 @@
               </div>
               
               <!-- Active Title -->
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-neutral-900 text-lg sm:text-xl leading-snug mb-3 tracking-tight">
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-neutral-900 text-lg sm:text-xl leading-snug mb-3 tracking-tight">
                 {{ step.activeTitle }}
               </h3>
 
@@ -120,35 +120,35 @@ const steps = [
   {
     number: '01.',
     title: 'Respect',
-    activeTitle: 'Mutual respect is key',
+    activeTitle: 'Mutual Respect Is Key',
     description: "Most agencies focus all their attention on the \"big shots\" and leave the smaller spenders in the dark. At R-E-D our attention is divided equally among all our clients. We treat all our clients with the respect they deserve.",
     image: respectImg,
   },
   {
     number: '02.',
     title: 'Support',
-    activeTitle: 'Support where you need it',
+    activeTitle: 'Support Where You Need It',
     description: "At R-E-D you will have only one point of contact for all your digital needs. From strategy formulation to the leads rolling in, our DMM's will be your sole point of contact and support throughout the entire process.",
     image: supportImg,
   },
   {
     number: '03.',
     title: 'Understanding',
-    activeTitle: 'We have a mutual understanding',
+    activeTitle: 'We Have A Mutual Understanding',
     description: "Once we partner up, we initiate an analysis of your businesses environment and needs in order to craft a fully tailored digital marketing plan. We do this so that we can fully understand your objectives and help you reach them.",
     image: understandingImg,
   },
   {
     number: '04.',
-    title: 'What works best',
-    activeTitle: 'What works best',
+    title: 'What Works Best',
+    activeTitle: 'What Works Best',
     description: "After we've crafted your strategy we will test various combinations, platforms and channels to discover what works best for your brand, your objectives and budget.",
     image: strategyImg,
   },
   {
     number: '05.',
-    title: 'Flexible budgets',
-    activeTitle: 'Flexible budgets available',
+    title: 'Flexible Budgets',
+    activeTitle: 'Flexible Budgets Available',
     description: "R-E-D is unique with its options of short burst campaigns. Most agencies will require you to use massive budgets over long periods of time, but at R-E-D we can run your campaigns on low budgets for short periods of time.",
     image: budgetsImg,
   },
