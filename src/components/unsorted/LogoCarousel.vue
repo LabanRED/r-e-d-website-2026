@@ -6,7 +6,7 @@
         <!-- Static Left Text -->
         <div class="shrink-0 text-center md:text-left">
           <span class="font-poppins font-medium text-neutral-500 text-sm md:text-base tracking-wide whitespace-nowrap">
-            {{ title || 'Trusted by 500+ dealers country wide.' }}
+            {{ title || 'Trusted By 500+ Dealers Country Wide.' }}
           </span>
         </div>
 

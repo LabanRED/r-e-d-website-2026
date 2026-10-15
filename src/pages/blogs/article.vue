@@ -69,8 +69,8 @@
               It is evident that social media is playing an increasingly important role in the purchase decisions of car buyers, and dealerships must respond to this shift. With recommendations and instant availability of information massively impacting car purchases, dealerships can leverage social media to improve their sales figures.
             </p>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
-              1. Facebook Advertising for Your Dealership
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+              1. Facebook Advertising For Your Dealership
             </h2>
             <p class="mb-6">
               Facebook is the largest social media platform in the world (over 2 billion users) and in South Africa (over 29 million users), so it's a good bet that your target audience are on Facebook. Facebook has extremely accurate targeting options which would allow you to dive into the timelines of your target audience.
@@ -93,8 +93,8 @@
               </picture>
             </div>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
-              2. Instagram Stories for Your Dealership
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+              2. Instagram Stories For Your Dealership
             </h2>
             <p class="mb-6">
               With 6.8 Million users in South Africa, Instagram is a social media titan. Instagram has a relatively young user base and has superseded Snap Chat as the king of stories. Stories were originally developed by Snap Chat and are short videos or photos that last a maximum of 24 hours.
@@ -106,8 +106,8 @@
               Instagram has enabled a function called highlights, which are albums where selected stories are kept after the 24-hour period. This could be a great way to display your inventory to your Instagram followers.
             </p>
 
-            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
-              3. YouTube Videos for Your Dealership
+            <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-xl sm:text-2xl font-medium text-primary mt-12 mb-6">
+              3. YouTube Videos For Your Dealership
             </h2>
             <p class="mb-10">
               YouTube is the go-to platform for reviews and recommendations from sources other than the buyer's family and friends. Therefore, YouTube is a great place to capture potential customers who are actively looking for information on which car to purchase. Your dealership could post comparison videos on vehicles you are currently stocking, or other kinds of information packed videos. You are also able to capture this information seeking audience through targeted advertisements on YouTube and Google.
@@ -147,8 +147,8 @@
           alt="R-E-D Logo"
           class="h-10 sm:h-12 object-contain mb-8"
         />
-        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
-          Ready to establish your digital presences?
+        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-medium text-neutral-800 mb-6 leading-tight max-w-2xl">
+          Ready To Establish Your Digital Presences?
         </h3>
         <p class="font-poppins text-neutral-600 text-base max-w-xl mb-10 leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ex ultricies, ornare velit vel, rhoncus metus.

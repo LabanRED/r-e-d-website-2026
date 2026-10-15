@@ -31,9 +31,9 @@
           v-motion
           :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
           :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-          class="font-poppins text-[2.1rem] sm:text-5xl font-semibold text-neutral-900 leading-[1.15] tracking-tight mb-6"
+          class="font-poppins text-[2.1rem] sm:text-5xl font-medium text-neutral-900 leading-[1.15] tracking-tight mb-6"
         >
-          <span class="text-primary font-semibold">Keep Your Google Rating High.</span><br />
+          <span class="text-primary font-medium">Keep Your Google Rating High.</span><br />
           Everything Else Follows.
         </h1>
         <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed max-w-xl mx-auto mb-8">
@@ -76,9 +76,9 @@
               v-motion
               :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
               :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-              class="font-poppins text-3xl lg:text-[2.65rem] xl:text-[3.1rem] font-semibold text-neutral-900 leading-[1.15] tracking-tight mb-6"
+              class="font-poppins text-3xl lg:text-[2.65rem] xl:text-[3.1rem] font-medium text-neutral-900 leading-[1.15] tracking-tight mb-6"
             >
-              <span class="text-primary font-semibold">Keep Your Google Rating High.</span> Everything Else Follows.
+              <span class="text-primary font-medium">Keep Your Google Rating High.</span> Everything Else Follows.
             </h1>
             <p class="font-poppins text-neutral-700 text-sm sm:text-base xl:text-lg leading-relaxed max-w-xl mb-8">
               Your star rating affects where you show up on Google, how your ads perform, what AI assistants say about you, and whether a customer chooses you or a competitor. R-E-D helps businesses earn more reviews, reply faster and protect their rating, with tools for your team or specialists who handle it for you.
@@ -124,8 +124,8 @@
           :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
           class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 leading-tight tracking-tight"
         >
-          <span class="text-primary font-medium">Before customers call, visit or buy, they check your stars.</span><br />
-          Here’s what a strong, current rating does for you.
+          <span class="text-primary font-medium">Before Customers Call, Visit Or Buy, They Check Your Stars.</span><br />
+          Here’s What A Strong, Current Rating Does For You.
         </h2>
       </div>
 
@@ -153,7 +153,7 @@
             >
               <div>
                 <h3 class="font-poppins text-[24px] font-medium text-neutral-900 mb-4">
-                  Search engines
+                  Search Engines
                 </h3>
                 <div class="w-full max-w-[580px] h-[200px] overflow-hidden rounded-xl sm:rounded-2xl mb-4 mx-auto">
                   <img
@@ -178,7 +178,7 @@
             >
               <div>
                 <h3 class="font-poppins text-[24px] font-medium text-neutral-900 mb-4">
-                  Stronger ads
+                  Stronger Ads
                 </h3>
                 <div class="w-full max-w-[580px] h-[200px] overflow-hidden rounded-xl sm:rounded-2xl mb-4 mx-auto">
                   <img
@@ -203,7 +203,7 @@
             >
               <div>
                 <h3 class="font-poppins text-[24px] font-medium text-neutral-900 mb-4">
-                  Trusted before the first call
+                  Trusted Before The First Call
                 </h3>
                 <div class="w-full max-w-[580px] h-[200px] overflow-hidden rounded-xl sm:rounded-2xl mb-4 mx-auto">
                   <img
@@ -228,7 +228,7 @@
             >
               <div>
                 <h3 class="font-poppins text-[24px] font-medium text-neutral-900 mb-4">
-                  More organic views
+                  More Organic Views
                 </h3>
                 <div class="w-full max-w-[580px] h-[200px] overflow-hidden rounded-xl sm:rounded-2xl mb-4 mx-auto">
                   <img
@@ -260,7 +260,7 @@
         </div>
       </div>
 
-      <h2 class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-semibold text-neutral-900 tracking-tight mb-2">
+      <h2 class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium text-neutral-900 tracking-tight mb-2">
         Google &amp; Facebook Review Management
       </h2>
       <p class="font-poppins text-neutral-800 text-lg sm:text-xl font-normal mb-10">
@@ -289,7 +289,7 @@
           class="bg-[#fceeed] rounded-3xl p-6 sm:p-8 flex flex-col justify-between border border-neutral-200/40 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
         >
           <div>
-            <h4 class="font-poppins text-lg sm:text-xl font-semibold text-neutral-900 mb-5 min-h-[56px] flex items-center">
+            <h4 class="font-poppins text-lg sm:text-xl font-medium text-neutral-900 mb-5 min-h-[56px] flex items-center">
               Master The Digital Duopoly With Professional Oversight
             </h4>
             <div class="w-full rounded-2xl overflow-hidden mb-6 aspect-[2/1]">
@@ -314,7 +314,7 @@
           class="bg-[#eeeef8] rounded-3xl p-6 sm:p-8 flex flex-col justify-between border border-neutral-200/40 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
         >
           <div>
-            <h4 class="font-poppins text-lg sm:text-xl font-semibold text-neutral-900 mb-5 min-h-[56px] flex items-center">
+            <h4 class="font-poppins text-lg sm:text-xl font-medium text-neutral-900 mb-5 min-h-[56px] flex items-center">
               24/7 Response Management
             </h4>
             <div class="w-full rounded-2xl overflow-hidden mb-6 aspect-[2/1]">
@@ -339,7 +339,7 @@
           class="bg-[#e8effa] rounded-3xl p-6 sm:p-8 flex flex-col justify-between border border-neutral-200/40 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1"
         >
           <div>
-            <h4 class="font-poppins text-lg sm:text-xl font-semibold text-neutral-900 mb-5 min-h-[56px] flex items-center">
+            <h4 class="font-poppins text-lg sm:text-xl font-medium text-neutral-900 mb-5 min-h-[56px] flex items-center">
               Effective Complaint Resolution &amp; Feedback Management
             </h4>
             <div class="w-full rounded-2xl overflow-hidden mb-6 aspect-[2/1]">
@@ -382,11 +382,11 @@
 
         <!-- Overlaid Desktop Content (Right-aligned over the background space) -->
         <div class="relative z-10 ml-auto w-full lg:w-[52%] md:px-20 lg:px-20 xl:w-[52%] py-16 xl:py-20 flex flex-col items-start text-left">
-          <h2 class="font-poppins text-2xl sm:text-3xl lg:text-[2.1rem] xl:text-[2.35rem] font-semibold text-neutral-900 leading-[1.25] mb-3 sm:mb-4 max-w-2xl">
-            Post<span class="text-primary font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
+          <h2 class="font-poppins text-2xl sm:text-3xl lg:text-[2.1rem] xl:text-[2.35rem] font-medium text-neutral-900 leading-[1.25] mb-3 sm:mb-4 max-w-2xl">
+            Post<span class="text-primary font-medium">X</span> Is The Omnichannel Workhorse For Teams That Live In The Conversation.
           </h2>
-          <h3 class="font-poppins text-xl sm:text-2xl lg:text-[1.45rem] xl:text-[1.65rem] font-semibold text-primary leading-snug mb-5 sm:mb-6 max-w-2xl">
-            Bring Google Ratings, complaints, reviews and more into one place.
+          <h3 class="font-poppins text-xl sm:text-2xl lg:text-[1.45rem] xl:text-[1.65rem] font-medium text-primary leading-snug mb-5 sm:mb-6 max-w-2xl">
+            Bring Google Ratings, Complaints, Reviews And More Into One Place.
           </h3>
           <p class="font-poppins text-neutral-700 text-sm sm:text-base lg:text-[16px] leading-relaxed mb-6 sm:mb-8 max-w-xl">
             Alongside WhatsApp, social media, live chat and internal conversations into one shared inbox - and let AI help you reply faster, capture leads and keep customers coming back.
@@ -446,11 +446,11 @@
 
         <!-- Mobile Text Content -->
         <div class="w-full px-6 sm:px-8 py-10 flex flex-col items-start text-left max-w-xl mx-auto">
-          <h2 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 leading-snug mb-3">
-            Post<span class="text-primary font-semibold">X</span> is the omnichannel workhorse for teams that live in the conversation.
+          <h2 class="font-poppins text-2xl sm:text-3xl font-medium text-neutral-900 leading-snug mb-3">
+            Post<span class="text-primary font-medium">X</span> Is The Omnichannel Workhorse For Teams That Live In The Conversation.
           </h2>
-          <h3 class="font-poppins text-xl sm:text-2xl font-semibold text-primary leading-snug mb-5">
-            Bring Google Ratings, complaints, reviews and more into one place.
+          <h3 class="font-poppins text-xl sm:text-2xl font-medium text-primary leading-snug mb-5">
+            Bring Google Ratings, Complaints, Reviews And More Into One Place.
           </h3>
           <p class="font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed mb-6">
             Alongside WhatsApp, social media, live chat and internal conversations into one shared inbox - and let AI help you reply faster, capture leads and keep customers coming back.
@@ -503,10 +503,10 @@
         v-motion
         :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
         :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-        class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-semibold text-neutral-900 tracking-tight mb-16"
+        class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium text-neutral-900 tracking-tight mb-16"
       >
-        <span class="text-primary font-semibold">Get Your 5-Star Reputation</span> Machine<br class="hidden sm:inline" />
-        Running in Days
+        <span class="text-primary font-medium">Get Your 5-Star Reputation</span> Machine<br class="hidden sm:inline" />
+        Running In Days
       </h2>
 
       <div class="flex flex-col gap-10 items-center">
@@ -518,7 +518,7 @@
           class="w-full md:w-[900px] min-h-[460px] md:h-[500px] bg-[#e8effa] rounded-3xl sm:rounded-4xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center border border-neutral-200/50 shadow-sm text-left transition-all duration-300 hover:shadow-md"
         >
           <div class="p-8 sm:p-10 lg:p-12 md:col-span-7 flex flex-col items-start justify-center">
-            <h3 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 mb-4">
+            <h3 class="font-poppins text-2xl sm:text-3xl font-medium text-neutral-900 mb-4">
               Connect &amp; Integrate:
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed max-w-sm">
@@ -551,7 +551,7 @@
             />
           </div>
           <div class="p-8 sm:p-10 lg:p-12 md:col-span-7 flex flex-col items-start justify-center order-1 md:order-2">
-            <h3 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 mb-4">
+            <h3 class="font-poppins text-2xl sm:text-3xl font-medium text-neutral-900 mb-4">
               Engage &amp; Request:
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed max-w-sm">
@@ -568,7 +568,7 @@
           class="w-full md:w-[900px] min-h-[460px] md:h-[500px] bg-[#fceeed] rounded-3xl sm:rounded-4xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center border border-neutral-200/50 shadow-sm text-left transition-all duration-300 hover:shadow-md"
         >
           <div class="p-8 sm:p-10 lg:p-12 md:col-span-7 flex flex-col items-start justify-center">
-            <h3 class="font-poppins text-2xl sm:text-3xl font-semibold text-neutral-900 mb-4">
+            <h3 class="font-poppins text-2xl sm:text-3xl font-medium text-neutral-900 mb-4">
               Monitor &amp; Resolve:
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed max-w-sm">
@@ -607,9 +607,9 @@
             v-motion
             :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-semibold text-neutral-900 leading-[1.2] tracking-tight mb-5"
+            class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 leading-[1.2] tracking-tight mb-5"
           >
-            Ready to Dominate Your Local Market Ratings?
+            Ready To Dominate Your Local Market Ratings?
           </h2>
           <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
             Let R-E-D audit your current digital footprint and show you how Post<span class="text-primary font-semibold">X</span> can elevate your reviews and lead generation.
@@ -641,7 +641,7 @@
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
             class="font-poppins text-4xl sm:text-5xl lg:text-[4rem] leading-[1.1] font-medium text-neutral-900 mb-10 tracking-tight"
           >
-            Frequently asked<br />questions
+            Frequently Asked<br />Questions
           </h2>
 
           <!-- CTA Card -->
@@ -650,9 +650,9 @@
               v-motion
               :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }"
               :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
-              class="font-poppins text-2xl font-semibold text-neutral-900 mb-4"
+              class="font-poppins text-2xl font-medium text-neutral-900 mb-4"
             >
-              Still have a question?
+              Still Have A Question?
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8">
               If you'd like to know more about how R-E-D can help your business generate more leads.

@@ -5,8 +5,8 @@
         
         <!-- Column 1: Our Services -->
         <div>
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
-            Our services
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl sm:text-3xl text-white mb-6">
+            Our Services
           </h3>
           <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">
             <li>
@@ -39,8 +39,8 @@
 
         <!-- Column 2: Our Products -->
         <div>
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
-            Our products
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl sm:text-3xl text-white mb-6">
+            Our Products
           </h3>
           <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">
             <li>
@@ -48,13 +48,18 @@
                 <img loading="lazy" :src="postXWhiteLogo" alt="PostX Logo" class="h-6 object-contain" />
               </NuxtLink>
             </li>
+            <li>
+              <NuxtLink to="/conexa" class="hover:text-white transition-colors duration-200 inline-block mt-1">
+                <img loading="lazy" :src="conexaLogo" alt="Conexa Logo" class="h-[21px] object-contain" />
+              </NuxtLink>
+            </li>
           </ul>
         </div>
 
         <!-- Column 3: Our Socials -->
         <div>
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
-            Our socials
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl sm:text-3xl text-white mb-6">
+            Our Socials
           </h3>
           <div class="flex items-center gap-5 mt-2">
             <a 
@@ -88,8 +93,8 @@
         <!-- Column 4: Get in Touch & Logo -->
         <div class="flex flex-col justify-between h-full min-h-55">
           <div>
-            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-3xl text-white mb-6">
-              Get in touch
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl sm:text-3xl text-white mb-6">
+              Get In Touch
             </h3>
             <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">
               <li>
@@ -139,6 +144,7 @@
 <script setup lang="ts">
 import redWhiteLogo from '~/assets/images/r-e-d-white-logo.svg';
 import postXWhiteLogo from '~/assets/images/PostX_Web_white_Logo.png';
+import conexaLogo from '~/assets/images/conexa-logo.svg';
 import facebookIcon from '~/assets/images/facebook-social-icon.svg';
 import linkedinIcon from '~/assets/images/linkedin-social-icon.svg';
 import xIcon from '~/assets/images/x-social-icon.svg';

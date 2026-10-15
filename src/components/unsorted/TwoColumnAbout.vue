@@ -16,10 +16,10 @@
           v-motion
           :initial="{ opacity: 0, y: 20 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 600, delay: 100 } }"
-          class="mt-3 text-3xl sm:text-5xl lg:text-5xl font-semibold tracking-tight text-neutral-950 leading-[1.1]"
+          class="mt-3 font-poppins font-medium text-3xl sm:text-5xl lg:text-5xl tracking-tight text-neutral-950 leading-[1.1]"
         >
-          Smarter conversations.<br />
-          Stronger conversions.
+          Smarter Conversations.<br />
+          Stronger Conversions.
         </h2>
       </div>
 
@@ -33,8 +33,8 @@
           :visible-once="{ opacity: 1, x: 0, transition: { duration: 700 } }"
           class="w-full md:w-175 lg:w-200 lg:col-span-5 space-y-6 flex flex-col items-start"
         >
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans text-2xl sm:text-[28px] lg:text-2xl font-semibold text-neutral-950 leading-snug tracking-tight">
-            Turn every lead into a meaningful interaction with Post<span class="text-[#2ca8cb]">X</span>.
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl sm:text-[28px] lg:text-2xl text-neutral-950 leading-snug tracking-tight">
+            Turn Every Lead Into A Meaningful Interaction With Post<span class="text-[#2ca8cb]">X</span>.
           </h3>
 
           <p class="font-sans text-base sm:text-[17px] text-neutral-600 font-normal leading-relaxed">

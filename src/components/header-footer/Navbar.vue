@@ -17,17 +17,66 @@
         <!-- Desktop Nav Links -->
         <div class="hidden md:flex items-center gap-10">
           
-          <NuxtLink
-            to="/postx"
-            class="flex items-center group transition-colors duration-200"
+          <!-- Our Products Dropdown -->
+          <div 
+            class="relative group"
+            @mouseenter="isProductsOpen = true"
+            @mouseleave="isProductsOpen = false"
           >
-            <img
-              :src="postXWhiteLogo"
-              alt="PostX"
-              class="h-6 object-contain select-none opacity-85 group-hover:opacity-100 transition-opacity duration-200"
-              referrerpolicy="no-referrer"
-            />
-          </NuxtLink>
+            <button
+              class="font-sans text-base font-normal tracking-wide text-neutral-300 transition-colors duration-200 hover:text-white flex items-center gap-1.5 py-2 cursor-pointer"
+              @click="isProductsOpen = !isProductsOpen"
+            >
+              <span>Our Products</span>
+              <ChevronDown 
+                :class="[
+                  'w-4 h-4 text-neutral-400 transition-transform duration-200 group-hover:text-white',
+                  isProductsOpen ? 'rotate-180' : ''
+                ]" 
+              />
+            </button>
+
+            <!-- Floating Sub Menu -->
+            <transition
+              enter-active-class="transition duration-200 ease-out"
+              enter-from-class="transform opacity-0 translate-y-1 scale-95"
+              enter-to-class="transform opacity-100 translate-y-0 scale-100"
+              leave-active-class="transition duration-150 ease-in"
+              leave-from-class="transform opacity-100 translate-y-0 scale-100"
+              leave-to-class="transform opacity-0 translate-y-1 scale-95"
+            >
+              <div
+                v-if="isProductsOpen"
+                class="absolute left-1/2 -translate-x-1/2 mt-7.5 w-52 rounded-3xl border border-neutral-800 bg-black backdrop-blur-md p-4 shadow-2xl flex flex-col gap-2 z-50 before:absolute before:-top-7.5 before:left-0 before:right-0 before:h-7.5 before:content-['']"
+              >
+                <NuxtLink
+                  to="/postx"
+                  @click="isProductsOpen = false"
+                  class="flex items-center justify-center py-3 px-4 rounded-2xl hover:bg-neutral-900/80 transition-colors duration-200 group/item"
+                >
+                  <img
+                    :src="postXWhiteLogo"
+                    alt="PostX"
+                    class="h-6 object-contain select-none opacity-85 group-hover/item:opacity-100 transition-opacity duration-200"
+                    referrerpolicy="no-referrer"
+                  />
+                </NuxtLink>
+                <div class="h-px bg-neutral-800/80 w-full"></div>
+                <NuxtLink
+                  to="/conexa"
+                  @click="isProductsOpen = false"
+                  class="flex items-center justify-center py-3 px-4 rounded-2xl hover:bg-neutral-900/80 transition-colors duration-200 group/item"
+                >
+                  <img
+                    :src="conexaLogo"
+                    alt="Conexa"
+                    class="h-5.25 object-contain select-none opacity-85 group-hover/item:opacity-100 transition-opacity duration-200"
+                    referrerpolicy="no-referrer"
+                  />
+                </NuxtLink>
+              </div>
+            </transition>
+          </div>
 
           <!-- Why Us -->
           <NuxtLink
@@ -174,9 +223,12 @@
           <template v-for="link in mobileLinks" :key="link.label">
             <div v-if="link.children" class="flex flex-col">
               <div class="flex items-center justify-between rounded-lg px-3 py-2 hover:bg-neutral-900 transition-colors cursor-pointer group" @click="link.isOpen = !link.isOpen">
-                <NuxtLink :to="link.href" @click="isOpen = false" class="text-base font-normal text-neutral-300 group-hover:text-white">
+                <NuxtLink v-if="link.href" :to="link.href" @click="isOpen = false" class="text-base font-normal text-neutral-300 group-hover:text-white">
                   {{ link.label }}
                 </NuxtLink>
+                <span v-else class="text-base font-normal text-neutral-300 group-hover:text-white">
+                  {{ link.label }}
+                </span>
                 <button class="p-1 text-neutral-400 group-hover:text-white transition-colors focus:outline-none" aria-label="Toggle Submenu">
                   <ChevronDown :class="['w-4 h-4 transition-transform duration-200', link.isOpen ? 'rotate-180' : '']" />
                 </button>
@@ -195,9 +247,19 @@
                     :key="child.label"
                     :to="child.href"
                     @click="isOpen = false"
-                    class="rounded-lg px-3 py-2 text-sm font-normal text-neutral-400 hover:bg-neutral-900 hover:text-white transition-colors"
+                    class="rounded-lg px-3 py-2 text-sm font-normal text-neutral-400 hover:bg-neutral-900 hover:text-white transition-colors flex items-center"
                   >
-                    {{ child.label }}
+                    <template v-if="child.isImage">
+                      <img
+                        :src="child.imageSrc"
+                        :alt="child.label"
+                        :class="[child.mobileImageClass || 'h-5', 'object-contain select-none opacity-85']"
+                        referrerpolicy="no-referrer"
+                      />
+                    </template>
+                    <template v-else>
+                      {{ child.label }}
+                    </template>
                   </NuxtLink>
                 </div>
               </transition>
@@ -255,11 +317,13 @@ import { ref, onMounted, computed } from 'vue';
 import { Menu, X, Smartphone, Tablet, Monitor, ChevronDown } from 'lucide-vue-next';
 import redWhiteLogo from '~/assets/images/r-e-d-white-logo.svg';
 import postXWhiteLogo from '~/assets/images/PostX_Web_white_Logo.png';
+import conexaLogo from '~/assets/images/conexa-logo.svg';
 
 const emit = defineEmits(['cta-click']);
 
 const isOpen = ref(false);
 const isServicesOpen = ref(false);
+const isProductsOpen = ref(false);
 
 const isDev = import.meta.env.DEV;
 const previewMode = useState('previewMode', () => 'desktop');
@@ -300,7 +364,14 @@ const desktopNavLinks = [
 ];
 
 const mobileLinks = ref([
-  { label: 'PostX', href: '/postx', isImage: true, imageSrc: postXWhiteLogo },
+  { 
+    label: 'Our Products', 
+    isOpen: false,
+    children: [
+      { label: 'PostX', href: '/postx', isImage: true, imageSrc: postXWhiteLogo, mobileImageClass: 'h-5.5' },
+      { label: 'Conexa', href: '/conexa', isImage: true, imageSrc: conexaLogo, mobileImageClass: 'h-4.5' },
+    ]
+  },
   { label: 'Why Us', href: '/#why-us' },
   { 
     label: 'Services', 

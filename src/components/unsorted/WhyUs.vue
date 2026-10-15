@@ -8,8 +8,8 @@
           <span class="font-poppins text-sm sm:text-base font-normal text-primary tracking-wide block mb-3">
             Why us?
           </span>
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl md:text-[3.5rem] lg:text-[3.5rem] tracking-tight leading-tight mx-auto">
-            A better way to generate leads.
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl md:text-[3.5rem] lg:text-[3.5rem] tracking-tight leading-tight mx-auto">
+            A Better Way To Generate Leads.
           </h2>
         </div>
       </div>
@@ -28,12 +28,12 @@
           <div>
             <!-- Badge -->
             <span class="inline-block bg-neutral-100 text-neutral-600 font-poppins text-xs font-semibold px-4 py-1.5 rounded-full mb-8">
-              Others
+              others
             </span>
 
             <!-- Title -->
-            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-[32px] text-neutral-900 leading-tight mb-4">
-              Without a Specialised Lead Agency
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl sm:text-[32px] text-neutral-900 leading-tight mb-4">
+              Without A Specialised Lead Agency
             </h3>
 
             <!-- Subheading -->
@@ -74,12 +74,12 @@
           <div>
             <!-- Badge -->
             <span class="inline-block bg-primary text-white font-poppins text-xs font-semibold px-4 py-2 rounded-full mb-8">
-              With R-E-D
+              with R-E-D
             </span>
 
             <!-- Title -->
-            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-semibold text-2xl sm:text-[32px] text-white leading-tight mb-4">
-              With a Lead-Focused Agency
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl sm:text-[32px] text-white leading-tight mb-4">
+              With A Lead-Focused Agency
             </h3>
 
             <!-- Subheading -->
@@ -122,7 +122,7 @@
 
         <button
           @click="$emit('cta-click')"
-          class="font-poppins tracking-widest text-white bg-black btn-slide-in rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 font-medium text-xs sm:text-base"
+          class="font-poppins tracking-widest text-white bg-black btn-slide-in rounded-full py-3.5 px-10 hover:scale-105 active:scale-95 transition-all duration-300 font-medium text-xs sm:text-base"
         >
           schedule a meeting today
         </button>

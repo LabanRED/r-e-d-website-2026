@@ -4,9 +4,9 @@
       
       <!-- Section Header -->
       <div class="mb-16 text-center">
-        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans leading-tight mb-3">
-          <span class="text-[36px] sm:text-[56px] font-light italic text-primary tracking-tight mr-2 sm:mr-3">
-            One platform.
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium leading-tight mb-3">
+          <span class="text-[36px] sm:text-[56px] font-medium italic text-primary tracking-tight mr-2 sm:mr-3">
+            One Platform.
           </span>
           <span class="text-[36px] sm:text-[48px] font-medium text-neutral-950 tracking-tight">
             Four Pillars.
@@ -31,7 +31,7 @@
           <!-- Header with Icon and Headline -->
           <div class="flex items-center gap-3.5 mb-8">
             <component :is="card.icon" class="h-7 w-7 shrink-0" :class="card.iconColor" />
-            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans text-[26px] font-medium text-neutral-950 tracking-tight leading-none">
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[26px] font-medium text-neutral-950 tracking-tight leading-none">
               {{ card.headline }}
             </h3>
           </div>
@@ -64,7 +64,7 @@
             <!-- Header with Icon and Headline -->
             <div class="flex items-center gap-3.5 mb-8">
               <component :is="card.icon" class="h-7 w-7 shrink-0" :class="card.iconColor" />
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-sans text-[26px] font-medium text-neutral-950 tracking-tight leading-none">
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[26px] font-medium text-neutral-950 tracking-tight leading-none">
                 {{ card.headline }}
               </h3>
             </div>

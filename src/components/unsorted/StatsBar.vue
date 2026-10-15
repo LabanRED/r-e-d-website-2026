@@ -42,17 +42,17 @@ const stats = [
   {
     number: '2Mil',
     labelLine1: 'Leads',
-    labelLine2: 'generated',
+    labelLine2: 'Generated',
   },
   {
     number: '500',
     labelLine1: 'Happy',
-    labelLine2: 'customers',
+    labelLine2: 'Customers',
   },
   {
     number: 'R4Mil',
     labelLine1: 'Monthly',
-    labelLine2: 'ad spend',
+    labelLine2: 'Ad Spend',
   },
 ];
 </script>

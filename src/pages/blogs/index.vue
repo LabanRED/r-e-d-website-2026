@@ -32,9 +32,9 @@
           <p class="font-poppins text-neutral-600 text-sm sm:text-base mb-4 tracking-wide font-medium">
             Our blogs
           </p>
-          <h1 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-semibold text-neutral-800 leading-[1.1] tracking-tight">
+          <h1 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-medium text-neutral-800 leading-[1.1] tracking-tight">
             Smarter Digital <br class="hidden sm:block" />
-            Thinking for <span class="text-primary">Better <br class="hidden sm:block" />
+            Thinking For <span class="text-primary">Better <br class="hidden sm:block" />
               Conversions</span>
           </h1>
         </div>
@@ -46,9 +46,9 @@
           <p class="font-poppins text-neutral-600 text-sm sm:text-base mb-4 tracking-wide font-medium">
             Our blogs
           </p>
-          <h1 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-semibold text-neutral-800 leading-tight tracking-tight">
+          <h1 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-4xl sm:text-5xl md:text-6xl font-medium text-neutral-800 leading-tight tracking-tight">
             Smarter Digital <br />
-            Thinking for <span class="text-primary">Better <br />
+            Thinking For <span class="text-primary">Better <br />
               Conversions</span>
           </h1>
         </div>
@@ -68,8 +68,8 @@
 
     <!-- All Articles Section -->
     <section class="px-6 sm:px-8 lg:px-12 max-w-[1600px] mx-auto mb-16">
-      <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-6">
-        All articles
+      <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-3xl sm:text-4xl font-medium text-neutral-800 mb-6">
+        All Articles
       </h2>
       <p class="font-poppins text-neutral-600 text-lg leading-relaxed max-w-4xl mb-8">
         Explore our collection of insights, ideas, and updates across design, development, and digital strategy. From practical guides to industry perspectives, these articles are designed to keep you informed, inspired, and ahead of the curve in a fast-moving digital landscape.
@@ -94,8 +94,8 @@
 
     <!-- Latest Blogs Section -->
     <section class="px-6 sm:px-8 lg:px-12 max-w-[1600px] mx-auto mb-20">
-      <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full px-0 md:px-[186px] font-poppins text-3xl sm:text-4xl font-semibold text-neutral-800 mb-10">
-        Latest blogs
+      <h2 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full px-0 md:px-[186px] font-poppins text-3xl sm:text-4xl font-medium text-neutral-800 mb-10">
+        Latest Blogs
       </h2>
 
       <div class="flex flex-wrap justify-center gap-8 lg:gap-10 mb-12">
@@ -115,7 +115,7 @@
               <span class="font-poppins text-xs text-neutral-500 mb-3 uppercase tracking-wider font-medium">
                 {{ blog.date }}
               </span>
-              <h3 class="font-poppins text-xl font-semibold text-neutral-800 mb-4 leading-snug group-hover:text-primary transition-colors line-clamp-2">
+              <h3 class="font-poppins text-xl font-medium text-neutral-800 mb-4 leading-snug group-hover:text-primary transition-colors line-clamp-2">
                 {{ blog.title }}
               </h3>
               <p class="font-poppins text-neutral-600 text-sm leading-relaxed mb-6 line-clamp-3 flex-1">
@@ -150,8 +150,8 @@
           alt="R-E-D Logo"
           class="h-10 sm:h-12 object-contain mb-8"
         />
-        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-semibold text-neutral-800 mb-6 leading-tight max-w-2xl">
-          Ready to establish your digital presences?
+        <h3 v-motion :initial="{ opacity: 0, y: 20 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="font-poppins text-2xl sm:text-4xl font-medium text-neutral-800 mb-6 leading-tight max-w-2xl">
+          Ready To Establish Your Digital Presences?
         </h3>
         <p class="font-poppins text-neutral-600 text-base max-w-xl mb-10 leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu ex ultricies, ornare velit vel, rhoncus metus.
@@ -205,7 +205,7 @@ const blogsData = [
   },
   {
     id: 3,
-    title: "Ads, ads and more ads",
+    title: "Ads, Ads And More Ads",
     date: "R-E-D | 2023",
     excerpt: "Facebook ads work best when you're focused on what you want to achieve.",
     image: thirdBlogImg,
@@ -213,21 +213,22 @@ const blogsData = [
   },
   {
     id: 4,
-    title: "Innovative and powerful ways to tell your business story!",
+    title: "Innovative And Powerful Ways To Tell Your Business Story!",
     date: "R-E-D | 15 March 2023",
     excerpt: "With so many active users on Facebook and Instagram, it may be difficult for you to decide...",
     image: fourthBlogImg,
+    link: "/blogs/innovative-and-powerful-ways",
   },
   {
     id: 5,
-    title: "Get more bang for your buck!",
+    title: "Get More Bang For Your Buck!",
     date: "R-E-D | 01 April 2023",
     excerpt: "Are you looking to reach & bring in new customers that are 100% interested in your products/services?",
     image: fifthBlogImg,
   },
   {
     id: 6,
-    title: "AI-Driven Advertising for Smarter Targeting & Lead Generation",
+    title: "AI-Driven Advertising For Smarter Targeting & Lead Generation",
     date: "R-E-D | 24 January 2025",
     excerpt: "Smarter targeting and automation driving better leads through machine learning.",
     image: sixthBlogImg,

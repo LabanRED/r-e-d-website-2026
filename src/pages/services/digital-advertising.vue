@@ -24,11 +24,11 @@
           <p class="text-neutral-500 font-poppins text-sm sm:text-base mb-4 tracking-wide">
             Digital Advertising
           </p>
-          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-6xl lg:text-6xl text-neutral-800 font-semibold leading-[1.1] tracking-tight">
-            Driving real <br class="hidden sm:block" />
-            growth through <br class="hidden sm:block" />
-            <span class="text-primary">data-driven</span> <br class="hidden sm:block" />
-            <span class="text-primary">digital advertising</span>
+          <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-6xl lg:text-6xl text-neutral-800 font-medium leading-[1.1] tracking-tight">
+            Driving Real <br class="hidden sm:block" />
+            Growth Through <br class="hidden sm:block" />
+            <span class="text-primary">Data-Driven</span> <br class="hidden sm:block" />
+            <span class="text-primary">Digital Advertising</span>
           </h1>
         </div>
 
@@ -55,8 +55,8 @@
       </p>
 
       <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-5xl lg:text-6xl font-medium text-neutral-800 leading-tight mb-16">
-        <span class="text-primary">Select</span> a relevant advertising <br class="hidden sm:block" />
-        platform for more information
+        <span class="text-primary">Select</span> A Relevant Advertising <br class="hidden sm:block" />
+        Platform For More Information
       </h2>
 
       <!-- Platform Cards Section -->
@@ -93,8 +93,8 @@
 
     <!-- Facebook & Instagram Section -->
     <section id="facebook-instagram" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
-        Facebook <span class="text-primary">&</span> Instagram advertising
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-medium text-neutral-800 mb-6 tracking-tight">
+        Facebook <span class="text-primary">&</span> Instagram Advertising
       </h2>
 
       <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-6 leading-relaxed max-w-[1600px]">
@@ -107,8 +107,8 @@
 
       <div class="flex flex-col lg:flex-row items-start gap-12 lg:gap-20">
         <div class="flex-1">
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through Facebook and Instagram our specialists can<span class="text-primary">:</span>
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-medium text-neutral-800 mb-8">
+            Through Facebook And Instagram Our Specialists Can<span class="text-primary">:</span>
           </h3>
 
           <ul class="space-y-6">
@@ -174,8 +174,8 @@
     <!-- Google Advertising Section -->
     <div class="w-full h-px bg-neutral-200 my-16 max-w-[1600px] mx-auto px-6 sm:px-8"></div>
     <section id="google" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
-        Google advertising
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-medium text-neutral-800 mb-6 tracking-tight">
+        Google Advertising
       </h2>
       <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-6 leading-relaxed max-w-[1600px]">
         Google has a massive user base and is one of the largest digital advertising mediums in existence. Google AdWords is Google's digital advertising programme which allows businesses to target their campaigns to very specific audiences. Google AdWords is an extremely powerful marketing tool for any business, that is if it's done right. AdWords can be tricky, but at R-E-D we have perfected the art and science that is Google AdWords.
@@ -195,8 +195,8 @@
             alt="Google Stats"
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through Google our specialists can<span class="text-primary">:</span>
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-medium text-neutral-800 mb-8">
+            Through Google Our Specialists Can<span class="text-primary">:</span>
           </h3>
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
@@ -229,8 +229,8 @@
     <!-- LinkedIn Advertising Section -->
     <div class="w-full h-px bg-neutral-200 my-16 max-w-[1600px] mx-auto px-6 sm:px-8"></div>
     <section id="linkedin" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
-        LinkedIn advertising
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-medium text-neutral-800 mb-6 tracking-tight">
+        LinkedIn Advertising
       </h2>
       <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-4 pb-12 leading-relaxed max-w-[1600px]">
         LinkedIn is a platform which supplies a unique audience of business professionals. Our specialists can use LinkedIn to target your ads to <strong>highly specific audiences</strong>, where we can target <strong>decision makers, income brackets</strong> and <strong>various industries</strong>. LinkedIn is great for B2B marketing; however, our specialists can also move beyond B2B to highly specific B2C audiences.
@@ -241,8 +241,8 @@
             alt="LinkedIn Stats"
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through LinkedIn our specialists can<span class="text-primary">:</span>
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-medium text-neutral-800 mb-8">
+            Through LinkedIn Our Specialists Can<span class="text-primary">:</span>
           </h3>
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
@@ -281,8 +281,8 @@
     <!-- TikTok Advertising Section -->
     <div class="w-full h-px bg-neutral-200 my-16 max-w-[1600px] mx-auto px-6 sm:px-8"></div>
     <section id="tiktok" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
-        TikTok advertising
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-medium text-neutral-800 mb-6 tracking-tight">
+        TikTok Advertising
       </h2>
       <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-6 leading-relaxed max-w-[1600px]">
         TikTok is a platform which supplies a unique audience of highly engaged users. Our specialists can use TikTok to target your ads to <strong>highly specific audiences</strong>, creating viral content that resonates with modern consumers. TikTok is great for B2C marketing; however, our specialists can also move beyond B2C to highly specific B2B audiences.
@@ -302,8 +302,8 @@
             alt="TikTok Stats"
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through TikTok our specialists can<span class="text-primary">:</span>
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-medium text-neutral-800 mb-8">
+            Through TikTok Our Specialists Can<span class="text-primary">:</span>
           </h3>
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
@@ -344,8 +344,8 @@
     <!-- SMS Campaigns Section -->
     <div class="w-full h-px bg-neutral-200 my-16 max-w-[1600px] mx-auto px-6 sm:px-8"></div>
     <section id="sms" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
-        SMS campaigns
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-medium text-neutral-800 mb-6 tracking-tight">
+        SMS Campaigns
       </h2>
       <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-16 pb-12 leading-relaxed max-w-[1600px]">
         SMS marketing campaigns are a giant in the digital marketing space with its massive reach and high engagement rates. The SMS open rates are far higher than other digital platforms with an astonishing 98% open rate. SMS campaigns can have immediate results with 95% of text messages are red within 3 minutes. At R-E-D our digital specialists can get your businesses message in front of thousands of prospect clients in a matter of hours.
@@ -362,8 +362,8 @@
             alt="SMS Stats"
             class="w-screen md:w-[476px] lg-w-[476px] h-auto object-contain mb-10"
           />
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through SMS campaigns our specialists can<span class="text-primary">:</span>
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-medium text-neutral-800 mb-8">
+            Through SMS Campaigns Our Specialists Can<span class="text-primary">:</span>
           </h3>
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
@@ -420,8 +420,8 @@
     <!-- Email Marketing Section -->
     <div class="w-full h-px bg-neutral-200 my-16 max-w-[1600px] mx-auto px-6 sm:px-8"></div>
     <section id="email" class="px-6 sm:px-8 lg:px-12 py-2 max-w-[1600px] mx-auto">
-      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-semibold text-neutral-800 mb-6 tracking-tight">
-        Email marketing
+      <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-5xl font-medium text-neutral-800 mb-6 tracking-tight">
+        Email Marketing
       </h2>
       <p class="font-poppins text-neutral-800 text-base sm:text-lg mb-16 pb-12 leading-relaxed max-w-[1600px]">
         Email marketing campaigns are highly effective tools for nurturing leads and maintaining customer engagement. With personalized content and targeted messaging, email campaigns can drive conversions and build brand loyalty. At R-E-D, our specialists use data-driven strategies to ensure your emails reach the right inbox at the perfect time.
@@ -432,8 +432,8 @@
             alt="Email Stats"
             class="w-screen md:w-[690px] lg-w-[690px] h-auto object-contain mb-10"
           />
-          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-semibold text-neutral-800 mb-8">
-            Through email marketing campaigns our specialists can<span class="text-primary">:</span>
+          <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl sm:text-2xl font-medium text-neutral-800 mb-8">
+            Through Email Marketing Campaigns Our Specialists Can<span class="text-primary">:</span>
           </h3>
           <ul class="space-y-6">
             <li class="flex items-start gap-4">
@@ -490,13 +490,13 @@
         <div class="w-full lg:w-[40%] flex flex-col items-start">
           <span class="text-primary font-poppins text-lg font-medium mb-4">Why us?</span>
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-4xl sm:text-5xl lg:text-[4rem] leading-[1.1] font-medium text-neutral-900 mb-10 tracking-tight">
-            Frequently asked<br />questions
+            Frequently Asked<br />Questions
           </h2>
 
           <!-- CTA Card -->
           <div class="w-full bg-[#f0f9fa] rounded-4xl p-8 sm:p-10 flex flex-col items-start mt-4">
-            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-semibold text-neutral-900 mb-4">
-              Still have a question?
+            <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-medium text-neutral-900 mb-4">
+              Still Have A Question?
             </h3>
             <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8">
               If you'd like to know more about how<br />R-E-D can help your business generate more leads.
