@@ -84,7 +84,7 @@
       >
         <div v-if="isLoading" class="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
         <template v-else>
-          <span>submit request</span>
+          <span>Submit Request</span>
           <Send v-if="variant === 'modal'" class="h-4 w-4 ml-2 inline-block" />
         </template>
       </button>
@@ -147,8 +147,8 @@ const inputClass = computed(() => {
 
 const buttonClass = computed(() => {
   return props.variant === 'modal'
-    ? 'flex w-full items-center justify-center gap-2 rounded-xl bg-black hover:bg-primary hover:scale-105 py-3.5 text-sm text-white shadow-lg shadow-primary/10 active:scale-[0.98] transition-all duration-300 disabled:opacity-50 font-poppins font-medium'
-    : 'w-full bg-black hover:bg-primary hover:scale-105 text-white font-poppins text-sm py-3.5 rounded-full transition-all duration-300 shadow-sm font-medium cursor-pointer flex justify-center items-center h-[52px]';
+    ? 'btn-primary flex w-full items-center justify-center gap-2 py-3.5 text-sm disabled:opacity-50 !rounded-xl'
+    : 'btn-primary w-full text-sm py-3.5 h-[52px]';
 });
 
 const handleSubmit = async () => {

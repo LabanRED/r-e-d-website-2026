@@ -26,17 +26,19 @@
           <!-- Card Content -->
           <div class="p-8 sm:p-12 flex flex-col grow">
             <!-- Partner Logo -->
-            <div class="mb-6 h-10 flex items-center">
+            <div class="mb-6 h-24 flex items-center">
               <img loading="lazy" :src="metaLogo"
                 alt="Meta Business Partner Logo"
                 referrerpolicy="no-referrer"
                 class="h-full w-auto object-contain max-w-60 block group-hover:hidden"
               />
+              <NuxtLink to="https://www.facebook.com/business/partner-directory/details?id=748219472646657" target="_blank">
               <img loading="lazy" :src="metaLogoWhite"
                 alt="Meta Business Partner Logo White"
                 referrerpolicy="no-referrer"
-                class="h-full w-auto object-contain max-w-60 hidden group-hover:block"
+                class="h-full w-auto object-contain max-w-60 hidden group-hover:h-24 group-hover:block"
               />
+              </NuxtLink>
             </div>
 
             <!-- Title -->
@@ -53,9 +55,9 @@
             <div>
               <NuxtLink
                 to="/contact"
-                class="inline-block font-poppins text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-primary! hover:text-white! hover:scale-105 px-6 py-3 rounded-full transition-all duration-300 font-medium text-base"
+                class="btn-primary text-base px-6 py-3"
               >
-                partner with us today
+                Start Your Journey With Meta
               </NuxtLink>
             </div>
           </div>
@@ -82,7 +84,8 @@
           <!-- Card Content -->
           <div class="p-8 sm:p-12 flex flex-col grow">
             <!-- Partner Logo -->
-            <div class="mb-6 h-10 flex items-center">
+            <NuxtLink to="https://www.google.com/partners/agency?id=4535472007" target="_blank">
+            <div class="mb-6 h-24 flex items-center">
               <img loading="lazy" :src="googleLogo"
                 alt="Google Partner Logo"
                 referrerpolicy="no-referrer"
@@ -94,6 +97,7 @@
                 class="h-full w-auto object-contain max-w-60 hidden group-hover:block"
               />
             </div>
+            </NuxtLink>
 
             <!-- Title -->
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-[2.5rem] text-neutral-800 group-hover:text-white leading-tight mb-6 tracking-tight transition-colors duration-300">
@@ -109,9 +113,9 @@
             <div>
               <NuxtLink
                 to="/contact"
-                class="inline-block font-poppins text-white border border-transparent group-hover:border-white bg-black group-hover:bg-transparent hover:bg-primary! hover:text-white! hover:scale-105 px-6 py-3 rounded-full transition-all duration-300 font-medium text-base"
+                class="btn-primary text-base px-6 py-3"
               >
-                partner with us today
+                Start Your Journey with Google
               </NuxtLink>
             </div>
           </div>

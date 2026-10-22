@@ -151,9 +151,9 @@
       <div class="text-center mt-8">
         <NuxtLink
           to="/services"
-          class="inline-block font-poppins tracking-widest text-white bg-black hover:bg-primary rounded-full py-4 px-10 hover:scale-105 active:scale-95 transition-all duration-300 shadow-sm font-medium text-base"
+          class="btn-primary tracking-widest py-4 px-10 text-xs sm:text-base"
         >
-          view all services
+          View All Services
         </NuxtLink>
       </div>
 

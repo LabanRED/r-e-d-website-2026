@@ -53,9 +53,9 @@
 
           <button
             @click="openModal('Conexa')"
-            class="bg-black hover:bg-primary text-white font-poppins text-xs sm:text-sm lg:text-base font-medium px-8 lg:px-9 py-3 lg:py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+            class="btn-primary text-xs sm:text-sm lg:text-base px-8 lg:px-9 py-3 lg:py-3.5"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
         </div>
       </div>
@@ -89,9 +89,9 @@
 
           <button
             @click="openModal('Conexa')"
-            class="bg-black hover:bg-primary text-white font-poppins text-sm font-medium px-8 py-3 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in mb-6"
+            class="btn-primary text-sm px-8 py-3 mb-6"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
 
           <div class="w-full flex justify-center">
@@ -604,9 +604,9 @@
           </h2>
           <button
             @click="openModal('Conexa')"
-            class="bg-black hover:bg-primary text-white font-poppins text-xs sm:text-sm lg:text-[14px] font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+            class="btn-primary text-xs sm:text-sm lg:text-[14px] px-8 py-3.5"
           >
-            schedule a meeting
+            Schedule A Meeting
           </button>
         </div>
       </div>
@@ -626,9 +626,9 @@
         </h2>
         <button
           @click="openModal('Conexa')"
-          class="bg-black hover:bg-primary text-white font-poppins text-xs sm:text-sm font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in mb-8"
+          class="btn-primary text-xs sm:text-sm px-8 py-3.5 mb-8"
         >
-          schedule a meeting
+          Schedule A Meeting
         </button>
         <div class="w-full rounded-2xl overflow-hidden shadow-sm">
           <img
@@ -1270,9 +1270,9 @@
             </p>
             <button
               @click="openModal('Conexa')"
-              class="bg-black hover:bg-primary text-white font-poppins text-sm font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+              class="btn-primary text-sm px-8 py-3.5"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>
@@ -1333,9 +1333,9 @@
 
         <button
           @click="openModal('Conexa')"
-          class="bg-black hover:bg-primary text-white font-poppins text-sm sm:text-base font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+          class="btn-primary text-sm sm:text-base px-10 py-4"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
       </div>
     </section>
@@ -1477,13 +1477,3 @@ useHead({
   ]
 });
 </script>
-
-<style scoped>
-.btn-slide-in {
-  transition: background-color 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.3s ease-out;
-}
-.btn-slide-in:hover {
-  background-color: #00A5C5;
-  transform: scale(1.04);
-}
-</style>

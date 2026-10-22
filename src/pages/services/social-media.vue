@@ -110,9 +110,9 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
+            class="btn-primary tracking-widest px-10 py-4 mb-16 text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
 
           <!-- Circular Icons -->
@@ -154,9 +154,9 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
+            class="btn-primary tracking-widest px-10 py-4 mb-16 text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
 
           <!-- Circular Icons -->
@@ -218,9 +218,9 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
+            class="btn-primary tracking-widest px-10 py-4 mb-16 text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
 
           <!-- Circular Icons -->
@@ -262,9 +262,9 @@
 
           <button
             @click="openModal('Social Media Management')"
-            class="font-poppins font-medium sm:text-[13px] tracking-widest text-white bg-black btn-slide-in px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 mb-16 cursor-pointer text-xs sm:text-base"
+            class="btn-primary tracking-widest px-10 py-4 mb-16 text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
 
           <!-- Circular Icons -->
@@ -321,9 +321,9 @@
             </p>
             <button
               @click="openModal('Social Media Management')"
-              class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
+              class="btn-primary px-8 py-4 text-xs sm:text-[15px]"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>

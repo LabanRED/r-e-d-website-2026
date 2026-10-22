@@ -14,8 +14,8 @@
         
         <button 
           @click="openCookieSettings" 
-          class="bg-primary hover:bg-[#008ba6] text-white text-[16px] font-semibold py-2.5 px-6 rounded-full transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm cursor-pointer"
-        >change your cookie settings</button>
+          class="btn-primary text-base font-semibold py-2.5 px-6"
+        >Change Your Cookie Settings</button>
       </div>
 
       <!-- Content -->

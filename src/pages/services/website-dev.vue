@@ -34,9 +34,9 @@
         </h1>
         <button
           @click="openModal('Website Development & Maintenance')"
-          class="w-full max-w-[340px] bg-black hover:bg-primary text-white font-poppins text-base font-medium py-3.5 px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in mb-8"
+          class="btn-primary w-full max-w-[340px] text-base mb-8 px-8 py-3.5"
         >
-          i want a website
+          I Want A Website
         </button>
         <div class="w-full flex justify-center">
           <img
@@ -69,9 +69,9 @@
             </h1>
             <button
               @click="openModal('Website Development & Maintenance')"
-              class="bg-black hover:bg-primary text-white font-poppins text-[13px] sm:text-[14px] font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+              class="btn-primary text-[13px] sm:text-[14px] font-semibold px-8 py-3.5"
             >
-              i want a website
+              I Want A Website
             </button>
           </div>
 
@@ -154,9 +154,9 @@
           </ul>
           <button
             @click="openModal('Website Development & Maintenance - Building')"
-            class="bg-black hover:bg-primary text-white font-poppins font-medium text-[13px] sm:text-[14px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+            class="btn-primary text-[13px] sm:text-[14px] px-8 py-3.5"
           >
-            i'm interested
+            I'm Interested
           </button>
         </div>
         <!-- Image -->
@@ -224,9 +224,9 @@
           </ul>
           <button
             @click="openModal('Website Development & Maintenance - Maintenance')"
-            class="bg-black hover:bg-primary text-white font-poppins font-medium text-[13px] sm:text-[14px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+            class="btn-primary text-[13px] sm:text-[14px] px-8 py-3.5"
           >
-            i'm interested
+            I'm Interested
           </button>
         </div>
       </div>
@@ -276,9 +276,9 @@
           </ul>
           <button
             @click="openModal('Website Development & Maintenance - Integration')"
-            class="bg-black hover:bg-primary text-white font-poppins font-medium text-[13px] sm:text-[14px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+            class="btn-primary text-[13px] sm:text-[14px] px-8 py-3.5"
           >
-            i'm interested
+            I'm Interested
           </button>
         </div>
         <!-- Image -->
@@ -346,9 +346,9 @@
           </ul>
           <button
             @click="openModal('Website Development & Maintenance - SEO')"
-            class="bg-black hover:bg-primary text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+            class="btn-primary text-[13px] sm:text-[14px] font-semibold px-8 py-3.5"
           >
-            i'm interested
+            I'm Interested
           </button>
         </div>
       </div>
@@ -398,9 +398,9 @@
           </ul>
           <button
             @click="openModal('Website Development & Maintenance - Analytics')"
-            class="bg-black hover:bg-primary text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+            class="btn-primary text-[13px] sm:text-[14px] font-semibold px-8 py-3.5"
           >
-            i'm interested
+            I'm Interested
           </button>
         </div>
         <!-- Image -->
@@ -443,9 +443,9 @@
           </h2>
           <button
             @click="openModal('Website Development & Maintenance - CTA')"
-            class="bg-black hover:bg-primary text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+            class="btn-primary text-[13px] sm:text-[14px] font-semibold px-10 py-4"
           >
-            i'm interested
+            I'm Interested
           </button>
         </div>
       </div>
@@ -486,9 +486,9 @@
             </p>
             <button
               @click="openModal('Website Development & Maintenance - FAQ')"
-              class="bg-black hover:bg-primary text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
+              class="btn-primary text-xs sm:text-[15px] px-8 py-4"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>

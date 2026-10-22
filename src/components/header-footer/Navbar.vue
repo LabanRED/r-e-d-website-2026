@@ -1,7 +1,7 @@
 <template>
   <nav class="sticky top-4 z-50 w-full px-4 sm:px-6 lg:px-8 bg-transparent">
     <!-- Black Floating Capsule Container -->
-    <div class="mx-auto max-w-[1600px] h-16 md:h-24 lg:h-24 rounded-full bg-black border px-6 sm:px-8 shadow-2xl flex items-center">
+    <div class="mx-auto max-w-[1600px] h-12 md:h-24 lg:h-20 rounded-full bg-black border px-6 sm:px-8 shadow-2xl flex items-center">
       <div class="flex items-center justify-between w-full">
         
         <!-- Logo: R-E-D White Logo -->
@@ -9,7 +9,7 @@
           <img 
             :src="redWhiteLogo" 
             alt="R-E-D Logo" 
-            class="h-8 md:h-16 lg:h-10 object-contain select-none opacity-90 group-hover:opacity-100 transition-opacity"
+            class="h-6 md:h-16 lg:h-10 object-contain select-none opacity-90 group-hover:opacity-100 transition-opacity"
             referrerpolicy="no-referrer"
           />
         </NuxtLink>
@@ -47,32 +47,21 @@
             >
               <div
                 v-if="isProductsOpen"
-                class="absolute left-1/2 -translate-x-1/2 mt-7.5 w-52 rounded-3xl border border-neutral-800 bg-black backdrop-blur-md p-4 shadow-2xl flex flex-col gap-2 z-50 before:absolute before:-top-7.5 before:left-0 before:right-0 before:h-7.5 before:content-['']"
+                class="absolute left-1/2 -translate-x-1/2 mt-7.5 w-48 rounded-3xl border border-neutral-800 bg-black backdrop-blur-md p-4 shadow-2xl flex flex-col gap-1 z-50 before:absolute before:-top-7.5 before:left-0 before:right-0 before:h-7.5 before:content-['']"
               >
                 <NuxtLink
                   to="/postx"
                   @click="isProductsOpen = false"
-                  class="flex items-center justify-center py-3 px-4 rounded-2xl hover:bg-neutral-900/80 transition-colors duration-200 group/item"
+                  class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
                 >
-                  <img
-                    :src="postXWhiteLogo"
-                    alt="PostX"
-                    class="h-6 object-contain select-none opacity-85 group-hover/item:opacity-100 transition-opacity duration-200"
-                    referrerpolicy="no-referrer"
-                  />
+                  PostX
                 </NuxtLink>
-                <div class="h-px bg-neutral-800/80 w-full"></div>
                 <NuxtLink
                   to="/conexa"
                   @click="isProductsOpen = false"
-                  class="flex items-center justify-center py-3 px-4 rounded-2xl hover:bg-neutral-900/80 transition-colors duration-200 group/item"
+                  class="block py-2.5 px-4 rounded-2xl text-neutral-300 hover:bg-primary hover:text-white transition-colors duration-200 text-sm font-medium"
                 >
-                  <img
-                    :src="conexaLogo"
-                    alt="Conexa"
-                    class="h-5.25 object-contain select-none opacity-85 group-hover/item:opacity-100 transition-opacity duration-200"
-                    referrerpolicy="no-referrer"
-                  />
+                  Conexa
                 </NuxtLink>
               </div>
             </transition>
@@ -184,11 +173,11 @@
             </div>
           </ClientOnly>
 
-          <!-- CTA (Desktop) - Vibrant Cyan Pill Button -->
+          <!-- CTA (Desktop) -->
           <NuxtLink
             to="/contact"
-            class="h-10.5 inline-flex items-center justify-center rounded-full bg-[#00a2ca] hover:bg-[#00b5e2] px-7 text-white shadow-md shadow-cyan-500/10 transition-all duration-300 hover:scale-[1.02] active:scale-95 font-poppins font-medium text-base"
-          >contact us</NuxtLink>
+            class="btn-tertiary h-10.5 px-7 font-poppins font-medium text-base"
+          >Contact Us</NuxtLink>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -249,17 +238,7 @@
                     @click="isOpen = false"
                     class="rounded-lg px-3 py-2 text-sm font-normal text-neutral-400 hover:bg-neutral-900 hover:text-white transition-colors flex items-center"
                   >
-                    <template v-if="child.isImage">
-                      <img
-                        :src="child.imageSrc"
-                        :alt="child.label"
-                        :class="[child.mobileImageClass || 'h-5', 'object-contain select-none opacity-85']"
-                        referrerpolicy="no-referrer"
-                      />
-                    </template>
-                    <template v-else>
-                      {{ child.label }}
-                    </template>
+                    {{ child.label }}
                   </NuxtLink>
                 </div>
               </transition>
@@ -271,17 +250,7 @@
               @click="isOpen = false"
               class="rounded-lg px-3 py-2 text-base font-normal text-neutral-300 hover:bg-neutral-900 hover:text-white transition-colors flex items-center"
             >
-              <template v-if="link.isImage">
-                <img
-                  :src="link.imageSrc"
-                  :alt="link.label"
-                  :class="[link.mobileImageClass || 'h-5', 'object-contain select-none opacity-85']"
-                  referrerpolicy="no-referrer"
-                />
-              </template>
-              <template v-else>
-                {{ link.label }}
-              </template>
+              {{ link.label }}
             </NuxtLink>
           </template>
           <div class="pt-4 border-t border-neutral-900 mt-2">
@@ -303,8 +272,8 @@
             <NuxtLink
               to="/contact"
               @click="isOpen = false"
-              class="block w-full rounded-full bg-[#00a2ca] py-3 text-base font-semibold text-white text-center shadow-lg hover:bg-[#00b5e2] transition-colors"
-            >contact us</NuxtLink>
+              class="btn-tertiary w-full py-3 text-base font-semibold"
+            >Contact Us</NuxtLink>
           </div>
         </div>
       </div>
@@ -316,10 +285,8 @@
 import { ref, onMounted, computed } from 'vue';
 import { Menu, X, Smartphone, Tablet, Monitor, ChevronDown } from 'lucide-vue-next';
 import redWhiteLogo from '~/assets/images/r-e-d-white-logo.svg';
-import postXWhiteLogo from '~/assets/images/PostX_Web_white_Logo.png';
-import conexaLogo from '~/assets/images/conexa-logo.svg';
 
-const emit = defineEmits(['cta-click']);
+defineEmits(['cta-click']);
 
 const isOpen = ref(false);
 const isServicesOpen = ref(false);
@@ -368,8 +335,8 @@ const mobileLinks = ref([
     label: 'Our Products', 
     isOpen: false,
     children: [
-      { label: 'PostX', href: '/postx', isImage: true, imageSrc: postXWhiteLogo, mobileImageClass: 'h-5.5' },
-      { label: 'Conexa', href: '/conexa', isImage: true, imageSrc: conexaLogo, mobileImageClass: 'h-4.5' },
+      { label: 'PostX', href: '/postx' },
+      { label: 'Conexa', href: '/conexa' },
     ]
   },
   { label: 'Why Us', href: '/#why-us' },
@@ -378,22 +345,17 @@ const mobileLinks = ref([
     href: '/services',
     isOpen: false,
     children: [
-      { label: 'Digital advertising', href: '/services/digital-advertising' },
-      { label: 'Social media management', href: '/services/social-media' },
-      { label: 'Website development & maintenance', href: '/services/website-dev' },
-      { label: 'Online reputation solutions', href: '/services/online-reputation' },
-      { label: 'Location listing and solutions', href: '/services/location-listing' },
+      { label: 'Digital Advertising', href: '/services/digital-advertising' },
+      { label: 'Social Media Management', href: '/services/social-media' },
+      { label: 'Website Development & Maintenance', href: '/services/website-dev' },
+      { label: 'Online Reputation Solutions', href: '/services/online-reputation' },
+      { label: 'Location Listing and Solutions', href: '/services/location-listing' },
     ]
   },
   { label: 'Blogs', href: '/blogs' },
   { label: 'Careers', href: '/careers' },
   { label: 'About', href: '/about' },
 ]);
-
-const handleMobileCta = () => {
-  isOpen.value = false;
-  emit('cta-click');
-};
 
 const scrollToTop = () => {
   if (import.meta.client) {
