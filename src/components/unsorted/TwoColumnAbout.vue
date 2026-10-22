@@ -52,18 +52,9 @@
           <div class="pt-2">
             <NuxtLink
               to="/postx"
-              class="group relative inline-flex items-center justify-center text-center text-sm sm:text-base text-white font-poppins font-medium"
+              class="btn-primary text-xs sm:text-base px-8 py-3.5"
             >
-              <!-- First Rotating Outline (Before) -->
-              <span class="absolute inset-0 w-full h-full rounded-full border border-[#2ca8cb]/60 bg-[#2ca8cb]/10 transition-all duration-500 pointer-events-none group-hover:-rotate-45 group-hover:border-[#2ca8cb] group-hover:bg-transparent"></span>
-              
-              <!-- Second Rotating Outline (After) -->
-              <span class="absolute inset-0 w-full h-full rounded-full border border-[#2ca8cb]/60 bg-[#2ca8cb]/10 transition-all duration-500 pointer-events-none group-hover:rotate-45 group-hover:border-[#2ca8cb] group-hover:bg-transparent"></span>
-              
-              <!-- Inner Button Surface -->
-              <span class="relative z-10 bg-black hover:bg-neutral-800 px-7 py-3.5 rounded-full active:scale-95 transition-transform duration-300 flex items-center justify-center w-full h-full">
-                explore postx and see how it works.
-              </span>
+              Explore PostX And See How It Works.
             </NuxtLink>
           </div>
         </div>

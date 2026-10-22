@@ -126,8 +126,8 @@
             href="https://maps.google.com"
             target="_blank"
             rel="noreferrer"
-            class="inline-block bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold px-8 py-3 rounded-full transition-all duration-300 shadow-sm cursor-pointer text-base"
-          >directions</a>
+            class="btn-primary text-base px-8 py-3"
+          >Directions</a>
         </div>
 
         <div class="w-full">

@@ -40,7 +40,7 @@ import AnimatedCounter from './AnimatedCounter.vue';
 
 const stats = [
   {
-    number: '2Mil',
+    number: '5Mil',
     labelLine1: 'Leads',
     labelLine2: 'Generated',
   },
@@ -50,7 +50,7 @@ const stats = [
     labelLine2: 'Customers',
   },
   {
-    number: 'R4Mil',
+    number: 'R7Mil',
     labelLine1: 'Monthly',
     labelLine2: 'Ad Spend',
   },

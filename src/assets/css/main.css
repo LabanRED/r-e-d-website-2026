@@ -42,14 +42,142 @@ body {
   /* Chrome, Safari and Opera */
 }
 
-/* CTA Button smooth hover transition to blue */
+/* ==========================================================================
+   GLOBAL CTA BUTTON SYSTEM
+   Update the variables below to customize all primary & secondary buttons
+   across the entire website.
+   ========================================================================== */
+:root {
+  /* --- Primary CTA Button (Main actions: "Schedule a Meeting", "Contact Us", Submit) --- */
+  --btn-primary-bg: #000000;
+  --btn-primary-text: #ffffff;
+  --btn-primary-border: 1.5px solid transparent;
+  --btn-primary-hover-bg: var(--color-primary, #00A5C5);
+  --btn-primary-hover-text: #ffffff;
+  --btn-primary-hover-border: 1.5px solid transparent;
+  --btn-primary-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+  --btn-primary-hover-shadow: 0 8px 24px rgba(0, 165, 197, 0.28);
+  --btn-primary-hover-scale: 1.05;
+  --btn-primary-active-scale: 0.95;
+
+
+  /* --- Secondary CTA Button (Secondary actions: "Go Back", "Decline", Outlined/Light) --- */
+  --btn-secondary-bg: #ffffff;
+  --btn-secondary-text: #171717;
+  --btn-secondary-border: 1.5px solid #171717;
+  --btn-secondary-hover-bg: #000000;
+  --btn-secondary-hover-text: #ffffff;
+  --btn-secondary-hover-border: 1.5px solid #000000;
+  --btn-secondary-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  --btn-secondary-hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  --btn-secondary-hover-scale: 1.05;
+  --btn-secondary-active-scale: 0.95;
+
+  /* --- Tertiary CTA Button (Blue bg -> White hover with 1px black outline) --- */
+  --btn-tertiary-bg: var(--color-primary, #00A5C5);
+  --btn-tertiary-text: #ffffff;
+  --btn-tertiary-border: 1px solid transparent;
+  --btn-tertiary-hover-bg: #ffffff;
+  --btn-tertiary-hover-text: #000000;
+  /* Change to #ffffff if white text on white hover is desired */
+  --btn-tertiary-hover-border: 1px solid #000000;
+  --btn-tertiary-shadow: 0 4px 14px rgba(0, 165, 197, 0.25);
+  --btn-tertiary-hover-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+  --btn-tertiary-hover-scale: 1.05;
+  --btn-tertiary-active-scale: 0.95;
+
+  /* --- Shared Geometry & Typography Defaults --- */
+  --btn-radius: 9999px;
+  /* full capsule shape */
+  --btn-font-family: var(--font-poppins, "Poppins", sans-serif);
+  --btn-font-weight: 500;
+  --btn-transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Baseline sizing (can be overridden by Tailwind px/py/text-* utilities) */
+:where(.btn-primary, .btn-secondary, .btn-tertiary, .btn-slide-in) {
+  padding: 0.875rem 2rem;
+  font-size: 0.9375rem;
+}
+
+/* Shared Core Button Styles */
+.btn-primary,
+.btn-secondary,
+.btn-tertiary,
 .btn-slide-in {
-  transition: background-color 0.3s ease-out, transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  font-family: var(--btn-font-family);
+  font-weight: var(--btn-font-weight);
+  border-radius: var(--btn-radius);
+  transition: var(--btn-transition);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  line-height: 1.25;
 }
 
+/* Primary CTA Button */
+.btn-primary,
+.btn-slide-in {
+  background-color: var(--btn-primary-bg) !important;
+  color: var(--btn-primary-text) !important;
+  border: var(--btn-primary-border);
+  box-shadow: var(--btn-primary-shadow);
+}
+
+.btn-primary:hover,
 .btn-slide-in:hover {
-  background-color: var(--color-primary);
-  transform: scale(1.05);
+  background-color: var(--btn-primary-hover-bg) !important;
+  color: var(--btn-primary-hover-text) !important;
+  border: var(--btn-primary-hover-border);
+  box-shadow: var(--btn-primary-hover-shadow);
+  transform: scale(var(--btn-primary-hover-scale));
 }
 
+.btn-primary:active,
+.btn-slide-in:active {
+  transform: scale(var(--btn-primary-active-scale));
+}
+
+/* Secondary CTA Button */
+.btn-secondary {
+  background-color: var(--btn-secondary-bg) !important;
+  color: var(--btn-secondary-text) !important;
+  border: var(--btn-secondary-border);
+  box-shadow: var(--btn-secondary-shadow);
+}
+
+.btn-secondary:hover {
+  background-color: var(--btn-secondary-hover-bg) !important;
+  color: var(--btn-secondary-hover-text) !important;
+  border: var(--btn-secondary-hover-border);
+  box-shadow: var(--btn-secondary-hover-shadow);
+  transform: scale(var(--btn-secondary-hover-scale));
+}
+
+.btn-secondary:active {
+  transform: scale(var(--btn-secondary-active-scale));
+}
+
+/* Tertiary CTA Button */
+.btn-tertiary {
+  background-color: var(--btn-tertiary-bg) !important;
+  color: var(--btn-tertiary-text) !important;
+  border: var(--btn-tertiary-border);
+  box-shadow: var(--btn-tertiary-shadow);
+}
+
+.btn-tertiary:hover {
+  background-color: var(--btn-tertiary-hover-bg) !important;
+  color: var(--btn-tertiary-hover-text) !important;
+  border: var(--btn-tertiary-hover-border);
+  box-shadow: var(--btn-tertiary-hover-shadow);
+  transform: scale(var(--btn-tertiary-hover-scale));
+}
+
+.btn-tertiary:active {
+  transform: scale(var(--btn-tertiary-active-scale));
+}

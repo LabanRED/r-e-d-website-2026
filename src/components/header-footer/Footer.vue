@@ -98,11 +98,11 @@
             </h3>
             <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">
               <li>
-                <NuxtLink to="/contact" class="hover:text-white transition-colors duration-200">contact us</NuxtLink>
+                <NuxtLink to="/contact" class="hover:text-white transition-colors duration-200">Contact Us</NuxtLink>
               </li>
               <li>
                 <NuxtLink to="/about" class="hover:text-white transition-colors duration-200">
-                  About us
+                  About Us
                 </NuxtLink>
               </li>
               <li class="text-neutral-400">

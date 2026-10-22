@@ -95,9 +95,9 @@
               </p>
               <NuxtLink
                 :to="service.link"
-                class="inline-block bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-semibold text-[13px] sm:text-[14px] px-8 py-3 rounded-full transition-all duration-300 shadow-sm hover:shadow-md active:scale-95 tracking-wide text-center"
+                class="btn-primary px-8 py-3 text-[13px] sm:text-[14px] font-semibold tracking-wide text-center"
               >
-                i'm interested
+                I'm Interested
               </NuxtLink>
             </div>
 

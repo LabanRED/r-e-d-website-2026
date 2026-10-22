@@ -39,9 +39,9 @@
         </h1>
         <button
           @click="openModal('Location Listing - Hero Mobile')"
-          class="w-full max-w-[340px] bg-black hover:bg-primary text-white font-poppins text-base font-medium py-3.5 px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in mb-8"
+          class="btn-primary w-full max-w-[340px] text-base mb-8 px-8 py-3.5"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
         <div class="w-full flex justify-center rounded-2xl overflow-hidden shadow-sm">
           <img
@@ -80,9 +80,9 @@
             </h1>
             <button
               @click="openModal('Location Listing - Hero Desktop')"
-              class="bg-black hover:bg-primary text-white font-poppins text-[14px] sm:text-[15px] font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+              class="btn-primary text-[14px] sm:text-[15px] px-9 py-3.5"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>
@@ -194,9 +194,9 @@
       <div class="flex justify-center">
         <button
           @click="openModal('Location Listing - Section 1 Button')"
-          class="bg-black hover:bg-primary text-white font-poppins text-[14px] sm:text-[15px] font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+          class="btn-primary text-[14px] sm:text-[15px] px-9 py-3.5"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
       </div>
     </section>
@@ -236,9 +236,9 @@
             </p>
             <button
               @click="openModal('Unified Directory Sync')"
-              class="bg-black hover:bg-primary text-white font-poppins text-[13px] sm:text-[14px] font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+              class="btn-primary text-[13px] sm:text-[14px] px-8 py-3.5"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
           <div class="md:col-span-5 h-full flex justify-end items-center relative overflow-hidden">
@@ -275,9 +275,9 @@
             </p>
             <button
               @click="openModal('Brand Image Protection')"
-              class="bg-black hover:bg-primary text-white font-poppins text-[13px] sm:text-[14px] font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+              class="btn-primary text-[13px] sm:text-[14px] px-8 py-3.5"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>
@@ -298,9 +298,9 @@
             </p>
             <button
               @click="openModal('Proactive Monitoring & Maintenance')"
-              class="bg-black hover:bg-primary text-white font-poppins text-[13px] sm:text-[14px] font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+              class="btn-primary text-[13px] sm:text-[14px] px-8 py-3.5"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
           <div class="md:col-span-5 h-full flex justify-end items-center relative overflow-hidden">
@@ -481,9 +481,9 @@
           <div class="pt-4">
             <button
               @click="openModal('Secure Local Presence - Steps')"
-              class="bg-black hover:bg-primary text-white font-poppins text-[14px] sm:text-[15px] font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+              class="btn-primary text-[14px] sm:text-[15px] px-9 py-3.5"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>
@@ -531,9 +531,9 @@
           </p>
           <button
             @click="openModal('Location Listing - CTA Banner')"
-            class="bg-black hover:bg-primary text-white font-poppins text-[14px] sm:text-[15px] font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+            class="btn-primary text-[14px] sm:text-[15px] px-9 py-3.5"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
         </div>
       </div>
@@ -574,9 +574,9 @@
             </p>
             <button
               @click="openModal('Location Listing - FAQ Meeting')"
-              class="bg-black hover:bg-primary text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
+              class="btn-primary text-xs sm:text-[15px] px-8 py-4"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>

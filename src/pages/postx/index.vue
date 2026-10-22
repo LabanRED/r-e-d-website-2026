@@ -48,10 +48,9 @@
             <div class="flex flex-wrap items-center gap-4">
               <button
                 @click="openModal('PostX - Demo')"
-                class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg cursor-pointer"
-                style="padding: 20px 40px"
+                class="btn-primary text-[16px] px-10 py-5"
               >
-                book your demo
+                Book Your Demo
               </button>
             </div>
           </div>
@@ -79,9 +78,9 @@
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8 w-full sm:w-auto">
             <button
               @click="openModal('PostX - Demo')"
-              class="font-poppins tracking-widest text-white border-2 border-black rounded-full py-4 px-8 bg-black hover:bg-primary active:bg-primary transition-all duration-300 hover:scale-105 active:scale-95 mb-10 w-full sm:w-auto font-medium cursor-pointer text-base"
+              class="btn-primary tracking-widest py-4 px-8 mb-10 w-full sm:w-auto text-base"
             >
-              book your demo
+              Book Your Demo
             </button>
           </div>
 
@@ -507,8 +506,8 @@
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl md:text-4xl lg:text-[3rem] leading-[1.1] text-neutral-950 mb-8 tracking-tight">
             Ready To Simplify<br />Your Conversations?
           </h2>
-          <div class="font-poppins font-medium md:text-[16px] text-white bg-black hover:bg-primary rounded-full py-4 px-10 transition-all duration-300 shadow-md text-base">
-            book your demo
+          <div class="btn-primary py-4 px-10 text-base">
+            Book Your Demo
           </div>
         </div>
       </div>
@@ -526,8 +525,8 @@
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl leading-[2.5rem] text-neutral-950 mb-2 tracking-tight">
             Ready To Simplify<br />Your Conversations?
           </h2>
-          <div class="font-poppins font-medium text-sm text-white bg-black rounded-full py-3 px-8 shadow-md">
-            book your demo
+          <div class="btn-primary py-3 px-8 text-sm">
+            Book Your Demo
           </div>
         </div>
       </div>
@@ -623,9 +622,9 @@
           <div class="mb-10">
             <button
               @click="openModal('PostX - Demo')"
-              class="font-poppins font-medium text-[16px] text-white bg-black hover:bg-primary rounded-full py-4 px-10 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md hover:shadow-lg cursor-pointer"
+              class="btn-primary py-4 px-10 text-base"
             >
-              book your demo
+              Book Your Demo
             </button>
           </div>
 
@@ -701,9 +700,9 @@
           <div class="mb-8 w-full sm:w-auto">
             <button
               @click="openModal('PostX - Demo')"
-              class="font-poppins font-medium text-white bg-black hover:bg-primary rounded-full py-3.5 px-8 transition-all duration-300 hover:scale-105 active:scale-95 shadow-md cursor-pointer w-full sm:w-auto text-base"
+              class="btn-primary py-3.5 px-8 w-full sm:w-auto text-base"
             >
-              book your demo
+              Book Your Demo
             </button>
           </div>
 
@@ -760,7 +759,7 @@
             <p class="font-poppins text-neutral-800 text-md font-regular leading-[1.6] mb-8 max-w-xl tracking-wide">
               Manage your customer lifecycle with outbound campaigns, automatic lead re-engagement, service, and appointment reminders.Capture24/7 leads, schedule test drives, and exchange secure documents - all while keeping your sales, service, and admin teams perfectly connected.
             </p>
-            <button class="font-poppins font-medium text-[15px] text-white bg-black hover:bg-primary hover:scale-105 active:scale-95 px-9 py-3.5 rounded-full transition-all duration-300 shadow-md cursor-pointer">read more</button>
+            <button @click="openModal('PostX - Feature')" class="btn-primary text-[15px] px-9 py-3.5">Read More</button>
           </div>
           <div class="flex justify-end">
             <img loading="lazy" :src="automateDesktop" alt="Automate Customer Journey" class="w-full max-w-[550px] h-auto object-contain" referrerpolicy="no-referrer" />
@@ -784,7 +783,7 @@
             Capture 24/7 leads, schedule test drives, send automated reminders, and exchange secure documents, all while keeping your sales, service, and admin teams perfectly connected.
           </p>
           <div>
-            <button class="font-poppins font-medium text-white bg-black hover:bg-primary hover:scale-105 active:bg-primary active:scale-95 px-8 py-3.5 rounded-full transition-all duration-300 shadow-md cursor-pointer text-base">read more</button>
+            <button @click="openModal('PostX - Feature')" class="btn-primary text-base px-8 py-3.5">Read More</button>
           </div>
         </div>
 
@@ -1003,9 +1002,9 @@
             </p>
             <button
               @click="openModal"
-              class="bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 cursor-pointer text-base"
+              class="btn-primary text-base px-10 py-4"
             >
-              contact us today
+              Contact Us Today
             </button>
           </div>
 
@@ -1074,9 +1073,9 @@
             </p>
             <button
               @click="openModal"
-              class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
+              class="btn-primary text-xs sm:text-[15px] px-8 py-4"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>
@@ -1138,9 +1137,9 @@
 
         <button
           @click="openModal"
-          class="bg-black hover:bg-primary text-white font-poppins px-10 py-4 rounded-full transition-all duration-300 shadow-md hover:scale-105 active:scale-95 tracking-wide font-medium cursor-pointer btn-slide-in text-xs sm:text-base"
+          class="btn-primary tracking-wide text-xs sm:text-base px-10 py-4"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
       </div>
     </section>

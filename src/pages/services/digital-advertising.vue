@@ -156,9 +156,9 @@
 
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
+            class="btn-primary mt-12 px-8 py-4 text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
         </div>
 
@@ -218,9 +218,9 @@
           </ul>
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
+            class="btn-primary mt-12 px-8 py-4 text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
         </div>
       </div>
@@ -264,9 +264,9 @@
           </ul>
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
+            class="btn-primary mt-12 px-8 py-4 text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
         </div>
         <div class="flex-1 w-full lg:mt-[-4rem]">
@@ -333,9 +333,9 @@
           </ul>
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
+            class="btn-primary mt-12 px-8 py-4 text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
         </div>
       </div>
@@ -409,9 +409,9 @@
           </ul>
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
+            class="btn-primary mt-12 px-8 py-4 text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
         </div>
       </div>
@@ -463,9 +463,9 @@
           </ul>
           <button
             @click="openModal('Digital Advertising')"
-            class="mt-12 bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
+            class="btn-primary mt-12 px-8 py-4 text-xs sm:text-base"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
         </div>
         <div class="flex-1 w-full lg:mt-[-4rem]">
@@ -503,9 +503,9 @@
             </p>
             <button
               @click="openModal('Digital Advertising')"
-              class="bg-black text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
+              class="btn-primary px-8 py-4 text-xs sm:text-[15px]"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>

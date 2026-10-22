@@ -41,9 +41,9 @@
         </p>
         <button
           @click="openModal('Online Reputation Solutions - Hero Mobile')"
-          class="w-full max-w-[340px] bg-black hover:bg-primary text-white font-poppins text-base font-medium py-3.5 px-8 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in mb-8"
+          class="btn-primary w-full max-w-[340px] text-base mb-8 px-8 py-3.5"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
         <div class="w-full flex justify-center">
           <img
@@ -85,9 +85,9 @@
             </p>
             <button
               @click="openModal('Online Reputation Solutions - Hero Desktop')"
-              class="bg-black hover:bg-primary text-white font-poppins text-[13px] sm:text-[14px] font-semibold px-8 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+              class="btn-primary text-[13px] sm:text-[14px] font-semibold px-8 py-3.5"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>
@@ -360,9 +360,9 @@
       <!-- Action Button -->
       <button
         @click="openModal('Google & Facebook Review Management - Schedule')"
-        class="bg-black hover:bg-primary text-white font-poppins text-[14px] sm:text-[15px] font-semibold px-9 py-4 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+        class="btn-primary text-[14px] sm:text-[15px] font-semibold px-9 py-4"
       >
-        schedule a meeting today
+        Schedule A Meeting Today
       </button>
     </section>
 
@@ -616,9 +616,9 @@
           </p>
           <button
             @click="openModal('Ready to Dominate - CTA')"
-            class="bg-black hover:bg-primary text-white font-poppins text-[14px] sm:text-[15px] font-semibold px-9 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+            class="btn-primary text-[14px] sm:text-[15px] font-semibold px-9 py-3.5"
           >
-            schedule a meeting today
+            Schedule A Meeting Today
           </button>
         </div>
       </div>
@@ -659,9 +659,9 @@
             </p>
             <button
               @click="openModal('Online Reputation - FAQ Meeting')"
-              class="bg-black hover:bg-primary text-white font-poppins px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 text-xs sm:text-[15px] font-medium cursor-pointer btn-slide-in"
+              class="btn-primary text-xs sm:text-[15px] px-8 py-4"
             >
-              schedule a meeting today
+              Schedule A Meeting Today
             </button>
           </div>
         </div>

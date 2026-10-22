@@ -86,7 +86,7 @@
           v-model="searchQuery"
           class="w-full pl-12 pr-32 py-4 bg-transparent border border-neutral-300 rounded-full focus:outline-none focus:border-primary font-poppins text-neutral-700"
         />
-        <button class="absolute right-2 top-2 bottom-2 bg-black hover:bg-primary hover:scale-105 text-white px-6 rounded-full font-poppins font-medium transition-all duration-300 cursor-pointer text-base">
+        <button class="btn-primary absolute right-2 top-2 bottom-2 px-6 text-base">
           Search
         </button>
       </div>
@@ -122,7 +122,7 @@
                 {{ blog.excerpt }}
               </p>
               <div class="mt-auto">
-                <button class="px-6 py-2 bg-black text-white hover:bg-primary hover:scale-105 rounded-full font-poppins transition-all duration-300 font-medium cursor-pointer text-base">
+                <button class="btn-primary px-6 py-2 text-base">
                   Read Article
                 </button>
               </div>
@@ -137,8 +137,8 @@
       </div>
 
       <div v-if="filteredBlogs.length >= 7" class="flex justify-center">
-        <button class="bg-black hover:bg-primary hover:scale-105 text-white px-8 py-3 rounded-full font-poppins transition-all duration-300 shadow-sm font-medium cursor-pointer text-base">
-          load more...
+        <button class="btn-primary px-8 py-3 text-base">
+          Load More...
         </button>
       </div>
     </section>
@@ -158,9 +158,9 @@
         </p>
         <button
           @click="openModal"
-          class="bg-black text-white font-poppins font-medium px-8 py-4 rounded-full transition-all duration-300 shadow-md active:scale-95 cursor-pointer btn-slide-in text-xs sm:text-base"
+          class="btn-primary px-8 py-4 text-xs sm:text-base"
         >
-          schedule a meeting today
+          Schedule A Meeting Today
         </button>
       </div>
     </section>

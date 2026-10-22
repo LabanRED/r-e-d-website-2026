@@ -423,9 +423,9 @@
                   </h2>
                   <button
                     @click="openModal('Blog Article - Innovative Ways CTA')"
-                    class="bg-black hover:bg-primary text-white font-poppins text-sm sm:text-base font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md hover:scale-105 active:scale-95 cursor-pointer btn-slide-in"
+                    class="btn-primary px-9 py-3.5 text-sm sm:text-base"
                   >
-                    schedule a meeting today
+                    Schedule A Meeting Today
                   </button>
                 </div>
               </div>

@@ -153,28 +153,28 @@ const saveCustomPreferences = () => {
               class="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 bg-neutral-100 hover:bg-neutral-200 text-neutral-700 text-xs sm:text-sm font-semibold py-2.5 px-4 rounded-xl transition-colors duration-200 cursor-pointer"
             >
               <SlidersHorizontal class="w-3.5 h-3.5" />
-              <span>{{ showPreferences ? 'Hide Options' : 'customise' }}</span>
+              <span>{{ showPreferences ? 'Hide Options' : 'Customise' }}</span>
               <component :is="showPreferences ? ChevronUp : ChevronDown" class="w-3.5 h-3.5" />
             </button>
             
             <button 
               type="button"
               @click="declineAll"
-              class="flex-1 sm:flex-none bg-neutral-100 hover:bg-neutral-200 text-neutral-700 text-xs sm:text-sm font-semibold py-2.5 px-5 rounded-xl transition-colors duration-200 cursor-pointer"
-            >decline all</button>
+              class="btn-secondary flex-1 sm:flex-none text-xs sm:text-sm font-semibold py-2.5 px-5 !rounded-xl"
+            >Decline All</button>
 
             <button 
               v-if="showPreferences"
               type="button"
               @click="saveCustomPreferences"
-              class="w-full sm:w-auto bg-neutral-800 hover:bg-black text-white text-xs sm:text-sm font-semibold py-2.5 px-5 rounded-xl transition-all duration-200 cursor-pointer shadow-sm"
-            >save preferences</button>
+              class="btn-primary w-full sm:w-auto text-xs sm:text-sm font-semibold py-2.5 px-5 !rounded-xl"
+            >Save Preferences</button>
             
             <button 
               type="button"
               @click="acceptAll"
-              class="flex-1 sm:flex-none bg-black hover:bg-primary text-white text-xs sm:text-sm font-semibold py-2.5 px-6 rounded-xl transition-all duration-300 hover:scale-[1.02] active:scale-[0.98] shadow-sm cursor-pointer"
-            >accept all</button>
+              class="btn-primary flex-1 sm:flex-none text-xs sm:text-sm font-semibold py-2.5 px-6 !rounded-xl"
+            >Accept All</button>
           </div>
 
         </div>
