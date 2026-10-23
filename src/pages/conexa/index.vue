@@ -52,7 +52,7 @@
           </p>
 
           <button
-            @click="openModal('Conexa')"
+            @click="openModal('Conexa - General Enquiry')"
             class="btn-primary text-xs sm:text-sm lg:text-base px-8 lg:px-9 py-3 lg:py-3.5"
           >
             Schedule A Meeting Today
@@ -88,7 +88,7 @@
           </p>
 
           <button
-            @click="openModal('Conexa')"
+            @click="openModal('Conexa - General Enquiry')"
             class="btn-primary text-sm px-8 py-3 mb-6"
           >
             Schedule A Meeting Today
@@ -603,7 +603,7 @@
             Ready To Simplify<br />Your Conversations?
           </h2>
           <button
-            @click="openModal('Conexa')"
+            @click="openModal('Conexa - General Enquiry')"
             class="btn-primary text-xs sm:text-sm lg:text-[14px] px-8 py-3.5"
           >
             Schedule A Meeting
@@ -625,7 +625,7 @@
           Ready To Simplify<br />Your Conversations?
         </h2>
         <button
-          @click="openModal('Conexa')"
+          @click="openModal('Conexa - General Enquiry')"
           class="btn-primary text-xs sm:text-sm px-8 py-3.5 mb-8"
         >
           Schedule A Meeting
@@ -1269,7 +1269,7 @@
               If you’d like to know more about how R-E-D can help your business generate more leads.
             </p>
             <button
-              @click="openModal('Conexa')"
+              @click="openModal('Conexa - General Enquiry')"
               class="btn-primary text-sm px-8 py-3.5"
             >
               Schedule A Meeting Today
@@ -1332,7 +1332,7 @@
         </p>
 
         <button
-          @click="openModal('Conexa')"
+          @click="openModal('Conexa - General Enquiry')"
           class="btn-primary text-sm sm:text-base px-10 py-4"
         >
           Schedule A Meeting Today

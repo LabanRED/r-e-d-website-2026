@@ -28,7 +28,7 @@
           <div>
             <!-- Badge -->
             <span class="inline-block bg-neutral-100 text-neutral-600 font-poppins text-xs font-semibold px-4 py-1.5 rounded-full mb-8">
-              others
+              Others
             </span>
 
             <!-- Title -->
@@ -74,17 +74,17 @@
           <div>
             <!-- Badge -->
             <span class="inline-block bg-primary text-white font-poppins text-xs font-semibold px-4 py-2 rounded-full mb-8">
-              with R-E-D
+              With R-E-D
             </span>
 
             <!-- Title -->
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl sm:text-[32px] text-white leading-tight mb-4">
-              With A Lead-Focused Agency
+              A ecosystem for lead generation
             </h3>
 
             <!-- Subheading -->
             <p class="font-poppins text-neutral-400 text-sm sm:text-base mb-8">
-              A specialised approach turns strategy into measurable business growth.
+              Where strategy, advertising, and technology drive measurable growth.
             </p>
 
             <!-- Positive List -->
@@ -147,8 +147,8 @@ const withoutAgency = [
 ];
 
 const withAgency = [
-  'Full-funnel strategy designed to attract, nurture, and convert leads',
-  'Data-driven optimisation that continuously improves performance',
-  'Higher-quality leads that translate into real sales and ROI'
+  'Google Ads, Social Media and Design turning attention into opporunity',
+  'Connected journey beyond the campaign using Conexa and PostX',
+  'One partner and ecosystem build to Reach, Enage and Develop'
 ];
 </script>
