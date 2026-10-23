@@ -36,13 +36,13 @@
               class="h-10 w-auto mb-6 object-contain"
               referrerpolicy="no-referrer"
             />
-            <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl md:text-5xl lg:text-4xl mb-6 text-neutral-900">
-              From First Click To Final Sale.<br />
-              <span class="text-[#2ca8cb] md:text-4xl">One Platform For Every Conversation.</span>
+            <h1 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl md:text-5xl lg:text-5xl mb-6 text-neutral-900">
+              Every conversation. <br />
+              <span class="text-[#2ca8cb] text-3xl md:text-5xl">Every channel. One platform.</span>
             </h1>
 
             <p class="font-poppins font-regular text-neutral-800 text-base leading-6 max-w-2xl mb-8">
-              PostX unifies WhatsApp, social media, live chat, and AI-powered assistants into a single command centre - purpose-built for motor dealerships and beyond. Publish content, manage every message, generate leads, and turn conversations into sales.
+              PostX brings WhatsApp, Facebook, Instagram, LinkedIn, Google reviews and live chat into one inbox. AI assistants can reply in seconds, and content tools keep your brand consistent on every channel. Built in South Africa and proven in motor retail, where every lead counts.
             </p>
 
             <div class="flex flex-wrap items-center gap-4">
@@ -112,14 +112,14 @@
               Take Control Of<br />Every Conversation.
             </h2>
             <p class="font-poppins font-light text-xl sm:text-2xl md:text-3xl lg:text-[2.25rem] text-[#2ca8cb] italic mt-6 leading-tight">
-              WhatsApp. Social media.<br />Live chat. One platform.
+              Your customers choose the channel. PostX makes sure your team never misses the message.
             </p>
           </div>
 
           <!-- Right Column (5 cols on large screens) -->
-          <div class="lg:col-span-5 lg:pt-3">
-            <p class="font-poppins font-regular text-neutral-800 text-base md:text-2xl lg:text-2xl leading-[2.25]">
-              Post<span class="text-[#2ca8cb] font-semibold">X</span> brings every channel into one inbox - WhatsApp, social media, live chat, and Google reviews - so your team responds faster, never misses a lead, and delivers a seamless customer experience from first enquiry to aftersales.
+          <div class="lg:col-span-5">
+            <p class="font-poppins font-regular text-neutral-800 text-base md:text-xl lg:text-xl leading-[2.25]">
+              Every enquiry, comment, review and chat lands in one shared inbox. Each one is routed to the right person, tracked against your response targets and kept on record. Add an optional AI assistant to reply instantly, answer routine questions and capture details, day or night. Your team replies faster, your managers see everything, and no lead slips through.
             </p>
           </div>
         </div>
@@ -402,18 +402,18 @@
     <!-- Divider 2 -->
     <div class="w-full h-6 bg-[#F3F4F5]" />
 
-    <!-- Meet your 24/7 Sales Team - Powered by AI Section -->
+    <!-- Meet your 24/7 Assistant - Powered by AI Section -->
     <section class="py-20 bg-white">
       <div class="mx-auto max-w-[1600px] px-6 sm:px-8 lg:px-24">
         <!-- Header & Intro -->
         <div class="mb-16">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl lg:text-5xl leading-tight text-neutral-950">
-            <span class="text-[#2ca8cb] italic font-light">Meet Your 24/7 Sales Team</span><br />
+            <span class="text-[#2ca8cb] italic font-light">Meet your 24/7 assistant,</span><br />
             <span class="font-medium">- Powered By AI</span>
           </h2>
           <p class="font-poppins font-regular text-neutral-600 text-base sm:text-lg max-w-2xl mt-4 leading-relaxed">
-            Have your team focus on what is important, SALES!<br />
-            Our Chatbot focuses on automating the conversation for your convenience.
+            Let AI handle the first reply and the routine questions,<br />
+            so your team can focus on the conversations that close.
           </p>
         </div>
 
@@ -429,14 +429,14 @@
             <div>
               <div class="w-12 h-12 flex items-center justify-center mb-6">
                 <img loading="lazy" :src="leadQualIcon"
-                  alt="Lead Qualification Icon"
+                  alt="Replies in seconds, day or night Icon"
                   class="w-12 h-12 object-contain transition-transform duration-300 hover:scale-105"
                   referrerpolicy="no-referrer"
                 />
               </div>
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900 mb-3">Lead Qualification:</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900 mb-3">Replies in seconds, day or night.</h3>
               <p class="font-poppins font-regular text-neutral-700 text-sm sm:text-base leading-relaxed">
-                AI assistants engage new enquiries on WhatsApp within seconds, qualify intent, directly integrate and route hot leads to the right department.
+                The PostX AI Assistant greets every new WhatsApp enquiry instantly, works out what the customer needs and captures their details. Qualified leads go straight into your lead management system, even after hours.
               </p>
             </div>
           </div>
@@ -456,9 +456,9 @@
                   referrerpolicy="no-referrer"
                 />
               </div>
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900 mb-3">Intelligent Conversations:</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900 mb-3">Trained on your business.</h3>
               <p class="font-poppins font-regular text-neutral-700 text-sm sm:text-base leading-relaxed">
-                Trained on your stock, pricing, and dealership info. Handles FAQs, books test drives, and follows up on dormant leads - all on the customer's preferred platform.
+                It’s set up with your brand, stock, pricing, FAQs and processes, and it can show customers your WhatsApp catalogue right in the chat. Let it book appointments and follow up on leads that have gone quiet.
               </p>
             </div>
           </div>
@@ -478,9 +478,10 @@
                   referrerpolicy="no-referrer"
                 />
               </div>
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900 mb-3">Your Team Can Focus On Conversions</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900 mb-3">Hands over at the right moment.</h3>
               <p class="font-poppins font-regular text-neutral-700 text-sm sm:text-base leading-relaxed">
-                With repetitive conversations automated, your sales team spends more time closing deals, not managing inboxes.
+                When a customer is ready, the chat moves to the right person with the full history, so nobody has to ask the same question twice. The right balance between AI and your people is what makes it work.
+
               </p>
             </div>
           </div>
@@ -532,57 +533,80 @@
       </div>
     </section>
 
-    <!-- PostX Insights Section -->
-    <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full bg-[#f2fafc] py-20 sm:py-24 px-6 sm:px-8 lg:px-12">
-      <div class="max-w-[1200px] mx-auto text-center">
-        <!-- Header -->
-        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl md:text-4xl lg:text-5xl leading-tight text-neutral-950 mb-6 tracking-tight">
-          Insight Of <img loading="lazy" :src="postXLogo" alt="PostX" class="h-8 md:h-10 lg:h-12 inline-block align-middle mx-1 md:mx-2 -mt-2" /> Improving Your<br />Customer Service
-        </h2>
-        <p class="font-poppins text-neutral-800 font-medium text-base md:text-lg max-w-6xl mx-auto mb-4 tracking-wide">
-          Take control of your customer communication and meet them on their preferred communication platform.
-        </p>
-        <p class="font-poppins text-neutral-800 font-medium text-base md:text-lg max-w-2xl mx-auto mb-16 tracking-wide">
-          From WhatsApp campaigns to social post scheduling, Post<span class="text-[#2ca8cb] font-semibold">X</span> gives your team full visibility and control.
-        </p>
+    <!-- Content Creation & Publishing Carousel Section -->
+    <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full bg-[#f5f5f5] py-20 sm:py-24 px-6 sm:px-8 lg:px-12">
+      <div class="max-w-[1600px] mx-auto">
+        <!-- Section Header -->
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
+          <div>
+            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl lg:text-[48px] leading-tight tracking-tight">
+              <span class="italic font-light text-[#2ca8cb]">Create, approve and publish content</span><br />
+              <span class="font-medium text-neutral-950">without the back-and-forth</span>
+            </h2>
+            <p class="font-poppins font-normal text-base text-neutral-600 mt-3 max-w-2xl">
+              Keep every location on brand and every post signed off, from one place.
+            </p>
+          </div>
 
-        <!-- Carousel Titles -->
-        <div class="mb-2">
-          <span class="font-poppins text-neutral-500 uppercase tracking-widest text-sm font-semibold">POSTX INBOX</span>
-        </div>
-        <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl md:text-2xl text-neutral-900 mb-10 tracking-tight">
-          All Conversations Funnel Into One Inbox
-        </h3>
-
-        <!-- Carousel Image Container -->
-        <div class="relative w-full h-auto bg-white rounded-3xl md:rounded-xl shadow-[0px_4px_30px_rgba(0,0,0,0.05)] border border-neutral-100 overflow-hidden mb-8">
-          <transition name="fade" mode="out-in">
-            <div
-              :key="insightIndex"
-              class="w-full h-full flex items-center justify-center bg-neutral-50"
+          <!-- Carousel Controls -->
+          <div class="flex items-center gap-3 self-end sm:self-auto flex-shrink-0">
+            <button
+              @click="scrollCards('left')"
+              :disabled="isAtStart"
+              :class="[
+                'w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200',
+                isAtStart
+                  ? 'border border-neutral-300 text-neutral-400 opacity-60 cursor-not-allowed'
+                  : 'border border-neutral-400 text-neutral-800 hover:border-neutral-900 active:scale-95 cursor-pointer'
+              ]"
+              aria-label="Previous card"
             >
-              <img loading="lazy" :src="insightIndex === 0 ? postxInboxScreenshot : `https://placehold.co/1200x800/e2e8f0/64748b?text=PostX+Insight+${insightIndex + 1}`"
-                :alt="`PostX Insight ${insightIndex + 1}`"
-                class="w-full h-full object-contain"
-              />
-            </div>
-          </transition>
+              <ChevronLeft class="w-5 h-5" />
+            </button>
+            <button
+              @click="scrollCards('right')"
+              :disabled="isAtEnd"
+              :class="[
+                'w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 shadow-sm',
+                isAtEnd
+                  ? 'bg-neutral-300 text-neutral-500 opacity-60 cursor-not-allowed'
+                  : 'bg-black text-white hover:bg-neutral-800 active:scale-95 cursor-pointer'
+              ]"
+              aria-label="Next card"
+            >
+              <ChevronRight class="w-5 h-5" />
+            </button>
+          </div>
         </div>
 
-        <!-- Carousel Controls -->
-        <div class="flex items-center justify-center gap-4">
-          <button
-            @click="prevInsight"
-            class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 font-poppins font-medium cursor-pointer"
+        <!-- Cards Carousel -->
+        <div
+          ref="contentScrollContainer"
+          @scroll="updateScrollButtons"
+          class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth pb-6 pt-2 px-1"
+        >
+          <div
+            v-for="(card, index) in contentCardsData"
+            :key="index"
+            class="w-[280px] sm:w-[328px] flex-shrink-0 bg-white rounded-3xl p-6 sm:p-7 border border-neutral-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.02)] flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:border-neutral-300"
           >
-            <img loading="lazy" :src="cartLeftChevron" alt="Previous" class="w-5 h-5 md:w-6 md:h-6 object-contain" />
-          </button>
-          <button
-            @click="nextInsight"
-            class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 font-poppins font-medium cursor-pointer"
-          >
-            <img loading="lazy" :src="cartRightChevron" alt="Next" class="w-5 h-5 md:w-6 md:h-6 object-contain" />
-          </button>
+            <div>
+              <h3 class="font-poppins font-medium text-[20px] sm:text-[24px] text-neutral-950 leading-snug tracking-tight mb-4 min-h-[58px]">
+                {{ card.title }}
+              </h3>
+              <div class="w-full h-[180px] sm:h-[220px] rounded-2xl overflow-hidden mb-5 bg-neutral-100">
+                <img
+                  loading="lazy"
+                  :src="card.img"
+                  :alt="card.alt"
+                  class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+            </div>
+            <p class="font-poppins font-normal text-sm sm:text-base text-neutral-600 leading-relaxed">
+              {{ card.desc }}
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -1148,10 +1172,11 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-import { ChevronDown, ArrowLeft } from 'lucide-vue-next';
+import { ref, onMounted } from 'vue';
+import { ChevronDown, ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-vue-next';
 
 // Image Imports
+import contentCreationDeskImg from '~/assets/images/postx-content-creation-desk.jpg';
 import postXHeroBanner from '~/assets/images/hero-hanner-lady-desktop-banner.webp';
 import postXLogo from '~/assets/images/PostX_Web_Dark_Logo.png';
 import postXHeroMobileBanner from '~/assets/images/hero-hanner-lady-mobile-banner.webp';
@@ -1183,7 +1208,6 @@ import unlimitedUsersIcon from '~/assets/images/unlimited-users-icon.svg';
 import inhouseSupportIcon from '~/assets/images/in-house-support-team.svg';
 import clientsTrustImg from '~/assets/images/clients-who-trust-postx.webp';
 import continouslyUpdatingImg from '~/assets/images/postx-analytics-screenshot.webp';
-import postxInboxScreenshot from '~/assets/images/postx-inbox-screenshot.webp';
 import postxMobileLoginMockup from '~/assets/images/postx-mobile-login-screen-mockup.webp';
 import postxDesktopBanner from '~/assets/images/postx-mobileapp-desktop-background-mockup.webp';
 import postxMobileBanner from '~/assets/images/postx-mobileapp-mobile-background-mockup.webp';
@@ -1291,11 +1315,6 @@ const handleScroll = () => {
   }
 };
 
-// PostX Insights Carousel
-const insightIndex = ref(0);
-const totalInsights = 3;
-const nextInsight = () => insightIndex.value = (insightIndex.value + 1) % totalInsights;
-const prevInsight = () => insightIndex.value = (insightIndex.value - 1 + totalInsights) % totalInsights;
 
 // Automate Features Expand
 const isFeaturesExpanded = ref(false);
@@ -1331,6 +1350,79 @@ const handleAutomateScroll = () => {
   }
 };
 
+// Content Creation & Publishing Carousel (7 Cards)
+const contentScrollContainer = ref<HTMLDivElement | null>(null);
+const isAtStart = ref(true);
+const isAtEnd = ref(false);
+
+const updateScrollButtons = () => {
+  if (contentScrollContainer.value) {
+    const { scrollLeft, scrollWidth, clientWidth } = contentScrollContainer.value;
+    isAtStart.value = scrollLeft <= 10;
+    isAtEnd.value = scrollLeft + clientWidth >= scrollWidth - 10;
+  }
+};
+
+const scrollCards = (direction: 'left' | 'right') => {
+  if (contentScrollContainer.value) {
+    const cardWidth = 352; // 328px + 24px gap
+    const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
+    contentScrollContainer.value.scrollBy({
+      left: scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+};
+
+onMounted(() => {
+  updateScrollButtons();
+});
+
+const contentCardsData = [
+  {
+    title: 'Create once, post everywhere',
+    img: contentCreationDeskImg,
+    alt: 'Create once, post everywhere',
+    desc: 'Pick your channels, write a caption, upload images or video and see a live preview. Post templates with pre-set captions speed up the posts you make often.'
+  },
+  {
+    title: 'Polish with AI.',
+    img: contentCreationDeskImg,
+    alt: 'Polish with AI',
+    desc: 'The AI caption polisher fixes spelling, grammar and punctuation before anything goes out.'
+  },
+  {
+    title: 'A branded frame on every photo.',
+    img: contentCreationDeskImg,
+    alt: 'A branded frame on every photo',
+    desc: 'Delivery and handover posts let your team photograph a happy customer, add your frame and request a Google review in the same step. The customer gives consent with a one-time PIN (OTP) before anything is published.'
+  },
+  {
+    title: 'Approve before it goes live.',
+    img: contentCreationDeskImg,
+    alt: 'Approve before it goes live',
+    desc: 'Managers approve or reject the image, caption and schedule separately, and send feedback in one click. Posts can also require customer approval.'
+  },
+  {
+    title: 'Controlled access.',
+    img: contentCreationDeskImg,
+    alt: 'Controlled access',
+    desc: 'Set role-based permissions for dealership staff, agencies, and regional managers so everyone creates safely within brand guidelines.'
+  },
+  {
+    title: 'Schedule ahead & stay active.',
+    img: contentCreationDeskImg,
+    alt: 'Schedule ahead & stay active',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+  },
+  {
+    title: 'Track reach & engagement.',
+    img: contentCreationDeskImg,
+    alt: 'Track reach & engagement',
+    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+  }
+];
+
 useHead({
   title: 'PostX | R-E-D',
   meta: [
@@ -1340,16 +1432,6 @@ useHead({
 </script>
 
 <style scoped>
-/* Optional: fade transition classes for Insights carousel */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.3s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
 
 /* Optional: pop transition for pagination numbers */
 .pop-enter-active,

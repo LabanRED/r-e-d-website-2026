@@ -119,10 +119,10 @@
           v-motion
           :initial="{ opacity: 0, y: 20 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-          class="w-full max-w-[620px] min-h-[390px] bg-[#fbf0ef] rounded-3xl sm:rounded-4xl p-6 sm:p-7 flex flex-col justify-between shadow-sm border border-neutral-100 transition-transform duration-300 hover:-translate-y-1"
+          class="w-full max-w-[620px] min-h-[390px] bg-white rounded-3xl sm:rounded-4xl p-6 sm:p-7 flex flex-col justify-between shadow-[0_10px_35px_rgba(0,0,0,0.06)] border border-neutral-100/80 transition-all duration-300 hover:shadow-[0_20px_45px_rgba(0,0,0,0.1)] hover:-translate-y-1"
         >
           <div>
-            <h3 class="font-poppins text-[24px] font-medium text-neutral-900 mb-4">
+            <h3 class="font-poppins text-[22px] sm:text-[24px] font-medium text-primary mb-4">
               Instant Trust &amp; Credibility
             </h3>
             <div class="w-full max-w-[580px] h-[200px] overflow-hidden rounded-xl sm:rounded-2xl mb-4 mx-auto">
@@ -134,7 +134,7 @@
               />
             </div>
           </div>
-          <p class="font-poppins text-[16px] text-neutral-700 leading-relaxed">
+          <p class="font-poppins text-[15px] sm:text-[16px] text-neutral-600 leading-relaxed">
             An unverified or inconsistent online profile signals an untrustworthy brand. Impeccable listing maintenance projects professional excellence.
           </p>
         </div>
@@ -144,10 +144,10 @@
           v-motion
           :initial="{ opacity: 0, y: 20 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 } }"
-          class="w-full max-w-[620px] min-h-[390px] bg-[#eae8f6] rounded-3xl sm:rounded-4xl p-6 sm:p-7 flex flex-col justify-between shadow-sm border border-neutral-100 transition-transform duration-300 hover:-translate-y-1"
+          class="w-full max-w-[620px] min-h-[390px] bg-white rounded-3xl sm:rounded-4xl p-6 sm:p-7 flex flex-col justify-between shadow-[0_10px_35px_rgba(0,0,0,0.06)] border border-neutral-100/80 transition-all duration-300 hover:shadow-[0_20px_45px_rgba(0,0,0,0.1)] hover:-translate-y-1"
         >
           <div>
-            <h3 class="font-poppins text-[24px] font-medium text-neutral-900 mb-4">
+            <h3 class="font-poppins text-[22px] sm:text-[24px] font-medium text-primary mb-4">
               Local Search Dominance
             </h3>
             <div class="w-full max-w-[580px] h-[200px] overflow-hidden rounded-xl sm:rounded-2xl mb-4 mx-auto">
@@ -159,7 +159,7 @@
               />
             </div>
           </div>
-          <p class="font-poppins text-[16px] text-neutral-700 leading-relaxed">
+          <p class="font-poppins text-[15px] sm:text-[16px] text-neutral-600 leading-relaxed">
             Search engines favor accuracy. Optimized, synchronized listings drive higher local SEO rankings and organic foot traffic.
           </p>
         </div>
@@ -169,11 +169,11 @@
           v-motion
           :initial="{ opacity: 0, y: 20 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 200 } }"
-          class="w-full max-w-[620px] min-h-[390px] bg-[#e6f0fa] rounded-3xl sm:rounded-4xl p-6 sm:p-7 flex flex-col justify-between shadow-sm border border-neutral-100 transition-transform duration-300 hover:-translate-y-1"
+          class="w-full max-w-[620px] min-h-[390px] bg-white rounded-3xl sm:rounded-4xl p-6 sm:p-7 flex flex-col justify-between shadow-[0_10px_35px_rgba(0,0,0,0.06)] border border-neutral-100/80 transition-all duration-300 hover:shadow-[0_20px_45px_rgba(0,0,0,0.1)] hover:-translate-y-1"
         >
           <div>
-            <h3 class="font-poppins text-[24px] font-medium text-neutral-900 mb-4">
-              Zero Friction For Buyers
+            <h3 class="font-poppins text-[22px] sm:text-[24px] font-medium text-primary mb-4">
+              Zero Friction for Buyers
             </h3>
             <div class="w-full max-w-[580px] h-[200px] overflow-hidden rounded-xl sm:rounded-2xl mb-4 mx-auto">
               <img
@@ -184,7 +184,7 @@
               />
             </div>
           </div>
-          <p class="font-poppins text-[16px] text-neutral-700 leading-relaxed">
+          <p class="font-poppins text-[15px] sm:text-[16px] text-neutral-600 leading-relaxed">
             Make it effortless for prospective customers to call, navigate, or book an appointment with the exact branch closest to them.
           </p>
         </div>
@@ -225,7 +225,7 @@
           v-motion
           :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-          class="w-full md:w-[900px] min-h-[460px] md:h-[500px] bg-[#e6ecf8] rounded-3xl sm:rounded-4xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center border border-neutral-200/50 shadow-sm text-left transition-all duration-300 hover:shadow-md"
+          class="w-full md:w-[900px] min-h-[460px] md:h-[500px] bg-white rounded-3xl sm:rounded-4xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center border border-neutral-200/50 shadow-sm text-left transition-all duration-300 hover:shadow-md"
         >
           <div class="p-8 sm:p-10 lg:p-12 md:col-span-7 flex flex-col items-start justify-center">
             <h3 class="font-poppins text-2xl sm:text-3xl font-medium text-neutral-900 mb-4">
@@ -256,7 +256,7 @@
           v-motion
           :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-          class="w-full md:w-[900px] min-h-[460px] md:h-[500px] bg-[#e8ebf7] rounded-3xl sm:rounded-4xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center border border-neutral-200/50 shadow-sm text-left transition-all duration-300 hover:shadow-md"
+          class="w-full md:w-[900px] min-h-[460px] md:h-[500px] bg-white rounded-3xl sm:rounded-4xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center border border-neutral-200/50 shadow-sm text-left transition-all duration-300 hover:shadow-md"
         >
           <div class="md:col-span-5 h-full flex justify-start items-center relative overflow-hidden order-2 md:order-1">
             <img
@@ -287,7 +287,7 @@
           v-motion
           :initial="{ opacity: 0, y: 30 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-          class="w-full md:w-[900px] min-h-[460px] md:h-[500px] bg-[#fae8e8] rounded-3xl sm:rounded-4xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center border border-neutral-200/50 shadow-sm text-left transition-all duration-300 hover:shadow-md"
+          class="w-full md:w-[900px] min-h-[460px] md:h-[500px] bg-white rounded-3xl sm:rounded-4xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center border border-neutral-200/50 shadow-sm text-left transition-all duration-300 hover:shadow-md"
         >
           <div class="p-8 sm:p-10 lg:p-12 md:col-span-7 flex flex-col items-start justify-center">
             <h3 class="font-poppins text-2xl sm:text-3xl font-medium text-neutral-900 mb-4">
@@ -352,10 +352,10 @@
               v-motion
               :initial="{ opacity: 0, y: 20 }"
               :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-              class="w-full max-w-[420px] min-h-[380px] bg-[#dce6f5]/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-lg border border-white/60 transition-transform duration-300 hover:-translate-y-1"
+              class="w-full max-w-[420px] min-h-[380px] bg-[#EAFCFF] backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-lg border border-white/60 transition-transform duration-300 hover:-translate-y-1"
             >
               <div>
-                <h3 class="font-poppins text-[22px] sm:text-[24px] font-medium text-neutral-900 mb-4">
+                <h3 class="font-poppins text-[22px] sm:text-[24px] font-medium text-[#002127] mb-4">
                   Master-To-Regional Architecture
                 </h3>
                 <div class="w-full h-[180px] overflow-hidden rounded-xl sm:rounded-2xl mb-4">
@@ -377,10 +377,10 @@
               v-motion
               :initial="{ opacity: 0, y: 20 }"
               :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 } }"
-              class="w-full max-w-[420px] min-h-[380px] bg-[#e6e5f5]/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-lg border border-white/60 transition-transform duration-300 hover:-translate-y-1"
+              class="w-full max-w-[420px] min-h-[380px] bg-[#EAFCFF] backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-lg border border-white/60 transition-transform duration-300 hover:-translate-y-1"
             >
               <div>
-                <h3 class="font-poppins text-[22px] sm:text-[24px] font-medium text-neutral-900 mb-4">
+                <h3 class="font-poppins text-[22px] sm:text-[24px] font-medium text-[#002127] mb-4">
                   Localised Performance Analytics
                 </h3>
                 <div class="w-full h-[180px] overflow-hidden rounded-xl sm:rounded-2xl mb-4">
@@ -402,10 +402,10 @@
               v-motion
               :initial="{ opacity: 0, y: 20 }"
               :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 200 } }"
-              class="w-full max-w-[420px] min-h-[380px] bg-[#f8e5e5]/95 backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-lg border border-white/60 transition-transform duration-300 hover:-translate-y-1"
+              class="w-full max-w-[420px] min-h-[380px] bg-[#EAFCFF] backdrop-blur-md rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col justify-between shadow-lg border border-white/60 transition-transform duration-300 hover:-translate-y-1"
             >
               <div>
-                <h3 class="font-poppins text-[22px] sm:text-[24px] font-medium text-neutral-900 mb-4">
+                <h3 class="font-poppins text-[22px] sm:text-[24px] font-medium text-[#002127] mb-4">
                   Streamlined Campaign Rollouts
                 </h3>
                 <div class="w-full h-[180px] overflow-hidden rounded-xl sm:rounded-2xl mb-4">
@@ -524,10 +524,10 @@
             :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }"
             class="font-poppins text-3xl sm:text-4xl lg:text-[42px] font-medium text-neutral-900 leading-[1.2] tracking-tight mb-5"
           >
-            Are Your Locations Costing<br />You Customers Right Now?
+            Are Your Locations Costing You Customers Right Now?
           </h2>
           <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
-            Let R-<span class="text-primary font-semibold">E</span>-D run a digital audit of your current maps and directory listings to uncover hidden gaps.
+            Let R-E-D run a digital audit of your current maps and directory listings to uncover hidden gaps.
           </p>
           <button
             @click="openModal('Location Listing - CTA Banner')"

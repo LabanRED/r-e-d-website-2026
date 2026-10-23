@@ -58,6 +58,7 @@
         <option value="Location Listing">Location Listing</option>
         <option value="PostX - Demo">PostX - Demo</option>
         <option value="PostX - General Enquiry">PostX - General Enquiry</option>
+        <option value="Conexa - General Enquiry">Conexa - General Enquiry</option>
         <option value="Other">Other</option>
       </select>
     </div>
@@ -116,12 +117,17 @@ const route = useRoute();
 
 const validServices = [
   'Digital Advertising', 'Social Media Management', 'Website Development',
-  'Online Reputation', 'Location Listing', 'PostX - Demo', 'PostX - General Enquiry', 'Other'
+  'Online Reputation', 'Location Listing', 'PostX - Demo', 'PostX - General Enquiry',
+  'Conexa - General Enquiry', 'Other'
 ];
 
 const updateServiceFromQuery = (val: unknown) => {
-  if (val && typeof val === 'string' && validServices.includes(val)) {
-    service.value = val;
+  if (val && typeof val === 'string') {
+    if (val === 'Conexa' || val === 'Conexa - General Enquiry') {
+      service.value = 'Conexa - General Enquiry';
+    } else if (validServices.includes(val)) {
+      service.value = val;
+    }
   }
 };
 

@@ -44,13 +44,13 @@
           </h3>
           <ul class="space-y-3 font-poppins text-neutral-400 text-sm sm:text-base">
             <li>
-              <NuxtLink to="/postx" class="hover:text-white transition-colors duration-200 inline-block mt-1">
-                <img loading="lazy" :src="postXWhiteLogo" alt="PostX Logo" class="h-6 object-contain" />
+              <NuxtLink to="/postx" class="hover:text-white transition-colors duration-200">
+                PostX
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/conexa" class="hover:text-white transition-colors duration-200 inline-block mt-1">
-                <img loading="lazy" :src="conexaLogo" alt="Conexa Logo" class="h-[21px] object-contain" />
+              <NuxtLink to="/conexa" class="hover:text-white transition-colors duration-200">
+                Conexa
               </NuxtLink>
             </li>
           </ul>
@@ -143,9 +143,4 @@
 
 <script setup lang="ts">
 import redWhiteLogo from '~/assets/images/r-e-d-white-logo.svg';
-import postXWhiteLogo from '~/assets/images/PostX_Web_white_Logo.png';
-import conexaLogo from '~/assets/images/conexa-logo.svg';
-import facebookIcon from '~/assets/images/facebook-social-icon.svg';
-import linkedinIcon from '~/assets/images/linkedin-social-icon.svg';
-import xIcon from '~/assets/images/x-social-icon.svg';
 </script>

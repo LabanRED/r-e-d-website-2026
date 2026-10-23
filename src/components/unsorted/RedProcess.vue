@@ -29,72 +29,78 @@
       </div>
 
       <!-- 5-Step Process Cards Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-start">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 sm:gap-6 items-start">
         <div
           v-for="(step, index) in steps"
           :key="index"
-          @mouseenter="hoveredIdx = index"
-          @mouseleave="hoveredIdx = null"
-          @click="hoveredIdx = hoveredIdx === index ? null : index"
+          @mouseenter="activeIdx = index"
+          @mouseleave="activeIdx = null"
+          @click="toggleCard(index)"
           v-motion
           :initial="{ opacity: 0, y: 30 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: index * 50 } }"
-          class="relative bg-white rounded-4xl transition-all duration-300 border border-neutral-100/50 cursor-pointer overflow-hidden flex flex-col"
-          :class="hoveredIdx === index ? 'p-6 shadow-xl ring-1 ring-primary/10 min-h-105' : 'p-8 min-h-70 justify-between shadow-sm hover:shadow-md'"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: index * 60 } }"
+          class="group relative bg-white rounded-[22px] transition-all duration-300 ease-out cursor-pointer overflow-hidden border border-neutral-100/80 p-6 sm:p-7"
+          :class="activeIdx === index
+            ? 'shadow-[0_20px_45px_rgba(0,0,0,0.12)] ring-1 ring-primary/20 min-h-[510px] sm:min-h-[540px]'
+            : 'shadow-[0_10px_30px_rgba(0,0,0,0.06)] hover:shadow-[0_18px_38px_rgba(0,0,0,0.09)] min-h-[250px] sm:min-h-[270px] hover:-translate-y-1'"
         >
-          <transition
-            mode="out-in"
-            enter-active-class="transition duration-200 ease-out"
-            leave-active-class="transition duration-150 ease-in"
-            enter-from-class="opacity-0 translate-y-3"
-            enter-to-class="opacity-100 translate-y-0"
-            leave-from-class="opacity-100 translate-y-0"
-            leave-to-class="opacity-0 -translate-y-3"
+          <!-- Inactive / Default View -->
+          <div
+            class="flex flex-col justify-between h-full min-h-[190px] sm:min-h-[200px] transition-all duration-200 ease-out"
+            :class="activeIdx === index
+              ? 'opacity-0 pointer-events-none absolute inset-x-6 top-6 sm:inset-x-7 sm:top-7 -translate-y-2'
+              : 'opacity-100 translate-y-0'"
           >
-            <!-- Active State -->
-            <div v-if="hoveredIdx === index" class="flex flex-col h-full">
-              <!-- Top Image -->
-              <div class="w-full h-36 sm:h-40 overflow-hidden rounded-2xl mb-5">
-                <img loading="lazy" :src="step.image"
-                  :alt="step.activeTitle"
-                  referrerpolicy="no-referrer"
-                  class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              
-              <!-- Active Title -->
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-neutral-900 text-lg sm:text-xl leading-snug mb-3 tracking-tight">
-                {{ step.activeTitle }}
-              </h3>
-
-              <!-- Description Paragraph -->
-              <p class="font-poppins text-neutral-600 text-xs sm:text-[13px] leading-relaxed">
-                {{ step.description }}
-              </p>
-            </div>
-            
-            <!-- Inactive State -->
-            <div v-else class="flex flex-col justify-between min-h-54">
-              <!-- Top right large faint number -->
-              <div class="absolute top-6 right-8 font-poppins font-medium text-4xl sm:text-5xl text-neutral-300 select-none">
+            <div>
+              <!-- Number -->
+              <div class="font-poppins font-medium text-3xl sm:text-4xl text-neutral-300 select-none tracking-tight leading-none mb-7 sm:mb-8">
                 {{ step.number }}
               </div>
 
               <!-- Icon Container -->
-              <div class="mt-8">
-                <div class="w-12 h-12 rounded-xl bg-primary flex items-center justify-center text-white shadow-sm select-none">
-                  <Star class="w-5 h-5 fill-current text-white" />
-                </div>
-              </div>
-
-              <!-- Card Label / Title -->
-              <div class="mt-8">
-                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl sm:text-2xl text-neutral-800 leading-tight">
-                  {{ step.title }}
-                </h3>
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary flex items-center justify-center text-white shadow-sm select-none transition-transform duration-300 group-hover:scale-105">
+                <Star class="w-5 h-5 fill-current text-white" />
               </div>
             </div>
-          </transition>
+
+            <!-- Bottom Area: Title -->
+            <div class="mt-8">
+              <h3 class="font-poppins font-medium text-[17px] sm:text-[18px] text-neutral-800 leading-snug whitespace-pre-line">
+                {{ step.title }}
+              </h3>
+            </div>
+          </div>
+
+          <!-- Active / Hovered View -->
+          <div
+            class="flex flex-col h-full transition-all duration-300 ease-out"
+            :class="activeIdx === index
+              ? 'opacity-100 translate-y-0'
+              : 'opacity-0 pointer-events-none absolute inset-x-6 top-6 sm:inset-x-7 sm:top-7 translate-y-2'"
+          >
+            <!-- Top Image -->
+            <div class="w-full h-28 sm:h-30 overflow-hidden rounded-xl mb-4 shrink-0">
+              <img
+                loading="lazy"
+                :src="step.image"
+                :alt="step.title.replace('\n', ' ')"
+                referrerpolicy="no-referrer"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
+
+            <!-- Active Title -->
+            <h3 class="font-poppins font-medium text-[17px] sm:text-[19px] text-neutral-900 leading-snug mb-3 tracking-tight whitespace-pre-line">
+              {{ step.activeTitle }}
+            </h3>
+
+            <!-- Description Paragraphs -->
+            <div class="space-y-2.5 font-poppins text-neutral-600 text-xs sm:text-[12px] leading-[1.6]">
+              <p v-for="(p, pIdx) in step.paragraphs" :key="pIdx" class="whitespace-pre-line">
+                {{ p }}
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -105,52 +111,66 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { Star } from 'lucide-vue-next';
-
 import respectImg from '~/assets/images/mutual-respect-is-key.webp';
-import supportImg from '~/assets/images/support-where-you-need-it.webp';
-import understandingImg from '~/assets/images/we-have-mutual-understanding.webp';
-import strategyImg from '~/assets/images/what-works-best.webp';
-import budgetsImg from '~/assets/images/flexible-budgets-available.webp';
 
 defineEmits(['cta-click']);
 
-const hoveredIdx = ref<number | null>(null);
+const activeIdx = ref<number | null>(null);
+
+const toggleCard = (index: number) => {
+  activeIdx.value = activeIdx.value === index ? null : index;
+};
 
 const steps = [
   {
     number: '01.',
-    title: 'Respect',
-    activeTitle: 'Mutual Respect Is Key',
-    description: "Most agencies focus all their attention on the \"big shots\" and leave the smaller spenders in the dark. At R-E-D our attention is divided equally among all our clients. We treat all our clients with the respect they deserve.",
+    title: 'Turnaround\nTimes',
+    activeTitle: 'Turnaround\nTimes',
     image: respectImg,
+    paragraphs: [
+      "Refined systems and disciplined processes allow R-E-D to operate outside industry norms when it comes to turnaround times. Brief it early, get it back the same day. From design to live, fast.",
+      "Wherever possible, every R-E-D service and product is held to our turnaround standards not the industry's."
+    ]
   },
   {
     number: '02.',
-    title: 'Support',
-    activeTitle: 'Support Where You Need It',
-    description: "At R-E-D you will have only one point of contact for all your digital needs. From strategy formulation to the leads rolling in, our DMM's will be your sole point of contact and support throughout the entire process.",
-    image: supportImg,
+    title: 'Integrated\nSolutions',
+    activeTitle: 'Integrated\nSolutions',
+    image: respectImg,
+    paragraphs: [
+      "Your business doesn't need more systems, or more fragmentation. Every R-E-D service and product is designed to work together and integrate into your business.",
+      "Leads generated flow directly into your preferred systems, reducing missed emails, disconnected processes and leads going cold. One connected ecosystem. From ours, into yours."
+    ]
   },
   {
     number: '03.',
-    title: 'Understanding',
-    activeTitle: 'We Have A Mutual Understanding',
-    description: "Once we partner up, we initiate an analysis of your businesses environment and needs in order to craft a fully tailored digital marketing plan. We do this so that we can fully understand your objectives and help you reach them.",
-    image: understandingImg,
+    title: 'Custom\nSLAs',
+    activeTitle: 'Custom SLAs',
+    image: respectImg,
+    paragraphs: [
+      "No two businesses operate exactly the same way. Your service agreement shouldn't pretend they do.\nWe're flexible where it matters and disciplined where it counts.",
+      "Each package and client-specific agreement unlocks a defined set of SLAs, built around the operational requirements of your business. Clear expectations. Clear accountability. Built around how you work."
+    ]
   },
   {
     number: '04.',
-    title: 'What Works Best',
-    activeTitle: 'What Works Best',
-    description: "After we've crafted your strategy we will test various combinations, platforms and channels to discover what works best for your brand, your objectives and budget.",
-    image: strategyImg,
+    title: 'Access to\nIndustry Experts',
+    activeTitle: 'Access to\nIndustry Experts',
+    image: respectImg,
+    paragraphs: [
+      "They say it takes 10,000 disciplined hours to become an expert in a field. You can spend those hours practising badly. We didn't. With more than 50,000 hours dedicated to what we do and how we do it you're working with people who understand the disciplines behind marketing, advertising, websites, lead management, creative and digital operations.",
+      "Not just people who know the platforms. People who understand how the pieces work together."
+    ]
   },
   {
     number: '05.',
-    title: 'Flexible Budgets',
-    activeTitle: 'Flexible Budgets Available',
-    description: "R-E-D is unique with its options of short burst campaigns. Most agencies will require you to use massive budgets over long periods of time, but at R-E-D we can run your campaigns on low budgets for short periods of time.",
-    image: budgetsImg,
+    title: 'Operational\nTransparency',
+    activeTitle: 'Operational\nTransparency',
+    image: respectImg,
+    paragraphs: [
+      "In a world full of noise, excuses and broken accountability, we choose transparency. If we make a mistake, we tell you. If something isn't working, we don't hide it behind a report.",
+      "We explain what happened, what it means and what we're doing about it. We operate as an extension of your business. You deserve to know when things aren't going to plan just as much as when they are. Accountability isn't something we report on. It's how we operate."
+    ]
   },
 ];
 </script>
