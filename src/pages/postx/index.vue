@@ -50,7 +50,7 @@
                 @click="openModal('PostX - Demo')"
                 class="btn-primary text-[16px] px-10 py-5"
               >
-                Book Your Demo
+                Book a Demo
               </button>
             </div>
           </div>
@@ -80,7 +80,7 @@
               @click="openModal('PostX - Demo')"
               class="btn-primary tracking-widest py-4 px-8 mb-10 w-full sm:w-auto text-base"
             >
-              Book Your Demo
+              Book a Demo
             </button>
           </div>
 
@@ -360,10 +360,10 @@
           <!-- Pagination Controls -->
           <div class="flex justify-between items-center mt-6 px-1">
             <!-- Pagination Pill -->
-            <div class="border border-primary text-primary rounded-full px-5 h-[34px] text-sm font-poppins font-medium flex items-center justify-center gap-1">
+            <div class="border border-black text-black rounded-full px-5 h-[34px] text-sm font-poppins font-medium flex items-center justify-center gap-1">
               <div class="relative w-3 h-5 overflow-hidden flex items-center justify-center">
                 <transition name="pop">
-                  <span :key="activePillar" class="absolute font-semibold text-primary">
+                  <span :key="activePillar" class="absolute font-semibold text-black">
                     {{ activePillar + 1 }}
                   </span>
                 </transition>
@@ -375,23 +375,29 @@
             <div class="flex items-center gap-3">
               <button
                 @click="prevPillar"
-                class="transition-transform active:scale-95 duration-200 font-poppins font-medium cursor-pointer"
+                :disabled="activePillar === 0"
+                :class="[
+                  'w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200',
+                  activePillar === 0
+                    ? 'border border-neutral-300 text-neutral-400 opacity-60 cursor-not-allowed'
+                    : 'border border-neutral-400 text-neutral-800 hover:border-neutral-900 active:scale-95 cursor-pointer'
+                ]"
                 aria-label="Previous card"
               >
-                <img loading="lazy" :src="cartLeftChevron"
-                  alt="Previous"
-                  class="w-[42px] h-[42px] object-contain"
-                />
+                <ChevronLeft class="w-5 h-5" />
               </button>
               <button
                 @click="nextPillar"
-                class="transition-transform active:scale-95 duration-200 font-poppins font-medium cursor-pointer"
+                :disabled="activePillar === 3"
+                :class="[
+                  'w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 shadow-sm',
+                  activePillar === 3
+                    ? 'bg-neutral-300 text-neutral-500 opacity-60 cursor-not-allowed'
+                    : 'bg-black text-white hover:bg-neutral-800 active:scale-95 cursor-pointer'
+                ]"
                 aria-label="Next card"
               >
-                <img loading="lazy" :src="cartRightChevron"
-                  alt="Next"
-                  class="w-[42px] h-[42px] object-contain"
-                />
+                <ChevronRight class="w-5 h-5" />
               </button>
             </div>
           </div>
@@ -508,7 +514,7 @@
             Ready To Simplify<br />Your Conversations?
           </h2>
           <div class="btn-primary py-4 px-10 text-base">
-            Book Your Demo
+            Book a Demo
           </div>
         </div>
       </div>
@@ -519,15 +525,15 @@
         @click="openModal('PostX - Demo')"
       >
         <img loading="lazy" :src="mobileMidCta" alt="PostX Mid Page CTA" class="w-full h-auto object-contain" referrerpolicy="no-referrer" />
-        <div class="absolute top-[5%] left-6 right-6 flex flex-col items-start text-left">
-          <p class="font-poppins text-neutral-800 font-medium text-sm mb-2 tracking-wide">
+        <div class="absolute top-[4%] left-5 right-5 flex flex-col items-start text-left">
+          <p class="font-poppins text-neutral-800 font-medium text-xs mb-1.5 tracking-wide">
             Increase your conversion rate today.
           </p>
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl leading-[2.5rem] text-neutral-950 mb-2 tracking-tight">
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-[1.35rem] min-[400px]:text-[1.5rem] leading-[1.2] text-neutral-950 mb-3 tracking-tight">
             Ready To Simplify<br />Your Conversations?
           </h2>
-          <div class="btn-primary py-3 px-8 text-sm">
-            Book Your Demo
+          <div class="btn-primary py-2.5 px-6 text-xs">
+            Book a Demo
           </div>
         </div>
       </div>
@@ -537,7 +543,7 @@
     <section v-motion :initial="{ opacity: 0, y: 30 }" :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }" class="w-full bg-[#f5f5f5] py-20 sm:py-24 px-6 sm:px-8 lg:px-12">
       <div class="max-w-[1600px] mx-auto">
         <!-- Section Header -->
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-8 sm:mb-12">
           <div>
             <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl sm:text-4xl lg:text-[48px] leading-tight tracking-tight">
               <span class="italic font-light text-[#2ca8cb]">Create, approve and publish content</span><br />
@@ -548,8 +554,96 @@
             </p>
           </div>
 
-          <!-- Carousel Controls -->
-          <div class="flex items-center gap-3 self-end sm:self-auto flex-shrink-0">
+          <!-- Carousel Controls (Desktop) -->
+          <div class="hidden sm:flex items-center gap-4 sm:self-auto flex-shrink-0">
+            <!-- Pagination Pill (Desktop) -->
+            <div class="border border-black text-black rounded-full px-5 h-[34px] text-sm font-poppins font-medium flex items-center justify-center gap-1">
+              <div class="relative w-3.5 h-5 overflow-hidden flex items-center justify-center">
+                <transition name="pop">
+                  <span :key="activeContentCard" class="absolute font-semibold text-black">
+                    {{ activeContentCard + 1 }}
+                  </span>
+                </transition>
+              </div>
+              <span> - {{ contentCardsData.length }}</span>
+            </div>
+
+            <!-- Navigation Chevrons -->
+            <div class="flex items-center gap-3">
+              <button
+                @click="scrollCards('left')"
+                :disabled="isAtStart"
+                :class="[
+                  'w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200',
+                  isAtStart
+                    ? 'border border-neutral-300 text-neutral-400 opacity-60 cursor-not-allowed'
+                    : 'border border-neutral-400 text-neutral-800 hover:border-neutral-900 active:scale-95 cursor-pointer'
+                ]"
+                aria-label="Previous card"
+              >
+                <ChevronLeft class="w-5 h-5" />
+              </button>
+              <button
+                @click="scrollCards('right')"
+                :disabled="isAtEnd"
+                :class="[
+                  'w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 shadow-sm',
+                  isAtEnd
+                    ? 'bg-neutral-300 text-neutral-500 opacity-60 cursor-not-allowed'
+                    : 'bg-black text-white hover:bg-neutral-800 active:scale-95 cursor-pointer'
+                ]"
+                aria-label="Next card"
+              >
+                <ChevronRight class="w-5 h-5" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards Carousel -->
+        <div
+          ref="contentScrollContainer"
+          @scroll="updateScrollButtons"
+          class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth pb-6 pt-2 px-1"
+        >
+          <div
+            v-for="(card, index) in contentCardsData"
+            :key="index"
+            class="w-[280px] sm:w-[328px] flex-shrink-0 bg-white rounded-3xl p-6 sm:p-7 border border-neutral-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.02)] flex flex-col transition-all duration-300 hover:shadow-md hover:border-neutral-300"
+          >
+            <h3 class="font-poppins font-medium text-[20px] sm:text-[24px] text-neutral-950 leading-snug tracking-tight mb-4 min-h-[58px] sm:min-h-[72px]">
+              {{ card.title }}
+            </h3>
+            <div class="w-full h-[180px] sm:h-[220px] rounded-2xl overflow-hidden mb-5 bg-neutral-100 flex-shrink-0">
+              <img
+                loading="lazy"
+                :src="card.img"
+                :alt="card.alt"
+                class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+              />
+            </div>
+            <p class="font-poppins font-normal text-sm sm:text-base text-neutral-600 leading-relaxed">
+              {{ card.desc }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Carousel Controls (Mobile) -->
+        <div class="flex sm:hidden justify-between items-center pt-2 px-1">
+          <!-- Pagination Pill (Mobile) -->
+          <div class="border border-black text-black rounded-full px-5 h-[34px] text-sm font-poppins font-medium flex items-center justify-center gap-1">
+            <div class="relative w-3.5 h-5 overflow-hidden flex items-center justify-center">
+              <transition name="pop">
+                <span :key="activeContentCard" class="absolute font-semibold text-black">
+                  {{ activeContentCard + 1 }}
+                </span>
+              </transition>
+            </div>
+            <span> - {{ contentCardsData.length }}</span>
+          </div>
+
+          <!-- Navigation Chevrons -->
+          <div class="flex items-center gap-3">
             <button
               @click="scrollCards('left')"
               :disabled="isAtStart"
@@ -578,36 +672,6 @@
             </button>
           </div>
         </div>
-
-        <!-- Cards Carousel -->
-        <div
-          ref="contentScrollContainer"
-          @scroll="updateScrollButtons"
-          class="flex gap-6 overflow-x-auto no-scrollbar scroll-smooth pb-6 pt-2 px-1"
-        >
-          <div
-            v-for="(card, index) in contentCardsData"
-            :key="index"
-            class="w-[280px] sm:w-[328px] flex-shrink-0 bg-white rounded-3xl p-6 sm:p-7 border border-neutral-200/80 shadow-[0_4px_24px_rgba(0,0,0,0.02)] flex flex-col justify-between transition-all duration-300 hover:shadow-md hover:border-neutral-300"
-          >
-            <div>
-              <h3 class="font-poppins font-medium text-[20px] sm:text-[24px] text-neutral-950 leading-snug tracking-tight mb-4 min-h-[58px]">
-                {{ card.title }}
-              </h3>
-              <div class="w-full h-[180px] sm:h-[220px] rounded-2xl overflow-hidden mb-5 bg-neutral-100">
-                <img
-                  loading="lazy"
-                  :src="card.img"
-                  :alt="card.alt"
-                  class="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-            </div>
-            <p class="font-poppins font-normal text-sm sm:text-base text-neutral-600 leading-relaxed">
-              {{ card.desc }}
-            </p>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -629,15 +693,15 @@
         <!-- Overlaid Desktop Content (Right-aligned over the background space) -->
         <div class="relative z-10 ml-auto w-full lg:w-[52%] xl:w-[48%] py-16 flex flex-col items-start text-left">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl lg:text-[2.75rem] leading-[1.25] text-neutral-950 mb-6 tracking-tight">
-            Post<span class="text-primary font-medium">X</span> Is The Omnichannel Workhorse For Teams That Live In The Conversation.
+            Post<span class="text-primary font-medium">X</span> inbox and your content, in your pocket
           </h2>
 
           <p class="font-poppins font-regular text-neutral-700 text-base sm:text-lg leading-relaxed mb-8 max-w-xl">
-            Bring WhatsApp, social media, live chat and Google reviews into one shared inbox - and let AI help you reply faster, capture leads and keep customers coming back.
+            The PostX mobile app gives your team the same control away from the desk. Reply to a customer from the floor, approve a post between meetings, or take a photo and send it for approval in under a minute.
           </p>
 
           <ul class="space-y-3.5 mb-8">
-            <li v-for="(item, i) in ['Dedicated AI agents', 'Content posting & scheduling', 'Google Review Booster', 'Analytics & insights', 'Unlimited users on every plan']" :key="i" class="flex items-center gap-3 font-poppins text-neutral-800 font-medium text-sm sm:text-base">
+            <li v-for="(item, i) in ['Reply to, transfer and close chats from anywhere', 'Action your leads and customer chats after hours ', 'Set your online status, so out-of-office replies take over when you’re away', 'Take a photo, add your frame and send it for approval', 'Review and approve content with one tap']" :key="i" class="flex items-center gap-3 font-poppins text-neutral-800 font-medium text-sm sm:text-base">
               <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
               <span>{{ item }}</span>
             </li>
@@ -648,14 +712,14 @@
               @click="openModal('PostX - Demo')"
               class="btn-primary py-4 px-10 text-base"
             >
-              Book Your Demo
+              Book a Demo
             </button>
           </div>
 
           <!-- Download App Links -->
           <div class="flex flex-col items-start gap-3">
             <span class="font-poppins font-medium text-neutral-800 text-sm sm:text-base">
-              Download the app today.
+              PostX is available on Google Play and App Store
             </span>
             <div class="flex items-center gap-4 flex-wrap">
               <a
@@ -707,15 +771,15 @@
         <!-- Content -->
         <div class="w-full max-w-xl flex flex-col items-start">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl leading-[1.25] text-neutral-950 mb-6 tracking-tight">
-            Post<span class="text-primary font-medium">X</span> Is The Omnichannel Workhorse For Teams That Live In The Conversation.
+            Post<span class="text-primary font-medium">X</span> inbox and your content, in your pocket
           </h2>
 
           <p class="font-poppins font-regular text-neutral-700 text-sm sm:text-base leading-relaxed mb-6">
-            Bring WhatsApp, social media, live chat and Google reviews into one shared inbox - and let AI help you reply faster, capture leads and keep customers coming back.
+            The PostX mobile app gives your team the same control away from the desk. Reply to a customer from the floor, approve a post between meetings, or take a photo and send it for approval in under a minute.
           </p>
 
           <ul class="space-y-3 mb-6">
-            <li v-for="(item, i) in ['Dedicated AI agents', 'Content posting & scheduling', 'Google Review Booster', 'Analytics & insights', 'Unlimited users on every plan']" :key="i" class="flex items-center gap-3 font-poppins text-neutral-800 font-medium text-sm">
+            <li v-for="(item, i) in ['Reply to, transfer and close chats from anywhere', 'Action your leads and customer chats after hours ', 'Set your online status, so out-of-office replies take over when you’re away', 'Take a photo, add your frame and send it for approval', 'Review and approve content with one tap']" :key="i" class="flex items-center gap-3 font-poppins text-neutral-800 font-medium text-sm">
               <span class="w-2 h-2 rounded-full bg-primary flex-shrink-0" />
               <span>{{ item }}</span>
             </li>
@@ -726,7 +790,7 @@
               @click="openModal('PostX - Demo')"
               class="btn-primary py-3.5 px-8 w-full sm:w-auto text-base"
             >
-              Book Your Demo
+              Book a Demo
             </button>
           </div>
 
@@ -775,15 +839,15 @@
         <div class="hidden lg:grid grid-cols-2 gap-12 items-center">
           <div class="flex flex-col items-start text-left">
             <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-[#2ca8cb] text-[2.5rem] leading-[1.15] mb-4 tracking-tight">
-              Automate Every<br />Step Of The<br />Customer Journey
+              Talk to customers<br />where they already are
             </h2>
             <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-neutral-900 text-[1.8rem] leading-tight mb-8 tracking-tight">
               From First Chat<br />To Final Deal
             </h3>
             <p class="font-poppins text-neutral-800 text-md font-regular leading-[1.6] mb-8 max-w-xl tracking-wide">
-              Manage your customer lifecycle with outbound campaigns, automatic lead re-engagement, service, and appointment reminders.Capture24/7 leads, schedule test drives, and exchange secure documents - all while keeping your sales, service, and admin teams perfectly connected.
+              Most customers would rather send a WhatsApp than wait on hold. PostX makes WhatsApp your team’s main way to talk to customers, with fewer calls, fewer back-and-forth emails, and conversations that are easy to manage even at high volume.
             </p>
-            <button @click="openModal('PostX - Feature')" class="btn-primary text-[15px] px-9 py-3.5">Read More</button>
+            <button @click="openModal('PostX - Feature')" class="btn-primary text-[15px] px-9 py-3.5">Book a Demo</button>
           </div>
           <div class="flex justify-end">
             <img loading="lazy" :src="automateDesktop" alt="Automate Customer Journey" class="w-full max-w-[550px] h-auto object-contain" referrerpolicy="no-referrer" />
@@ -793,7 +857,7 @@
         <!-- Mobile Layout -->
         <div class="flex flex-col lg:hidden">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-[#2ca8cb] text-[2rem] sm:text-4xl leading-[1.15] mb-2 tracking-tight">
-            Automate Every<br />Step Of The<br />Customer Journey
+           Talk to customers <br />where they already are
           </h2>
           <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-neutral-900 text-[1.5rem] sm:text-3xl leading-tight mb-8 tracking-tight">
             From First Chat<br />To Final Deal
@@ -806,8 +870,8 @@
           <p class="font-poppins text-neutral-800 font-medium text-base sm:text-lg leading-[1.6] mb-8 tracking-wide">
             Capture 24/7 leads, schedule test drives, send automated reminders, and exchange secure documents, all while keeping your sales, service, and admin teams perfectly connected.
           </p>
-          <div>
-            <button @click="openModal('PostX - Feature')" class="btn-primary text-base px-8 py-3.5">Read More</button>
+          <div class="w-full">
+            <button @click="openModal('PostX - Feature')" class="btn-primary text-base px-8 py-3.5 w-full sm:w-auto">Book a Demo</button>
           </div>
         </div>
 
@@ -821,7 +885,7 @@
               </div>
 
               <div class="w-1/2 flex flex-col items-start">
-                <div class="bg-white rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-12 mb-6 w-full">
+                <div class="bg-white rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-12 w-full">
                   <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[1.75rem] font-medium text-neutral-900 leading-[1.3] mb-4">
                     {{ feature.title }}
                   </h3>
@@ -829,9 +893,6 @@
                     {{ feature.desc }}
                   </p>
                 </div>
-                <button @click="openModal" class="ml-6 bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-9 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 cursor-pointer">
-                  enquire today
-                </button>
               </div>
 
             </div>
@@ -840,57 +901,85 @@
 
         <!-- Desktop View More / View Less Button -->
         <div class="hidden lg:flex mt-20 justify-center">
-          <button v-if="!isFeaturesExpanded" @click="isFeaturesExpanded = true" class="bg-black hover:bg-primary hover:scale-105 text-white font-poppins font-medium px-10 py-4 rounded-full transition-all duration-300 shadow-lg active:scale-95 cursor-pointer text-base">view more</button>
-          <button v-else @click="collapseFeatures" class="bg-transparent border-2 border-primary text-primary hover:bg-black hover:text-white hover:border-transparent hover:scale-105 font-poppins font-medium px-10 py-3.5 rounded-full transition-all duration-300 active:scale-95 cursor-pointer text-base">view less</button>
+          <button v-if="!isFeaturesExpanded" @click="isFeaturesExpanded = true" class="btn-primary px-10 py-4 text-base">View More</button>
+          <button v-else @click="collapseFeatures" class="bg-transparent border-2 border-primary text-primary hover:bg-black hover:text-white hover:border-transparent hover:scale-105 font-poppins font-medium px-10 py-3.5 rounded-full transition-all duration-300 active:scale-95 cursor-pointer text-base">View Less</button>
         </div>
 
         <!-- Mobile Features Carousel -->
-        <div class="flex flex-col lg:hidden mt-20  sm:-mx-8">
+        <div class="flex flex-col lg:hidden mt-12 sm:mt-16 -mx-6 sm:-mx-8">
           <div
             ref="automateScrollContainerRef"
             @scroll="handleAutomateScroll"
-            class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-6 px-6 sm:px-8"
+            class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-4 px-6 sm:px-8 [overscroll-behavior-x:contain]"
           >
             <div v-for="(feature, idx) in automateFeaturesData" :key="idx" class="w-full flex-shrink-0 snap-center flex flex-col items-center">
-              <div class="w-full flex justify-center mb-8 px-4">
-                <img loading="lazy" :src="feature.img" :alt="feature.title" class="w-full max-w-85 object-contain drop-shadow-xl" />
+              <div class="w-full h-[210px] sm:h-[280px] flex items-center justify-center mb-4 px-4 flex-shrink-0">
+                <img loading="lazy" :src="feature.img" :alt="feature.title" class="max-h-full w-auto max-w-85 object-contain drop-shadow-xl" />
               </div>
-              <div class="w-full flex flex-col items-start px-2">
-                <div class="bg-white rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-8 mb-6 w-full text-left">
-                  <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-2xl font-medium text-neutral-900 leading-[1.3] mb-4">
+              <div class="w-full flex flex-col items-start px-1 sm:px-2 flex-1">
+                <div class="bg-white rounded-3xl sm:rounded-4xl shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 sm:p-8 w-full text-left min-h-[330px] sm:min-h-[300px] flex flex-col justify-start">
+                  <h3 class="font-poppins text-xl sm:text-2xl font-medium text-neutral-900 leading-[1.3] mb-3 min-h-[54px] sm:min-h-[62px]">
                     {{ feature.title }}
                   </h3>
-                  <p class="font-poppins text-neutral-600 font-medium text-base leading-[1.6]">
+                  <p class="font-poppins text-neutral-600 font-medium text-sm sm:text-base leading-[1.6]">
                     {{ feature.desc }}
                   </p>
                 </div>
-                <button @click="openModal" class="ml-4 bg-black hover:bg-primary hover:scale-105 active:bg-primary text-white font-poppins font-medium px-8 py-3.5 rounded-full transition-all duration-300 shadow-md active:scale-95 cursor-pointer">
-                  enquire today
-                </button>
               </div>
             </div>
           </div>
 
-          <!-- Mobile Carousel Controls -->
-          <div class="flex flex-col items-center gap-6">
-            <div class="flex items-center justify-center gap-2">
-              <div v-for="(_, i) in automateFeaturesData" :key="i"
-                :class="`h-2 rounded-full transition-all duration-300 ${i === activeAutomateFeature ? 'w-4 bg-[#2ca8cb]' : 'w-2 bg-neutral-300'}`"
-              ></div>
+          <!-- Mobile Carousel Controls & Single Enquire Button -->
+          <div class="flex flex-col gap-6 mt-6 px-6 sm:px-8">
+            <div class="w-full">
+              <button @click="openModal('PostX - Enquire')" class="btn-primary text-base px-8 py-3.5 w-full sm:w-auto">
+                Enquire Today
+              </button>
             </div>
-            <div class="flex items-center gap-4">
-              <button
-                @click="scrollToAutomateFeature(Math.max(0, activeAutomateFeature - 1))"
-                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 cursor-pointer"
-              >
-                <img loading="lazy" :src="cartLeftChevron" alt="Previous" class="w-5 h-5 object-contain" />
-              </button>
-              <button
-                @click="scrollToAutomateFeature(Math.min(automateFeaturesData.length - 1, activeAutomateFeature + 1))"
-                class="w-12 h-12 rounded-full bg-primary flex items-center justify-center hover:bg-[#008eb0] transition-colors shadow-md active:scale-95 cursor-pointer"
-              >
-                <img loading="lazy" :src="cartRightChevron" alt="Next" class="w-5 h-5 object-contain" />
-              </button>
+
+            <!-- Pagination Pill & Navigation Chevrons -->
+            <div class="flex justify-between items-center px-1">
+              <!-- Pagination Pill -->
+              <div class="border border-black text-black rounded-full px-5 h-[34px] text-sm font-poppins font-medium flex items-center justify-center gap-1">
+                <div class="relative w-3.5 h-5 overflow-hidden flex items-center justify-center">
+                  <transition name="pop">
+                    <span :key="activeAutomateFeature" class="absolute font-semibold text-black">
+                      {{ activeAutomateFeature + 1 }}
+                    </span>
+                  </transition>
+                </div>
+                <span> - {{ automateFeaturesData.length }}</span>
+              </div>
+
+              <!-- Navigation Chevrons -->
+              <div class="flex items-center gap-3">
+                <button
+                  @click="scrollToAutomateFeature(Math.max(0, activeAutomateFeature - 1))"
+                  :disabled="activeAutomateFeature === 0"
+                  :class="[
+                    'w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200',
+                    activeAutomateFeature === 0
+                      ? 'border border-neutral-300 text-neutral-400 opacity-60 cursor-not-allowed'
+                      : 'border border-neutral-400 text-neutral-800 hover:border-neutral-900 active:scale-95 cursor-pointer'
+                  ]"
+                  aria-label="Previous feature"
+                >
+                  <ChevronLeft class="w-5 h-5" />
+                </button>
+                <button
+                  @click="scrollToAutomateFeature(Math.min(automateFeaturesData.length - 1, activeAutomateFeature + 1))"
+                  :disabled="activeAutomateFeature === automateFeaturesData.length - 1"
+                  :class="[
+                    'w-11 h-11 rounded-full flex items-center justify-center transition-all duration-200 shadow-sm',
+                    activeAutomateFeature === automateFeaturesData.length - 1
+                      ? 'bg-neutral-300 text-neutral-500 opacity-60 cursor-not-allowed'
+                      : 'bg-black text-white hover:bg-neutral-800 active:scale-95 cursor-pointer'
+                  ]"
+                  aria-label="Next feature"
+                >
+                  <ChevronRight class="w-5 h-5" />
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -904,13 +993,11 @@
 
         <!-- Header -->
         <div class="mb-16 md:mb-20 text-left">
-          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[2.5rem] md:text-[3.5rem] font-medium leading-[1.2] tracking-tight text-neutral-900 mb-6">
-            Dynamic Service, <span class="text-[#2aa6c4]">Tailored</span> And <br class="hidden md:block" />
-            Ready To Action.
+          <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-[2.5rem] md:text-[3.5rem] md:w-[70%] lg:w-[50%] font-medium leading-[1.2] tracking-tight text-neutral-900 mb-6">
+            Set up around how your business works
           </h2>
           <p class="font-poppins text-lg md:text-xl text-neutral-600 font-medium max-w-3xl">
-            Built for Every Department in your Dealership <br class="hidden md:block" />
-            Personalised onboarding â€“ curated to your needs & size.
+            Personalised onboarding, sized to your team, your locations and your goals.
           </p>
         </div>
 
@@ -920,16 +1007,16 @@
           <div class="col-span-3 flex flex-col gap-16 relative z-10">
             <div>
               <img loading="lazy" :src="builtNotLicensedIcon" alt="Built, not licensed" class="h-8 md:h-10 w-auto mb-5 transition-transform duration-300 hover:scale-105" />
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-medium text-neutral-800 mb-3">Built, Not Licensed</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-medium text-neutral-800 mb-3">Built for real workflows.</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
-                Build from the ground up for dealer workflows and your local systems & compliance.
+                Designed with South African businesses, from single sites to national groups, and refined in demanding motor retail environments.
               </p>
             </div>
             <div>
               <img loading="lazy" :src="inhouseDevIcon" alt="Developed 100% in-house" class="h-8 md:h-10 w-auto mb-5 transition-transform duration-300 hover:scale-105" />
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-medium text-neutral-800 mb-3">Developed 100% In-House</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-medium text-neutral-800 mb-3">Built and owned by R-E-D.</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
-                No Third-party dependencies. Every feature is built, owned, and evolved by our team.
+                Every feature is designed and improved by our own developers, so your feedback shapes the roadmap.
               </p>
             </div>
           </div>
@@ -943,16 +1030,16 @@
           <div class="col-span-3 flex flex-col gap-16 relative z-10">
             <div>
               <img loading="lazy" :src="unlimitedUsersIcon" alt="Unlimited users" class="h-8 md:h-10 w-auto mb-5 transition-transform duration-300 hover:scale-105" />
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-medium text-neutral-800 mb-3">Unlimited Users</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-medium text-neutral-800 mb-3">Unlimited users.</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
-                No per-seat pricing games. Your whole team gets access - sales, service, F&I, parts, everyone.
+                No per-seat pricing. Everyone who talks to customers can use PostX.
               </p>
             </div>
             <div>
               <img loading="lazy" :src="inhouseSupportIcon" alt="In-house support team" class="h-8 md:h-10 w-auto mb-5 transition-transform duration-300 hover:scale-105" />
-              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-medium text-neutral-800 mb-3">In-House Support Team</h3>
+              <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-xl md:text-2xl font-medium text-neutral-800 mb-3">Support from the people who built it.</h3>
               <p class="font-poppins text-neutral-600 text-sm md:text-base leading-[1.6]">
-                Direct access to the people who built it, No tickets disappearing into a vendor's queue
+                Talk to our in-house team directly, not a ticket queue.
               </p>
             </div>
           </div>
@@ -1009,26 +1096,24 @@
           <!-- Image Column -->
           <div class="w-full lg:w-[45%] flex justify-center lg:justify-start">
             <img loading="lazy" :src="clientsTrustImg"
-              alt="320+ Clients Trust PostX"
+              alt="Hundreds of South African motor dealers and groups trust PostX"
               class="w-full max-w-[500px] lg:max-w-none rounded-4xl object-cover drop-shadow-lg"
             />
           </div>
 
           <!-- Text Column -->
           <div class="w-full lg:w-[55%] flex flex-col items-start text-left">
-            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-5xl md:text-5xl font-medium text-neutral-900 leading-[1.3] tracking-tight mb-8">
-              <span class="text-primary font-medium">320+ Clients Trust</span> PostX To<br class="hidden xl:block" /> Be Part Of Their Daily<br class="hidden xl:block" /> Process.
+            <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins text-3xl md:text-5xl font-medium text-neutral-900 leading-[1.3] tracking-tight mb-8">
+              <span class="text-primary font-medium">Hundreds of South African</span> motor dealers and groups run their customer conversations on Post<span class="text-primary font-medium">X</span> every day.
             </h2>
-            <p class="font-poppins text-lg md:text-xl text-neutral-800 font-medium leading-[1.7] max-w-2xl mb-12">
-              From a small independent business to a multi-franchise motor
-              group, PostX powers the customer communication engine behind
-              South Africa's dealerships and beyond.
+            <p class="font-poppins text-md md:text-xl text-neutral-800 font-medium leading-[1.7] max-w-2xl mb-12">
+              From single-site independents to multi-franchise groups, and a growing list of businesses beyond motor retail.
             </p>
             <button
               @click="openModal"
-              class="btn-primary text-base px-10 py-4"
+              class="btn-primary text-base px-10 py-4 w-full sm:w-auto"
             >
-              Contact Us Today
+              Enquire Today
             </button>
           </div>
 
@@ -1044,13 +1129,13 @@
       v-motion
       :initial="{ opacity: 0, y: 30 }"
       :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
-      class="w-full bg-white py-20 sm:py-28 px-6 sm:px-8 lg:px-12 text-center overflow-hidden"
+      class="w-full bg-white py-20 sm:py-28 px-4 sm:px-8 lg:px-12 text-center overflow-hidden"
     >
       <div class="max-w-300 mx-auto flex flex-col items-center">
 
         <img loading="lazy" :src="postXLogo" alt="PostX" class="h-10 md:h-12 lg:h-13 mb-4 object-contain" />
 
-        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl md:text-5xl lg:text-5xl leading-[1.2] tracking-tight text-neutral-900 mb-8">
+        <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl md:text-5xl lg:text-5xl leading-[1.2] tracking-tight text-neutral-900 mb-8">
           <span class="text-primary font-medium"> Capabilities Shipping Continuously -</span> <span class="italic font-light">Your PostX Gets Smarter Over Time.</span>
         </h2>
 
@@ -1097,7 +1182,7 @@
             </p>
             <button
               @click="openModal"
-              class="btn-primary text-xs sm:text-[15px] px-8 py-4"
+              class="btn-primary text-xs sm:text-[15px] px-8 py-4 w-full sm:w-auto"
             >
               Schedule A Meeting Today
             </button>
@@ -1161,7 +1246,7 @@
 
         <button
           @click="openModal"
-          class="btn-primary tracking-wide text-xs sm:text-base px-10 py-4"
+          class="btn-primary tracking-wide text-xs sm:text-base px-10 py-4 w-full sm:w-auto"
         >
           Schedule A Meeting Today
         </button>
@@ -1187,8 +1272,6 @@ import controlIcon from '~/assets/images/control.svg';
 import leadQualIcon from '~/assets/images/lead-qualitification-icon.svg';
 import intelConversationsIcon from '~/assets/images/intelligent-coversations.svg';
 import teamFocusIcon from '~/assets/images/team-focus-conversation.svg';
-import cartLeftChevron from '~/assets/images/cart-left-chevron.svg';
-import cartRightChevron from '~/assets/images/cart-right-chevron.svg';
 import desktopMidCta from '~/assets/images/desktop-mid-page-cta.webp';
 import mobileMidCta from '~/assets/images/mobile-mid-page-cta.webp';
 import automateDesktop from '~/assets/images/automate-customer-journey-desktop-image.webp';
@@ -1236,16 +1319,50 @@ const leave = (el: Element) => {
 };
 
 const faqData = [
-  { question: 'What is PostX?', answer: 'PostX is a communication, messaging, and automation platform built for the modern business. It helps your staff and systems engage customers, automate follow-ups, and convert more leads across your marketing and sales channels - tried and tested in the motor industry and tailored to your industry.' },
-  { question: 'Does PostX use AI?', answer: 'Yes. PostX includes AI assistants that automate customer conversations, qualify leads, and speed up response times. The AI is trained and configured for your unique business, so replies stay relevant to how your clients and customers shop and enquire. More AI and automation features coming soon.' },
-  { question: 'Which channels does PostX support?', answer: 'PostX supports WhatsApp, Meta, Facebook Messenger, Instagram, TikTok, Google, LinkedIn, and web chat, as well as custom integrations. The platform is continuously expanding and evolving, so new channels and capabilities are added over time.' },
-  { question: 'Do you provide onboarding and training?', answer: 'Yes. Every PostX client gets structured onboarding, hands-on team training, and setup support built into activation. We make sure your sales, operations, and marketing teams are confident using the platform from day one, with ongoing support and resources available whenever you need them.' },
-  { question: 'Can PostX integrate with our CRM or existing systems?', answer: 'Yes. PostX connects with the tools your business already runs, including CRM and lead-management systems. Integrations centralise your customer data and automate the flow between platforms - and we offer custom integration development and assistance where you need it.' },
-  { question: 'How quickly can PostX be set up and ready to use?', answer: 'Most businesses are up and running within 48 hours. Once your account is activated, our team handles configuration and integration, then trains your staff so you start seeing value fast - not weeks of waiting.' },
-  { question: 'How does PostX pricing work?', answer: 'PostX is priced on a flexible subscription model that scales with your business size and needs. Basic, Advanced, Enterprise and Custom are available. There are no hidden costs - you pay for the capabilities you use. Contact us for a tailored quote based on your team, volume, and the features that matter to you.' },
-  { question: 'How often will I receive performance reports?', answer: 'You get ongoing, real-time access to your performance data through the PostX dashboard - engagement, leads, chat stats and campaign results, whenever you need them. Scheduled report summaries can also be set up for your team on request.' },
-  { question: 'Do you work with businesses in my industry?', answer: 'PostX is purpose-built and battle-tested in motor retail, but widely used across many other industries. We work with businesses large and small around the world, adapting the platform to how your market actually buys and communicates.' },
-  { question: 'What makes RED different from other agencies?', answer: 'RED combines software solutions and development with deep motor retail expertise and full-service digital marketing. Instead of buying tools and services from separate vendors, you get an integrated partner that builds the product, runs the campaigns, and understands your market end-to-end. PostX is built and maintained in-house.' }
+  {
+    question: "What is PostX?",
+    answer: "PostX is R-E-D’s customer communication platform. It brings messaging, social media content, reviews and optional AI assistants into one place, so your team responds faster and manages your brand with more control. It’s proven in motor retail and used across many industries."
+  },
+  {
+    question: "Does PostX use AI?",
+    answer: "Yes, and it’s your choice how much. AI assistants can answer and qualify enquiries 24/7 and send leads to your lead system. The AI caption polisher tidies up social posts, and AI moderation responds to comments on your Facebook page. Each assistant is configured for your business, and your team stays in control."
+  },
+  {
+    question: "Which channels does PostX support?",
+    answer: "WhatsApp, Facebook DMs and comments, Instagram DMs and comments, LinkedIn, Google reviews, website live chat and internal team chat, all in one inbox. You can also publish content to your social channels from PostX, and we offer custom integrations."
+  },
+  {
+    question: "Is there a mobile app?",
+    answer: "Yes. Your team gets access to the PostX mobile app during onboarding, so they can manage chats, create posts and approve content from anywhere."
+  },
+  {
+    question: "Can I control who sees what?",
+    answer: "Yes. Role-based access means every user only sees the locations, departments and tools they need."
+  },
+  {
+    question: "Can PostX integrate with our CRM?",
+    answer: "Yes. Leads captured in chat, by your team or by AI, go straight to your CRM or lead management system. We build custom integrations where you need them."
+  },
+  {
+    question: "How quickly can we start?",
+    answer: "Most businesses are up and running within days. Our team handles setup and integration, and trains your staff."
+  },
+  {
+    question: "How does pricing work?",
+    answer: "PostX runs on a flexible subscription that grows with your business. We offer Basic, Standard and Custom setups, shaped around your team size, the channels you use and the features that matter to you. Every business is different, so we’ll recommend the right fit and give you a tailored quote, with no surprises."
+  },
+  {
+    question: "What reporting do I get?",
+    answer: "Live dashboards for messaging and content, including response times, conversation volumes, leads and reports per user."
+  },
+  {
+    question: "Do you work with businesses in my industry?",
+    answer: "Most likely. PostX was proven in motor retail and works for any business that talks to customers on WhatsApp and social media."
+  },
+  {
+    question: "What makes R-E-D different?",
+    answer: "We build the software and run the marketing. You get one partner that owns the product, understands your market and supports you directly."
+  }
 ];
 
 const automateFeaturesData = [
@@ -1301,8 +1418,16 @@ const scrollToPillar = (index: number) => {
     }
   }
 };
-const nextPillar = () => scrollToPillar((activePillar.value + 1) % 4);
-const prevPillar = () => scrollToPillar((activePillar.value - 1 + 4) % 4);
+const nextPillar = () => {
+  if (activePillar.value < 3) {
+    scrollToPillar(activePillar.value + 1);
+  }
+};
+const prevPillar = () => {
+  if (activePillar.value > 0) {
+    scrollToPillar(activePillar.value - 1);
+  }
+};
 const handleScroll = () => {
   if (scrollContainerRef.value) {
     const { scrollLeft, clientWidth } = scrollContainerRef.value;
@@ -1329,10 +1454,14 @@ const activeAutomateFeature = ref(0);
 const automateScrollContainerRef = ref<HTMLDivElement | null>(null);
 const scrollToAutomateFeature = (index: number) => {
   if (automateScrollContainerRef.value) {
-    const { clientWidth } = automateScrollContainerRef.value;
-    if (clientWidth > 0) {
-      automateScrollContainerRef.value.scrollTo({
-        left: index * clientWidth,
+    const container = automateScrollContainerRef.value;
+    const slides = container.children;
+    if (slides && slides[index]) {
+      const slide = slides[index] as HTMLElement;
+      // Scroll strictly horizontally within the carousel container - completely avoids window vertical jumping
+      const targetLeft = slide.offsetLeft - (container.clientWidth - slide.offsetWidth) / 2;
+      container.scrollTo({
+        left: Math.max(0, targetLeft),
         behavior: 'smooth'
       });
       activeAutomateFeature.value = index;
@@ -1341,11 +1470,14 @@ const scrollToAutomateFeature = (index: number) => {
 };
 const handleAutomateScroll = () => {
   if (automateScrollContainerRef.value) {
-    const scrollPosition = automateScrollContainerRef.value.scrollLeft;
-    const itemWidth = automateScrollContainerRef.value.clientWidth;
-    const newIndex = Math.round(scrollPosition / itemWidth);
-    if (newIndex !== activeAutomateFeature.value) {
-      activeAutomateFeature.value = newIndex;
+    const container = automateScrollContainerRef.value;
+    const scrollPosition = container.scrollLeft;
+    const itemWidth = container.firstElementChild ? (container.firstElementChild as HTMLElement).offsetWidth : container.clientWidth;
+    if (itemWidth > 0) {
+      const newIndex = Math.round(scrollPosition / itemWidth);
+      if (newIndex >= 0 && newIndex < automateFeaturesData.length && newIndex !== activeAutomateFeature.value) {
+        activeAutomateFeature.value = newIndex;
+      }
     }
   }
 };
@@ -1354,18 +1486,31 @@ const handleAutomateScroll = () => {
 const contentScrollContainer = ref<HTMLDivElement | null>(null);
 const isAtStart = ref(true);
 const isAtEnd = ref(false);
+const activeContentCard = ref(0);
 
 const updateScrollButtons = () => {
   if (contentScrollContainer.value) {
     const { scrollLeft, scrollWidth, clientWidth } = contentScrollContainer.value;
     isAtStart.value = scrollLeft <= 10;
     isAtEnd.value = scrollLeft + clientWidth >= scrollWidth - 10;
+
+    const firstCard = contentScrollContainer.value.querySelector<HTMLElement>(':scope > div');
+    const cardStep = firstCard ? firstCard.offsetWidth + 24 : 352;
+    if (cardStep > 0) {
+      if (isAtEnd.value && clientWidth < 640) {
+        activeContentCard.value = contentCardsData.length - 1;
+      } else {
+        const rawIndex = Math.round(scrollLeft / cardStep);
+        activeContentCard.value = Math.max(0, Math.min(contentCardsData.length - 1, rawIndex));
+      }
+    }
   }
 };
 
 const scrollCards = (direction: 'left' | 'right') => {
   if (contentScrollContainer.value) {
-    const cardWidth = 352; // 328px + 24px gap
+    const firstCard = contentScrollContainer.value.querySelector<HTMLElement>(':scope > div');
+    const cardWidth = firstCard ? firstCard.offsetWidth + 24 : 352;
     const scrollAmount = direction === 'left' ? -cardWidth : cardWidth;
     contentScrollContainer.value.scrollBy({
       left: scrollAmount,
