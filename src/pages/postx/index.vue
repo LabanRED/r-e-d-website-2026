@@ -12,7 +12,7 @@
     </div>
 
     <!-- Hero Section -->
-    <section class="relative mt-4 pb-12 sm:pb-16" id="hero">
+    <section class="relative mt-4 pb-6 sm:pb-8" id="hero">
       <div class="mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-0">
 
         <!-- DESKTOP LAYOUT (lg and up) -->
@@ -100,6 +100,62 @@
       </div>
     </section>
 
+    <!-- In-House Proprietary Banner Section -->
+    <section class="pb-12 sm:pb-16">
+      <div class="mx-auto lg:w-[95%] max-w-[1600px] px-4 sm:px-6 lg:px-0">
+        <div
+          v-motion
+          :initial="{ opacity: 0, y: 20 }"
+          :visible-once="{ opacity: 1, y: 0, transition: { duration: 600 } }"
+          class="rounded-[28px] sm:rounded-[32px] py-7 px-6 sm:px-10 border border-white bg-gradient-to-b from-white via-white/95 to-[#E8F8FB] shadow-[0_10px_30px_rgba(0,0,0,0.04),0_1px_3px_rgba(0,0,0,0.02)]"
+        >
+          <!-- Heading (24px) -->
+          <h2 class="font-poppins font-medium text-lg sm:text-xl lg:text-[24px] text-center text-neutral-900 mb-6 tracking-tight leading-snug">
+            <span class="text-[#2ca8cb]">A proprietary R-E-D product.</span> Built, developed, maintained and supported in-house.
+          </h2>
+
+          <!-- Feature Points -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10 lg:gap-16">
+            <div class="flex items-center gap-3">
+              <img
+                loading="lazy"
+                :src="builtByDevelopersIcon"
+                alt="Built by our own developers"
+                class="w-7 h-7 sm:w-8 sm:h-8 object-contain flex-shrink-0"
+              />
+              <span class="font-poppins text-xs sm:text-sm font-medium text-neutral-800">
+                Built by our own developers
+              </span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <img
+                loading="lazy"
+                :src="supportWhoBuiltItIcon"
+                alt="Support from the people who build it"
+                class="w-7 h-7 sm:w-8 sm:h-8 object-contain flex-shrink-0"
+              />
+              <span class="font-poppins text-xs sm:text-sm font-medium text-neutral-800">
+                Support from the people who build it
+              </span>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <img
+                loading="lazy"
+                :src="newFeaturesShippedIcon"
+                alt="New features shipped continuously"
+                class="w-7 h-7 sm:w-8 sm:h-8 object-contain flex-shrink-0"
+              />
+              <span class="font-poppins text-xs sm:text-sm font-medium text-neutral-800">
+                New features shipped continuously
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <LogoCarousel />
 
     <!-- Control Every Conversation Section -->
@@ -130,15 +186,15 @@
     <div class="w-full h-6 bg-[#F3F4F5]" />
 
     <!-- One Platform. Four Pillars. Section -->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-[#F5F6F8]">
       <div class="mx-auto max-w-[1600px] px-6 sm:px-8 lg:px-24">
         <!-- Header -->
         <div class="text-center mb-16">
           <h2 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-3xl sm:text-4xl lg:text-[2.75rem] tracking-tight text-neutral-950">
             <span class="text-[#2ca8cb] italic font-light">One Platform.</span> Four Pillars.
           </h2>
-          <p class="font-poppins font-regular text-neutral-500 text-sm sm:text-base mt-3">
-            Every department. Every Conversation. Every post. One Place.
+          <p class="font-poppins font-regular text-neutral-500 max-w-3xl mx-auto text-sm sm:text-base mt-3">
+            PostX is built around how a dealership actually runs, with sales, service, parts, F&I, receptionists, and marketing on a single system. It’s flexible enough for any business that talks to customers.
           </p>
         </div>
 
@@ -149,22 +205,25 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 } }"
-            class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="rounded-[30px] p-[30px] border border-white bg-gradient-to-b from-white via-white/95 to-[#E8F8FB] shadow-[0_10px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.02)] min-h-[460px] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(88,228,255,0.22),0_4px_12px_rgba(0,0,0,0.04)]"
           >
             <div>
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center">
+              <div class="flex items-center gap-3.5 mb-3">
+                <div class="w-12 h-12 rounded-full bg-[#D6EEF0] flex items-center justify-center flex-shrink-0">
                   <img loading="lazy" :src="createIcon"
                     alt="Create Icon"
                     class="w-6 h-6 object-contain"
                     referrerpolicy="no-referrer"
                   />
                 </div>
-                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900">Create</h3>
+                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl text-neutral-900 tracking-tight">Create</h3>
               </div>
-              <ul class="space-y-4">
-                <li v-for="(bullet, i) in ['Controlled Access', 'Omni-channel Posting & Scheduling', 'Brand Frames & Delivery Photos', 'Content Approval', 'AI Post Polisher & Moderator']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
-                  <span class="w-2 h-2 rounded-full bg-[#2ca8cb] mt-2 flex-shrink-0" />
+              <p class="text-neutral-500 text-sm font-poppins leading-relaxed mb-5 min-h-[42px]">
+                Plan, polish, approve and publish from one place.
+              </p>
+              <ul class="space-y-3.5">
+                <li v-for="(bullet, i) in ['Omni-channel social posting & scheduling', 'Brand frames & delivery photos', 'Content approval flow', 'AI caption polisher', 'AI comment moderation', 'Controlled Access']" :key="i" class="flex items-start gap-3 text-neutral-800 text-sm sm:text-[15px] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#58E4FF] mt-2 flex-shrink-0" />
                   <span>{{ bullet }}</span>
                 </li>
               </ul>
@@ -176,22 +235,25 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 200 } }"
-            class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="rounded-[30px] p-[30px] border border-white bg-gradient-to-b from-white via-white/95 to-[#E8F8FB] shadow-[0_10px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.02)] min-h-[460px] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(88,228,255,0.22),0_4px_12px_rgba(0,0,0,0.04)]"
           >
             <div>
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center">
+              <div class="flex items-center gap-3.5 mb-3">
+                <div class="w-12 h-12 rounded-full bg-[#D6EEF0] flex items-center justify-center flex-shrink-0">
                   <img loading="lazy" :src="connectIcon"
                     alt="Connect Icon"
                     class="w-6 h-6 object-contain"
                     referrerpolicy="no-referrer"
                   />
                 </div>
-                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900">Connect</h3>
+                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl text-neutral-900 tracking-tight">Connect</h3>
               </div>
-              <ul class="space-y-4">
-                <li v-for="(bullet, i) in ['Website, Meta & Google ads integration', 'Omni-channel Posting & Scheduling', 'Offline Activations & Events', 'Reviews, Ratings & CSI', 'Internal Cross Department Communication.']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
-                  <span class="w-2 h-2 rounded-full bg-[#2ca8cb] mt-2 flex-shrink-0" />
+              <p class="text-neutral-500 text-sm font-poppins leading-relaxed mb-5 min-h-[42px]">
+                From ad click to lead system, in one connected pipeline.
+              </p>
+              <ul class="space-y-3.5">
+                <li v-for="(bullet, i) in ['Click-to-WhatsApp ads', 'Official business WhatsApp', 'Lead system integration', 'Google Review Booster', 'WhatsApp catalogue', 'Offline Activations & Events']" :key="i" class="flex items-start gap-3 text-neutral-800 text-sm sm:text-[15px] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#58E4FF] mt-2 flex-shrink-0" />
                   <span>{{ bullet }}</span>
                 </li>
               </ul>
@@ -203,22 +265,25 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 300 } }"
-            class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="rounded-[30px] p-[30px] border border-white bg-gradient-to-b from-white via-white/95 to-[#E8F8FB] shadow-[0_10px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.02)] min-h-[460px] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(88,228,255,0.22),0_4px_12px_rgba(0,0,0,0.04)]"
           >
             <div>
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center">
+              <div class="flex items-center gap-3.5 mb-3">
+                <div class="w-12 h-12 rounded-full bg-[#D6EEF0] flex items-center justify-center flex-shrink-0">
                   <img loading="lazy" :src="commsIcon"
                     alt="Comms Icon"
                     class="w-6 h-6 object-contain"
                     referrerpolicy="no-referrer"
                   />
                 </div>
-                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900">Comms</h3>
+                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl text-neutral-900 tracking-tight">Comms</h3>
               </div>
-              <ul class="space-y-4">
-                <li v-for="(bullet, i) in ['Customer communication via WhatsApp or Social Platforms', 'Leads via WhatsApp & 24/7 AI Lead Assistance', 'Omni-channel inbox', 'Smart Routing & SLA Monitoring', 'Service Bookings & Reminders']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
-                  <span class="w-2 h-2 rounded-full bg-[#2ca8cb] mt-2 flex-shrink-0" />
+              <p class="text-neutral-500 text-sm font-poppins leading-relaxed mb-5 min-h-[42px]">
+                Talk to customers on the platform they prefer, with fewer calls.
+              </p>
+              <ul class="space-y-3.5">
+                <li v-for="(bullet, i) in ['Omni-channel team inbox', '24/7 AI lead assistant', 'Bulk WhatsApp messaging & Campaigns', 'Media-rich messages & templates', 'Internal Communication tool']" :key="i" class="flex items-start gap-3 text-neutral-800 text-sm sm:text-[15px] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#58E4FF] mt-2 flex-shrink-0" />
                   <span>{{ bullet }}</span>
                 </li>
               </ul>
@@ -230,22 +295,25 @@
             v-motion
             :initial="{ opacity: 0, y: 30 }"
             :visible-once="{ opacity: 1, y: 0, transition: { duration: 500, delay: 400 } }"
-            class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] flex flex-col justify-between transition-all duration-300 hover:scale-[1.01]"
+            class="rounded-[30px] p-[30px] border border-white bg-gradient-to-b from-white via-white/95 to-[#E8F8FB] shadow-[0_10px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.02)] min-h-[460px] flex flex-col justify-between transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_16px_36px_rgba(88,228,255,0.22),0_4px_12px_rgba(0,0,0,0.04)]"
           >
             <div>
-              <div class="flex items-center gap-3 mb-6">
-                <div class="w-10 h-10 rounded-xl flex items-center justify-center">
+              <div class="flex items-center gap-3.5 mb-3">
+                <div class="w-12 h-12 rounded-full bg-[#D6EEF0] flex items-center justify-center flex-shrink-0">
                   <img loading="lazy" :src="controlIcon"
                     alt="Control Icon"
                     class="w-6 h-6 object-contain"
                     referrerpolicy="no-referrer"
                   />
                 </div>
-                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900">Control</h3>
+                <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl text-neutral-900 tracking-tight">Control</h3>
               </div>
-              <ul class="space-y-4">
-                <li v-for="(bullet, i) in ['Lead Routing & Escalations', 'Reporting Dashboard', 'Team Activity', 'Leads integrated to CRM/CMS', 'Customer Data & Access Control']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
-                  <span class="w-2 h-2 rounded-full bg-[#2ca8cb] mt-2 flex-shrink-0" />
+              <p class="text-neutral-500 text-sm font-poppins leading-relaxed mb-5 min-h-[42px]">
+                The right access for every user. The full picture for managers.
+              </p>
+              <ul class="space-y-3.5">
+                <li v-for="(bullet, i) in ['Role-based access', 'Reporting Dashboard', 'Manager view over conversations', 'Smart routing & SLA alerts', 'Multi-dealership/Brand structure', 'Leads integrated to CRM/LMS']" :key="i" class="flex items-start gap-3 text-neutral-800 text-sm sm:text-[15px] leading-relaxed">
+                  <span class="w-1.5 h-1.5 rounded-full bg-[#58E4FF] mt-2 flex-shrink-0" />
                   <span>{{ bullet }}</span>
                 </li>
               </ul>
@@ -262,21 +330,24 @@
           >
             <!-- Card 1: Create -->
             <div class="w-full flex-shrink-0 snap-center px-1">
-              <div class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] min-h-[380px] flex flex-col justify-between">
+              <div class="rounded-[30px] p-[30px] border border-white bg-gradient-to-b from-white via-white/95 to-[#E8F8FB] shadow-[0_10px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.02)] min-h-[460px] flex flex-col justify-between">
                 <div>
-                  <div class="flex items-center gap-3 mb-6">
-                    <div class="w-10 h-10 rounded-xl flex items-center justify-center">
+                  <div class="flex items-center gap-3.5 mb-3">
+                    <div class="w-12 h-12 rounded-full bg-[#D6EEF0] flex items-center justify-center flex-shrink-0">
                       <img loading="lazy" :src="createIcon"
                         alt="Create Icon"
                         class="w-6 h-6 object-contain"
                         referrerpolicy="no-referrer"
                       />
                     </div>
-                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900">Create</h3>
+                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl text-neutral-900 tracking-tight">Create</h3>
                   </div>
-                  <ul class="space-y-4">
-                    <li v-for="(bullet, i) in ['Controlled Access', 'Omni-channel Posting & Scheduling', 'Brand Frames & Delivery Photos', 'Content Approval', 'AI Post Polisher & Moderator']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
-                      <span class="w-2 h-2 rounded-full bg-[#2ca8cb] mt-2 flex-shrink-0" />
+                  <p class="text-neutral-500 text-sm font-poppins leading-relaxed mb-5 min-h-[42px]">
+                    Plan, polish, approve and publish from one place.
+                  </p>
+                  <ul class="space-y-3.5">
+                    <li v-for="(bullet, i) in ['Omni-channel social posting & scheduling', 'Brand frames & delivery photos', 'Content approval flow', 'AI caption polisher', 'AI comment moderation', 'Controlled Access']" :key="i" class="flex items-start gap-3 text-neutral-800 text-sm sm:text-[15px] leading-relaxed">
+                      <span class="w-1.5 h-1.5 rounded-full bg-[#58E4FF] mt-2 flex-shrink-0" />
                       <span>{{ bullet }}</span>
                     </li>
                   </ul>
@@ -286,21 +357,24 @@
 
             <!-- Card 2: Connect -->
             <div class="w-full flex-shrink-0 snap-center px-1">
-              <div class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] min-h-[380px] flex flex-col justify-between">
+              <div class="rounded-[30px] p-[30px] border border-white bg-gradient-to-b from-white via-white/95 to-[#E8F8FB] shadow-[0_10px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.02)] min-h-[460px] flex flex-col justify-between">
                 <div>
-                  <div class="flex items-center gap-3 mb-6">
-                    <div class="w-10 h-10 rounded-xl flex items-center justify-center">
+                  <div class="flex items-center gap-3.5 mb-3">
+                    <div class="w-12 h-12 rounded-full bg-[#D6EEF0] flex items-center justify-center flex-shrink-0">
                       <img loading="lazy" :src="connectIcon"
                         alt="Connect Icon"
                         class="w-6 h-6 object-contain"
                         referrerpolicy="no-referrer"
                       />
                     </div>
-                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900">Connect</h3>
+                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl text-neutral-900 tracking-tight">Connect</h3>
                   </div>
-                  <ul class="space-y-4">
-                    <li v-for="(bullet, i) in ['Website, Meta & Google ads integration', 'Omni-channel Posting & Scheduling', 'Offline Activations & Events', 'Reviews, Ratings & CSI', 'Internal Cross Department Communication.']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
-                      <span class="w-2 h-2 rounded-full bg-[#2ca8cb] mt-2 flex-shrink-0" />
+                  <p class="text-neutral-500 text-sm font-poppins leading-relaxed mb-5 min-h-[42px]">
+                    From ad click to lead system, in one connected pipeline.
+                  </p>
+                  <ul class="space-y-3.5">
+                    <li v-for="(bullet, i) in ['Click-to-WhatsApp ads', 'Official business WhatsApp', 'Lead system integration', 'Google Review Booster', 'WhatsApp catalogue', 'Offline Activations & Events']" :key="i" class="flex items-start gap-3 text-neutral-800 text-sm sm:text-[15px] leading-relaxed">
+                      <span class="w-1.5 h-1.5 rounded-full bg-[#58E4FF] mt-2 flex-shrink-0" />
                       <span>{{ bullet }}</span>
                     </li>
                   </ul>
@@ -310,21 +384,24 @@
 
             <!-- Card 3: Comms -->
             <div class="w-full flex-shrink-0 snap-center px-1">
-              <div class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#2ca8cb] min-h-[380px] flex flex-col justify-between">
+              <div class="rounded-[30px] p-[30px] border border-white bg-gradient-to-b from-white via-white/95 to-[#E8F8FB] shadow-[0_10px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.02)] min-h-[460px] flex flex-col justify-between">
                 <div>
-                  <div class="flex items-center gap-3 mb-6">
-                    <div class="w-10 h-10 rounded-xl flex items-center justify-center">
+                  <div class="flex items-center gap-3.5 mb-3">
+                    <div class="w-12 h-12 rounded-full bg-[#D6EEF0] flex items-center justify-center flex-shrink-0">
                       <img loading="lazy" :src="commsIcon"
                         alt="Comms Icon"
                         class="w-6 h-6 object-contain"
                         referrerpolicy="no-referrer"
                       />
                     </div>
-                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900">Comms</h3>
+                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl text-neutral-900 tracking-tight">Comms</h3>
                   </div>
-                  <ul class="space-y-4">
-                    <li v-for="(bullet, i) in ['Customer communication via WhatsApp or Social Platforms', 'Leads via WhatsApp & 24/7 AI Lead Assistance', 'Omni-channel inbox', 'Smart Routing & SLA Monitoring', 'Service Bookings & Reminders']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
-                      <span class="w-2 h-2 rounded-full bg-[#2ca8cb] mt-2 flex-shrink-0" />
+                  <p class="text-neutral-500 text-sm font-poppins leading-relaxed mb-5 min-h-[42px]">
+                    Talk to customers on the platform they prefer, with fewer calls.
+                  </p>
+                  <ul class="space-y-3.5">
+                    <li v-for="(bullet, i) in ['Omni-channel team inbox', '24/7 AI lead assistant', 'Bulk WhatsApp messaging & Campaigns', 'Media-rich messages & templates', 'Internal Communication tool']" :key="i" class="flex items-start gap-3 text-neutral-800 text-sm sm:text-[15px] leading-relaxed">
+                      <span class="w-1.5 h-1.5 rounded-full bg-[#58E4FF] mt-2 flex-shrink-0" />
                       <span>{{ bullet }}</span>
                     </li>
                   </ul>
@@ -334,21 +411,24 @@
 
             <!-- Card 4: Control -->
             <div class="w-full flex-shrink-0 snap-center px-1">
-              <div class="bg-white rounded-3xl p-8 border border-neutral-100 shadow-[6px_6px_0px_0px_#145d70] min-h-[380px] flex flex-col justify-between">
+              <div class="rounded-[30px] p-[30px] border border-white bg-gradient-to-b from-white via-white/95 to-[#E8F8FB] shadow-[0_10px_30px_rgba(0,0,0,0.06),0_1px_3px_rgba(0,0,0,0.02)] min-h-[460px] flex flex-col justify-between">
                 <div>
-                  <div class="flex items-center gap-3 mb-6">
-                    <div class="w-10 h-10 rounded-xl flex items-center justify-center">
+                  <div class="flex items-center gap-3.5 mb-3">
+                    <div class="w-12 h-12 rounded-full bg-[#D6EEF0] flex items-center justify-center flex-shrink-0">
                       <img loading="lazy" :src="controlIcon"
                         alt="Control Icon"
                         class="w-6 h-6 object-contain"
                         referrerpolicy="no-referrer"
                       />
                     </div>
-                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-xl text-neutral-900">Control</h3>
+                    <h3 v-motion :initial="{ opacity: 0, y: 30, filter: 'blur(10px)' }" :visible-once="{ opacity: 1, y: 0, filter: 'blur(0px)', transition: { duration: 600, type: 'keyframes', ease: 'easeOut' } }" class="font-poppins font-medium text-2xl text-neutral-900 tracking-tight">Control</h3>
                   </div>
-                  <ul class="space-y-4">
-                    <li v-for="(bullet, i) in ['Lead Routing & Escalations', 'Reporting Dashboard', 'Team Activity', 'Leads integrated to CRM/CMS', 'Customer Data & Access Control']" :key="i" class="flex items-start gap-2.5 text-neutral-700 text-sm sm:text-base leading-relaxed">
-                      <span class="w-2 h-2 rounded-full bg-[#2ca8cb] mt-2 flex-shrink-0" />
+                  <p class="text-neutral-500 text-sm font-poppins leading-relaxed mb-5 min-h-[42px]">
+                    The right access for every user. The full picture for managers.
+                  </p>
+                  <ul class="space-y-3.5">
+                    <li v-for="(bullet, i) in ['Role-based access', 'Reporting Dashboard', 'Manager view over conversations', 'Smart routing & SLA alerts', 'Multi-dealership/Brand structure', 'Leads integrated to CRM/LMS']" :key="i" class="flex items-start gap-3 text-neutral-800 text-sm sm:text-[15px] leading-relaxed">
+                      <span class="w-1.5 h-1.5 rounded-full bg-[#58E4FF] mt-2 flex-shrink-0" />
                       <span>{{ bullet }}</span>
                     </li>
                   </ul>
@@ -1265,6 +1345,9 @@ import contentCreationDeskImg from '~/assets/images/postx-content-creation-desk.
 import postXHeroBanner from '~/assets/images/hero-hanner-lady-desktop-banner.webp';
 import postXLogo from '~/assets/images/PostX_Web_Dark_Logo.png';
 import postXHeroMobileBanner from '~/assets/images/hero-hanner-lady-mobile-banner.webp';
+import builtByDevelopersIcon from '~/assets/images/postx-built-by-our-developers-icon.svg';
+import supportWhoBuiltItIcon from '~/assets/images/postx-support-who-built-it-icon.svg';
+import newFeaturesShippedIcon from '~/assets/images/postx-new-features-shipped-icon.svg';
 import createIcon from '~/assets/images/create.svg';
 import connectIcon from '~/assets/images/connect.svg';
 import commsIcon from '~/assets/images/comms.svg';
@@ -1555,16 +1638,16 @@ const contentCardsData = [
     desc: 'Set role-based permissions for dealership staff, agencies, and regional managers so everyone creates safely within brand guidelines.'
   },
   {
-    title: 'Schedule ahead & stay active.',
+    title: 'AI moderation on Facebook.',
     img: contentCreationDeskImg,
-    alt: 'Schedule ahead & stay active',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.'
+    alt: 'AI moderation on Facebook.',
+    desc: 'PostX’s moderation AI responds to customer comments on your Facebook page, so nobody is left waiting for an answer.'
   },
   {
-    title: 'Track reach & engagement.',
+    title: 'A full audit trail.',
     img: contentCreationDeskImg,
-    alt: 'Track reach & engagement',
-    desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+    alt: 'A full audit trail.',
+    desc: 'See who created, edited and approved every post, and when.'
   }
 ];
 
