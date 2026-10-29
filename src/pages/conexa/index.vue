@@ -1261,16 +1261,17 @@
             Frequently Asked<br />Questions
           </h2>
 
-          <div class="w-full bg-[#dff0f6] rounded-3xl p-8 border border-[#c4e5f0] shadow-sm">
-            <h3 class="font-poppins text-xl font-medium text-neutral-900 mb-3">
+          <!-- CTA Card -->
+          <div class="w-full bg-[#f0f9fa] rounded-4xl p-8 sm:p-10 flex flex-col items-start mt-4">
+            <h3 class="font-poppins text-2xl font-medium text-neutral-900 mb-4">
               Still Have A Question?
             </h3>
-            <p class="font-poppins text-neutral-700 text-sm sm:text-base leading-relaxed mb-6">
-              If you’d like to know more about how R-E-D can help your business generate more leads.
+            <p class="font-poppins text-neutral-700 text-base sm:text-lg leading-relaxed mb-8">
+              If you’d like to know more about how<br class="hidden sm:inline" />R-E-D can help your business generate more leads.
             </p>
             <button
               @click="openModal('Conexa - General Enquiry')"
-              class="btn-primary text-sm px-8 py-3.5"
+              class="btn-primary text-xs sm:text-[15px] px-8 py-4 w-full sm:w-auto"
             >
               Schedule A Meeting Today
             </button>
@@ -1282,29 +1283,33 @@
           <div
             v-for="(faq, index) in faqData"
             :key="index"
-            class="bg-white rounded-2xl border border-neutral-200/80 shadow-sm overflow-hidden transition-all duration-200"
+            class="bg-[#fafafa] rounded-3xl overflow-hidden transition-all duration-300"
           >
             <button
               @click="toggleFaq(index)"
-              class="w-full px-6 sm:px-8 py-5 sm:py-6 flex items-center justify-between text-left font-poppins text-base sm:text-lg font-medium text-neutral-900 hover:text-primary transition-colors cursor-pointer"
+              class="w-full flex items-center justify-between p-6 sm:px-8 sm:py-7 text-left focus:outline-none cursor-pointer"
             >
-              <span>{{ faq.question }}</span>
-              <ChevronDown
-                :class="[
-                  'w-5 h-5 text-neutral-400 transition-transform duration-300 flex-shrink-0 ml-4',
-                  activeFaq === index ? 'rotate-180 text-primary' : ''
-                ]"
-              />
+              <span class="font-poppins font-semibold text-lg sm:text-xl text-neutral-900 pr-4">
+                {{ faq.question }}
+              </span>
+              <div
+                class="flex-shrink-0 text-primary transition-transform duration-300"
+                :class="{ 'rotate-180': activeFaq === index }"
+              >
+                <ChevronDown class="w-6 h-6" stroke-width="2.5" />
+              </div>
             </button>
 
             <transition
+              enter-active-class="transition-[height,opacity] duration-300 ease-in-out"
+              leave-active-class="transition-[height,opacity] duration-300 ease-in-out"
               @enter="enter"
               @after-enter="afterEnter"
               @leave="leave"
             >
               <div v-show="activeFaq === index" class="overflow-hidden">
-                <div class="px-6 sm:px-8 pb-6 pt-0 font-poppins text-neutral-600 text-sm sm:text-base leading-relaxed border-t border-neutral-100">
-                  <div class="pt-4">{{ faq.answer }}</div>
+                <div class="px-6 pb-6 sm:px-8 sm:pb-8 pt-0 mx-6 sm:mx-8 font-poppins text-neutral-600 text-base sm:text-lg leading-relaxed border-t border-neutral-200">
+                  <div class="pt-6">{{ faq.answer }}</div>
                 </div>
               </div>
             </transition>
