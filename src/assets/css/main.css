@@ -142,6 +142,16 @@ body {
   transform: scale(var(--btn-primary-active-scale));
 }
 
+.btn-primary:disabled,
+.btn-secondary:disabled,
+.btn-tertiary:disabled,
+.btn-slide-in:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+  transform: none !important;
+}
+
 /* Secondary CTA Button */
 .btn-secondary {
   background-color: var(--btn-secondary-bg) !important;

@@ -3,7 +3,7 @@
     <!-- Name Input -->
     <div :class="variant === 'modal' ? 'space-y-1.5' : ''">
       <label :class="labelClass">
-        Name <span v-if="variant === 'modal'">*</span>
+        Name <span class="text-primary">*</span>
       </label>
       <input
         type="text"
@@ -17,10 +17,11 @@
     <!-- Phone Input -->
     <div :class="variant === 'modal' ? 'space-y-1.5' : ''">
       <label :class="labelClass">
-        Phone number
+        Phone number <span class="text-primary">*</span>
       </label>
       <input
         type="tel"
+        required
         v-model="phone"
         placeholder="e.g. 082 123 4567"
         :class="inputClass"
@@ -30,7 +31,7 @@
     <!-- Email Input -->
     <div :class="variant === 'modal' ? 'space-y-1.5' : ''">
       <label :class="labelClass">
-        Email Address <span v-if="variant === 'modal'">*</span>
+        Email Address <span class="text-primary">*</span>
       </label>
       <input
         type="email"
@@ -44,9 +45,10 @@
     <!-- Service Selection -->
     <div :class="variant === 'modal' ? 'space-y-1.5' : ''">
       <label :class="labelClass">
-        {{ variant === 'modal' ? 'Core Objective' : 'Select a service' }}
+        {{ variant === 'modal' ? 'Core Objective' : 'Select a service' }} <span class="text-primary">*</span>
       </label>
       <select
+        required
         v-model="service"
         :class="[inputClass, 'appearance-none text-neutral-700']"
       >
@@ -80,7 +82,7 @@
     <div :class="variant === 'modal' ? 'pt-2' : 'pt-2'">
       <button
         type="submit"
-        :disabled="isLoading"
+        :disabled="isLoading || !isFormValid"
         :class="buttonClass"
       >
         <div v-if="isLoading" class="h-5 w-5 animate-spin rounded-full border-2 border-white border-t-transparent"></div>
@@ -151,14 +153,24 @@ const inputClass = computed(() => {
     : 'w-full bg-[#f8f8f8] border border-transparent rounded-xl px-4 py-3.5 text-sm focus:outline-none focus:border-primary transition-colors';
 });
 
+const isFormValid = computed(() => {
+  return (
+    fullName.value.trim().length > 0 &&
+    phone.value.trim().length > 0 &&
+    email.value.trim().length > 0 &&
+    service.value !== '' &&
+    service.value !== 'Select a service'
+  );
+});
+
 const buttonClass = computed(() => {
   return props.variant === 'modal'
-    ? 'btn-primary flex w-full items-center justify-center gap-2 py-3.5 text-sm disabled:opacity-50 !rounded-xl'
-    : 'btn-primary w-full text-sm py-3.5 h-[52px]';
+    ? 'btn-primary flex w-full items-center justify-center gap-2 py-3.5 text-sm disabled:opacity-50 disabled:cursor-not-allowed !rounded-xl'
+    : 'btn-primary w-full text-sm py-3.5 h-[52px] disabled:opacity-50 disabled:cursor-not-allowed';
 });
 
 const handleSubmit = async () => {
-  if (!fullName.value || !email.value) return;
+  if (!isFormValid.value) return;
 
   isLoading.value = true;
   
