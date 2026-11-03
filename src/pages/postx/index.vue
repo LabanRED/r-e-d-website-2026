@@ -1654,9 +1654,18 @@ onMounted(() => {
 });
 
 useHead({
-  title: 'PostX | R-E-D',
+  title: 'PostX Omnichannel Lead Assistant',
   meta: [
-    { name: 'description', content: 'PostX unifies WhatsApp, social media, live chat, and AI-powered assistants into a single command centre.' }
+    {
+      name: 'description',
+      content: 'PostX by Reach Engage Develop (R-E-D) unites WhatsApp business messaging, social media publishing, AI comments moderation, and CRM lead delivery into a single command hub.'
+    },
+    {
+      name: 'keywords',
+      content: 'PostX, R-E-D PostX, Red PostX, Reach Engage Develop PostX, WhatsApp business marketing, automotive lead automation'
+    },
+    { property: 'og:title', content: 'PostX Omnichannel Lead Assistant | Reach Engage Develop (R-E-D)' },
+    { property: 'og:description', content: 'PostX by Reach Engage Develop (R-E-D) unites WhatsApp business messaging, social media publishing, AI comments moderation, and CRM lead delivery into a single command hub.' }
   ]
 });
 </script>

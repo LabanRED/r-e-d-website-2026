@@ -180,7 +180,6 @@ import secondBlogImg from '~/assets/images/article-social-media-for-your-busines
 import thirdBlogImg from '~/assets/images/article-ads-ads-and-more-ads-mobile-banner.webp';
 import fourthBlogImg from '~/assets/images/article-innovative-and-powerful-waysmobile-banner.webp';
 import fifthBlogImg from '~/assets/images/article-get-more-bang-for-your-buck-mobile-banner.webp';
-import sixthBlogImg from '~/assets/images/ai-driven-advertising-target-marketing.webp';
 
 const { openModal } = useModal();
 
@@ -225,13 +224,6 @@ const blogsData = [
     date: "R-E-D | 01 April 2023",
     excerpt: "Are you looking to reach & bring in new customers that are 100% interested in your products/services?",
     image: fifthBlogImg,
-  },
-  {
-    id: 6,
-    title: "AI-Driven Advertising For Smarter Targeting & Lead Generation",
-    date: "R-E-D | 24 January 2025",
-    excerpt: "Smarter targeting and automation driving better leads through machine learning.",
-    image: sixthBlogImg,
   }
 ];
 
@@ -244,9 +236,18 @@ const filteredBlogs = computed(() => {
 });
 
 useHead({
-  title: 'Blogs | R-E-D',
+  title: 'Insights & Blog',
   meta: [
-    { name: 'description', content: 'Explore our collection of insights, ideas, and updates across design, development, and digital strategy.' }
+    {
+      name: 'description',
+      content: 'Explore insights, ideas, and strategies on automotive advertising, lead conversion, and web development from Reach Engage Develop (R-E-D).'
+    },
+    {
+      name: 'keywords',
+      content: 'R-E-D blog, Red insights, Reach Engage Develop articles, digital marketing tips, automotive advertising'
+    },
+    { property: 'og:title', content: 'Insights & Blog | Reach Engage Develop (R-E-D)' },
+    { property: 'og:description', content: 'Explore insights, ideas, and strategies on automotive advertising, lead conversion, and web development from Reach Engage Develop (R-E-D).' }
   ]
 });
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-[#fafafa] min-h-screen relative font-sans overflow-x-hidden pt-8 pb-20">
     <Head>
-      <Title>Ads, ads and more ads | R-E-D</Title>
+      <Title>Ads, ads and more ads</Title>
     </Head>
 
     <!-- Back Breadcrumb -->
@@ -296,9 +296,9 @@ const shareTo = (platform: string) => {
 };
 
 useHead({
-  title: 'Ads, ads and more ads | R-E-D',
+  title: 'Ads, ads and more ads',
   meta: [
-    { name: 'description', content: "Facebook ads work best when you're focused on what you want to achieve." }
+    { name: 'description', content: "Facebook ads work best when you're focused on what you want to achieve. Expert advertising advice from Reach Engage Develop (R-E-D)." }
   ]
 });
 </script>

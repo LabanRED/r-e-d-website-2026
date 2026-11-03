@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-[#fafafa] min-h-screen relative font-sans overflow-x-hidden pt-8 pb-20">
     <Head>
-      <Title>Innovative and powerful ways to tell your business story! | R-E-D</Title>
+      <Title>Innovative and powerful ways to tell your business story!</Title>
       <Meta
         name="description"
         content="With so many active users on Facebook and Instagram, learn which Ad Type to use to reach new customers and reengage with existing customers."
@@ -514,11 +514,11 @@ const shareTo = (platform: string) => {
 };
 
 useHead({
-  title: 'Innovative and powerful ways to tell your business story! | R-E-D',
+  title: 'Innovative and powerful ways to tell your business story!',
   meta: [
     {
       name: 'description',
-      content: 'With so many active users on Facebook and Instagram, it may be difficult for you to decide which Ad Type to use to reach new customers and reengage with existing customers.'
+      content: 'With so many active users on Facebook and Instagram, learn which Ad Type to use to reach new customers and re-engage with existing customers. Insights from Reach Engage Develop (R-E-D).'
     }
   ]
 });

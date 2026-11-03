@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-[#fafafa] min-h-screen relative font-sans overflow-x-hidden pt-8 pb-20">
     <Head>
-      <Title>3 Winning Social Media Strategies | R-E-D</Title>
+      <Title>3 Winning Social Media Strategies</Title>
     </Head>
 
     <!-- Back Breadcrumb -->

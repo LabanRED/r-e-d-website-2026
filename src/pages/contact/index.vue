@@ -164,9 +164,18 @@ const handleSuccess = (data: any) => {
 };
 
 useHead({
-  title: 'Contact Us | R-E-D',
+  title: 'Contact Us',
   meta: [
-    { name: 'description', content: 'Contact R-E-D today for expert digital advertising, high-converting campaigns, and measurable results.' }
+    {
+      name: 'description',
+      content: 'Contact Reach Engage Develop (R-E-D) today for expert digital advertising, Conexa website platform demos, PostX lead automation, and measurable business growth.'
+    },
+    {
+      name: 'keywords',
+      content: 'Contact R-E-D, Contact Red, Contact Reach Engage Develop, RED digital contact, Reach Enage Develop'
+    },
+    { property: 'og:title', content: 'Contact Us | Reach Engage Develop (R-E-D)' },
+    { property: 'og:description', content: 'Contact Reach Engage Develop (R-E-D) today for expert digital advertising, Conexa website platform demos, PostX lead automation, and measurable business growth.' }
   ]
 });
 </script>

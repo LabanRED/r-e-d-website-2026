@@ -1,7 +1,7 @@
 <template>
   <div class="w-full bg-[#fafafa] min-h-screen relative font-sans overflow-x-hidden pt-8 pb-20">
     <Head>
-      <Title>Social Media for Your Business: 5 Tips to Get It Right | R-E-D</Title>
+      <Title>Social Media for Your Business: 5 Tips to Get It Right</Title>
     </Head>
 
     <!-- Back Breadcrumb -->

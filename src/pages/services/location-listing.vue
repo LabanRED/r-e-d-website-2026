@@ -3,10 +3,10 @@
     <Head>
       <Link rel="preload" as="image" :href="heroDesktopBanner" media="(min-width: 1024px)" fetchpriority="high" />
       <Link rel="preload" as="image" :href="heroMobileBanner" media="(max-width: 1023px)" fetchpriority="high" />
-      <Title>Location Listing & Solutions | R-E-D</Title>
+      <Title>Location Listing & Solutions</Title>
       <Meta
         name="description"
-        content="Ensure your brand is discoverable, verified, and consistent everywhere customers search. Location Listing and Maintenance solutions by R-E-D."
+        content="Ensure your brand is discoverable, verified, and consistent everywhere customers search. Google Business Profile & Location Listing solutions by Reach Engage Develop (R-E-D)."
       />
     </Head>
 

@@ -58,8 +58,13 @@
               </div>
 
               <!-- Icon Container -->
-              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-primary flex items-center justify-center text-white shadow-sm select-none transition-transform duration-300 group-hover:scale-105">
-                <Star class="w-5 h-5 fill-current text-white" />
+              <div class="w-11 h-11 sm:w-12 sm:h-12 select-none transition-transform duration-300 group-hover:scale-105">
+                <img
+                  :src="step.icon"
+                  :alt="step.title.replace('\n', ' ')"
+                  class="w-full h-full object-contain"
+                  loading="lazy"
+                />
               </div>
             </div>
 
@@ -110,8 +115,20 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import { Star } from 'lucide-vue-next';
-import respectImg from '~/assets/images/mutual-respect-is-key.webp';
+
+// Card Banner Images
+import turnaroundTimesImg from '~/assets/images/r-e-d-turnaround-times.webp';
+import integratedSolutionsImg from '~/assets/images/r-e-d-integrated-solutions.webp';
+import customSlaImg from '~/assets/images/r-e-d-custom-sla.webp';
+import industryExpertsImg from '~/assets/images/r-e-d-access-to-industry-experts.webp';
+import operationalTransparencyImg from '~/assets/images/r-e-d-operational-transparency.webp';
+
+// Card Icons
+import turnaroundTimesIcon from '~/assets/images/turnaround-times-icon.svg';
+import integratedSolutionsIcon from '~/assets/images/integrated-solutions-icon.svg';
+import customSlaIcon from '~/assets/images/custom sla-icon.svg';
+import industryExpertsIcon from '~/assets/images/access-to-industry-experts-icon.svg';
+import operationalTransparencyIcon from '~/assets/images/operation-transparency-icon.svg';
 
 defineEmits(['cta-click']);
 
@@ -126,7 +143,8 @@ const steps = [
     number: '01.',
     title: 'Turnaround\nTimes',
     activeTitle: 'Turnaround\nTimes',
-    image: respectImg,
+    icon: turnaroundTimesIcon,
+    image: turnaroundTimesImg,
     paragraphs: [
       "Refined systems and disciplined processes allow R-E-D to operate outside industry norms when it comes to turnaround times. Brief it early, get it back the same day. From design to live, fast.",
       "Wherever possible, every R-E-D service and product is held to our turnaround standards not the industry's."
@@ -136,7 +154,8 @@ const steps = [
     number: '02.',
     title: 'Integrated\nSolutions',
     activeTitle: 'Integrated\nSolutions',
-    image: respectImg,
+    icon: integratedSolutionsIcon,
+    image: integratedSolutionsImg,
     paragraphs: [
       "Your business doesn't need more systems, or more fragmentation. Every R-E-D service and product is designed to work together and integrate into your business.",
       "Leads generated flow directly into your preferred systems, reducing missed emails, disconnected processes and leads going cold. One connected ecosystem. From ours, into yours."
@@ -146,7 +165,8 @@ const steps = [
     number: '03.',
     title: 'Custom\nSLAs',
     activeTitle: 'Custom SLAs',
-    image: respectImg,
+    icon: customSlaIcon,
+    image: customSlaImg,
     paragraphs: [
       "No two businesses operate exactly the same way. Your service agreement shouldn't pretend they do.\nWe're flexible where it matters and disciplined where it counts.",
       "Each package and client-specific agreement unlocks a defined set of SLAs, built around the operational requirements of your business. Clear expectations. Clear accountability. Built around how you work."
@@ -156,7 +176,8 @@ const steps = [
     number: '04.',
     title: 'Access to\nIndustry Experts',
     activeTitle: 'Access to\nIndustry Experts',
-    image: respectImg,
+    icon: industryExpertsIcon,
+    image: industryExpertsImg,
     paragraphs: [
       "They say it takes 10,000 disciplined hours to become an expert in a field. You can spend those hours practising badly. We didn't. With more than 50,000 hours dedicated to what we do and how we do it you're working with people who understand the disciplines behind marketing, advertising, websites, lead management, creative and digital operations.",
       "Not just people who know the platforms. People who understand how the pieces work together."
@@ -166,7 +187,8 @@ const steps = [
     number: '05.',
     title: 'Operational\nTransparency',
     activeTitle: 'Operational\nTransparency',
-    image: respectImg,
+    icon: operationalTransparencyIcon,
+    image: operationalTransparencyImg,
     paragraphs: [
       "In a world full of noise, excuses and broken accountability, we choose transparency. If we make a mistake, we tell you. If something isn't working, we don't hide it behind a report.",
       "We explain what happened, what it means and what we're doing about it. We operate as an extension of your business. You deserve to know when things aren't going to plan just as much as when they are. Accountability isn't something we report on. It's how we operate."

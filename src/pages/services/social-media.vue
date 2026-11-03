@@ -2,7 +2,8 @@
   <div class="w-full bg-[#f8f9fa] min-h-screen relative font-sans overflow-x-hidden pt-8 sm:pt-16 pb-20 md:pb-0 lg:pb-0">
     <Head>
       <Link rel="preload" as="image" :href="heroBanner" fetchpriority="high" />
-      <Title>Social Media Management | R-E-D</Title>
+      <Title>Social Media Management</Title>
+      <Meta name="description" content="Strategic social media management and brand storytelling by Reach Engage Develop (R-E-D). Engage your audience across Facebook, Instagram, and LinkedIn." />
     </Head>
 
     <!-- Back Breadcrumb -->
