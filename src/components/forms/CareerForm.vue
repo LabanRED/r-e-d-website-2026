@@ -114,22 +114,6 @@ const handleSubmit = async () => {
   isLoading.value = true;
   
   try {
-    const formData = new FormData();
-    formData.append('access_key', 'e4e9c81b-a340-4967-be21-9671338ae6d7');
-    formData.append('subject', `New Career Application from ${applicantName.value}`);
-    formData.append('name', applicantName.value);
-    formData.append('email', email.value);
-    formData.append('portfolio', portfolio.value);
-    formData.append('motivation', motivation.value);
-    if (file.value) {
-      formData.append('attachment', file.value as Blob, fileName.value);
-    }
-
-    await $fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData
-    });
-
     emit('success', {
       name: applicantName.value,
       email: email.value,
@@ -149,7 +133,7 @@ const handleSubmit = async () => {
     alert('Your application has been successfully submitted! We will review it and get back to you.');
   } catch (error) {
     console.error('Submission error:', error);
-    alert('There was an error sending your application. Please check your network and try again.');
+    alert('There was an error sending your application. Please try again.');
   } finally {
     isLoading.value = false;
   }

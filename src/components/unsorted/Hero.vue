@@ -97,8 +97,8 @@
                 </span>
 
                 <h2 class="font-poppins font-medium text-2xl lg:text-[2rem] xl:text-[2.35rem] leading-[1.18] tracking-tight text-neutral-900 mb-4">
-                  Designed for<br />
-                  <span class="text-[#2ca8cb] whitespace-nowrap">businesses of all sizes.</span>
+                  Designed For<br />
+                  <span class="text-[#2ca8cb] whitespace-nowrap">Businesses of All Sizes.</span>
                 </h2>
 
                 <p class="font-poppins font-normal text-neutral-600 text-xs xl:text-[13px] leading-[1.65] max-w-[380px] mb-7">
@@ -466,8 +466,8 @@
               ABOUT
             </span>
             <h2 class="font-poppins font-medium text-2xl sm:text-3xl leading-tight text-neutral-900 mb-3">
-              Designed for<br />
-              <span class="text-[#2ca8cb]">businesses of all sizes.</span>
+              Designed For<br />
+              <span class="text-[#2ca8cb]">Businesses Of All Sizes.</span>
             </h2>
             <p class="font-poppins text-neutral-600 text-xs sm:text-sm leading-relaxed max-w-md mb-5">
               From early stage start-ups to industry leading corporations, R-E-D is the choice of modern CEO's and CFO's. Make us your marketing partner and maximise your growth and results today!
