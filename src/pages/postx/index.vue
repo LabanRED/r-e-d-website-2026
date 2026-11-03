@@ -1343,6 +1343,7 @@ import creatingPostImg from '~/assets/images/r-e-d-postx-creating-post.webp';
 import polishWithAiImg from '~/assets/images/r-e-d-postx-polish-with-ai-caption-post.webp';
 import customPostFrameImg from '~/assets/images/vw-postx-custom-post-frame.webp';
 import approveBeforeLiveImg from '~/assets/images/vw-postx-approve-before-goes-live-post.webp';
+import controlledAccessImg from '~/assets/images/vw-postx-controlled-access-post.webp';
 import contentCreationDeskImg from '~/assets/images/postx-content-creation-desk.jpg';
 import postXHeroBanner from '~/assets/images/hero-hanner-lady-desktop-banner.webp';
 import postXLogo from '~/assets/images/PostX_Web_Dark_Logo.png';
@@ -1594,7 +1595,7 @@ const contentCardsData = [
   },
   {
     title: 'Controlled access.',
-    img: contentCreationDeskImg,
+    img: controlledAccessImg,
     alt: 'Controlled access',
     desc: 'Set role-based permissions for dealership staff, agencies, and regional managers so everyone creates safely within brand guidelines.'
   },
