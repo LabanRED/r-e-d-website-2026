@@ -175,23 +175,6 @@ const handleSubmit = async () => {
   isLoading.value = true;
   
   try {
-    await $fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-      },
-      body: {
-        access_key: 'e4e9c81b-a340-4967-be21-9671338ae6d7',
-        subject: `New Lead: ${service.value} from ${fullName.value}`,
-        name: fullName.value,
-        phone: phone.value,
-        email: email.value,
-        service: service.value,
-        message: message.value
-      }
-    });
-
     emit('success', {
       name: fullName.value,
       phone: phone.value,
@@ -211,7 +194,7 @@ const handleSubmit = async () => {
     }
   } catch (error) {
     console.error('Submission error:', error);
-    alert('There was an error sending your message. Please check your network and try again.');
+    alert('There was an error sending your message. Please try again.');
   } finally {
     isLoading.value = false;
   }

@@ -121,7 +121,7 @@
         </h2>
 
         <!-- Feature Points -->
-        <div class="flex flex-col sm:flex-row items-start justify-start gap-6 sm:gap-10 lg:gap-16">
+        <div class="flex flex-col sm:flex-row items-start justify-start lg:items-center lg:justify-center gap-6 sm:gap-10 lg:gap-16">
           <div class="flex items-center gap-3">
             <img
               loading="lazy"
@@ -960,10 +960,10 @@
               </div>
               <div>
                 <h3 class="font-poppins text-lg sm:text-xl font-medium text-neutral-900 mb-1">
-                  Secure By Default
+                  Domain and SSL handled:
                 </h3>
                 <p class="font-poppins text-neutral-600 text-sm sm:text-base leading-relaxed">
-                  SSL, hardened hosting, controlled access - stable sites that protect your spend.
+                  We set up and manage your domain and SSL certificate for you.
                 </p>
               </div>
             </div>
@@ -980,10 +980,10 @@
               </div>
               <div>
                 <h3 class="font-poppins text-lg sm:text-xl font-medium text-neutral-900 mb-1">
-                  Ranked And Recommended
+                  Monitored around the clock:
                 </h3>
                 <p class="font-poppins text-neutral-600 text-sm sm:text-base leading-relaxed">
-                  Structured data, sitemaps and meta control - built for Google and AI engines.
+                  Every site is monitored for downtime and SSL expiry, so problems are fixed before customers notice.
                 </p>
               </div>
             </div>
@@ -994,10 +994,10 @@
               </div>
               <div>
                 <h3 class="font-poppins text-lg sm:text-xl font-medium text-neutral-900 mb-1">
-                  Content Recommendations
+                  Built to be found:
                 </h3>
                 <p class="font-poppins text-neutral-600 text-sm sm:text-base leading-relaxed">
-                  Conexa recommends content to add or improve - growing your GEO listings and exposure.
+                  Structured data, sitemaps, meta for every page and SEO-ready vehicle page templates. That’s what Google and AI search tools read.
                 </p>
               </div>
             </div>
