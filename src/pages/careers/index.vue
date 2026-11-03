@@ -271,9 +271,18 @@ import creativeEngineImg from '~/assets/images/life-at-r-e-d-creative-engine.web
 import theCraftImg from '~/assets/images/the-craft-at-r-e-d.webp';
 
 useHead({
-  title: 'Careers | R-E-D',
+  title: 'Careers',
   meta: [
-    { name: 'description', content: 'Join the future of digital advertising. We are looking for visionaries to build what is next.' }
+    {
+      name: 'description',
+      content: 'Join the future of digital advertising and automotive software. Explore visionary career opportunities at Reach Engage Develop (R-E-D).'
+    },
+    {
+      name: 'keywords',
+      content: 'Careers at R-E-D, Work at Red, Reach Engage Develop jobs, digital marketing careers'
+    },
+    { property: 'og:title', content: 'Careers | Reach Engage Develop (R-E-D)' },
+    { property: 'og:description', content: 'Join the future of digital advertising and automotive software. Explore visionary career opportunities at Reach Engage Develop (R-E-D).' }
   ]
 });
 </script>

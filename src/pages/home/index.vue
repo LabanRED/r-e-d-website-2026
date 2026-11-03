@@ -37,14 +37,19 @@ definePageMeta({
 const { openModal } = useModal();
 
 useHead({
-  title: 'R-E-D | Digital Marketing & Sales Solutions Specialist',
+  title: 'Reach Engage Develop (R-E-D) | Digital Marketing & Sales Solutions',
+  titleTemplate: '%s',
   meta: [
     {
       name: 'description',
-      content: 'Empower your brand with R-E-D. We specialize in performance digital advertising, social media management, custom web development, online reputation, and AI-powered sales automation.'
+      content: "Reach Engage Develop (R-E-D) is South Africa's premier digital solutions and performance marketing specialist. Powering brands through digital advertising, Conexa website platform, and PostX sales automation."
     },
-    { property: 'og:title', content: 'R-E-D | Digital Marketing & Sales Solutions Specialist' },
-    { property: 'og:description', content: 'Empower your brand with R-E-D. We specialize in performance digital advertising, social media management, custom web development, online reputation, and AI-powered sales automation.' },
+    {
+      name: 'keywords',
+      content: 'Red, R-E-D, Reach Engage Develop, Reach Engage and Develop, Reach Enage Develop, RED marketing, RED agency, RED digital, automotive digital marketing'
+    },
+    { property: 'og:title', content: 'Reach Engage Develop (R-E-D) | Digital Marketing & Sales Solutions' },
+    { property: 'og:description', content: "Reach Engage Develop (R-E-D) is South Africa's premier digital solutions and performance marketing specialist. Powering brands through digital advertising, Conexa website platform, and PostX sales automation." },
     { property: 'og:type', content: 'website' }
   ]
 });

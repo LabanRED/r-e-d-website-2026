@@ -153,9 +153,18 @@ const servicesList = [
 ];
 
 useHead({
-  title: 'Services | R-E-D',
+  title: 'Digital Marketing & Web Services',
   meta: [
-    { name: 'description', content: 'Explore our wide range of digital services including advertising, social media management, website development, and more.' }
+    {
+      name: 'description',
+      content: 'Explore digital services from Reach Engage Develop (R-E-D): digital advertising, Conexa dealership websites, PostX lead automation, social media, and online reputation management.'
+    },
+    {
+      name: 'keywords',
+      content: 'R-E-D services, Red services, Reach Engage Develop services, automotive digital marketing, digital advertising agency'
+    },
+    { property: 'og:title', content: 'Digital Marketing & Web Services | Reach Engage Develop (R-E-D)' },
+    { property: 'og:description', content: 'Explore digital services from Reach Engage Develop (R-E-D): digital advertising, Conexa dealership websites, PostX lead automation, social media, and online reputation management.' }
   ]
 });
 </script>

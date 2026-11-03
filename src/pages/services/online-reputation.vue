@@ -2,10 +2,10 @@
   <div class="w-full bg-[#f8f9fa] min-h-screen relative font-sans overflow-x-hidden pt-8 sm:pt-16 pb-0">
     <Head>
       <Link rel="preload" as="image" :href="heroBgImg" fetchpriority="high" />
-      <Title>Online Reputation Solutions | R-E-D</Title>
+      <Title>Online Reputation Solutions</Title>
       <Meta
         name="description"
-        content="Keep your Google rating high. Everything else follows. Turn positive customer feedback into your strongest sales engine with R-E-D and PostX."
+        content="Keep your Google rating high and protect your brand with Reach Engage Develop (R-E-D). Turn customer feedback into sales growth with PostX review boosters."
       />
     </Head>
 

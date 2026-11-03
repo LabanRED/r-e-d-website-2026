@@ -208,9 +208,18 @@ const togglePhilosophy = (id: string) => {
 };
 
 useHead({
-  title: 'About Us | R-E-D',
+  title: 'About Us',
   meta: [
-    { name: 'description', content: 'Learn more about R-E-D and our core values and philosophy.' }
+    {
+      name: 'description',
+      content: 'Learn more about Reach Engage Develop (R-E-D) — a unique digital solutions provider delivering tailored digital advertising, web development, and social media management across South Africa.'
+    },
+    {
+      name: 'keywords',
+      content: 'About R-E-D, About Reach Engage Develop, Red, RED digital agency, Reach Engage and Develop'
+    },
+    { property: 'og:title', content: 'About Us | Reach Engage Develop (R-E-D)' },
+    { property: 'og:description', content: 'Learn more about Reach Engage Develop (R-E-D) — a unique digital solutions provider delivering tailored digital advertising, web development, and social media management across South Africa.' }
   ]
 });
 </script>

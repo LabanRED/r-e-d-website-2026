@@ -2,7 +2,8 @@
   <div class="w-full bg-[#f8f9fa] min-h-screen relative font-sans overflow-x-hidden pt-8 sm:pt-16 pb-0">
     <Head>
       <Link rel="preload" as="image" :href="laptopHeroBanner" fetchpriority="high" />
-      <Title>Website Development & Maintenance | R-E-D</Title>
+      <Title>Website Development & Maintenance</Title>
+      <Meta name="description" content="Custom website development, maintenance, and Conexa platform builds by Reach Engage Develop (R-E-D). High-speed, responsive, conversion-focused websites." />
     </Head>
 
     <!-- Back Breadcrumb -->

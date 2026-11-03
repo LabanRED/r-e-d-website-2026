@@ -2,7 +2,8 @@
   <div class="w-full bg-[#f8f9fa] min-h-screen relative font-sans overflow-x-hidden pt-8 sm:pt-16 pb-20">
     <Head>
       <Link rel="preload" as="image" :href="heroDesktop" fetchpriority="high" />
-      <Title>Digital Advertising | R-E-D</Title>
+      <Title>Digital Advertising</Title>
+      <Meta name="description" content="Data-driven digital advertising solutions by Reach Engage Develop (R-E-D). High-converting Google Ads, Meta campaigns, and automotive lead generation." />
     </Head>
 
     <!-- Back Breadcrumb -->
