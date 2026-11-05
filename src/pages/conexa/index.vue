@@ -213,7 +213,7 @@
 
     <!-- 4. Section: How Quickly Can You Update Your Website? -->
     <section class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 mb-24 sm:mb-32">
-      <div class="text-center max-w-4xl mx-auto mb-16">
+      <div class="text-center max-w-5xl mx-auto mb-16">
         <h2
           v-motion
           :initial="{ opacity: 0, y: 20 }"
@@ -306,14 +306,14 @@
 
     <!-- 5. Section: One Ecosystem. Four pillars. -->
     <section class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 mb-24 sm:mb-32">
-      <div class="max-w-4xl mb-12">
+      <div class="text-center max-w-4xl mx-auto mb-14">
         <h2
           v-motion
           :initial="{ opacity: 0, y: 20 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-          class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-neutral-900 mb-3"
+          class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-neutral-900 leading-tight mb-3"
         >
-          One Ecosystem. Four Pillars.
+          <span class="text-primary font-medium">One Ecosystem.</span> Four pillars.
         </h2>
         <p class="font-poppins text-neutral-600 text-base sm:text-lg">
           Build it, wire it in, control who touches it, and see what converts - all in one place.<br class="hidden sm:inline" />
@@ -324,75 +324,94 @@
       <!-- 4 Pillars Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
         <!-- Convert -->
-        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-neutral-200/70 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
-          <div>
-            <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-4">
-              Convert
-            </h3>
-            <div class="rounded-2xl overflow-hidden bg-neutral-100 mb-6">
-              <img :src="convertImg1" alt="Convert" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
-            </div>
+        <div class="bg-[#e4ecf7] rounded-3xl p-6 sm:p-7 border border-[#d3e2f2] shadow-sm flex flex-col justify-start hover:shadow-md transition-shadow duration-300">
+          <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-2">
+            Convert
+          </h3>
+          <p class="font-poppins text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5 min-h-[44px] sm:min-h-[52px]">
+            See what sells - every lead, page and offer in one view.
+          </p>
+          <div class="rounded-2xl overflow-hidden bg-white mb-6">
+            <img :src="convertImg2" alt="Convert" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
           </div>
-          <div class="flex items-start gap-2.5">
-            <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-            <p class="font-poppins text-neutral-600 text-sm sm:text-base leading-relaxed">
-              See what sells. Every visitor, offer, vehicle and lead in one system.
-            </p>
-          </div>
+          <ul class="flex flex-col gap-2.5 font-poppins text-xs sm:text-sm text-neutral-700">
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Live site stats</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Traffic channels and referrers</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Views and leads per offer and vehicle</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Leads by type and period</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Period comparisons</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Multi-field lead search</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Lead delivery tracking</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Manager visibility</li>
+          </ul>
         </div>
 
         <!-- Create -->
-        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-neutral-200/70 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
-          <div>
-            <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-4">
-              Create
-            </h3>
-            <div class="rounded-2xl overflow-hidden bg-neutral-100 mb-6">
-              <img :src="createImg1" alt="Create" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
-            </div>
+        <div class="bg-[#e4ecf7] rounded-3xl p-6 sm:p-7 border border-[#d3e2f2] shadow-sm flex flex-col justify-start hover:shadow-md transition-shadow duration-300">
+          <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-2">
+            Create
+          </h3>
+          <p class="font-poppins text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5 min-h-[44px] sm:min-h-[52px]">
+            Change pages, offers, stock, banners and forms yourself, with no code.
+          </p>
+          <div class="rounded-2xl overflow-hidden bg-white mb-6">
+            <img :src="createImg2" alt="Create" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
           </div>
-          <div class="flex items-start gap-2.5">
-            <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-            <p class="font-poppins text-neutral-600 text-sm sm:text-base leading-relaxed">
-              Change pages, offers, stock, banners and forms yourself, with no code.
-            </p>
-          </div>
+          <ul class="flex flex-col gap-2.5 font-poppins text-xs sm:text-sm text-neutral-700">
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Pages, blogs and articles</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Offers linked to make and model</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Banners and slides (incl. video)</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Products, VAPS and accessories</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Custom forms and lead types</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> “Sell your car” form with photos</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> AI polishing tool</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> SEO tool</li>
+          </ul>
         </div>
 
         <!-- Connect -->
-        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-neutral-200/70 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
-          <div>
-            <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-4">
-              Connect
-            </h3>
-            <div class="rounded-2xl overflow-hidden bg-neutral-100 mb-6">
-              <img :src="connectImg1" alt="Connect" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
-            </div>
+        <div class="bg-[#e4ecf7] rounded-3xl p-6 sm:p-7 border border-[#d3e2f2] shadow-sm flex flex-col justify-start hover:shadow-md transition-shadow duration-300">
+          <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-2">
+            Connect
+          </h3>
+          <p class="font-poppins text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5 min-h-[44px] sm:min-h-[52px]">
+            Stock feeds, OEM vehicle data, catalogue feeds and lead delivery to your CRM.
+          </p>
+          <div class="rounded-2xl overflow-hidden bg-white mb-6">
+            <img :src="connectImg2" alt="Connect" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
           </div>
-          <div class="flex items-start gap-2.5">
-            <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-            <p class="font-poppins text-neutral-600 text-sm sm:text-base leading-relaxed">
-              Stock feeds, OEM vehicle data, catalogue feeds and lead delivery to your CRM.
-            </p>
-          </div>
+          <ul class="flex flex-col gap-2.5 font-poppins text-xs sm:text-sm text-neutral-700">
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> 11 stock feed integrations</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Stock import mapping and overrides</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> New vehicle catalogue from the feed</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Catalogue feeds: Meta, TikTok, WhatsApp</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> CRM and LMS lead delivery</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Offers to Google Business Profile (with PostX)</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> PostX add-on (WhatsApp, web chat)</li>
+          </ul>
         </div>
 
         <!-- Control -->
-        <div class="bg-white rounded-3xl p-6 sm:p-7 border border-neutral-200/70 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-300">
-          <div>
-            <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-4">
-              Control
-            </h3>
-            <div class="rounded-2xl overflow-hidden bg-neutral-100 mb-6">
-              <img :src="controlImg1" alt="Control" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
-            </div>
+        <div class="bg-[#e4ecf7] rounded-3xl p-6 sm:p-7 border border-[#d3e2f2] shadow-sm flex flex-col justify-start hover:shadow-md transition-shadow duration-300">
+          <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-2">
+            Control
+          </h3>
+          <p class="font-poppins text-neutral-600 text-xs sm:text-sm leading-relaxed mb-5 min-h-[44px] sm:min-h-[52px]">
+            One hub for every dealership, brand and site, with approvals, roles and a full audit trail.
+          </p>
+          <div class="rounded-2xl overflow-hidden bg-white mb-6">
+            <img :src="controlImg2" alt="Control" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
           </div>
-          <div class="flex items-start gap-2.5">
-            <span class="w-2 h-2 rounded-full bg-primary mt-2 flex-shrink-0"></span>
-            <p class="font-poppins text-neutral-600 text-sm sm:text-base leading-relaxed">
-              One hub for every dealership, brand and site, with approvals, roles and a full audit trail.
-            </p>
-          </div>
+          <ul class="flex flex-col gap-2.5 font-poppins text-xs sm:text-sm text-neutral-700">
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Group and master sites</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Lead routing to the right branch</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Central offer approvals</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Role-based access</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Audit trail</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Dealer profiles (hours, staff)</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Model FAQs pushed to all dealers</li>
+            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Uptime and SSL monitoring</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -912,14 +931,14 @@
 
     <!-- 11. Section: Drastically Faster. Secure By Design. -->
     <section class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 mb-24 sm:mb-32">
-      <div class="text-center max-w-4xl mx-auto mb-14">
+      <div class="text-center max-w-5xl mx-auto mb-14">
         <h2
           v-motion
           :initial="{ opacity: 0, y: 20 }"
           :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
           class="font-poppins text-3xl sm:text-4xl md:lg:text-5xl lg:text-5xl font-medium tracking-tight text-neutral-900 leading-tight mb-3"
         >
-          <span class="text-black md:text-4xl">Fast. Secure. Found by Google, and by AI..</span>
+          <span class="text-primary">Fast. Secure.</span> Found by Google, and by AI..
         </h2>
       </div>
 
@@ -1211,106 +1230,7 @@
       </div>
     </section>
 
-    <!-- 14. Section: Capabilities Shipping Continuously -->
-    <section class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 mb-24 sm:mb-32">
-      <div class="text-center max-w-4xl mx-auto mb-14">
-        <h2
-          v-motion
-          :initial="{ opacity: 0, y: 20 }"
-          :visible-once="{ opacity: 1, y: 0, transition: { duration: 500 } }"
-          class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-neutral-900 leading-tight mb-3"
-        >
-          <span class="text-primary">Capabilities Shipping</span> Continuously
-        </h2>
-        <p class="font-poppins text-neutral-600 text-base sm:text-lg">
-          Your Conexa gets smarter over time.
-        </p>
-      </div>
-
-      <!-- 4 Columns Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-        <!-- Convert -->
-        <div class="bg-[#e4ecf7] rounded-3xl p-6 sm:p-7 border border-[#d3e2f2] shadow-sm flex flex-col justify-start hover:shadow-md transition-shadow duration-300">
-          <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-4">
-            Convert
-          </h3>
-          <div class="rounded-2xl overflow-hidden bg-white mb-6">
-            <img :src="convertImg2" alt="Convert capabilities" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
-          </div>
-          <ul class="flex flex-col gap-2.5 font-poppins text-xs sm:text-sm text-neutral-700">
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Live site stats</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Traffic channels and referrers</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Views and leads per offer and vehicle</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Leads by type and period</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Period comparisons</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Multi-field lead search</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Lead delivery tracking</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Manager visibility</li>
-          </ul>
-        </div>
-
-        <!-- Create -->
-        <div class="bg-[#e4ecf7] rounded-3xl p-6 sm:p-7 border border-[#d3e2f2] shadow-sm flex flex-col justify-start hover:shadow-md transition-shadow duration-300">
-          <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-4">
-            Create
-          </h3>
-          <div class="rounded-2xl overflow-hidden bg-white mb-6">
-            <img :src="createImg2" alt="Create capabilities" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
-          </div>
-          <ul class="flex flex-col gap-2.5 font-poppins text-xs sm:text-sm text-neutral-700">
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Pages, blogs and articles</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Offers linked to make and model</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Banners and slides (incl. video)</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Products, VAPS and accessories</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Custom forms and lead types</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> “Sell your car” form with photos</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> AI polishing tool</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> SEO tool</li>
-          </ul>
-        </div>
-
-        <!-- Connect -->
-        <div class="bg-[#e4ecf7] rounded-3xl p-6 sm:p-7 border border-[#d3e2f2] shadow-sm flex flex-col justify-start hover:shadow-md transition-shadow duration-300">
-          <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-4">
-            Connect
-          </h3>
-          <div class="rounded-2xl overflow-hidden bg-white mb-6">
-            <img :src="connectImg2" alt="Connect capabilities" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
-          </div>
-          <ul class="flex flex-col gap-2.5 font-poppins text-xs sm:text-sm text-neutral-700">
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> 11 stock feed integrations</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Stock import mapping and overrides</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> New vehicle catalogue from the feed</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Catalogue feeds: Meta, TikTok, WhatsApp</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> CRM and LMS lead delivery</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Offers to Google Business Profile (with PostX)</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> PostX add-on (WhatsApp, web chat)</li>
-          </ul>
-        </div>
-
-        <!-- Control -->
-        <div class="bg-[#e4ecf7] rounded-3xl p-6 sm:p-7 border border-[#d3e2f2] shadow-sm flex flex-col justify-start hover:shadow-md transition-shadow duration-300">
-          <h3 class="font-poppins text-2xl font-medium text-neutral-800 mb-4">
-            Control
-          </h3>
-          <div class="rounded-2xl overflow-hidden bg-white mb-6">
-            <img :src="controlImg2" alt="Control capabilities" class="w-full h-auto object-cover hover:scale-103 transition-transform duration-300" loading="lazy" />
-          </div>
-          <ul class="flex flex-col gap-2.5 font-poppins text-xs sm:text-sm text-neutral-700">
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Group and master sites</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Lead routing to the right branch</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Central offer approvals</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Role-based access</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Audit trail</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Dealer profiles (hours, staff)</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Model FAQs pushed to all dealers</li>
-            <li class="flex items-start gap-2"><span class="text-neutral-400">•</span> Uptime and SSL monitoring</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 15. FAQ Section -->
+    <!-- 14. FAQ Section -->
     <section class="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 mb-24 sm:mb-32">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
         
@@ -1392,8 +1312,7 @@
         </div>
 
         <h2 class="font-poppins text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-neutral-900 leading-tight mb-4">
-          Ready To Build Your<br />
-          Business With Cone<span class="text-primary">x</span>a?
+          Ready to take control <br> of your website?
         </h2>
 
         <p class="font-poppins text-neutral-600 text-sm sm:text-base max-w-xl mx-auto mb-8 font-normal">
@@ -1450,15 +1369,11 @@ import heroBannerImg from '~/assets/images/r-e-d-conexa-desktop-hero-banner.png'
 import heroMobileBannerImg from '~/assets/images/r-e-d-conexa-landing-page-mobile-banner.webp';
 import outdatedStaleImg from '~/assets/images/r-e-d-conexa-outdated-stale-image.webp';
 import howQuicklyImg from '~/assets/images/r-e-d-conexa-how-quickly-can-you-update-your-website-image.png';
-import convertImg1 from '~/assets/images/r-e-d-conexa-convert-image-1.png';
-import createImg1 from '~/assets/images/r-e-d-conexa-create-image-1.png';
-import connectImg1 from '~/assets/images/r-e-d-conexa-connect-image-1.png';
-import controlImg1 from '~/assets/images/r-e-d-conexa-control-image-1.png';
-import everythingOnePlaceImg from '~/assets/images/r-e-d-conexa-everything-one-place-image.png';
+import everythingOnePlaceImg from '~/assets/images/r-e-d-conexa-everything-one-place-image.webp';
 import ctaBannerImg from '~/assets/images/r-e-d-conexa-cta-banner-image.png';
 import addLocationImg from '~/assets/images/r-e-d-conexa-add-a-location-image.png';
 import drasticallyFasterImg from '~/assets/images/r-e-d-conexa-drastically-faster-image.png';
-import campaignsImg from '~/assets/images/r-e-d-conexa-your-site-and-your-campaigns-image.png';
+import campaignsImg from '~/assets/images/r-e-d-conexa-your-site-and-your-campaigns-image.webp';
 import convertImg2 from '~/assets/images/r-e-d-conexa-convert-image-2.png';
 import createImg2 from '~/assets/images/r-e-d-conexa-create-image-2.png';
 import connectImg2 from '~/assets/images/r-e-d-conexa-connect-image-2.png';
