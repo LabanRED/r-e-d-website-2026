@@ -1344,7 +1344,8 @@ import polishWithAiImg from '~/assets/images/r-e-d-postx-polish-with-ai-caption-
 import customPostFrameImg from '~/assets/images/vw-postx-custom-post-frame.webp';
 import approveBeforeLiveImg from '~/assets/images/vw-postx-approve-before-goes-live-post.webp';
 import controlledAccessImg from '~/assets/images/vw-postx-controlled-access-post.webp';
-import contentCreationDeskImg from '~/assets/images/postx-content-creation-desk.jpg';
+import aiModerationImg from '~/assets/images/postx-ai-moderation-post.webp';
+import fullAuditTrailImg from '~/assets/images/postx-full-audit-trail.webp';
 import postXHeroBanner from '~/assets/images/hero-hanner-lady-desktop-banner.webp';
 import postXLogo from '~/assets/images/PostX_Web_Dark_Logo.png';
 import postXHeroMobileBanner from '~/assets/images/hero-hanner-lady-mobile-banner.webp';
@@ -1601,13 +1602,13 @@ const contentCardsData = [
   },
   {
     title: 'AI moderation on Facebook.',
-    img: contentCreationDeskImg,
+    img: aiModerationImg,
     alt: 'AI moderation on Facebook.',
     desc: 'PostX’s moderation AI responds to customer comments on your Facebook page, so nobody is left waiting for an answer.'
   },
   {
     title: 'A full audit trail.',
-    img: contentCreationDeskImg,
+    img: fullAuditTrailImg,
     alt: 'A full audit trail.',
     desc: 'See who created, edited and approved every post, and when.'
   }

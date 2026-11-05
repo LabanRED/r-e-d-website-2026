@@ -68,7 +68,7 @@
               <img
                 :src="heroBanner"
                 alt="R-E-D Solutions Hero Banner"
-                class="hero-slide-art absolute bottom-0 right-0 w-full h-[549px] object-cover object-right-bottom select-none pointer-events-none"
+                class="hero-slide-art absolute bottom-0 right-0 w-full h-[564px] object-cover object-right-bottom select-none pointer-events-none"
                 :class="activeSlide === 0 ? 'is-active' : 'is-inactive'"
                 fetchpriority="high"
                 loading="eager"
@@ -76,12 +76,12 @@
             </div>
 
             <!-- Head Pop-out Above the 500px Card Top Edge -->
-            <div class="absolute inset-x-0 bottom-0 h-[549px] pointer-events-none hero-head-popout-clip">
+            <div class="absolute inset-x-0 bottom-0 h-[564px] pointer-events-none hero-head-popout-clip">
               <img
                 :src="heroBanner"
                 alt=""
                 aria-hidden="true"
-                class="hero-slide-art absolute bottom-0 right-0 w-full h-[549px] object-cover object-right-bottom select-none pointer-events-none"
+                class="hero-slide-art absolute bottom-0 right-0 w-full h-[564px] object-cover object-right-bottom select-none pointer-events-none"
                 :class="activeSlide === 0 ? 'is-active' : 'is-inactive'"
               />
             </div>
@@ -549,8 +549,8 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { useHead } from '#imports';
 import { ChevronRight } from 'lucide-vue-next';
-import heroBanner from '~/assets/images/r-e-d-landing-page-hero-banner.webp';
-import heroMobileBanner from '~/assets/images/r-e-d-landing-page-hero-mobile-banner.webp';
+import heroBanner from '~/assets/images/r-e-d-landing-jason-page-desktop-hero-banner.webp';
+import heroMobileBanner from '~/assets/images/r-e-d-landing-jason-page-mobile-hero-banner.webp';
 import postXHeroBanner from '~/assets/images/hero-hanner-lady-desktop-banner.webp';
 import postXHeroMobileBanner from '~/assets/images/r-e-d-postx-landing-page-mobile-banner.webp';
 import postXLogo from '~/assets/images/PostX_Web_Dark_Logo.png';
